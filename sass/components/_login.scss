@@ -1,0 +1,31 @@
+/*
+Login Button
+
+The Login Button
+
+Markup:
+  <div class="login">Login</div>
+
+*/
+.block--menu-menu-nefo-login-menu {
+  background-image: url("../images/login.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 17px 17px;
+  color: $header-login;
+  padding-left: 25px;
+
+  ul li {
+    overflow: hidden;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover {
+      color: inherit;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+//
+//.l-region--navigation {
+//  @for $i from 1 through 4 {
+//    #block-system-main-menu ul.menu li:nth-child(#{$i}) {
+//      $column: 2 * $i - 1;
+//      @include grid-span(2, $column);
+//    }
+//  }
+//  #block-menu-menu-main-menu-second {
+//    ul.menu li:nth-child(1) {
+//      @include grid-span(2, 9);
+//    }
+//    ul.menu li:nth-child(1) {
+//      @include grid-span(2, 11);
+//    }
+//  }
+//}

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+/* The order here is important. Bold styles have to come last */
+/* first for IE 4–8 */
+@font-face {
+  font-family: ProximaNova;
+  src: url("../assets/ProximaNova-RegularWeb.eot");
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: ProximaNova;
+  src: url("../assets/ProximaNova-RegularWeb.woff") format("woff");
+}
+
+/* first for IE 4–8 */
+@font-face {
+  font-family: ProximaNova;
+  src: url("../assets/ProximaNova-BoldWeb.eot");
+  font-weight: bold;
+}
+
+/* then for WOFF-capable browsers */
+@font-face {
+  font-family: ProximaNovaf;
+  src: url("../assets/ProximaNova-BoldWeb.woff") format("woff");
+  font-weight: bold;
+}
+
+body {
+  width: 1194px;
+  margin: 0 auto;
+  font-family: ProximaNovaRegular, sans-serif;
+  font-size: $main-font-size;
+}
+

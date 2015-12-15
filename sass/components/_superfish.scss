@@ -1,0 +1,35 @@
+.l-region--navigation .block--superfish {
+  @include grid-span(12, 1);
+
+  font-family: ProximaNovaBold, sans-serif;
+  background-color: $nav-main-background;
+  padding-left: 50px;
+  padding-right: 50px;
+  ul {
+    li {
+      width: 171px;
+      height: 70px;
+      padding-top: 10px;
+
+      a {
+        color: $nav-main-color;
+        text-decoration: none;
+        text-transform: uppercase;
+
+        .main-menu--description {
+          font-size: $main-font-size - 2px;
+        }
+      }
+    }
+
+    li:nth-last-child(-n+2) {
+      width: 120px;
+      background-color: $nav-secondary-bg;
+      text-align: center;
+      a {
+        color: $nav-secondary-color;
+      }
+    }
+  }
+
+}
