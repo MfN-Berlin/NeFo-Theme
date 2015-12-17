@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "breakpoint-sass": "^2.6.1",
-    "eyeglass": "github:sass-eyeglass/eyeglass",
+    "eyeglass": "sass-eyeglass/eyeglass",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-compass": "^2.1.0",
