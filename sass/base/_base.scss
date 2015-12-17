@@ -24,7 +24,7 @@
 
 /* then for WOFF-capable browsers */
 @font-face {
-  font-family: ProximaNovaf;
+  font-family: ProximaNova;
   src: url("../assets/ProximaNova-BoldWeb.woff") format("woff");
   font-weight: bold;
 }
@@ -32,7 +32,7 @@
 body {
   width: 1194px;
   margin: 0 auto;
-  font-family: ProximaNovaRegular, sans-serif;
+  font-family: ProximaNova, sans-serif;
   font-size: $main-font-size;
 }
 

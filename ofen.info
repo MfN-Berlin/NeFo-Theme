@@ -31,8 +31,8 @@ regions[products]       = Aktuelle Nefo Produkte
 regions[misc]           = Events and News
 regions[studies]        = Studien
 regions[workshops]      = Workshops
-regions[sidebar_first]  = First Sidebar
-regions[sidebar_second] = Second Sidebar
+regions[sidebar]        = Sidebar
+
 
 regions[footer]         = Footer
 regions[footer_first]   = Footer First

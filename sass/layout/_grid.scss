@@ -1,12 +1,20 @@
 @include add-grid(12);
 @include add-gutter(.1);
 
+.l-page,
 .l-header,
 .l-main,
 .l-footer,
 .l-content,
 .l-region--navigation {
   @include grid-span(12, 1);
+}
+
+.l-header,
+.l-main,
+.l-footer,
+.color-rule {
+  clear: both;
 }
 
 .l-branding {

@@ -70,7 +70,8 @@
  * @see omega_preprocess_page()
  */
 ?>
-<div <?php print $attributes; ?>>
+<div class="color-rule"></div>
+    <div <?php print $attributes; ?>>
     <header class="l-header" role="banner">
         <div class="l-branding">
             <?php if ($logo): ?>
@@ -120,8 +121,9 @@
         </div>
 
     </div>
-
+    <div class="color-rule"></div>
     <footer class="l-footer" role="contentinfo">
+        <?php print render($page['footer']); ?>
         <?php print render($page['footer_first']); ?>
         <?php print render($page['footer_second']); ?>
         <?php print render($page['footer_third']); ?>

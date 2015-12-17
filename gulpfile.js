@@ -20,7 +20,7 @@ var eyeglass = new Eyeglass({
 eyeglass.enableImportOnce = false
 
 gulp.task('sass:prod', function () {
-  gulp.src('./sass/*.scss')
+  gulp.src('./sass/**/*.scss')
     .pipe(sass(eyeglass.sassOptions()).on("error", sass.logError))
     .pipe(autoprefixer({
        browsers: ['last 2 version']
@@ -29,7 +29,7 @@ gulp.task('sass:prod', function () {
 });
 
 gulp.task('sass:dev', function () {
-  gulp.src('./sass/*.scss')
+  gulp.src('./sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(eyeglass.sassOptions()).on("error", sass.logError))
     .pipe(autoprefixer({

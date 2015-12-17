@@ -1,5 +1,5 @@
 <div<?php print $attributes; ?>>
-
+    <div class="color-rule"></div>
     <header class="l-header" role="banner">
       <div class="l-branding">
         <?php if ($logo): ?>
@@ -11,15 +11,10 @@
         <?php print render($page['header']); ?>
         <?php print render($page['navigation']); ?>
 
-        <div class="l-main-menu">
-
-      </div>
-
     </header>
 
     <main class="l-main">
       <div class="l-content" role="main">
-        Bla
         <?php print render($page['highlighted']); ?>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
@@ -36,9 +31,9 @@
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div>
-      <?php print render($page['sidebar']); ?>
     </main>
-
+    <?php print render($page['sidebar']); ?>
+    <div class="color-rule"></div>
     <footer class="l-footer" role="contentinfo">
         <?php print render($page['footer_first']); ?>
         <?php print render($page['footer_second']); ?>
