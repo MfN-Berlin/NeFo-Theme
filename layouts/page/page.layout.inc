@@ -11,6 +11,7 @@ regions[top_menu]       = Top Menu
 regions[language]       = Language Switch
 regions[search]         = Search Box
 regions[main_menu]      = Main Menu
+regions[navigation]      = Navigation
 
 regions[highlighted]    = Highlighted
 regions[help]           = Help
