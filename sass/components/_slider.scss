@@ -1,0 +1,37 @@
+/*
+ * flexslider slide styling
+ */
+
+#block-views-slider-block {
+  margin-left: -50px;
+}
+
+.slides {
+  overflow: hidden !important;
+}
+
+.slides div .flex-caption {
+  overflow: scroll !important;
+}
+
+ul.slides li {
+
+}
+/*
+ * flexslider caption styling
+ */
+
+.flex-caption {
+  position: absolute;
+  text-align: left;
+  font-size: 11px;
+  background: grey;
+  z-index: 100;
+  padding: 20px 10px 35px 30px;
+  width: 287px;
+  padding-top: 100%;
+  bottom: 0px;
+  color: #000;
+  right: 0;
+  margin-bottom: 0px;
+}
