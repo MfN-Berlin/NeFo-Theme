@@ -1,0 +1,11 @@
+.rrssb-buttons {
+  width: 500px;
+}
+
+.rrssb-buttons li.rrssb-email a {
+  background-color: green;
+
+  &:hover {
+    background-color: darkgreen;
+  }
+}
