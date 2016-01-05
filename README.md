@@ -1,2 +1,4 @@
-# Ofen
-Omega 4 based theme using the "Bleeding Edge" starterkit. Uses LibSass instead of the Ruby Sass preprocessor.
+# Ofen Theme
+
+Omega 4 based theme for the upcoming biodiversity.de website
+
