@@ -49,7 +49,15 @@
   @include grid-span(4, 9);
 }
 
-
+#block-views-nefo-view-block-opinion-block {
+  @include grid-span(4, 1);
+}
+#block-views-nefo-view-block-factsheet-block {
+  @include grid-span(4, 5);
+}
+#block-views-nefo-view-block-report-block {
+  @include grid-span(4, 9);
+}
 
 @include layout($gutter: 0.35) {
   .l-region--footer-first {
