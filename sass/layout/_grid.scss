@@ -6,7 +6,12 @@
 .l-main,
 .l-footer,
 .l-content,
-.l-region--navigation {
+.l-region--navigation,
+.l-region--misc,
+.l-region--studies,
+.l-region--news,
+.l-region--products,
+.color-rule {
   @include grid-span(12, 1);
 }
 
@@ -28,6 +33,23 @@
 .l-region--navigation {
   clear:both;
 }
+
+.l-main {
+  padding: 0 50px;
+}
+
+.block--views-events-block {
+  @include grid-span(4, 1);
+}
+.block--views-nefo-view-block-newsipbes-block {
+  @include grid-span(4, 5);
+}
+// TODO change class name of block bio-div-news
+.block--views-a6a217d58919eaa51b43af13b76ffc5e {
+  @include grid-span(4, 9);
+}
+
+
 
 @include layout($gutter: 0.35) {
   .l-region--footer-first {
