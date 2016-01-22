@@ -5,6 +5,8 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var livereload = require('gulp-livereload');
+var compass = require('gulp-compass'),
+    path = require('path');
 
 var Eyeglass = require('eyeglass').Eyeglass;
 

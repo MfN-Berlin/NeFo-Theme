@@ -26,6 +26,8 @@ regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
 
+regions[featured]       = Featured
+regions[atlas]          = Forschungsatlas
 regions[news]           = Nachrichten
 regions[products]       = Aktuelle Nefo Produkte
 regions[misc]           = Events and News

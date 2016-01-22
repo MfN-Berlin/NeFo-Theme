@@ -1,18 +1,28 @@
-@include add-grid(12);
-@include add-gutter(.1);
+// Global
+$mobile: 20em;
+$tab: 44em;
+$desk: 70em;
 
+@include add-grid(3);
+@include add-gutter(0.15);
+
+// top level containers
 .l-page,
 .l-header,
 .l-main,
 .l-footer,
 .l-content,
 .l-region--navigation,
+.l-region--highlighted,
 .l-region--misc,
 .l-region--studies,
 .l-region--news,
 .l-region--products,
+.l-region--featured,
+.l-region--atlas,
+.block--block-1,
 .color-rule {
-  @include grid-span(12, 1);
+  @include grid-span(3, 1);
 }
 
 .l-header,
@@ -23,11 +33,11 @@
 }
 
 .l-branding {
-  @include grid-span(5, 1);
+  @include grid-span(1, 1);
 }
 
 .l-region--header {
-  @include grid-span(7, 6);
+  @include grid-span(2, 2);
 }
 
 .l-region--navigation {
@@ -38,49 +48,65 @@
   padding: 0 50px;
 }
 
+@include layout(3 2) {
+  .view-view-researcher-profile {
+    @include grid-span(1, 1);
+  }
+
+  .feature-block {
+    @include grid-span(1,2);
+  }
+}
+
 .block--views-events-block {
-  @include grid-span(4, 1);
+  @include grid-span(1, 1);
 }
 .block--views-nefo-view-block-newsipbes-block {
-  @include grid-span(4, 5);
+  @include grid-span(1, 2);
 }
 // TODO change class name of block bio-div-news
 .block--views-a6a217d58919eaa51b43af13b76ffc5e {
-  @include grid-span(4, 9);
+  @include grid-span(1, 3);
+}
+
+@for $i from 1 through 3 {
+  .nefo-view-block-news-row:nth-of-type(#{$i}) {
+    @include grid-span(1, $i)
+  }
 }
 
 #block-views-nefo-view-block-opinion-block {
-  @include grid-span(4, 1);
+  @include grid-span(1, 1);
 }
 #block-views-nefo-view-block-factsheet-block {
-  @include grid-span(4, 5);
+  @include grid-span(1, 2);
 }
 #block-views-nefo-view-block-report-block {
-  @include grid-span(4, 9);
+  @include grid-span(1, 3);
 }
 
-@include layout($gutter: 0.35) {
+@include layout($grid:6, $gutter: 0.1) {
   .l-region--footer-first {
     @include grid-span(2, 1);
   }
 
   .l-region--footer-second {
-    @include grid-span(2, 3);
+    @include grid-span(2, 2);
   }
 
   .l-region--footer-third {
-    @include grid-span(2, 5);
+    @include grid-span(2, 3);
   }
 
   .l-region--footer-fourth {
-    @include grid-span(2, 7);
+    @include grid-span(2, 4);
   }
 
   .l-region--footer-fifth {
-    @include grid-span(2, 9);
+    @include grid-span(2, 5);
   }
 
   .l-region--footer-sixth {
-    @include grid-span(2, 11);
+    @include grid-span(2, 6);
   }
 }

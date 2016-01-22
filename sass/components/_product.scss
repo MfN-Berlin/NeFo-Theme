@@ -9,6 +9,12 @@
   z-index: 1;
 }
 
+%no_style_link {
+  a {
+    text-decoration: none;
+  }
+}
+
 
 .nefo-view-block-opinion-row,
 .nefo-view-block-factsheet-row,
@@ -29,26 +35,34 @@
 .nefo-view-block-opinion-title,
 .nefo-view-block-factsheet-title,
 .nefo-view-block-report-title {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  position: absolute;
-  top: 100px;
-  z-index: 2;
+  @extend %no_style_link;
 
-  padding-left: 10px;
+  a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+
+    padding-left: 10px;
+  }
 }
 
 .nefo-view-block-opinion-desc,
 .nefo-view-block-factsheet-desc,
 .nefo-view-block-report-desc {
-  color: white;
-  position: absolute;
-  top: 130px;
-  z-index: 2;
-  padding-left: 10px;
+  @extend %no_style_link;
 
-  font-size: 16px;
+  a {
+    color: white;
+    position: absolute;
+    top: 130px;
+    z-index: 2;
+    padding-left: 10px;
+
+    font-size: 16px;
+  }
 }
 
 .nefo-view-block-opinion-link-all,
