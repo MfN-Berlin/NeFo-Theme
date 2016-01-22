@@ -1,7 +1,7 @@
-name = Ofen Frontpage
-description = Ofen Frontpage mobile first with 1 column layout.
+name = Forschungsatlas
+description = Custom layout für die Seite mit dem Forschungsatlas
 preview = preview.png
-template = frontpage-layout
+template = atlas-layout
 
 ; Regions
 regions[branding]       = Branding
@@ -27,6 +27,6 @@ regions[footer_fifth]   = Footer Fifth
 regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css
+stylesheets[all][] = css/layouts/frontpage/atlas.layout.css
 
 
