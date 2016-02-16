@@ -113,6 +113,7 @@
                 <ul class="action-links"><?php print render($action_links); ?></ul>
             <?php endif; ?>
             <?php print render($page['featured']); ?>
+            <?php print render($page['slider']); ?>
             <?php print render($page['atlas']); ?>
             <?php print render($page['news']); ?>
             <?php print render($page['products']); ?>

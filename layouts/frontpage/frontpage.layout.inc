@@ -12,6 +12,7 @@ regions[help]           = Help
 regions[content]        = Content
 
 regions[featured]       = Featured
+regions[slider]         = Slider
 regions[atlas]          = Forschungsatlas
 regions[news]           = Nachrichten
 regions[products]       = Aktuelle Nefo Produkte

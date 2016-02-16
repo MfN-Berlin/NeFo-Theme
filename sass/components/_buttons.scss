@@ -1,0 +1,13 @@
+%button {
+  background-color: $nefo-n;
+  border-radius: 5px;
+  display: table;
+  height: 40px;
+  width: 180px;
+
+  & > a {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
