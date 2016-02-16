@@ -17,6 +17,7 @@ regions[news]           = Nachrichten
 regions[products]       = Aktuelle Nefo Produkte
 regions[misc]           = Events and News
 regions[studies]        = Studies
+regions[interviews]        = Interviews
 
 regions[footer]         = Footer
 regions[footer_first]   = Footer First
