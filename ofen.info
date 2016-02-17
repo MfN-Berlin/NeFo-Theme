@@ -33,9 +33,8 @@ regions[news]           = Nachrichten
 regions[products]       = Aktuelle Nefo Produkte
 regions[misc]           = Events and News
 regions[studies]        = Studien
-regions[workshops]      = Workshops
 regions[sidebar]        = Sidebar
-regions[interviews]        = Interviews
+regions[interviews]     = Interviews
 
 
 regions[footer]         = Footer
