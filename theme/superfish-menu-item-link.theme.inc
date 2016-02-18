@@ -16,7 +16,7 @@ function ofen_superfish_menu_item_link(array $variables) {
     $link_options['html'] = TRUE;
     $description = '';
     if (array_key_exists('title', $link_options['attributes']) ) {
-        $description = '<br><span class="main-menu--description">'. $link_options['attributes']['title'] . '</span>';
+        //$description = '<br><span class="main-menu--description">'. $link_options['attributes']['title'] . '</span>';
     }
 
     return l($menu_item['link']['title'] . $description, $menu_item['link']['href'], $link_options);
