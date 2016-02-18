@@ -13,6 +13,7 @@ $desk: 70em;
 .l-footer,
 .l-content,
 .l-region--navigation,
+.block--superfish,
 .l-region--highlighted,
 .l-region--featured,
 .l-region--slider,
@@ -47,7 +48,7 @@ $desk: 70em;
 }
 
 .block--superfish {
-    @include grid-span(1 1);
+    @include grid-span(3, 1);
 }
 
 .l-main {
