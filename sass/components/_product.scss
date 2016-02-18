@@ -25,7 +25,7 @@
 
 .nefo-view-block-opinion-img,
 .nefo-view-block-factsheet-img,
-.nefo-view-block-report-img{
+.nefo-view-block-report-img {
   position: relative;
   &::after {
     @include blackoverlay;
