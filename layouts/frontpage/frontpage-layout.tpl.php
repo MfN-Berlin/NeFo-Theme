@@ -119,7 +119,7 @@
             <?php print render($page['products']); ?>
             <?php print render($page['misc']); ?>
             <?php print render($page['studies']); ?>
-            <?php print render($page['iterviews']); ?>
+            <?php print render($page['interviews']); ?>
             <?php print $feed_icons; ?>
         </div>
 
