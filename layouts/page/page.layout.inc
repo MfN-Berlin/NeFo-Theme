@@ -13,7 +13,7 @@ regions[search]         = Search Box
 regions[main_menu]      = Main Menu
 regions[navigation]      = Navigation
 
-;regions[highlighted]    = Highlighted
+regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
 regions[sidebar]        = Sidebar
