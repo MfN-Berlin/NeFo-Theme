@@ -1,34 +1,126 @@
-.l-region--navigation .block--superfish {
+/*
+ * Sample SCSS for adding Superfish styles to themes.
+ *
+ * Instructions:
+ *
+ * 1. Change the #block-superfish-1 (below) to the ID of your Superfish menu.
+ *
+ * 2. Add the SCSS to your theme, either as a separate SCSS file or as a part of the main SCSS file.
+ *
+ * 3. Note that by removing the .sf-style-none, the style will be applied to the menu regardless of
+ *    the Style selected in the block configuration.
+ *
+ */
 
-  font-family: ProximaNovaBold, sans-serif;
-  background-color: $nav-main-background;
-  padding-left: 50px;
-  padding-right: 50px;
-  ul {
-    li {
-      width: 171px;
-      height: 70px;
-      padding-top: 10px;
+// You can add these variables to your _base.scss
+$superfish-1-color: #fff;
+$superfish-1-background-color-level-first: $nav-main-background;
+$superfish-1-background-color-level-second: $nefo-e;
+$superfish-1-background-color-level-third: $nefo-n;
+$superfish-1-background-color-level-fourth: $nefo-e;
 
-      a {
-        color: $nav-main-color;
-        text-decoration: none;
-        text-transform: uppercase;
+.l-region--navigation {
+  /* not quite sure exactly why 5em is the correct size.
+     the links have 1em vertical padding. first level + second level = 4em.
+     that would mean one line of text is .5em high. is that right?
+     */
+  height: 5em;
+  font-family: ProximaNova, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-        .main-menu--description {
-          font-size: $main-font-size - 2px;
-        }
+#block-superfish-1 {
+
+  ul.sf-menu>li:nth-last-child(-n+2) {
+    background-color: $nav-secondary-bg;
+    a {
+      color: $nav-secondary-color;
+      &:hover {
+        background: white;
+        outline: 0;
       }
     }
 
-    li:nth-last-child(-n+2) {
-      width: 120px;
-      background-color: $nav-secondary-bg;
-      text-align: center;
-      a {
-        color: $nav-secondary-color;
-      }
-    }
   }
 
+  .sf-style-none {
+    float: left;
+    margin: 0;
+    padding: 0;
+    &.sf-navbar {
+      width: 100%;
+      background: $superfish-1-background-color-level-first;
+    }
+    &.sf-navbar:before{
+      content: '';
+      position: absolute;
+      left: 0;
+      z-index: -1;
+      background-color: $superfish-1-background-color-level-first;
+      height: 200%;
+      width: 100%;
+    }
+    ul {
+      padding-left: 0;
+    }
+    a {
+      text-decoration: none;
+      color: $superfish-1-color;
+      padding: 0.75em 1em;
+      &.sf-with-ul {
+        padding-right: 2.25em;
+      }
+      &:focus {
+        background: $superfish-1-background-color-level-fourth;
+        outline: 0;
+      }
+      &:hover {
+        background: $nefo-e-hover;
+        outline: 0;
+      }
+      &:active {
+        background: $superfish-1-background-color-level-fourth;
+        outline: 0;
+      }
+    }
+    span {
+      &.nolink {
+        color: $superfish-1-color;
+        padding: 0.75em 1em;
+        &.sf-with-ul {
+          padding-right: 2.25em;
+        }
+        &:hover {
+          background: $superfish-1-background-color-level-fourth;
+          outline: 0;
+        }
+      }
+      &.sf-description {
+        color: $superfish-1-color;
+        display: block;
+        font-size: 0.833em;
+        line-height: 1.5;
+        margin: 5px 0 0 5px;
+        padding: 0;
+      }
+    }
+    li {
+      background: $superfish-1-background-color-level-first;
+      li {
+        background: $superfish-1-background-color-level-second;
+        li {
+          background: $superfish-1-background-color-level-third;
+        }
+      }
+      &:hover,
+      &.sfHover {
+        background: $superfish-1-background-color-level-fourth;
+        outline: 0;
+      }
+    }
+    .sf-sub-indicator {
+      background-image: url('../images/dropdown-arrows.png');
+    }
+  }
 }
