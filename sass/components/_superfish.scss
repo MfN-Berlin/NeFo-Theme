@@ -32,7 +32,20 @@ $superfish-1-background-color-level-fourth: $nefo-e;
 
 #block-superfish-1 {
 
-  ul.sf-menu>li:nth-last-child(-n+2) {
+  .sf-menu.sf-horizontal.sf-shadow ul,
+  .sf-menu.sf-vertical.sf-shadow ul,
+  .sf-menu.sf-navbar.sf-shadow ul ul {
+    background: none;
+    padding: 0 8px 9px 0 !important;
+    -webkit-border-top-right-radius: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .sf-menu>li:nth-last-child(-n+2) {
     background-color: $nav-secondary-bg;
     a {
       color: $nav-secondary-color;
@@ -63,6 +76,9 @@ $superfish-1-background-color-level-fourth: $nefo-e;
     }
     ul {
       padding-left: 0;
+    }
+    &>ul {
+      background-color: $superfish-1-background-color-level-second;
     }
     a {
       text-decoration: none;
