@@ -51,8 +51,8 @@ $desk: 70em;
     @include grid-span(3, 1);
 }
 
-.l-main {
-  padding: 0 50px;
+.l-content {
+  padding: 0 $content-padding;
 }
 
 @include layout(3 2) {
