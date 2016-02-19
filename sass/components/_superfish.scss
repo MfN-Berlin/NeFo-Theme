@@ -28,6 +28,7 @@ $superfish-1-background-color-level-fourth: $nefo-e;
   font-family: ProximaNova, sans-serif;
   font-size: 20px;
   font-weight: bold;
+  background-color: $superfish-1-background-color-level-second;
 }
 
 #block-superfish-1 {
@@ -54,7 +55,6 @@ $superfish-1-background-color-level-fourth: $nefo-e;
         outline: 0;
       }
     }
-
   }
 
   .sf-style-none {
@@ -65,20 +65,11 @@ $superfish-1-background-color-level-fourth: $nefo-e;
       width: 100%;
       background: $superfish-1-background-color-level-first;
     }
-    &.sf-navbar:before{
-      content: '';
-      position: absolute;
-      left: 0;
-      z-index: -1;
-      background-color: $superfish-1-background-color-level-first;
-      height: 200%;
-      width: 100%;
+    .sf-depth-1>ul {
+      background-color: $superfish-1-background-color-level-second;
     }
     ul {
       padding-left: 0;
-    }
-    &>ul {
-      background-color: $superfish-1-background-color-level-second;
     }
     a {
       text-decoration: none;
