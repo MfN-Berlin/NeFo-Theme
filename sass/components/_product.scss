@@ -1,3 +1,5 @@
+@import "variables/fonts";
+
 @mixin blackoverlay {
   content: " ";
   width: 100%;
@@ -15,6 +17,9 @@
   }
 }
 
+//
+// Fronpage
+//
 
 .nefo-view-block-opinion-row,
 .nefo-view-block-factsheet-row,
@@ -86,3 +91,275 @@
 
   border-bottom: 4px solid $events-bg;
 }
+
+
+//
+// Page
+//
+
+// List
+.nefo-view-list-opinion-row , 
+.nefo-view-list-factsheet-row,
+.nefo-view-list-study-row,
+.nefo-view-list-workshop-row,
+.nefo-view-list-report-row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+.nefo-view-list-opinion-title, 
+.nefo-view-list-factsheet-title,
+.nefo-view-list-study-title,
+.nefo-view-list-workshop-title,
+.nefo-view-list-report-title {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+.nefo-view-list-opinion-desc, 
+.nefo-view-block-factsheet-desc ,
+.nefo-view-list-study-desc, 
+.nefo-view-list-workshop-desc,
+.nefo-view-list-report-desc {
+  font-size: $view-list-desc-font-size;
+  line-height: $view-list-desc-line-height;
+  text-align: justify;
+}
+
+// Literaturtipps
+.nefo-view-list-literature-tip-row {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}
+.nefo-view-list-literature-tip-col1 {
+  width: 150px;
+  float: left;
+}
+.nefo-view-list-literature-tip-col2 {
+  margin-left: 160px;
+  width: auto;
+}
+.nefo-view-list-literature-tip-title {
+  padding-left: 1em;
+}
+.nefo-view-list-literature-tip-desc {
+  padding-left: 1em;
+}
+.nefo-view-list-literature-tip-img {
+ box-shadow: 8px 8px 4px #888;
+}
+.nefo-view-list-literature-tip-link {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+  padding-left: 1em;
+}
+.nefo-view-list-literature-tip-date {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height;
+}
+
+// Interviews
+.nefo-view-list-interview-row {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+}
+.nefo-view-list-interview-col1 {
+  margin-right: 130px;
+}
+.nefo-view-list-interview-col2 {
+  width: 120px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.nefo-view-list-interview-category {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+  clear: both;
+}
+.nefo-view-list-interview-title {
+}
+.nefo-view-list-interview-desc {
+}
+.nefo-view-list-interview-link-all {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+  margin-top: 1em;
+}
+.nefo-view-list-interview-img {
+  margin-bottom: 8px;
+}
+
+.nefo-view-list-interview-img-caption {
+  font-size: $view-list-caption-font-size;
+  line-height: $view-list-caption-line-height;
+}
+.nefo-view-list-interview-img-credit {
+  font-size: $view-list-credit-font-size;
+  line-height: $view-list-credit-line-height;
+}
+
+// News
+.nefo-view-list-news-row {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}
+.nefo-view-list-news-title {
+  padding-right: 1em;
+}
+.nefo-view-list-news-category {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+.nefo-view-list-news-content {
+  clear: both;
+}
+.nefo-view-list-news-col2 {
+  width: 120px;
+  float: right;
+}
+.nefo-view-list-news-col1 {
+  margin-right: 130px;
+}
+.nefo-view-list-news-link  {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+.nefo-view-list-news-msg {
+}
+.nefo-view-list-news-date {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height; 
+}
+.nefo-view-list-news-img {
+  margin-bottom: 8px; 
+}
+.nefo-view-list-news-img-caption {
+  font-size: $view-list-caption-font-size;
+  line-height: $view-list-caption-line-height;
+}
+.nefo-view-list-news-img-credit {
+  font-size: $view-list-credit-font-size;
+  line-height: $view-list-credit-line-height;
+}
+
+// Pressemitteilungen
+.nefo-view-list-press-release-row  {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}
+.nefo-view-list-press-release-title {
+}
+.nefo-view-list-press-release-content {
+  clear: both;
+}
+.nefo-view-list-press-release-col2 {
+  width: 120px;
+  float: right;
+}
+.nefo-view-list-press-release-col1 {
+  margin-right: 130px;
+}
+.nefo-view-list-press-release-desc {
+}
+.nefo-view-list-press-release-link {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+.nefo-view-list-press-release-date {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height; 
+}.nefo-view-list-press-release-img   {
+  margin-bottom: 8px;
+}
+.nefo-view-list-press-release-img-caption {
+  font-size: $view-list-caption-font-size;
+  line-height: $view-list-caption-line-height;
+}
+.nefo-view-list-press-release-img-credit {
+  font-size: $view-list-credit-font-size;
+  line-height: $view-list-credit-line-height;
+}
+
+// Artikel
+.nefo-view-list-article-row  {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  clear: both;
+}
+.nefo-view-list-article-title {
+}
+.nefo-view-list-article-content {
+  clear: both;
+}
+.nefo-view-list-article-col2 {
+  width: 120px;
+  float: right;
+}
+.nefo-view-list-article-col1 {
+  margin-right: 130px;
+}
+.nefo-view-list-article-desc {
+}
+.nefo-view-list-article-link {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+.nefo-view-list-article-date {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height; 
+}
+.nefo-view-list-article-img {
+  margin-bottom: 8px;
+}
+.nefo-view-list-article-img-caption {
+  font-size: $view-list-caption-font-size;
+  line-height: $view-list-caption-line-height;
+}
+.nefo-view-list-article-img-credit {
+  font-size: $view-list-credit-font-size;
+  line-height: $view-list-credit-line-height;
+}
+
+// Unsere Themen
+.nefo-view-list-product-row {
+}
+.nefo-view-list-product-title {
+}
+.nefo-view-list-product-icon {
+}
+.nefo-view-list-product-date {
+}
+
+// TagCloud
+.tagclouds-term {
+  padding: 1em 1em;
+  vertical-align: baseline;
+  line-height: $tagclouds-term-line-height; 
+}
+.block--tagclouds {
+  text-align: center;
+}
+// Icons
+.nefo-pdf-icon {
+  padding-left: 8px;
+}
+
