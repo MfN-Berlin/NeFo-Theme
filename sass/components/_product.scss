@@ -28,7 +28,6 @@
   position: relative;
   overflow: hidden;
 }
-
 .nefo-view-block-opinion-img,
 .nefo-view-block-factsheet-img,
 .nefo-view-block-report-img {
@@ -37,38 +36,33 @@
     @include blackoverlay;
   }
 }
-
+.nefo-view-block-opinion-text,
+.nefo-view-block-factsheet-text,
+.nefo-view-block-report-text {
+  position: absolute;
+  top: 100px;
+  z-index: 2;
+  padding-left: 10px;
+}
 .nefo-view-block-opinion-title,
 .nefo-view-block-factsheet-title,
 .nefo-view-block-report-title {
   @extend %no_style_link;
-
   a {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    position: absolute;
-    top: 100px;
-    z-index: 2;
-
-    padding-left: 10px;
   }
 }
-
 .nefo-view-block-opinion-desc,
 .nefo-view-block-factsheet-desc,
 .nefo-view-block-report-desc {
   @extend %no_style_link;
-
   a {
     color: white;
-    position: absolute;
-    top: 130px;
-    z-index: 2;
-    padding-left: 10px;
-
     font-size: 16px;
   }
+  padding-top: 10px;
 }
 
 .nefo-view-block-opinion-link-all,
@@ -89,7 +83,6 @@
 .block--views-nefo-view-block-opinion-block,
 .block--views-nefo-view-block-factsheet-block,
 .block--views-nefo-view-block-report-block {
-
   border-bottom: 4px solid $events-bg;
 }
 
