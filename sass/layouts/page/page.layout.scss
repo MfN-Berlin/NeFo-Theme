@@ -3,11 +3,16 @@
 
 
 .l-main {
-  @include grid-span(8, 1);
+  @include grid-span(12, 1);
 }
 
-.l-region--sidebar {
-  @include grid-span(4, 9);
+.has-sidebar {
+  .l-content {
+    @include grid-span(8,1);
+  }
+    .l-region--sidebar {
+    @include grid-span(4,9);
+  }
 }
 
 .l-header,
