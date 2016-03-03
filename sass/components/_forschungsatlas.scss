@@ -1,3 +1,92 @@
+@import "variables/fonts";
+@import "variables/colors-hsl";
+
+//
+// Forschungsatlas
+// forschung/forschungsakteure/forschungsatlas
+//
+.nefo-map-page-wrapper {
+  background-color: rgb(239,244,248);
+}
+.nefo-map-search {
+}
+.nefo-map-search-form-wrapper {
+  float: left;
+  margin: 0 2em;
+}
+.nefo-map-simple-fieldset,
+.nefo-map-extended-fieldset {
+  margin-top: 2em;  
+}
+.nefo-map-simple-fieldset .fieldset-legend,
+.nefo-map-extended-fieldset .fieldset-legend {
+  @include nefo-heading;
+}
+.nefo-map-simple-fieldset legend,
+.nefo-map-extended-fieldset legend {
+  padding-bottom: 1em;
+}
+.nefo-map-simple-fieldset select,
+.nefo-map-extended-fieldset select,
+.nefo-map-simple-fieldset input {
+  width : 200px;
+}
+#nefo-map-form-action .form-submit {
+  margin-left: 1em;
+}
+
+#nefo-map-wrapper {
+}
+
+.nefo-map-table-wrapper {
+  clear: both;
+}
+#nefo-map-table-result-list {
+  margin-top: 3em;
+  width: 100%;
+}
+#nefo-map-table-result-list caption {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+#nefo-map-table-result-list th {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+  background-color: #a9c041;
+  @extend %no_style_link;
+  a {
+    color: white;
+  }
+}
+#nefo-map-table-result-list th:first-child,
+#nefo-map-table-result-list td:first-child {
+  padding-left: 1em;
+}
+#nefo-map-table-result-list th:last-child {
+  padding-right: 1em;
+}
+#nefo-map-table-result-list td {
+  font-size: $view-list-desc-font-size;
+  line-height: 2 * $view-list-desc-font-size;
+}
+#nefo-map-table-result-list td.active {
+  //background-color: #DDD;
+  background-color: inherit;
+}
+#nefo-map-table-result-list tr.odd {
+  background-color: #E0E0E0;
+}
+#nefo-map-table-result-list tr.even {
+  background-color: #EEE;
+}
+
+.nefo-map-pager-wrapper {
+  padding: 0.5em 0;
+}
+
+//
+// Frontpage blocks
+//
 .l-region--atlas {
   .block--block-1 {
     position: relative;
@@ -6,7 +95,6 @@
     background-size: 1200px 400px;
     background-position: top left;
   }
-
   .feature-block {
     padding-top: 50px;
     padding-right: 50px;
@@ -37,7 +125,6 @@
       }
     }
   }
-
   .view-view-researcher-profile {
     padding: 50px;
 
