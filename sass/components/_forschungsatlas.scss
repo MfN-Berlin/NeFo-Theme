@@ -79,6 +79,14 @@
 #nefo-map-table-result-list tr.even {
   background-color: #EEE;
 }
+a.nefo-institution-l-ext {
+  background-image: url('../images/icons/external-link.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-right: 16px;
+  font-size: 12px;
+  font-style: italic;
+}
 
 .nefo-map-pager-wrapper {
   padding: 0.5em 0;
