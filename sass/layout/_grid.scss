@@ -48,6 +48,7 @@
 
 .l-content {
   padding: 0 $content-padding;
+  padding-bottom: $vert-spacing-unit;  
 }
 
 @include layout(3 2) {

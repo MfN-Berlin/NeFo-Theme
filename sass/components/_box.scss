@@ -15,13 +15,9 @@
 
 .l-region--news,
 .l-region--misc,
-.l-region--products {
+.l-region--products,
+.l-region--studies {
   @extend %block;
 }
-.l-region--products {
-  padding-top: 20px;
-   h2 {
-     position: absolute;
-     top: 0;
-   }
-}
+
+

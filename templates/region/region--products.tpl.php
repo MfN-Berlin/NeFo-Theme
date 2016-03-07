@@ -31,7 +31,7 @@
 ?>
 <?php if ($content): ?>
     <div<?php print $attributes; ?>>
-        <h2>Aktuelle Produkte</h2>
+        <!-- <h2>Aktuelle Produkte</h2> -->
         <?php print $content; ?>
     </div>
 <?php endif; ?>

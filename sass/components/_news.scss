@@ -1,14 +1,37 @@
+//
+// Frontpage
+//
 .l-region--news {
-
-  h3 {
-
-  }
-
   img {
     max-width: 100%;
   }
+}
+.nefo-view-block-news-desc {
+  padding-top: 10px;
+  p {
+    font-size: $view-list-title-font-size;
+    line-height: $view-list-title-line-height;
+  }
+}
+.nefo-view-block-news-title {
+  height: 3em;
+}
+.view-block-newsipbes-link-all {
+  @extend %nefo-front-readmore-nav; 
+  a {
+    @extend %nefo-front-readmore-nav-link;  
+  }
+}
 
-  .block__content {
-    margin-top: 20px;
+.view-nefo-view-block-newsipbes {
+  margin-top: 20px;
+}
+.nefo-view-block-newsipbes-row {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+  padding-bottom: 1em;
+  a {
+    color: $h2-bg;
+    text-decoration: none;
   }
 }
