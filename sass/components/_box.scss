@@ -16,7 +16,10 @@
 .l-region--news,
 .l-region--misc,
 .l-region--products,
-.l-region--studies {
+.l-region--studies,
+.block--views-nefo-view-block-interview-block,
+.block--views-nefo-block-press-release-block,
+.block--views-nefo-block-article-block {
   @extend %block;
 }
 

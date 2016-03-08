@@ -39,6 +39,20 @@
   font-weight: bold;
   text-decoration: none;
 }
+%nefo-front-readmore-nav-button {
+  background-color: $nefo-n;
+  border-radius: 4px;
+  padding: 0.5em 2em;
+  & > a {
+    color: $more-button-text;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
 %nefo-front-study-block {
   align-items: stretch;
   font-size: $view-list-title-font-size;

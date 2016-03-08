@@ -1,0 +1,26 @@
+.l-main {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+.has-sidebar .l-content {
+  width: 66.10169%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+
+.has-sidebar .l-region--sidebar {
+  width: 32.20339%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+.l-header,
+.l-main,
+.l-footer,
+.color-rule {
+  clear: both; }
