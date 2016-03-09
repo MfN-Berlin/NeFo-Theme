@@ -483,13 +483,13 @@ li {
   padding-bottom: 20px;
   border-bottom: 2px solid #e5e5e5;
   background-image: linear-gradient(to top, #f3f3f3 0px, rgba(243, 243, 243, 0.01) 40px); }
-  .l-region--news h2,
-  .l-region--misc h2,
-  .l-region--products h2,
-  .l-region--studies h2,
-  .block--views-nefo-view-block-interview-block h2,
-  .block--views-nefo-block-press-release-block h2,
-  .block--views-nefo-block-article-block h2 {
+  .l-region--news h2.block__title,
+  .l-region--misc h2.block__title,
+  .l-region--products h2.block__title,
+  .l-region--studies h2.block__title,
+  .block--views-nefo-view-block-interview-block h2.block__title,
+  .block--views-nefo-block-press-release-block h2.block__title,
+  .block--views-nefo-block-article-block h2.block__title {
     text-transform: uppercase;
     font-size: 12pt;
     font-weight: bold;

@@ -7,7 +7,7 @@
           rgba(243,243,243,1) 0px,
           rgba(243,243,243, 0.01) 40px));
 
-  h2 {
+  h2.block__title {
     @include nefo-heading;
   }
 }
