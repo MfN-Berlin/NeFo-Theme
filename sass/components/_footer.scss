@@ -12,7 +12,6 @@
 .l-region--footer-fourth,
 .l-region--footer-fifth,
 .l-region--footer-sixth {
-  font-weight: bold;
   h2 {
     font-size: $main-font-size + 2px;
     text-transform: uppercase;
@@ -27,6 +26,8 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $footer-text-color;
+    font-size: $main-font-size;
+    font-weight: bold;
   }
 }
 
