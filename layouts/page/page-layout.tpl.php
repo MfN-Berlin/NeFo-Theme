@@ -13,7 +13,7 @@
 
     </header>
 
-    <main class="l-main">
+    <div class="l-main">
       <div class="l-content" role="main">
         <?php print render($page['highlighted']); ?>
         <a id="main-content"></a>
@@ -31,7 +31,7 @@
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div>
-    </main>
+    </div>
     <?php print render($page['sidebar']); ?>
     <div class="color-rule"></div>
     <footer class="l-footer" role="contentinfo">

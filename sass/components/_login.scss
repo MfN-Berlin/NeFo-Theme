@@ -13,13 +13,15 @@ Markup:
   background-position: left top;
   background-size: 17px 17px;
   color: $header-login;
-  padding-left: 25px;
+  float: left;
+  padding-top: 10px;
 
   ul li {
     overflow: hidden;
   }
 
   a {
+    font-size: 14px;
     text-decoration: none;
     &:hover {
       color: inherit;

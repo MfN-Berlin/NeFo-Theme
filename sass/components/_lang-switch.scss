@@ -1,0 +1,8 @@
+
+#block-block-1 {
+  padding-top: 17px;
+  padding-left: 2em;
+  a {
+    @extend %nefo-top-menu-link;
+  }
+}

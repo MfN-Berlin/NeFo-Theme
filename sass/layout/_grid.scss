@@ -1,5 +1,7 @@
-@include add-grid(3);
-@include add-gutter(0.15);
+@include add-grid(1);
+@include add-grid(8 4 at $tab);
+@include add-grid(12 4 at $desk);
+@include add-gutter(.2);
 
 // top level containers
 .l-page,
@@ -20,7 +22,7 @@
 .l-region--interviews,
 .block--block-1,
 .color-rule {
-  @include grid-span(3, 1);
+  @include clearfix;
 }
 
 .l-header,
@@ -30,168 +32,136 @@
   clear: both;
 }
 
-.l-branding {
-  @include grid-span(1, 1);
+@include layout(1 1 2) {
+  .l-branding {
+    @include grid-span(1, 1);
+  }
+  .l-region--navigation {
+    //clear:both;
+    @include grid-span(1, 2);
+  }
+  .l-region--header {
+    @include grid-span(1, 3);
+  }
+}
+@include breakpoint($desk, true) {
+  @include layout(4 8) {
+    @include layout($gutter: .1) {
+      .l-branding {
+        @include grid-span(1, 1);
+      }
+      .l-region--header {
+        @include grid-span(1, 2);
+      }
+      .l-region--navigation {
+        clear:both;
+        @include grid-span(2, 1);
+      }
+    }
+  }
 }
 
-.l-region--header {
-  @include grid-span(2, 2);
-}
 
-.l-region--navigation {
-  clear:both;
-}
-
-.block--superfish {
-    @include grid-span(3, 1);
-}
-
+// Content
 .l-content {
   padding: 0 $content-padding;
   padding-bottom: $vert-spacing-unit;  
 }
-
-@include layout(3 2) {
-  .view-view-researcher-profile {
-    @include grid-span(1, 1);
-  }
-
-  .feature-block {
-    @include grid-span(1,2);
-  }
+.l-region--sidebar {
+  padding-top: $vert-spacing-unit
 }
-
-
-
-// Slider
-// Mobile first
-@include layout($grid:1, $gutter: 0.1) {
-    .l-region--slider {
-        @include grid-span(1, 1);
+@include breakpoint($tab, true) {
+  .l-content {
+      @include grid-span(2,1);
+  }
+  .has-sidebar {
+    .l-content {
+      @include grid-span(1,1);
     }
+    .l-region--sidebar {
+      @include grid-span(1,2);
+    }
+  }
 }
+
 
 // News
-// Mobile first
-@include layout($grid:1, $gutter: 0.1) {
-    @for $i from 1 through 3 {
-          .nefo-view-block-news-row:nth-of-type(#{$i}) {
-            @include grid-span(1, 1)
-          }
-    }
+@for $i from 1 through 3 {
+  .nefo-view-block-news-row:nth-of-type(#{$i}) {
+    @include grid-span(1, 1)
+  }
 }
-@include breakpoint($desk, true) {
-    @include layout($grid:3, $gutter: 0.1) {
-        @for $i from 1 through 3 {
-          .nefo-view-block-news-row:nth-of-type(#{$i}) {
-            @include grid-span(1, $i)
-          }
-        }
+@include breakpoint($tab, true) {
+  @include layout(3) {
+    @for $i from 1 through 3 {
+      .nefo-view-block-news-row:nth-of-type(#{$i}) {
+        @include grid-span(1, $i)
+      }
     }
+  }
 }
 
 // Products
-// Mobile first
-@include layout($grid:1, $gutter: 0.1) {
-        #block-views-nefo-view-block-opinion-block,
-        #block-views-nefo-view-block-factsheet-block,
-        #block-views-nefo-view-block-report-block {
-          @include grid-span(1, 1);
-        }
-}
-@include breakpoint($desk, true) {
-    @include layout($grid:3, $gutter: 0.1) {
-        #block-views-nefo-view-block-opinion-block {
-          @include grid-span(1, 1);
-        }
-        #block-views-nefo-view-block-factsheet-block {
-          @include grid-span(1, 2);
-        }
-        #block-views-nefo-view-block-report-block {
-          @include grid-span(1, 3);
-        }
+@include breakpoint($tab, true) {
+  @include layout(3) {
+    #block-views-nefo-view-block-opinion-block {
+      @include grid-span(1, 1);
     }
+    #block-views-nefo-view-block-factsheet-block {
+      @include grid-span(1, 2);
+    }
+    #block-views-nefo-view-block-report-block {
+      @include grid-span(1, 3);
+    }
+  }
 }
 
 // Miscellaneous (Events and News)
-// Mobile first
-@include layout($grid:1, $gutter: 0.1) {
-        // TODO: check ID name of events block 
-        #block--views-events-block, 
-        #block-views-nefo-view-block-newsipbes-block {
-          @include grid-span(1, 1);
-        }
-}
-@include breakpoint($desk, true) {
-    @include layout($grid:2, $gutter: 0.1) {
-         // TODO: check ID name of events block 
-        #block--views-events-block {
-          @include grid-span(1, 1);
-        }
-        #block-views-nefo-view-block-newsipbes-block {
-          @include grid-span(1, 2);
-        }   
+@include breakpoint($tab, true) {
+  @include layout(2) {
+    #block--views-events-block {
+      @include grid-span(1, 1);
     }
+    #block-views-nefo-view-block-newsipbes-block {
+      @include grid-span(1, 2);
+    }   
+  }
 }
 
 // Studies
-// Mobile first
-@include layout($grid:1, $gutter: 0.1) {
+@include breakpoint($tab, true) {
+  @include layout(4) {
     @for $i from 1 through 4 {
-          .nefo-view-block-study-row:nth-of-type(#{$i}) {
-            @include grid-span(1, 1)
-          }
+      .nefo-view-block-study-row:nth-of-type(#{$i}) {
+          @include grid-span(1, $i)
+      }
     }
-}
-@include breakpoint($desk, true) {
-    @include layout($grid:4, $gutter: 0.1) {
-        @for $i from 1 through 4 {
-          .nefo-view-block-study-row:nth-of-type(#{$i}) {
-            @include grid-span(1, $i)
-          }
-        }
-    }
-}
-
-
-// Interviews
-@include layout($grid:1, $gutter: 0.1) {
-    .l-region--interviews {
-        @include grid-span(1, 1);
-    }
+  }
 }
 
 // Footer
-// Mobile first
-@include layout($grid:1, $gutter: 0.1) {
-      .l-region--footer-first,
-      .l-region--footer-second,
-      .l-region--footer-third,
-      .l-region--footer-fourth,
-      .l-region--footer-fifth,
-      .l-region--footer-sixth {
-        @include grid-span(1, 1);
-      }
-}
 @include breakpoint($tab, true) {
-    @include layout($grid:2, $gutter: 0.1) {
-      .l-region--footer-first {
-        @include grid-span(1, 1);
-      }
-      .l-region--footer-third,
-      .l-region--footer-fifth {
-        @include grid-span(1, 1);
-        clear:both;
-      }
-      .l-region--footer-second,
-      .l-region--footer-fourth,
-      .l-region--footer-sixth {
-        @include grid-span(1, 2);
-      }
+  @include layout(3) {
+    .l-region--footer-first {
+      @include grid-span(1, 1);
     }
+    .l-region--footer-second,
+    .l-region--footer-fifth {
+      @include grid-span(1, 2);
+    }
+    .l-region--footer-third,
+    .l-region--footer-sixth {
+      @include grid-span(1, 3);      
+    }
+    .l-region--footer-fourth {
+      @include grid-span(1, 1);
+      clear:both;
+    }
+  }
 }
 @include breakpoint($desk, true) {
-    @include layout($grid:6, $gutter: 0.1) {
+  @include layout(6) {
+    @include layout($gutter: .05) {
       .l-region--footer-first {
         @include grid-span(1, 1);
       }
@@ -211,4 +181,8 @@
         @include grid-span(1, 6);
       }
     }
+  }
 }
+
+
+

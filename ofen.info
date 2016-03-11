@@ -1,5 +1,5 @@
 name = Ofen
-description = Theme for nefo website
+description = Theme for NeFo website
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate

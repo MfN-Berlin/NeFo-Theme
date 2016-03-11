@@ -21,6 +21,21 @@
   z-index: 1;
 }
 
+
+%block {
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgb(229,229,229);
+  //@include filter-gradient(#03207c, #1e5799, vertical); // IE6-9
+  @include background-image(linear-gradient(bottom,
+          rgba(243,243,243,1) 0px,
+          rgba(243,243,243, 0.01) 40px));
+
+  h2.block__title {
+    @include nefo-heading;
+  }
+}
+
 %no_style_link {
   a {
     text-decoration: none;
@@ -65,3 +80,14 @@
     text-decoration: none;
   }
 }
+
+%nefo-top-menu-link {
+  color: $nav-top-menu-color;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+
+
+
