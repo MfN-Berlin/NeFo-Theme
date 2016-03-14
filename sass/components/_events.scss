@@ -1,36 +1,63 @@
-.view-events {
+.block--views.block--views-nefo-calendar-event-up,
+.block--views.block--views-nefo-calendar-event-up-ical {
   position: relative;
   h2 {
-    font-size: 12pt;
-    position: relative;
-    top: 0;
-    display: inline;
-    background-color: $events-bg;
-    color: $h2-text;
-    padding: 0 1em;
+    @include nefo-heading;
   }
-}
 
-.view-events {
   ul {
     list-style-type: none;
     padding :0px;
-    h3 {
+    .nefo-event--heading {
+      font-weight: bold;
       background-color: $events-bg;
       color: white;
-      //font-size: 1em;
-      padding-left: 1em;
       padding-top: .7em;
       padding-bottom: .7em;
       background-image: url(../images/map.png);
-
-           background-position: 100% 95% ;
+      background-repeat: no-repeat;
+      background-position: right center;
       background-size: 28px 28px;
+    }
+    .nefo-event--date {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .nefo-event--location {
+      display: inline-block;
+      margin-left: 5px;
+    }
+    .nefo-event--title a {
+      text-decoration: none;
+      color: $text-color;
+    }
+    .nefo-event--title a:visited {
+      color: $text-color;
+    }
+  }
+
+  .nefo-event--heading,
+  .nefo-event--title ,
+  .more-link {
+    padding: 10px;
+  }
+
+  .view-content {
+    border-bottom: $seperator-color 1px solid;
+  }
+
+  .more-link {
+    text-align: left;
+    a {
+      text-decoration: none;
+      color: $more-text;
+      font-weight: bold;
+      background-image: url(../images/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: 100%;
+      background-size: 16px auto;
+      padding-right: 22px;
     }
   }
 }
 
-//.view-events .event-date,
-//.view-events .event-location {
-//  display: inline;
-//}
