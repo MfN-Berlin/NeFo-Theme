@@ -70,10 +70,12 @@
 .l-region--sidebar {
   padding-top: $vert-spacing-unit
 }
+
 @include breakpoint($tab, true) {
   .l-content {
       @include grid-span(2,1);
   }
+  
   .has-sidebar {
     .l-content {
       @include grid-span(1,1);
