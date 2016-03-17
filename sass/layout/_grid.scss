@@ -32,6 +32,10 @@
   clear: both;
 }
 
+.l-region--slider {
+  @include grid-span(2,1);
+}
+
 @include layout(1 1 2) {
   .l-branding {
     @include grid-span(1, 1);
@@ -120,7 +124,7 @@
 @include breakpoint($tab, true) {
   @include layout(2) {
     #block-views-nefo-calendar-event-up,
-    #block-views-nefo-calendar-event-up-ical, {
+    #block-views-nefo-calendar-event-up-ical {
       @include grid-span(1, 1);
     }
     #block-views-nefo-view-block-newsipbes-block {

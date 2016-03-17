@@ -1,13 +1,25 @@
 %button {
-  background-color: $nefo-n;
   border-radius: 5px;
   display: table;
   height: 40px;
   width: 180px;
 
   & > a {
-    text-align: center;
+    color: $button-text-white;
     display: table-cell;
+    text-align: center;
     vertical-align: middle;
+    text-decoration: none;
   }
+
+}
+
+%button--blue {
+  @extend %button;
+  background-color: $nefo-o;
+}
+
+%button--green {
+  @extend %button;
+  background-color: $nefo-n;
 }
