@@ -54,3 +54,97 @@ function ofen_form($variables) {
     //    return '<form' . drupal_attributes($element['#attributes']) . '><div>' . $element['#children'] . '</div></form>';
     return '<form' . drupal_attributes($element['#attributes']) . '>' . $element['#children'] . '</form>';
 }
+
+//function ofen_views_exposed_form($form) {
+//    $form['submit']['#value'] = t('Search');
+//    $output = drupal_render($form);
+//    return $output;
+//}
+
+function ofen_theme_registry_alter(&$theme_registry) {
+//    dpm("theme registry");
+//    $theme_registry['views_view__view_researcher_profile']['preprocess functions'][] = 'ofen_preprocess_addjs';
+//    krumo($theme_registry);
+}
+
+
+function ofen_preprocess_addjs(&$vars) {
+//    dpm("preprocess_addjs");
+//    krumo($vars);
+//    if ($view->name == 'view_researcher_profile') {
+//        krumo(drupal_get_path('theme', 'ofen') . '/js/ofen_researcher.behaviors.js');
+//        drupal_add_js(drupal_get_path('theme', 'ofen') . '/js/ofen_researcher.behavior.js', array(
+//          'type' => 'file',
+//          'group' => JS_THEME,
+//        ));
+//        $my_variables = array('var1' => 'test1', 'var2' => 'test2'); // and so on
+//        drupal_add_js(array('ofenResearcher' => $my_variables), 'setting'); //
+//    }
+}
+
+/**
+ * Returns HTML for a list or nested list of items.
+ *
+ * CHANGE:
+ *   If it is a pager__item whitespaces between li elements are removed
+ * @ingroup themeable
+ */
+function ofen_item_list($variables) {
+    $items = $variables['items'];
+    $title = $variables['title'];
+    $type = $variables['type'];
+    $attributes = $variables['attributes'];
+
+    // Only output the list container and title, if there are any list items.
+    // Check to see whether the block title exists before adding a header.
+    // Empty headers are not semantic and present accessibility challenges.
+    $output = '';
+    if (isset($title) && $title !== '') {
+        $output .= '<h3>' . $title . '</h3>';
+    }
+
+    if (!empty($items)) {
+        $output .= "<$type" . drupal_attributes($attributes) . '>';
+        $i = 0;
+        foreach ($items as $item) {
+            $attributes = array();
+            $children = array();
+            $data = '';
+            $i++;
+            if (is_array($item)) {
+                foreach ($item as $key => $value) {
+                    if ($key == 'data') {
+                        $data = $value;
+                    }
+                    elseif ($key == 'children') {
+                        $children = $value;
+                    }
+                    else {
+                        $attributes[$key] = $value;
+                    }
+                }
+            }
+            else {
+                $data = $item;
+            }
+            if (count($children) > 0) {
+                // Render nested list.
+                $data .= theme_item_list(array(
+                  'items' => $children,
+                  'title' => NULL,
+                  'type' => $type,
+                  'attributes' => $attributes,
+                ));
+            }
+            if (in_array('pager__item', $attributes['class'])) {
+                dpm("same");
+                $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>";
+            } else {
+                dpm($attributes['class']);
+                $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
+            }
+        }
+        $output .= "</$type>";
+    }
+    return $output;
+}

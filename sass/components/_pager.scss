@@ -1,0 +1,46 @@
+$pager-border-radius: 4px;
+$pager-border-color: lightgrey;
+
+ul.pager {
+  .pager__item {
+    border-top: 1px solid $pager-border-color;
+    border-bottom: 1px solid $pager-border-color;
+    border-left: 1px solid $pager-border-color;
+
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+
+    font-weight: bold;
+  }
+  .pager__item:last-child {
+    border-right: 1px solid $pager-border-color;
+    border-top-right-radius: $pager-border-radius;
+    border-bottom-right-radius: $pager-border-radius;
+  }
+  .pager__item:first-child {
+    border-top-left-radius: $pager-border-radius;
+    border-bottom-left-radius: $pager-border-radius;
+  }
+
+  .pager__item--current,
+  .pager__item--previous,
+  .pager__item--next {
+    background-color: $nefo-e;
+  }
+
+  .pager__item a {
+    text-decoration: none;
+  }
+
+  .pager__item--current {
+    color: white;
+  }
+
+  .pager__item--previous,
+  .pager__item--next,
+  .pager__item--first,
+  .pager__item--last {
+    width: inherit;
+  }
+}

@@ -14,20 +14,20 @@
 
 @import 'abstractions/mixins';
 
+@import 'components/box';
 @import 'components/buttons';
 @import 'components/carousel';
+@import 'components/color-rule';
 @import 'components/content';
-@import 'components/box';
-@import 'components/forschungsatlas';
-@import 'components/news';
-@import 'components/login';
-@import 'components/product';
 @import 'components/events';
 @import 'components/footer';
+@import 'components/forschungsatlas';
 @import 'components/header';
+@import 'components/lang-switch';
+@import 'components/login';
+@import 'components/news';
+@import 'components/pager';
+@import 'components/product';
 @import 'components/search';
 @import 'components/superfish';
 @import 'components/superfish-2';
-@import 'components/lang-switch';
-@import 'components/color-rule';
-
