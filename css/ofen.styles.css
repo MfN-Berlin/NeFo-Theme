@@ -29,7 +29,8 @@ body {
   max-width: 1133px;
   margin: 0 auto;
   font-family: ProximaNova, sans-serif;
-  font-size: 12px; }
+  font-size: 16px;
+  line-height: 1.6; }
 
 h1 {
   font-size: 32px;
@@ -481,14 +482,15 @@ li {
   margin: 20px 0; }
   .file-image img {
     padding-bottom: 8px; }
+  .file-image .field--name-field-image-caption-text > div > div {
+    font-size: 12px;
+    line-height: 1.2; }
+  .file-image .field--name-field-file-image-credit-text > div > div {
+    font-size: 12px;
+    line-height: 1.2; }
 
-.field--name-field-image-caption-text > div > div {
-  font-size: 12px;
-  line-height: 1.2; }
-
-.field--name-field-file-image-credit-text > div > div {
-  font-size: 12px;
-  line-height: 1.2; }
+.file-icon {
+  padding-right: 4px; }
 
 .block--views.block--views-nefo-calendar-event-up,
 .block--views.block--views-nefo-calendar-event-up-ical {
@@ -569,7 +571,7 @@ li {
 .l-region--footer-fourth h2,
 .l-region--footer-fifth h2,
 .l-region--footer-sixth h2 {
-  font-size: 14px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #141414;
   margin-bottom: 10px; }
@@ -592,7 +594,7 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   color: #4279a3;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold; }
 
 .nefo-map-page-wrapper {

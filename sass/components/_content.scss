@@ -4,13 +4,17 @@
   img {
     padding-bottom: 8px;
   }
-}
-.field--name-field-image-caption-text > div > div {
-  font-size: $caption-font-size;
-  line-height: $caption-line-height;
-}
-.field--name-field-file-image-credit-text > div > div {
-  font-size: $credit-font-size;
-  line-height: $credit-line-height;    
+  .field--name-field-image-caption-text > div > div {
+    font-size: $caption-font-size;
+    line-height: $caption-line-height;
+  }
+  .field--name-field-file-image-credit-text > div > div {
+    font-size: $credit-font-size;
+    line-height: $credit-line-height;    
+  }
 }
 
+// File icons 
+.file-icon {
+  padding-right: 4px;
+}
