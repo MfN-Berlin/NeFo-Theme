@@ -137,10 +137,8 @@ function ofen_item_list($variables) {
                 ));
             }
             if (in_array('pager__item', $attributes['class'])) {
-                dpm("same");
                 $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>";
             } else {
-                dpm($attributes['class']);
                 $output .= '<li' . drupal_attributes($attributes) . '>' . $data . "</li>\n";
             }
         }
