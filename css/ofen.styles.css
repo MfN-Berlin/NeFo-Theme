@@ -571,7 +571,7 @@ li {
 .l-region--footer-fourth h2,
 .l-region--footer-fifth h2,
 .l-region--footer-sixth h2 {
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
   color: #141414;
   margin-bottom: 10px; }
@@ -594,7 +594,7 @@ li {
   text-decoration: none;
   text-transform: uppercase;
   color: #4279a3;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold; }
 
 .nefo-map-page-wrapper {
@@ -1245,5 +1245,3 @@ ul.pager .pager__item--last {
 #block-superfish-2 ul.menu li {
   display: inline;
   margin-right: 1em; }
-
-/*# sourceMappingURL=ofen.styles.css.map */
