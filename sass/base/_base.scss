@@ -36,3 +36,68 @@ body {
   font-size: $main-font-size;
 }
 
+
+
+// H1-H6 tags
+// see http://www.w3schools.com/tags/tag_hn.asp
+h1 {
+  font-size: $h1-font-size;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+h2 {
+  font-size: $h2-font-size;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+h3 {
+  font-size: $h3-font-size;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: $h4-font-size;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em;
+}
+h5 {
+  font-size: $h5-font-size;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em;
+}
+h6 {
+  font-size: $h6-font-size;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+}
+
+p {
+  font-size: $p-font-size;
+  line-height: 1.6;
+  font-weight: 300;
+  color: black;
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+  text-align: left;
+}
+
+strong {
+  font-weight: bold; 
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px; 
+}
+
+li {
+  display: list-item;
+  margin-bottom: 0.7em;
+  font-size: $p-font-size;
+}
+

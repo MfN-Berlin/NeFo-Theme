@@ -1,0 +1,87 @@
+.l-region--sidebar #block-researcher-contact .button,
+.l-region--sidebar #block-researcher-signup .button {
+  border-radius: 5px;
+  display: table;
+  height: 40px;
+  width: 180px; }
+  .l-region--sidebar #block-researcher-contact .button > a,
+  .l-region--sidebar #block-researcher-signup .button > a {
+    color: white;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none; }
+
+.l-region--sidebar #block-researcher-contact .button,
+.l-region--sidebar #block-researcher-signup .button {
+  background-color: #5091c7; }
+
+.view-view-researcher-profile .table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 20px; }
+
+.view-view-researcher-profile .row {
+  display: table-row; }
+
+.view-view-researcher-profile .cell {
+  display: table-cell;
+  position: relative; }
+
+.view-view-researcher-profile .views-field-field-researcher-fascinated,
+.view-view-researcher-profile .views-field-field-researcher-important,
+.view-view-researcher-profile .views-field-field-researcher-deficit {
+  margin-left: 210px; }
+
+.view-view-researcher-profile .researcher-col1 {
+  width: 200px;
+  float: left; }
+
+.l-region--sidebar {
+  background-color: #eff4f8;
+  padding-left: 50px;
+  padding-right: 20px; }
+  .l-region--sidebar #block-researcher-contact,
+  .l-region--sidebar #block-researcher-signup {
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .l-region--sidebar #block-researcher-contact .block__content p,
+    .l-region--sidebar #block-researcher-signup .block__content p {
+      color: white;
+      font-weight: bold;
+      text-align: center; }
+    .l-region--sidebar #block-researcher-contact .button,
+    .l-region--sidebar #block-researcher-signup .button {
+      margin: 0 auto; }
+  .l-region--sidebar #block-researcher-contact {
+    background-color: #a9c041; }
+  .l-region--sidebar #block-researcher-signup {
+    background-color: #40769f; }
+  .l-region--sidebar .views-exposed-form #edit-freetext-search {
+    width: 100%; }
+
+.has-one-sidebar .l-main {
+  width: 75%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+.has-one-sidebar .l-region--sidebar {
+  width: 25%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+
+.has-one-sidebar .l-content {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+/*# sourceMappingURL=researcher.layout.css.map */
