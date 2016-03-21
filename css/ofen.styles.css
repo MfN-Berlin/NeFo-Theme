@@ -881,7 +881,7 @@ ul.pager .pager__item--last {
   position: absolute;
   top: 50px;
   z-index: 2;
-  padding-left: 10px; }
+  padding: 0 10px; }
 
 .nefo-view-block-opinion-title a,
 .nefo-view-block-factsheet-title a,
@@ -893,7 +893,7 @@ ul.pager .pager__item--last {
 .nefo-view-block-opinion-desc,
 .nefo-view-block-factsheet-desc,
 .nefo-view-block-report-desc {
-  padding-top: 10px; }
+  padding: 0; }
   .nefo-view-block-opinion-desc a,
   .nefo-view-block-factsheet-desc a,
   .nefo-view-block-report-desc a {
