@@ -20,7 +20,7 @@
 .nefo-view-block-factsheet-text,
 .nefo-view-block-report-text {
   position: absolute;
-  top: 100px;
+  top: 50px;
   z-index: 2;
   padding-left: 10px;
 }
@@ -140,6 +140,12 @@
   }
 }
 
+.block-products-heading {
+  h2 {
+    @include nefo-heading;  
+  }
+  margin-bottom: 10px;
+}
 
 //
 // Page

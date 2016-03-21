@@ -30,8 +30,13 @@
  */
 ?>
 <?php if ($content): ?>
-    <div<?php print $attributes; ?>>
-        <!-- <h2>Aktuelle Produkte</h2> -->
-        <?php print $content; ?>
+  <div<?php print $attributes; ?>>
+    <div class="block-products-heading">
+      <h2>Aktuelle Produkte</h2>
     </div>
+    <div>
+      <?php print $content; ?>
+    </div>
+  </div>
 <?php endif; ?>
+

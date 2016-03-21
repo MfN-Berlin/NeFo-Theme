@@ -879,7 +879,7 @@ ul.pager .pager__item--last {
 .nefo-view-block-factsheet-text,
 .nefo-view-block-report-text {
   position: absolute;
-  top: 100px;
+  top: 50px;
   z-index: 2;
   padding-left: 10px; }
 
@@ -960,6 +960,18 @@ ul.pager .pager__item--last {
   .nefo-view-block-press-release-link-all a,
   .nefo-view-block-article-link-all a {
     vertical-align: middle; }
+
+.block-products-heading {
+  margin-bottom: 10px; }
+  .block-products-heading h2 {
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    display: inline;
+    background-color: #40769f;
+    color: white;
+    padding: 0 5px;
+    margin-bottom: 20px; }
 
 .nefo-view-list-opinion-row,
 .nefo-view-list-factsheet-row,
