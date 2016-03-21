@@ -574,7 +574,17 @@ li {
   font-size: 14px;
   text-transform: uppercase;
   color: #141414;
-  margin-bottom: 10px; }
+  margin-bottom: 5px;
+  font-weight: bold; }
+
+.l-region--footer-first ul,
+.l-region--footer-second ul,
+.l-region--footer-third ul,
+.l-region--footer-fourth ul,
+.l-region--footer-fifth ul,
+.l-region--footer-sixth ul {
+  padding-left: 0;
+  margin-top: 0; }
 
 .l-region--footer-first li,
 .l-region--footer-second li,
@@ -583,7 +593,8 @@ li {
 .l-region--footer-fifth li,
 .l-region--footer-sixth li {
   overflow-x: hidden;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  margin-bottom: 0; }
 
 .l-region--footer-first a,
 .l-region--footer-second a,
