@@ -25,13 +25,16 @@ $superfish-1-background-color-level-fourth: $nefo-e;
      that would mean one line of text is .5em high. is that right?
      */
   height: 5em;
-  font-family: ProximaNova, sans-serif;
   font-size: 20px;
   font-weight: bold;
   background-color: $superfish-1-background-color-level-second;
+  margin-top: 25px;
 }
 
-#block-superfish-1 {
+nav#block-superfish-1 {
+  background-color: $nav-main-background;
+  padding-left: 100px;
+  padding-right: 100px;
 
   .sf-menu.sf-horizontal.sf-shadow ul,
   .sf-menu.sf-vertical.sf-shadow ul,
@@ -129,5 +132,9 @@ $superfish-1-background-color-level-fourth: $nefo-e;
     .sf-sub-indicator {
       background-image: url('../images/dropdown-arrows.png');
     }
+  }
+  &>ul {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

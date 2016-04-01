@@ -14,10 +14,14 @@ Markup:
   background-size: 17px 17px;
   color: $header-login;
   float: left;
-  padding-top: 1px;
 
-  ul li {
-    overflow: hidden;
+  ul.menu {
+    margin-top: 0;
+    padding-left: 0;
+    li {
+      line-height: initial;
+      overflow: hidden;
+    }
   }
 
   a {

@@ -19,3 +19,7 @@
     </div>
   <?php endif; ?>
 <?php endforeach; ?>
+<?php //If the total number of researchers is odd the div.row is not closed in the foreach loop ?>
+<?php if (count($rows) % 2 == 1): ?>
+ </div>
+<?php endif; ?>

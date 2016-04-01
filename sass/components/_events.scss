@@ -37,27 +37,20 @@
   }
 
   .nefo-event--heading,
-  .nefo-event--title ,
-  .more-link {
+  .nefo-event--title {
     padding: 10px;
+  }
+
+  .more-link {
+    @extend %nefo-front-readmore-nav;
+    text-align: right;
+    a {
+      @extend %nefo-front-readmore-nav-link;
+    }
   }
 
   .view-content {
     border-bottom: $seperator-color 1px solid;
-  }
-
-  .more-link {
-    text-align: left;
-    a {
-      text-decoration: none;
-      color: $more-text;
-      font-weight: bold;
-      background-image: url(../images/arrow-right.svg);
-      background-repeat: no-repeat;
-      background-position: 100%;
-      background-size: 16px auto;
-      padding-right: 22px;
-    }
   }
 }
 

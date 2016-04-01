@@ -44,10 +44,29 @@
   }
   padding: 0;
 }
+.nefo-view-block-opinion,
+.nefo-view-block-factsheet,
+.nefo-view-block-report,
 .nefo-view-block-opinion-nav,
 .nefo-view-block-factsheet-nav,
 .nefo-view-block-report-nav {
   @extend %nefo-front-readmore-nav;
+  display: inline-block;
+}
+
+.nefo-view-block-opinion,
+.nefo-view-block-factsheet,
+.nefo-view-block-report {
+  text-transform: uppercase;
+
+  padding-right: 0;
+}
+.nefo-view-block-opinion-nav,
+.nefo-view-block-factsheet-nav,
+.nefo-view-block-report-nav {
+  float: right;
+  padding-top: 12px;
+  padding-left: 0;
 }
 
 .nefo-view-block-opinion-link-all,
@@ -55,7 +74,7 @@
 .nefo-view-block-report-link-all {
   a {
     @extend %nefo-front-readmore-nav-link;
-  }  
+  }
 }
 
 .block--views-nefo-view-block-opinion-block,

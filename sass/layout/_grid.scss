@@ -20,47 +20,32 @@
 .l-region--misc,
 .l-region--studies,
 .l-region--interviews,
-.block--block-1,
 .color-rule {
   @include clearfix;
 }
 
-.l-header,
 .l-main,
 .l-footer,
-.color-rule {
-  clear: both;
-}
-
 .l-region--slider {
-  @include grid-span(2,1);
+  @include grid-span(1,1);
 }
 
-@include layout(1 1 2) {
-  .l-branding {
-    @include grid-span(1, 1);
-  }
-  .l-region--navigation {
-    //clear:both;
-    @include grid-span(1, 2);
-  }
-  .l-region--header {
-    @include grid-span(1, 3);
-  }
-}
 @include breakpoint($desk, true) {
-  @include layout(4 8) {
-    @include layout($gutter: .1) {
-      .l-branding {
-        @include grid-span(1, 1);
-      }
-      .l-region--header {
-        @include grid-span(1, 2);
-      }
-      .l-region--navigation {
-        clear:both;
-        @include grid-span(2, 1);
-      }
+
+  .l-header {
+     @include grid-span(2, 1);
+  }
+
+  @include layout($grid: 1 1, $gutter: .1) {
+    .l-branding {
+      @include grid-span(1, 1);
+    }
+    .l-region--header {
+      @include grid-span(1, 2);
+    }
+    .l-region--navigation {
+      @include grid-span(2, 1);
+      clear: both;
     }
   }
 }
@@ -69,7 +54,7 @@
 // Content
 .l-content {
   padding: 0 $content-padding;
-  padding-bottom: $vert-spacing-unit;  
+  //padding-bottom: $vert-spacing-unit;
 }
 .l-region--sidebar {
   padding-top: $vert-spacing-unit
@@ -109,7 +94,7 @@
 
 // Products
 @include breakpoint($tab, true) {
-  @include layout(3) {
+  @include layout(3, 0.1) {
     #block-views-nefo-view-block-opinion-block {
       @include grid-span(1, 1);
     }

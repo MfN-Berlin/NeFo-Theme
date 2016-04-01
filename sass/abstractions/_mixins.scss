@@ -2,10 +2,11 @@
   text-transform: uppercase;
   font-size: 12pt;
   font-weight: bold;
-  display: inline;
+  display: inline-block;
   background-color: $h2-bg;
   color: $h2-text;
-  padding: 0 5px;
+  padding: 0 10px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -24,7 +25,7 @@
 
 %block {
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   border-bottom: 2px solid rgb(229,229,229);
   //@include filter-gradient(#03207c, #1e5799, vertical); // IE6-9
   @include background-image(linear-gradient(bottom,
@@ -43,16 +44,20 @@
 }
 
 %nefo-front-readmore-nav {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 %nefo-front-readmore-nav-link {
   color: $h2-bg;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
   text-decoration: none;
+  background-image: url("../images/arrow-right-more.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 15px;
 }
 %nefo-front-readmore-nav-button {
   background-color: $nefo-n;

@@ -31,8 +31,8 @@
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
       </div>
+      <?php print render($page['sidebar']); ?>
     </div>
-    <?php print render($page['sidebar']); ?>
     <div class="color-rule"></div>
     <footer class="l-footer" role="contentinfo">
         <?php print render($page['footer_first']); ?>

@@ -3,15 +3,16 @@ $pager-border-color: lightgrey;
 
 ul.pager {
   .pager__item {
-    border-top: 1px solid $pager-border-color;
-    border-bottom: 1px solid $pager-border-color;
-    border-left: 1px solid $pager-border-color;
-
     display: inline-block;
     width: 34px;
     height: 34px;
 
-    font-weight: bold;
+    border-top: 1px solid $pager-border-color;
+    border-bottom: 1px solid $pager-border-color;
+    border-left: 1px solid $pager-border-color;
+
+    margin: 0;
+    background-color: white;
   }
   .pager__item:last-child {
     border-right: 1px solid $pager-border-color;
@@ -29,18 +30,29 @@ ul.pager {
     background-color: $nefo-e;
   }
 
-  .pager__item a {
-    text-decoration: none;
-  }
-
-  .pager__item--current {
-    color: white;
-  }
-
   .pager__item--previous,
   .pager__item--next,
   .pager__item--first,
   .pager__item--last {
     width: inherit;
+  }
+  .pager__item--current {
+    vertical-align: top;
+    line-height: 20px;
+  }
+  .pager__item a {
+    vertical-align: top;
+    line-height: 20px;
+    text-decoration: none;
+  }
+
+  .pager__item a {
+    color: $text-color;
+  }
+
+  .pager__item--next a,
+  .pager__item--previous a,
+  .pager__item--current {
+    color: white;
   }
 }
