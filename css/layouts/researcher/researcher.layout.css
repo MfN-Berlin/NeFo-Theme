@@ -63,7 +63,7 @@
   .l-region--sidebar .views-exposed-form #edit-freetext-search {
     width: 100%; }
 
-.has-one-sidebar .l-main {
+.has-one-sidebar .l-content {
   width: 75%;
   float: right;
   margin-left: 0;
@@ -75,11 +75,4 @@
   float: left;
   margin-right: -100%;
   margin-left: 0;
-  clear: none; }
-
-.has-one-sidebar .l-content {
-  width: 100%;
-  float: right;
-  margin-left: 0;
-  margin-right: 0;
   clear: none; }
