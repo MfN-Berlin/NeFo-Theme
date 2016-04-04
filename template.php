@@ -67,6 +67,14 @@ function ofen_theme_registry_alter(&$theme_registry) {
 //    krumo($theme_registry);
 }
 
+/**
+ * @param $vars
+ */
+function ofen_preprocess_html(&$vars) {
+  drupal_add_css("https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css",
+    array('type' => 'external')
+  );
+}
 
 function ofen_preprocess_addjs(&$vars) {
 //    dpm("preprocess_addjs");

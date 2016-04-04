@@ -31,9 +31,18 @@
 
   .researcher-col1 {
     width: 200px;
-    float:left
-  }
+    float:left;
 
+    .field-researcher-www,
+    .field-researcher-twitter,
+    .field-researcher-linkedin {
+      display: inline;
+
+      a {
+        color: $text-color;
+      }
+    }
+  }
 }
 
 .l-region--sidebar {
