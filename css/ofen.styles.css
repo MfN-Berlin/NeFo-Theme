@@ -787,10 +787,10 @@ Markup:
 
 */
 .block--menu-menu-nefo-login-menu {
-  background-image: url("../images/login.png");
+  background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;
   background-position: left top;
-  background-size: 17px 17px;
+  background-size: 15px 15px;
   color: #7fb24c;
   float: left; }
   .block--menu-menu-nefo-login-menu ul.menu {
@@ -801,7 +801,9 @@ Markup:
       overflow: hidden; }
   .block--menu-menu-nefo-login-menu a {
     font-size: 14px;
-    text-decoration: none; }
+    text-decoration: none;
+    color: inherit;
+    margin-left: 17px; }
     .block--menu-menu-nefo-login-menu a:hover {
       color: inherit; }
     .block--menu-menu-nefo-login-menu a:visited {
@@ -1319,5 +1321,3 @@ nav#block-superfish-1 {
 #block-superfish-2 ul.menu li {
   display: inline;
   margin-right: 1em; }
-
-/*# sourceMappingURL=ofen.styles.css.map */
