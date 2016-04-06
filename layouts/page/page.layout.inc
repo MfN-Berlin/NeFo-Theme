@@ -4,14 +4,9 @@ preview = preview.png
 template = page-layout
 
 ; Regions
-regions[header]         = Header
 regions[branding]       = Branding
-regions[login]          = Login
-regions[top_menu]       = Top Menu
-regions[language]       = Language Switch
-regions[search]         = Search Box
-regions[main_menu]      = Main Menu
-regions[navigation]      = Navigation
+regions[header]         = Header
+regions[navigation]     = Navigation
 
 regions[highlighted]    = Highlighted
 regions[help]           = Help
@@ -28,7 +23,7 @@ regions[footer_sixth]   = Footer Sixth
 regions[footer]         = Footer
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/page/page.layout.css
-stylesheets[all][] = css/layouts/page/page.layout.no-query.css
+;stylesheets[all][] = css/layouts/page/page.layout.css
+
 
 

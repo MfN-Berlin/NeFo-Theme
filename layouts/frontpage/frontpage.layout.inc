@@ -6,10 +6,11 @@ template = frontpage-layout
 ; Regions
 regions[branding]       = Branding
 regions[header]         = Header
-regions[navigation]     = Navigation bar
+regions[navigation]     = Navigation
+
 regions[highlighted]    = Highlighted
 regions[help]           = Help
-regions[content]        = Content
+;regions[content]        = Content
 
 regions[featured]       = Featured
 regions[slider]         = Slider
@@ -17,7 +18,8 @@ regions[atlas]          = Forschungsatlas
 regions[news]           = Nachrichten
 regions[products]       = Aktuelle Nefo Produkte
 regions[misc]           = Events and News
-regions[studies]        = Studies
+regions[studies]        = Studien
+regions[sidebar]        = Sidebar
 regions[interviews]     = Interviews
 
 regions[footer]         = Footer
@@ -29,6 +31,6 @@ regions[footer_fifth]   = Footer Fifth
 regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css
+;stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css
 
 
