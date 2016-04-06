@@ -36,6 +36,14 @@
 .view-view-researcher-profile .researcher-col1 {
   width: 200px;
   float: left; }
+  .view-view-researcher-profile .researcher-col1 .field-researcher-www,
+  .view-view-researcher-profile .researcher-col1 .field-researcher-twitter,
+  .view-view-researcher-profile .researcher-col1 .field-researcher-linkedin {
+    display: inline; }
+    .view-view-researcher-profile .researcher-col1 .field-researcher-www a,
+    .view-view-researcher-profile .researcher-col1 .field-researcher-twitter a,
+    .view-view-researcher-profile .researcher-col1 .field-researcher-linkedin a {
+      color: #575656; }
 
 .l-region--sidebar {
   background-color: #eff4f8;
@@ -76,3 +84,5 @@
   margin-right: -100%;
   margin-left: 0;
   clear: none; }
+
+/*# sourceMappingURL=researcher.layout.css.map */
