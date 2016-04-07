@@ -11,39 +11,34 @@
   .l-region--header {
     padding-right: 115px;
 
-
-    #block-nefo-language-switch {
-      ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        li {
-          float: left;
-          margin: 0;
-          padding: 0;
-          a {
-            @extend %nefo-top-menu-link;
-          }
-        }
-      }
-    }
   }
 }
 
 #block-menu-menu-nefo-login-menu,
 #block-superfish-2,
-#block-nefo-language-switch {
+#block-block-1 {
   display: inline-block;
 }
 
-#block-menu-menu-header-menu {
-  ul.menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    li {
-      display:inline;
-    }
+#block-block-1 {
+  vertical-align: top;
+  .block__content {
+    line-height: initial;
+  }
+  a {
+    @extend %nefo-top-menu-link;
   }
 }
+
+
+//#block-menu-menu-header-menu {
+//  ul.menu {
+//    list-style-type: none;
+//    margin: 0;
+//    padding: 0;
+//    li {
+//      display:inline;
+//    }
+//  }
+//}
 
