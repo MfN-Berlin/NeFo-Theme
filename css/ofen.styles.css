@@ -433,7 +433,7 @@ li {
     color: white;
     text-decoration: none; }
 
-.l-header .l-region--header #block-nefo-language-switch ul li a, #block-block-1 a, #block-superfish-2 ul.menu li a {
+#block-block-1 a, #block-superfish-2 ul.menu li a {
   color: #4279a3;
   font-size: 14px;
   font-weight: normal;
@@ -600,6 +600,55 @@ li {
   font-size: 12px;
   font-weight: bold; }
 
+.nefo-footer-banner {
+  margin: 20px 0; }
+  .nefo-footer-banner .nefo-footer-banner-col {
+    float: left;
+    width: 25%;
+    margin: auto;
+    padding: 0;
+    color: #575656;
+    text-transform: uppercase;
+    height: 34px; }
+  .nefo-footer-banner .nefo-footer-banner-col1 {
+    background-image: url("../images/icons/publikationen.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 32px 32px;
+    height: 100%; }
+  .nefo-footer-banner .nefo-footer-banner-col2 {
+    background-image: url("../images/icons/workshops.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 32px 32px;
+    height: 100%; }
+  .nefo-footer-banner .nefo-footer-banner-col3 {
+    background-image: url("../images/icons/newsletter.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 36px 30px;
+    height: 100%; }
+  .nefo-footer-banner .nefo-footer-banner-col4 {
+    background-image: url("../images/icons/blog.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 33px 32px;
+    height: 100%; }
+  .nefo-footer-banner a {
+    font-size: 14px;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 42px;
+    vertical-align: middle; }
+    .nefo-footer-banner a:hover {
+      color: inherit; }
+    .nefo-footer-banner a:visited {
+      color: inherit; }
+  .nefo-footer-banner::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 .nefo-map-page-wrapper {
   background-color: #eff4f8; }
 
@@ -752,30 +801,16 @@ a.nefo-institution-l-ext {
       width: 100%; }
   .l-header .l-region--header {
     padding-right: 115px; }
-    .l-header .l-region--header #block-nefo-language-switch ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none; }
-      .l-header .l-region--header #block-nefo-language-switch ul li {
-        float: left;
-        margin: 0;
-        padding: 0; }
 
 #block-menu-menu-nefo-login-menu,
 #block-superfish-2,
-#block-nefo-language-switch {
+#block-block-1 {
   display: inline-block; }
 
-#block-menu-menu-header-menu ul.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0; }
-  #block-menu-menu-header-menu ul.menu li {
-    display: inline; }
-
 #block-block-1 {
-  padding-top: 17px;
-  padding-left: 2em; }
+  vertical-align: top; }
+  #block-block-1 .block__content {
+    line-height: initial; }
 
 /*
 Login Button
@@ -1196,21 +1231,46 @@ ul.pager .pager__item--current {
 .nefo-pdf-icon {
   padding-left: 8px; }
 
+/* --------------- Search Form ---------------- */
 #block-search-form {
-  background-color: darkgray;
-  padding: 20px 0; }
-  #block-search-form form {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; }
-    #block-search-form form .form-type-textfield {
-      -webkit-flex-grow: 1;
-          -ms-flex-positive: 1;
-              flex-grow: 1; }
-      #block-search-form form .form-type-textfield input.form-text {
-        width: 100%;
-        border-style: none none solid;
-        background-color: transparent; }
+  display: inline-block;
+  float: right; }
+
+#block-search-form .content {
+  margin-top: 0; }
+
+#search-form input#edit-keys,
+#block-search-form .form-item-search-block-form input {
+  float: left;
+  /* LTR */
+  font-size: 1em;
+  width: 9em; }
+
+#search-block-form input.form-text,
+#search-form input.form-text {
+  margin: 0;
+  border: none;
+  height: 25px; }
+
+#search-block-form input.form-submit,
+#search-form input.form-submit {
+  margin-left: 0;
+  margin-right: 0;
+  height: 25px;
+  width: 34px;
+  padding: 0;
+  cursor: pointer;
+  text-indent: -9999px;
+  border: none;
+  background: url(../images/search-button.png) no-repeat center top;
+  overflow: hidden; }
+  #search-block-form input.form-submit:hover, #search-block-form input.form-submit:focus,
+  #search-form input.form-submit:hover,
+  #search-form input.form-submit:focus {
+    background-position: center bottom; }
+
+#search-form .form-item-keys label {
+  display: block; }
 
 /*
  * Sample SCSS for adding Superfish styles to themes.

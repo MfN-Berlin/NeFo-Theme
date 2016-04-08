@@ -35,6 +35,8 @@
     </div>
     <div class="color-rule"></div>
     <footer class="l-footer" role="contentinfo">
+      <div class="color-rule"></div>
+        <?php print render($page['footer']); ?>
         <?php print render($page['footer_first']); ?>
         <?php print render($page['footer_second']); ?>
         <?php print render($page['footer_third']); ?>

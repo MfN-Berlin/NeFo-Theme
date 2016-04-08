@@ -37,3 +37,57 @@
   }
 }
 
+.nefo-footer-banner {
+  margin: $vert-spacing-unit 0;
+  .nefo-footer-banner-col {
+    float: left;
+    width: 25%;
+    margin: auto;
+    padding: 0;
+    color: $text-color;
+    text-transform: uppercase;
+    height: 34px;
+  }
+  .nefo-footer-banner-col1 {
+    background-image: url("../images/icons/publikationen.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 32px 32px;
+    height: 100%;
+  }
+  .nefo-footer-banner-col2 {
+    background-image: url("../images/icons/workshops.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 32px 32px;
+    height: 100%;
+  }
+  .nefo-footer-banner-col3 {
+    background-image: url("../images/icons/newsletter.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 36px 30px;
+    height: 100%;
+  }
+  .nefo-footer-banner-col4 {
+    background-image: url("../images/icons/blog.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 33px 32px;
+    height: 100%;
+  }
+  a {
+    font-size: $footer-font-size + 2px;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 42px;
+    vertical-align: middle;
+    &:hover {
+      color: inherit;
+    }
+    &:visited {
+      color: inherit;
+    }
+  }
+  @include clearfix;
+}
