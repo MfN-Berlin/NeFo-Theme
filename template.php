@@ -155,33 +155,3 @@ function ofen_item_list($variables) {
     return $output;
 }
 
-
-/**
- * Move float style from image and to div
- */
-function ofen_media_wysiwyg_token_to_markup_alter(&$element, $tag_info, $settings) {
-  $content = $element['content'];
-  if (($content['#bundle'] == 'image') && ($content['file']['#view_mode'] == 'default')) {
-    if (isset($content['file']['#item']['attributes']['style'])) {
-      $pos = strpos($content['file']['#item']['attributes']['style'], 'float');
-      if ($pos !== false) {
-        $newstyle = '';
-        $styles = explode(';', $content['file']['#item']['attributes']['style']);
-        foreach ($styles as $style) {
-          $isfloat = strpos($style, 'float');
-          if ($isfloat !== false) {
-            $element['content']['#attributes']['style'] = $style .';';
-          }
-          else {
-            if (!empty($style)) {
-              $newstyle .= $style .';';
-            }
-          }
-        } // foreach;
-        $element['content']['file']['#item']['attributes']['style'] = $newstyle;
-      }
-    }
-  }
-}
-
-

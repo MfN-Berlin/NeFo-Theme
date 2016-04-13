@@ -433,7 +433,7 @@ li {
     color: white;
     text-decoration: none; }
 
-#block-block-1 a, #block-superfish-2 ul.menu li a {
+#block-block-1 a, #block-menu-menu-nefo-top-menu ul.menu li a, #block-superfish-2 ul.menu li a {
   color: #4279a3;
   font-size: 14px;
   font-weight: normal;
@@ -808,10 +808,26 @@ a.nefo-institution-l-ext {
   display: inline-block; }
 
 #block-block-1 {
-  vertical-align: top; }
+  vertical-align: top;
+  margin-left: 10px; }
   #block-block-1 .block__content {
     line-height: initial; }
 
+#block-menu-menu-nefo-top-menu ul.menu {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #block-menu-menu-nefo-top-menu ul.menu li {
+    display: inline; }
+
+/* I let this stay here in case we want to support older browsers */
 /*
 Login Button
 
@@ -1232,6 +1248,7 @@ ul.pager .pager__item--current {
   padding-left: 8px; }
 
 /* --------------- Search Form ---------------- */
+/* Copied from core and then edited */
 #block-search-form {
   display: inline-block;
   float: right; }
