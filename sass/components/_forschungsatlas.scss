@@ -96,77 +96,107 @@ a.nefo-institution-l-ext {
 //
 // Frontpage blocks
 //
-.l-region--atlas {
-  .block--block-1 {
+
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map {
+
+  h2 {
+    @include nefo-heading;
     position: relative;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), white),
-    url("/sites/nefo.biodiv.naturkundemuseum-berlin.de/files/map.png");
-    background-size: 1200px 400px;
-    background-position: top left;
+    top: 20px;
   }
-  .feature-block {
-    padding-top: 50px;
-    padding-right: 50px;
-
-    h2 {
-      @include nefo-heading;
-    }
-
-    h3 {
-      font-size: 22px;
-      margin-top: 15px;
-      margin-bottom: 15px;
-    }
-
-    .button--atlas {
-      position: absolute;
-      bottom: 60px;
-      a, a:visited {
-        text-decoration: none;
-        background-color: $button-second-bg;
-        color: $h2-text;
-        padding: 15px;
-        border-radius: 4px;
-        font-size: 16px;
-      }
-      a:hover {
-        background-color: $button-second-bg;
-      }
-    }
+  h3 {
+    font-size: 24px;
+    margin-bottom: 0;
   }
-  
-  .view-view-researcher-profile {
-    padding: 50px;
+  img {
+    width: 100%;
+  }
+  @include layout(2 1) {
+    .feature-map-img {
+      @include grid-span(1, 1);
+    }
+    .feature-map-text {
+      @include grid-span(1, 2);
 
-    .view-content {
-      width: 80%;
-      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-      background-color: white;
-      padding: 20px 20px 20px 20px;
-
-      .views-row {
-
-        overflow: auto;
-        h3 {
-          color: $emphasis-text;
-          font-size: 20px;
-        }
-        img {
-          float: left;
-        }
-
+      .btn--blue {
+        @extend %button--blue;
       }
-    }
-
-    .views-field-field-researcher-picture {
-      width: 170px;
-    }
-
-    .views-field-field-researcher-fascinated,
-    .views-field-field-researcher-deficit,
-    .views-field-field-researcher-important,
-    .views-field-field-researcher-interdiscipline {
-      margin-left: 180px;
     }
   }
 }
+
+
+//.l-region--atlas {
+//  .block--block-1 {
+//    position: relative;
+//    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), white),
+//    url("/sites/nefo.biodiv.naturkundemuseum-berlin.de/files/map.png");
+//    background-size: 1200px 400px;
+//    background-position: top left;
+//  }
+//  .feature-block {
+//    padding-top: 50px;
+//    padding-right: 50px;
+//
+//    h2 {
+//      @include nefo-heading;
+//    }
+//
+//    h3 {
+//      font-size: 22px;
+//      margin-top: 15px;
+//      margin-bottom: 15px;
+//    }
+//
+//    .button--atlas {
+//      position: absolute;
+//      bottom: 60px;
+//      a, a:visited {
+//        text-decoration: none;
+//        background-color: $button-second-bg;
+//        color: $h2-text;
+//        padding: 15px;
+//        border-radius: 4px;
+//        font-size: 16px;
+//      }
+//      a:hover {
+//        background-color: $button-second-bg;
+//      }
+//    }
+//  }
+//
+//  .view-view-researcher-profile {
+//    padding: 50px;
+//
+//    .view-content {
+//      width: 80%;
+//      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+//      background-color: white;
+//      padding: 20px 20px 20px 20px;
+//
+//      .views-row {
+//
+//        overflow: auto;
+//        h3 {
+//          color: $emphasis-text;
+//          font-size: 20px;
+//        }
+//        img {
+//          float: left;
+//        }
+//
+//      }
+//    }
+//
+//    .views-field-field-researcher-picture {
+//      width: 170px;
+//    }
+//
+//    .views-field-field-researcher-fascinated,
+//    .views-field-field-researcher-deficit,
+//    .views-field-field-researcher-important,
+//    .views-field-field-researcher-interdiscipline {
+//      margin-left: 180px;
+//    }
+//  }
+
