@@ -50,7 +50,26 @@
       }
     }
   }
+}
 
+// top menu hack for english site
+.i18n-en #block-menu-menu-nefo-top-menu {
+  // Really no idea why i need that here and not above.
+  @include grid-span(1,1);
+  ul.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: block;
+    text-align: right;
+    li {
+      display: inline;;
+
+      a {
+        @extend %nefo-top-menu-link;
+      }
+    }
+  }
 }
 /* I let this stay here in case we want to support older browsers */
 //#block-menu-menu-nefo-top-menu {
