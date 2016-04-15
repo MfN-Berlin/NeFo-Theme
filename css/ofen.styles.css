@@ -663,7 +663,7 @@ li {
 
 .nefo-map-simple-fieldset,
 .nefo-map-extended-fieldset {
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 .nefo-map-simple-fieldset .fieldset-legend,
 .nefo-map-extended-fieldset .fieldset-legend {
@@ -675,19 +675,20 @@ li {
   color: white;
   padding: 0 10px;
   margin-top: 0;
-  margin-bottom: 20px; }
-
-.nefo-map-simple-fieldset legend,
-.nefo-map-extended-fieldset legend {
-  padding-bottom: 1em; }
+  margin-bottom: 20px;
+  margin-bottom: 0; }
 
 .nefo-map-simple-fieldset select,
 .nefo-map-extended-fieldset select,
 .nefo-map-simple-fieldset input {
   width: 200px; }
 
+.nefo-map-simple-fieldset .form-item,
+.nefo-map-extended-fieldset .form-item {
+  margin-bottom: 0; }
+
 #nefo-map-form-action .form-submit {
-  margin-left: 1em; }
+  margin-top: 1em; }
 
 .nefo-map-table-wrapper {
   clear: both; }
