@@ -10,7 +10,7 @@ Markup:
 .block--menu-menu-nefo-login-menu {
   background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left 6px;
   background-size: 15px 15px;
   color: $header-login;
   float: left;
@@ -19,6 +19,7 @@ Markup:
     margin-top: 0;
     padding-left: 0;
     li {
+      padding-top: 3px;
       line-height: initial;
       overflow: hidden;
     }

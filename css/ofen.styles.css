@@ -340,6 +340,7 @@ li {
     margin-right: 0;
     clear: none; } }
 
+.l-region--atlas,
 .l-region--news,
 .l-region--misc,
 .l-region--products,
@@ -351,6 +352,7 @@ li {
   padding-bottom: 40px;
   border-bottom: 2px solid #e5e5e5;
   background-image: linear-gradient(to top, #f3f3f3 0px, rgba(243, 243, 243, 0.01) 40px); }
+  .l-region--atlas h2.block__title,
   .l-region--news h2.block__title,
   .l-region--misc h2.block__title,
   .l-region--products h2.block__title,
@@ -439,17 +441,20 @@ li {
   font-weight: normal;
   text-decoration: none; }
 
-.l-region--slider .nefo-button {
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue, .l-region--slider .nefo-button {
   border-radius: 5px;
   display: table;
   height: 40px;
   width: 180px; }
-  .l-region--slider .nefo-button > a {
+  .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue > a, .l-region--slider .nefo-button > a {
     color: white;
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     text-decoration: none; }
+
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue {
+  background-color: #5091c7; }
 
 .l-region--slider .nefo-button {
   background-color: #7cae4a; }
@@ -734,63 +739,39 @@ a.nefo-institution-l-ext {
   padding: 0.5em 0;
   background-color: white; }
 
-.l-region--atlas .block--block-1 {
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map h2 {
+  text-transform: uppercase;
+  font-size: 12pt;
+  font-weight: bold;
+  display: inline-block;
+  background-color: #40769f;
+  color: white;
+  padding: 0 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
   position: relative;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), white), url("/sites/nefo.biodiv.naturkundemuseum-berlin.de/files/map.png");
-  background-size: 1200px 400px;
-  background-position: top left; }
+  top: 20px; }
 
-.l-region--atlas .feature-block {
-  padding-top: 50px;
-  padding-right: 50px; }
-  .l-region--atlas .feature-block h2 {
-    text-transform: uppercase;
-    font-size: 12pt;
-    font-weight: bold;
-    display: inline-block;
-    background-color: #40769f;
-    color: white;
-    padding: 0 10px;
-    margin-top: 0;
-    margin-bottom: 20px; }
-  .l-region--atlas .feature-block h3 {
-    font-size: 22px;
-    margin-top: 15px;
-    margin-bottom: 15px; }
-  .l-region--atlas .feature-block .button--atlas {
-    position: absolute;
-    bottom: 60px; }
-    .l-region--atlas .feature-block .button--atlas a, .l-region--atlas .feature-block .button--atlas a:visited {
-      text-decoration: none;
-      background-color: #5091c7;
-      color: white;
-      padding: 15px;
-      border-radius: 4px;
-      font-size: 16px; }
-    .l-region--atlas .feature-block .button--atlas a:hover {
-      background-color: #5091c7; }
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map h3 {
+  font-size: 24px;
+  margin-bottom: 0; }
 
-.l-region--atlas .view-view-researcher-profile {
-  padding: 50px; }
-  .l-region--atlas .view-view-researcher-profile .view-content {
-    width: 80%;
-    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-    background-color: white;
-    padding: 20px 20px 20px 20px; }
-    .l-region--atlas .view-view-researcher-profile .view-content .views-row {
-      overflow: auto; }
-      .l-region--atlas .view-view-researcher-profile .view-content .views-row h3 {
-        color: #4d92c6;
-        font-size: 20px; }
-      .l-region--atlas .view-view-researcher-profile .view-content .views-row img {
-        float: left; }
-  .l-region--atlas .view-view-researcher-profile .views-field-field-researcher-picture {
-    width: 170px; }
-  .l-region--atlas .view-view-researcher-profile .views-field-field-researcher-fascinated,
-  .l-region--atlas .view-view-researcher-profile .views-field-field-researcher-deficit,
-  .l-region--atlas .view-view-researcher-profile .views-field-field-researcher-important,
-  .l-region--atlas .view-view-researcher-profile .views-field-field-researcher-interdiscipline {
-    margin-left: 180px; }
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map img {
+  width: 100%; }
+
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-img {
+  width: 62.5%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text {
+  width: 31.25%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
 
 .l-header {
   padding-top: 25px;
@@ -840,7 +821,7 @@ Markup:
 .block--menu-menu-nefo-login-menu {
   background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left 6px;
   background-size: 15px 15px;
   color: #7fb24c;
   float: left; }
@@ -848,6 +829,7 @@ Markup:
     margin-top: 0;
     padding-left: 0; }
     .block--menu-menu-nefo-login-menu ul.menu li {
+      padding-top: 3px;
       line-height: initial;
       overflow: hidden; }
   .block--menu-menu-nefo-login-menu a {
@@ -871,6 +853,9 @@ Markup:
 
 .nefo-view-block-news-title {
   height: 4em; }
+  .nefo-view-block-news-title a {
+    color: #40769f;
+    text-decoration: none; }
 
 .view-nefo-view-block-newsipbes {
   margin-top: 20px; }
@@ -1059,6 +1044,12 @@ ul.pager .pager__item--current {
   .nefo-view-block-press-release-link-all a,
   .nefo-view-block-article-link-all a {
     vertical-align: middle; }
+
+.nefo-view-block-interview-title a,
+.nefo-view-block-press-release-title a,
+.nefo-view-block-article-title a {
+  color: #40769f;
+  text-decoration: none; }
 
 .block-products-heading {
   margin-bottom: 10px; }

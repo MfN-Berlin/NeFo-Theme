@@ -158,6 +158,14 @@
     vertical-align: middle;
   }
 }
+.nefo-view-block-interview-title,
+.nefo-view-block-press-release-title,
+.nefo-view-block-article-title {
+  a {
+    color: $h2-bg;
+    text-decoration: none;
+  }
+}
 
 .block-products-heading {
   h2 {

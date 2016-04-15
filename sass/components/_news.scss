@@ -15,6 +15,10 @@
 }
 .nefo-view-block-news-title {
   height: 4em;
+  a {
+    color: $h2-bg;
+    text-decoration: none;
+  }
 }
 .view-block-newsipbes-link-all {
   @extend %nefo-front-readmore-nav; 
