@@ -616,6 +616,7 @@ li {
     text-transform: uppercase;
     height: 34px; }
   .nefo-footer-banner .nefo-footer-banner-col1 {
+    position: relative;
     background-image: url("../images/icons/publikationen.png");
     background-repeat: no-repeat;
     background-position: left top;
@@ -639,11 +640,18 @@ li {
     background-position: left top;
     background-size: 33px 32px;
     height: 100%; }
+  .nefo-footer-banner .nefo-footer-banner-col-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 32px;
+    background-color: transparent; }
   .nefo-footer-banner a {
     font-size: 14px;
     text-decoration: none;
     color: inherit;
-    margin-left: 42px;
+    padding-left: 42px;
     vertical-align: middle; }
     .nefo-footer-banner a:hover {
       color: inherit; }
