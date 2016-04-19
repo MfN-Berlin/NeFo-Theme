@@ -1,0 +1,40 @@
+.block--views.block--views-nefo-calendar-event-up,
+.block--views.block--views-nefo-calendar-event-up-ical {
+  position: relative;
+  h2 {
+    @include nefo-heading;
+  }
+}
+
+.view-events {
+  ul {
+    list-style-type: none;
+    padding :0px;
+    .nefo-event--heading {
+      font-weight: bold;
+      background-color: $events-bg;
+      color: white;
+      padding-top: .7em;
+      padding-bottom: .7em;
+      background-image: url(../images/map.png);
+      background-repeat: no-repeat;
+      background-position: right center;
+      background-size: 28px 28px;
+    .nefo-event--date {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .nefo-event--location {
+      display: inline-block;
+      margin-left: 5px;
+    }
+    .nefo-event--title a {
+      text-decoration: none;
+      color: $text-color;
+    }
+    .nefo-event--title a:visited {
+      color: $text-color;
+    }
+  }
+}
+

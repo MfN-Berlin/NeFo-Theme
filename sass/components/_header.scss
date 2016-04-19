@@ -1,72 +1,87 @@
-.l-header {
-  padding-top: 25px;
-  background: $header-bg;
 
-  .l-branding {
-    padding-left: 115px;
-    img {
-      width: 100%;
+.l-branding img {
+  width: 100%;
+}
+
+.block--menu-menu-nefo-top-menu ul.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+
+  li {
+    display: inline;
+  }
+}
+
+@include breakpoint($tab) {
+  .l-header {
+    padding-top: 25px;
+    background: $header-bg;
+
+    .l-branding {
+      padding-left: 115px;
+
+    }
+    .l-region--header {
+      padding-right: 115px;
+
     }
   }
-  .l-region--header {
-    padding-right: 115px;
 
+  #block-menu-menu-nefo-login-menu,
+  #block-superfish-2,
+  #block-block-1 {
+    display: inline-block;
   }
-}
 
-#block-menu-menu-nefo-login-menu,
-#block-superfish-2,
-#block-block-1 {
-  display: inline-block;
-}
-
-#block-block-1 {
-  vertical-align: top;
-  margin-left: 10px;
-  .block__content {
-    line-height: initial;
+  #block-block-1 {
+    vertical-align: top;
+    margin-left: 10px;
+    .block__content {
+      line-height: initial;
+    }
+    a {
+      @extend %nefo-top-menu-link;
+    }
   }
-  a {
-    @extend %nefo-top-menu-link;
-  }
-}
 
 
-// Top menu
-#block-menu-menu-nefo-top-menu {
+  // Top menu
+  #block-menu-menu-nefo-top-menu {
 
-  ul.menu {
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding:  0;
-    display: flex;
-    justify-content: space-between;
-    li {
-      display: inline;;
+    ul.menu {
+      width: 100%;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding:  0;
+      display: flex;
+      justify-content: space-between;
+      li {
+        display: inline;;
 
-      a {
-        @extend %nefo-top-menu-link;
+        a {
+          @extend %nefo-top-menu-link;
+        }
       }
     }
   }
-}
 
-// top menu hack for english site
-.i18n-en #block-menu-menu-nefo-top-menu {
-  // Really no idea why i need that here and not above.
-  @include grid-span(1,1);
-  ul.menu {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    display: block;
-    text-align: right;
-    li {
-      display: inline;;
+  // top menu hack for english site
+  .i18n-en #block-menu-menu-nefo-top-menu {
+    // Really no idea why i need that here and not above.
+    @include grid-span(1,1);
+    ul.menu {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+      display: block;
+      text-align: right;
+      li {
+        display: inline;;
 
-      a {
-        @extend %nefo-top-menu-link;
+        a {
+          @extend %nefo-top-menu-link;
+        }
       }
     }
   }

@@ -92,6 +92,10 @@
 }
 .nefo-view-block-study-row {
   @extend %nefo-front-study-block;
+  margin-bottom: 10px;
+  @include breakpoint($tab) {
+    margin-bottom: 0;
+  }
 }
 .nefo-view-block-study-title {
   height: 100%;
@@ -107,43 +111,6 @@
 }
 
 // Interview, Pressemitteilung, Artikel
-.block--views-nefo-view-block-interview-block,
-.block--views-nefo-block-press-release-block,
-.block--views-nefo-block-article-block {
-  clear: both;
-  height: 360px;
-}
-.view-nefo-view-block-interview,
-.view-nefo-block-press-release, 
-.view-nefo-block-article {
-  margin-top: 20px;
-}
-.nefo-view-block-interview-row,
-.nefo-view-block-press-release-row,
-.nefo-view-block-article-row {
-}
-.nefo-view-block-interview-col1,
-.nefo-view-block-press-release-col1,
-.nefo-view-block-article-col1 {
-  float: left;
- }
-.nefo-view-block-interview-col2,
-.nefo-view-block-press-release-col2,
-.nefo-view-block-article-col2 {
-  margin-left: 450px;
-}
-.nefo-view-block-interview-img-credit,
-.nefo-view-block-press-release-img-credit,
-.nefo-view-block-article-img-credit {
-  padding-top: 4px;
-  font-size: $view-list-credit-font-size;
-  font-weight: bold;
-}
-.nefo-view-block-interview-nav,
-.nefo-view-block-press-release-nav,
-.nefo-view-block-article-nav {
-  @extend %nefo-front-readmore-nav;
-}
 .nefo-view-block-interview-link,
 .nefo-view-block-press-release-link,
 .nefo-view-block-article-link {
@@ -152,7 +119,8 @@
 .nefo-view-block-interview-link-all,
 .nefo-view-block-press-release-link-all,
 .nefo-view-block-article-link-all {
-  padding-left: 2em;
+  //padding-left: 2em;
+  float: right;
   a {
     @extend %nefo-front-readmore-nav-link;
     vertical-align: middle;
@@ -167,151 +135,200 @@
   }
 }
 
-.block-products-heading {
-  h2 {
-    @include nefo-heading;  
+
+@include breakpoint($tab) {
+  .block--views-nefo-view-block-interview-block,
+  .block--views-nefo-block-press-release-block,
+  .block--views-nefo-block-article-block {
+    clear: both;
+    height: 360px;
   }
-  margin-bottom: 10px;
-}
+  .view-nefo-view-block-interview,
+  .view-nefo-block-press-release,
+  .view-nefo-block-article {
+    margin-top: 20px;
+  }
+  .nefo-view-block-interview-row,
+  .nefo-view-block-press-release-row,
+  .nefo-view-block-article-row {
+  }
+  .nefo-view-block-interview-col1,
+  .nefo-view-block-press-release-col1,
+  .nefo-view-block-article-col1 {
+    float: left;
+   }
+  .nefo-view-block-interview-col2,
+  .nefo-view-block-press-release-col2,
+  .nefo-view-block-article-col2 {
+    margin-left: 450px;
+  }
 
-//
-// Page
-//
+  .nefo-view-block-interview-link-all,
+  .nefo-view-block-press-release-link-all,
+  .nefo-view-block-article-link-all {
+    padding-left: 2em;
+    float: none;
+  }
+  .nefo-view-block-interview-img-credit,
+  .nefo-view-block-press-release-img-credit,
+  .nefo-view-block-article-img-credit {
+    padding-top: 4px;
+    font-size: $view-list-credit-font-size;
+    font-weight: bold;
+  }
+  .nefo-view-block-interview-nav,
+  .nefo-view-block-press-release-nav,
+  .nefo-view-block-article-nav {
+    @extend %nefo-front-readmore-nav;
+  }
 
-// List
-.nefo-view-list-opinion-row , 
-.nefo-view-list-factsheet-row,
-.nefo-view-list-study-row,
-.nefo-view-list-workshop-row,
-.nefo-view-list-report-row,
-.nefo-view-list-product-row {
+  .block-products-heading {
+    h2 {
+      @include nefo-heading;
+    }
+    margin-bottom: 10px;
+  }
+
+  //
+  // Page
+  //
+
+  // List
+  .nefo-view-list-opinion-row ,
+  .nefo-view-list-factsheet-row,
+  .nefo-view-list-study-row,
+  .nefo-view-list-workshop-row,
+  .nefo-view-list-report-row,
+  .nefo-view-list-product-row {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-left: 0;
+      margin-right: 0;
+  }
+  .nefo-view-list-opinion-title,
+  .nefo-view-list-factsheet-title,
+  .nefo-view-list-study-title,
+  .nefo-view-list-workshop-title,
+  .nefo-view-list-report-title,
+  .nefo-view-list-product-title {
+    font-size: $view-list-title-font-size;
+    line-height: $view-list-title-line-height;
+  }
+  .nefo-view-list-opinion-desc,
+  .nefo-view-block-factsheet-desc ,
+  .nefo-view-list-study-desc,
+  .nefo-view-list-workshop-desc,
+  .nefo-view-list-report-desc {
+    font-size: $view-list-desc-font-size;
+    line-height: $view-list-desc-line-height;
+    text-align: left;
+  }
+
+  // Unsere Themen
+  .nefo-view-list-product-row {
+    margin-bottom: 2em;
+  }
+  .nefo-view-list-product-title,
+  .nefo-view-list-product-icon,
+  .nefo-view-list-product-date,
+  .nefo-product-icon {
+    vertical-align: middle;
+  }
+  .nefo-view-list-product-icon {
+    padding: 0 8px;
+  }
+  .nefo-view-list-product-date {
+    font-size: $view-list-date-font-size;
+    line-height: $view-list-date-line-height;
+    white-space: nowrap;
+  }
+  .nefo-product-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  // Interviews, News, Artikel, Pressemitteilungen
+  .nefo-view-list-interview-row,
+  .nefo-view-list-news-row,
+  .nefo-view-list-article-row,
+  .nefo-view-list-press-release-row {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     margin-left: 0;
     margin-right: 0;
-}
-.nefo-view-list-opinion-title, 
-.nefo-view-list-factsheet-title,
-.nefo-view-list-study-title,
-.nefo-view-list-workshop-title,
-.nefo-view-list-report-title,
-.nefo-view-list-product-title {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-}
-.nefo-view-list-opinion-desc, 
-.nefo-view-block-factsheet-desc ,
-.nefo-view-list-study-desc, 
-.nefo-view-list-workshop-desc,
-.nefo-view-list-report-desc {
-  font-size: $view-list-desc-font-size;
-  line-height: $view-list-desc-line-height;
-  text-align: left;
-}
+    padding-bottom: 1em;
+    border-bottom: $separator-width solid $seperator-color;
+    clear: both;
+  }
+  .nefo-view-list-interview-content,
+  .nefo-view-list-news-content,
+  .nefo-view-list-article-content,
+  .nefo-view-list-press-release-content {
+    clear: both;
+  }
+  .nefo-view-list-interview-link,
+  .nefo-view-list-news-link,
+  .nefo-view-list-article-link,
+  .nefo-view-list-press-release-link {
+    font-size: $view-list-title-font-size;
+    line-height: $view-list-title-line-height;
+  }
 
-// Unsere Themen
-.nefo-view-list-product-row {
-  margin-bottom: 2em;
-}
-.nefo-view-list-product-title,
-.nefo-view-list-product-icon,
-.nefo-view-list-product-date,
-.nefo-product-icon {
-  vertical-align: middle;
-}
-.nefo-view-list-product-icon {
-  padding: 0 8px;
-}
-.nefo-view-list-product-date {
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height;
-  white-space: nowrap;
-}
-.nefo-product-icon {
-  width: 50px;
-  height: 50px;
-}
+  .nefo-view-list-interview-img,
+  .nefo-view-list-news-img,
+  .nefo-view-list-article-img,
+  .nefo-view-list-press-release-img {
+    margin-bottom: 8px;
+  }
+  .nefo-view-list-interview-img-caption,
+  .nefo-view-list-news-img-caption,
+  .nefo-view-list-article-img-caption,
+  .nefo-view-list-press-release-img-caption {
+    font-size: $view-list-caption-font-size;
+    line-height: $view-list-caption-line-height;
+  }
+  .nefo-view-list-interview-img-credit,
+  .nefo-view-list-news-img-credit,
+  .nefo-view-list-article-img-credit,
+  .nefo-view-list-press-release-img-credit {
+    font-size: $view-list-credit-font-size;
+    line-height: $view-list-credit-line-height;
+  }
+  .nefo-view-list-interview-col2,
+  .nefo-view-list-news-col2,
+  .nefo-view-list-article-col2,
+  .nefo-view-list-press-release-col2 {
+    width: 120px;
+    float: right;
+  }
+  .nefo-view-list-interview-col1,
+  .nefo-view-list-news-col1,
+  .nefo-view-list-article-col1,
+  .nefo-view-list-press-release-col1 {
+    margin-right: 130px;
+  }
+  // News, Artikel, Pressemitteilungen
+  .nefo-view-list-news-date,
+  .nefo-view-list-article-date,
+  .nefo-view-list-press-release-date {
+    margin-bottom: 1em;
+    font-size: $view-list-date-font-size;
+    line-height: $view-list-date-line-height;
+  }
+  // Interviews, News
+  .nefo-view-list-interview-category,
+  .nefo-view-list-news-category {
+    font-size: $view-list-title-font-size;
+    line-height: $view-list-title-line-height;
+    padding-bottom: 1em;
+  }
+  // Interviews
+  .nefo-view-list-interview-link-all {
+    font-size: $view-list-title-font-size;
+    line-height: $view-list-title-line-height;
+    margin-top: 1em;
+  }
 
-
-// Interviews, News, Artikel, Pressemitteilungen
-.nefo-view-list-interview-row,
-.nefo-view-list-news-row,
-.nefo-view-list-article-row,
-.nefo-view-list-press-release-row {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 1em;
-  border-bottom: $separator-width solid $seperator-color;
-  clear: both;
-}
-.nefo-view-list-interview-content,
-.nefo-view-list-news-content,
-.nefo-view-list-article-content,
-.nefo-view-list-press-release-content {
-  clear: both;
-}
-.nefo-view-list-interview-link,
-.nefo-view-list-news-link,
-.nefo-view-list-article-link,
-.nefo-view-list-press-release-link {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-}
-.nefo-view-list-interview-img,
-.nefo-view-list-news-img,
-.nefo-view-list-article-img,
-.nefo-view-list-press-release-img {
-  margin-bottom: 8px;
-}
-.nefo-view-list-interview-img-caption,
-.nefo-view-list-news-img-caption,
-.nefo-view-list-article-img-caption,
-.nefo-view-list-press-release-img-caption {
-  font-size: $view-list-caption-font-size;
-  line-height: $view-list-caption-line-height;
-}
-.nefo-view-list-interview-img-credit,
-.nefo-view-list-news-img-credit,
-.nefo-view-list-article-img-credit,
-.nefo-view-list-press-release-img-credit {
-  font-size: $view-list-credit-font-size;
-  line-height: $view-list-credit-line-height;
-}
-.nefo-view-list-interview-col2,
-.nefo-view-list-news-col2,
-.nefo-view-list-article-col2,
-.nefo-view-list-press-release-col2 {
-  width: 120px;
-  float: right;
-}
-.nefo-view-list-interview-col1,
-.nefo-view-list-news-col1,
-.nefo-view-list-article-col1,
-.nefo-view-list-press-release-col1 {
-  margin-right: 130px;
-}
-// News, Artikel, Pressemitteilungen
-.nefo-view-list-news-date,
-.nefo-view-list-article-date,
-.nefo-view-list-press-release-date {
-  margin-bottom: 1em;
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height; 
-}
-// Interviews, News
-.nefo-view-list-interview-category,
-.nefo-view-list-news-category {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-  padding-bottom: 1em;
-}
-// Interviews
-.nefo-view-list-interview-link-all {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-  margin-top: 1em;
 }
 
 // Literaturtipps

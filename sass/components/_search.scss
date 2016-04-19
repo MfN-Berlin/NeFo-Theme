@@ -1,8 +1,10 @@
 /* --------------- Search Form ---------------- */
 /* Copied from core and then edited */
-#block-search-form {
-  display: inline-block;
-  float: right;
+@include breakpoint($tab) {
+  #block-search-form {
+    display: inline-block;
+    float: right;
+  }
 }
 #block-search-form .content {
   margin-top: 0;

@@ -115,18 +115,22 @@ a.nefo-institution-l-ext {
     margin-bottom: 0;
   }
   img {
-    width: 100%;
+    display: none;
+    @include breakpoint($tab) {
+      display: block;
+      width: 100%;
+    }
   }
-  @include layout(2 1) {
+  .feature-map-text .btn--blue{
+    @extend %button--blue;
+  }
+
+  @include layout-at(2 1, $tab) {
     .feature-map-img {
       @include grid-span(1, 1);
     }
     .feature-map-text {
       @include grid-span(1, 2);
-
-      .btn--blue {
-        @extend %button--blue;
-      }
     }
   }
 }
