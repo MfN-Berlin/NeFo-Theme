@@ -24,7 +24,6 @@
         <?php print render($page['header']); ?>
         <?php print render($page['navigation']); ?>
     </header>
-
     <div class="l-main">
         <div class="l-content" role="main">
           <?php print render($page['highlighted']); ?>
@@ -45,9 +44,6 @@
         </div>
         <?php print render($page['sidebar']); ?>
     </div>
-
-    <div class="color-rule"></div>
-
     <footer class="l-footer" role="contentinfo">
       <div class="color-rule"></div>
         <?php print render($page['footer']); ?>
