@@ -1,15 +1,16 @@
-
-.l-branding img {
-  width: 100%;
+.l-branding {
+  padding: 5px 10px;
+  img {
+    width: 100%;
+  }
 }
 
 .block--menu-menu-nefo-top-menu ul.menu {
-  display: flex;
-  justify-content: space-between;
+  display: inline;
   padding: 0 5px;
 
   li {
-    display: inline;
+    //display: inline;
   }
 }
 
@@ -20,11 +21,9 @@
 
     .l-branding {
       padding-left: 115px;
-
     }
     .l-region--header {
       padding-right: 115px;
-
     }
   }
 
@@ -41,7 +40,7 @@
       line-height: initial;
     }
     a {
-      @extend %nefo-top-menu-link;
+      @include nefo-top-menu-link;
     }
   }
 
@@ -60,7 +59,7 @@
         display: inline;;
 
         a {
-          @extend %nefo-top-menu-link;
+          @include nefo-top-menu-link;
         }
       }
     }
@@ -80,7 +79,7 @@
         display: inline;;
 
         a {
-          @extend %nefo-top-menu-link;
+          @include nefo-top-menu-link;
         }
       }
     }

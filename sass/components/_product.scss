@@ -179,7 +179,7 @@
   .nefo-view-block-interview-nav,
   .nefo-view-block-press-release-nav,
   .nefo-view-block-article-nav {
-    @extend %nefo-front-readmore-nav;
+    @include nefo-front-readmore-nav;
   }
 
   .block-products-heading {

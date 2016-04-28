@@ -32,7 +32,7 @@
     }
 
     .nefo-button {
-      @extend %button--green;
+      @include button--green;
       position: absolute;
       width: 120px;
 
