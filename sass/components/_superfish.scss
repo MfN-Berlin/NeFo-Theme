@@ -24,7 +24,8 @@ $superfish-1-background-color-level-fourth: $nefo-e;
      the links have 1em vertical padding. first level + second level = 4em.
      that would mean one line of text is .5em high. is that right?
      */
-  height: 5em;
+  //height: 5em;
+  height: 43px;
   font-size: 20px;
   font-weight: bold;
   background-color: $superfish-1-background-color-level-second;
@@ -32,10 +33,12 @@ $superfish-1-background-color-level-fourth: $nefo-e;
 }
 
 nav#block-superfish-1 {
-  background-color: $nav-main-background;
-  padding-left: 100px;
-  padding-right: 100px;
-
+  //background-color: $nav-main-background;
+  //padding-left: 100px;
+  //padding-right: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  
   .sf-menu.sf-horizontal.sf-shadow ul,
   .sf-menu.sf-vertical.sf-shadow ul,
   .sf-menu.sf-navbar.sf-shadow ul ul {
