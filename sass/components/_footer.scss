@@ -1,6 +1,5 @@
 
 .l-footer {
-  //padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
   background: $footer-bg;
@@ -41,12 +40,15 @@
   margin: $vert-spacing-unit 0;
   .nefo-footer-banner-col {
     float: left;
-    width: 25%;
+    width: 50%;
     margin: auto;
     padding: 0;
     color: $text-color;
     text-transform: uppercase;
     height: 34px;
+    @include breakpoint($tab, true) {
+      width: 25%;
+    }
   }
   .nefo-footer-banner-col1 {
     position: relative; 
