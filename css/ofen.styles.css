@@ -142,29 +142,6 @@ li {
   .l-content {
     padding: 0 50px; } }
 
-.l-region--sidebar {
-  padding-top: 20px; }
-
-@media (min-width: 44em) {
-  .l-content {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-  .has-sidebar .l-content {
-    width: 65.57377%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none; }
-  .has-sidebar .l-region--sidebar {
-    width: 32.78689%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; } }
-
 .nefo-view-block-news-row:nth-of-type(1) {
   width: 100%;
   float: right;
@@ -377,9 +354,7 @@ li {
 .nefo-view-block-report,
 .nefo-view-block-opinion-nav,
 .nefo-view-block-factsheet-nav,
-.nefo-view-block-report-nav, .view-block-study-link-all, .nefo-view-block-interview-nav,
-.nefo-view-block-press-release-nav,
-.nefo-view-block-article-nav {
+.nefo-view-block-report-nav, .view-block-study-link-all {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -429,18 +404,18 @@ li {
     color: white;
     text-decoration: none; }
 
-#block-block-1 a, #block-menu-menu-nefo-top-menu ul.menu li a, .i18n-en #block-menu-menu-nefo-top-menu ul.menu li a, #block-superfish-2 ul.menu li a {
+#block-superfish-2 ul.menu li a {
   color: #4279a3;
   font-size: 14px;
   font-weight: normal;
   text-decoration: none; }
 
-.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue, .l-region--slider .nefo-button {
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue {
   border-radius: 4px;
   display: table;
   height: 40px;
   width: 180px; }
-  .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue > a, .l-region--slider .nefo-button > a {
+  .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue > a {
     color: white;
     display: table-cell;
     text-align: center;
@@ -450,44 +425,15 @@ li {
 .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue {
   background-color: #5091c7; }
 
-.l-region--slider .nefo-button {
-  background-color: #7cae4a; }
-
-.l-region--slider {
-  background-color: #eff4f8; }
-  .l-region--slider .view-nefo-slider .owl-item img {
-    height: auto;
-    max-width: 100%; }
-  .l-region--slider .nefo-slideshow-desc,
-  .l-region--slider .owl-buttons {
-    display: none; }
-  @media (min-width: 44em) {
-    .l-region--slider {
-      padding: 40px 50px; }
-      .l-region--slider .view-nefo-slider .owl-item img {
-        float: left;
-        max-width: 70%; }
-      .l-region--slider .owl-controls {
-        position: absolute;
-        right: 50px;
-        bottom: 0px; }
-      .l-region--slider .owl-buttons {
-        display: block; }
-      .l-region--slider .nefo-button {
-        position: absolute;
-        width: 120px;
-        right: 160px;
-        bottom: 0px; }
-      .l-region--slider .slider-content-right {
-        display: inline-block;
-        width: 30%;
-        padding-left: 15px; }
-        .l-region--slider .slider-content-right h2 {
-          margin: 0; } }
-
 .color-rule {
   height: 3px;
   background-image: linear-gradient(to right, #4291a3 0%, #437eb6 30%, #accc44 60%, #7eb24b 100%); }
+
+.l-main {
+  margin-bottom: 20px; }
+
+.l-content {
+  margin-top: 65px; }
 
 .file-image {
   margin: 20px 0; }
@@ -559,8 +505,10 @@ li {
   .block--views.block--views-nefo-calendar-event-up-ical .view-content {
     border-bottom: #e0e0e0 1px solid; }
 
+#block-views-nefo-calendar-event-up-ical {
+  float: none; }
+
 .l-footer {
-  padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
   background: white; }
@@ -612,12 +560,15 @@ li {
   margin: 20px 0; }
   .nefo-footer-banner .nefo-footer-banner-col {
     float: left;
-    width: 25%;
+    width: 50%;
     margin: auto;
     padding: 0;
     color: #575656;
     text-transform: uppercase;
     height: 34px; }
+    @media (min-width: 44em) {
+      .nefo-footer-banner .nefo-footer-banner-col {
+        width: 25%; } }
   .nefo-footer-banner .nefo-footer-banner-col1 {
     position: relative;
     background-image: url("../images/icons/publikationen.png");
@@ -789,19 +740,14 @@ a.nefo-institution-l-ext {
     margin-right: 0;
     clear: none; } }
 
-.l-branding img {
-  width: 100%; }
+.l-branding {
+  padding: 5px 10px; }
+  .l-branding img {
+    width: 100%; }
 
 .block--menu-menu-nefo-top-menu ul.menu {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: inline;
   padding: 0 5px; }
-  .block--menu-menu-nefo-top-menu ul.menu li {
-    display: inline; }
 
 @media (min-width: 44em) {
   .l-header {
@@ -820,6 +766,11 @@ a.nefo-institution-l-ext {
     margin-left: 10px; }
     #block-block-1 .block__content {
       line-height: initial; }
+    #block-block-1 a {
+      color: #4279a3;
+      font-size: 14px;
+      font-weight: normal;
+      text-decoration: none; }
   #block-menu-menu-nefo-top-menu ul.menu {
     width: 100%;
     margin-top: 0;
@@ -833,6 +784,11 @@ a.nefo-institution-l-ext {
             justify-content: space-between; }
     #block-menu-menu-nefo-top-menu ul.menu li {
       display: inline; }
+      #block-menu-menu-nefo-top-menu ul.menu li a {
+        color: #4279a3;
+        font-size: 14px;
+        font-weight: normal;
+        text-decoration: none; }
   .i18n-en #block-menu-menu-nefo-top-menu {
     width: 65.57377%;
     float: left;
@@ -846,7 +802,12 @@ a.nefo-institution-l-ext {
       display: block;
       text-align: right; }
       .i18n-en #block-menu-menu-nefo-top-menu ul.menu li {
-        display: inline; } }
+        display: inline; }
+        .i18n-en #block-menu-menu-nefo-top-menu ul.menu li a {
+          color: #4279a3;
+          font-size: 14px;
+          font-weight: normal;
+          text-decoration: none; } }
 
 /* I let this stay here in case we want to support older browsers */
 h1 > a,
@@ -1108,6 +1069,13 @@ ul.pager .pager__item--current {
     padding-top: 4px;
     font-size: 12px;
     font-weight: bold; }
+  .nefo-view-block-interview-nav,
+  .nefo-view-block-press-release-nav,
+  .nefo-view-block-article-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
   .block-products-heading {
     margin-bottom: 10px; }
     .block-products-heading h2 {
@@ -1337,16 +1305,15 @@ ul.pager .pager__item--current {
      the links have 1em vertical padding. first level + second level = 4em.
      that would mean one line of text is .5em high. is that right?
      */
-  height: 5em;
+  height: 43px;
   font-size: 20px;
   font-weight: bold;
   background-color: #a9c041;
   margin-top: 25px; }
 
 nav#block-superfish-1 {
-  background-color: #5295cc;
-  padding-left: 100px;
-  padding-right: 100px; }
+  padding-left: 0px;
+  padding-right: 0px; }
   nav#block-superfish-1 .sf-menu.sf-horizontal.sf-shadow ul,
   nav#block-superfish-1 .sf-menu.sf-vertical.sf-shadow ul,
   nav#block-superfish-1 .sf-menu.sf-navbar.sf-shadow ul ul {

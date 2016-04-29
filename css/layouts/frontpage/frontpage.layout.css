@@ -1,0 +1,42 @@
+.l-region--slider {
+  background-color: #eff4f8; }
+  .l-region--slider .view-nefo-slider .owl-item img {
+    height: auto;
+    max-width: 100%; }
+  .l-region--slider .nefo-slideshow-desc,
+  .l-region--slider .owl-buttons {
+    display: none; }
+  @media (min-width: 44em) {
+    .l-region--slider {
+      padding: 40px 50px; }
+      .l-region--slider .view-nefo-slider .owl-item img {
+        float: left;
+        max-width: 70%; }
+      .l-region--slider .owl-controls {
+        position: absolute;
+        right: 50px;
+        bottom: 0px; }
+      .l-region--slider .owl-buttons {
+        display: block; }
+      .l-region--slider .nefo-button {
+        border-radius: 4px;
+        display: table;
+        height: 40px;
+        width: 180px;
+        background-color: #7cae4a;
+        position: absolute;
+        width: 120px;
+        right: 160px;
+        bottom: 0px; }
+        .l-region--slider .nefo-button > a {
+          color: white;
+          display: table-cell;
+          text-align: center;
+          vertical-align: middle;
+          text-decoration: none; }
+      .l-region--slider .slider-content-right {
+        display: inline-block;
+        width: 30%;
+        padding-left: 15px; }
+        .l-region--slider .slider-content-right h2 {
+          margin: 0; } }
