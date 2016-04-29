@@ -52,24 +52,6 @@
     padding: 0 $content-padding;
   }
 }
-.l-region--sidebar {
-  padding-top: $vert-spacing-unit
-}
-
-@include breakpoint($tab, true) {
-  .l-content {
-      @include grid-span(2,1);
-  }
-  
-  .has-sidebar {
-    .l-content {
-      @include grid-span(1,1);
-    }
-    .l-region--sidebar {
-      @include grid-span(1,2);
-    }
-  }
-}
 
 
 // News

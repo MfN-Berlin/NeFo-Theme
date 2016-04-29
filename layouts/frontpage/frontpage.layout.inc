@@ -31,6 +31,6 @@ regions[footer_fifth]   = Footer Fifth
 regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
-;stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css
+stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css
 
 

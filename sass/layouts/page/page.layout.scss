@@ -1,0 +1,27 @@
+// Import variables, abstractions, base styles and components.
+@import 'singularitygs';
+@import 'breakpoint';
+@import 'bourbon';
+
+@import '../../variables/sizes';
+@import '../../variables/variables';
+
+
+// Sidebar
+.has-sidebar, 
+.has-one-sidebar {
+  @include breakpoint($tab, true) {
+    @include layout($grid: 8 4) {
+      .l-content {
+        @include grid-span(1, 1);
+      }
+      .l-region--sidebar {
+        @include grid-span(1, 2);
+      }
+    }
+  }
+
+  .l-region--sidebar {
+    padding-top: $vert-spacing-unit
+  }
+}

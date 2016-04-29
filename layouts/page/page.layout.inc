@@ -23,7 +23,7 @@ regions[footer_sixth]   = Footer Sixth
 regions[footer]         = Footer
 
 ; Stylesheets
-;stylesheets[all][] = css/layouts/page/page.layout.css
+stylesheets[all][] = css/layouts/page/page.layout.css
 
 
 
