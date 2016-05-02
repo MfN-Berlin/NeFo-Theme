@@ -58,7 +58,16 @@
   };
   Drupal.behaviors.moveTopMenu = {
     attach: function (context, settings) {
-      var tabWidth = 700;
+      var getEmInPx = function (parentElement) {
+        parentElement = parentElement || document.body;
+        var div = document.createElement('div');
+        div.style.width = "1000em";
+        parentElement.appendChild(div);
+        var pixels = div.offsetWidth / 1000;
+        parentElement.removeChild(div);
+        return pixels;
+      }
+      var tabWidth = getEmInPx(document.body) * 44; //px size of 44em
       var moveToFooter = function(event){
         var win = $(this);
         if (win.width() <= tabWidth) {
@@ -73,5 +82,4 @@
       }
     }
   };
-
 })(jQuery);
