@@ -61,12 +61,6 @@ function ofen_form($variables) {
 //    return $output;
 //}
 
-function ofen_theme_registry_alter(&$theme_registry) {
-//    dpm("theme registry");
-//    $theme_registry['views_view__view_researcher_profile']['preprocess functions'][] = 'ofen_preprocess_addjs';
-//    krumo($theme_registry);
-}
-
 /**
  * Theme function to allow any menu tree to be themed as a Superfish menu.
  */

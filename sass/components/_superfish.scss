@@ -38,6 +38,11 @@ nav#block-superfish-1 {
   //padding-right: 100px;
   padding-left: 0px;
   padding-right: 0px;
+
+  margin-top: 5px;
+  @include breakpoint($desk) {
+    margin-top: 0px;
+  }
   
   .sf-menu.sf-horizontal.sf-shadow ul,
   .sf-menu.sf-vertical.sf-shadow ul,
@@ -81,6 +86,13 @@ nav#block-superfish-1 {
       text-decoration: none;
       color: $superfish-1-color;
       padding: 0.75em 1em;
+      &#superfish-1-toggle {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      &#superfish-1-toggle:hover {
+        background: none;
+      }
       &.sf-with-ul {
         padding-right: 2.25em;
       }
