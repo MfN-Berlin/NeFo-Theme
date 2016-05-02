@@ -38,19 +38,13 @@ gulp.task('sass:dev', function () {
       browsers: ['last 2 version']
     }))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./css'))
+    .pipe(livereload());
 });
-
-gulp.task('lr', function () {
-    gulp.src('./css/*.css')
-        .pipe(livereload());
-});
-
 
 gulp.task('sass:watch', function () {
-    //livereload.listen();
+    livereload.listen();
     gulp.watch('./sass/**/*.scss', ['sass:dev']);
-    gulp.watch('./css/**/*.css', ['lr']);
 });
 
 gulp.task('default', ['sass:dev', 'sass:watch']);
