@@ -3,7 +3,9 @@
   margin-bottom: $vert-spacing-unit;
 }
 .l-content {
-  margin-top: $content-top-margin;
+  @include breakpoint($desk, true) {
+    margin-top: $content-top-margin;
+  }
 }
 
 

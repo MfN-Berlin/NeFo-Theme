@@ -11,8 +11,12 @@
 .nefo-map-search {
 }
 .nefo-map-search-form-wrapper {
-  float: left;
-  margin: 0 2em;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  @include breakpoint($tab, true) {
+    float: left;
+    margin: 0 2em;
+  }
 }
 .nefo-map-simple-fieldset,
 .nefo-map-extended-fieldset {
