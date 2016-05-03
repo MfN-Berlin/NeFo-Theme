@@ -14,6 +14,22 @@
   }
 }
 
+// Top menu
+#block-menu-menu-nefo-top-menu {
+
+  ul.menu {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:  0;
+    li {
+      display: block;
+      a {
+        @include nefo-top-menu-link;
+      }
+    }
+  }
+}
+
 @include breakpoint($tab) {
   .l-header {
     padding-top: 25px;
@@ -39,25 +55,17 @@
     .block__content {
       line-height: initial;
     }
-    a {
-      @include nefo-top-menu-link;
-    }
   }
-
 
   // Top menu
   #block-menu-menu-nefo-top-menu {
 
     ul.menu {
       width: 100%;
-      margin-top: 0;
-      margin-bottom: 0;
-      padding:  0;
       display: flex;
       justify-content: space-between;
       li {
-        display: inline;;
-
+        display: inline;
         a {
           @include nefo-top-menu-link;
         }

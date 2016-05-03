@@ -61,7 +61,7 @@
       var tabWidth = 540;
       var moveToFooter = function(event){
         var win = $(this);
-        if (win.width() <= tabWidth) {
+        if (win.width() < tabWidth) {
           $('#block-menu-menu-nefo-top-menu').appendTo('footer.l-footer');
         } else {
           $('#block-menu-menu-nefo-top-menu').appendTo('.l-region--header');
