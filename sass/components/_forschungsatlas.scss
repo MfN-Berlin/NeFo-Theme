@@ -34,7 +34,10 @@
 .nefo-map-simple-fieldset select,
 .nefo-map-extended-fieldset select,
 .nefo-map-simple-fieldset input {
-  width : 200px;
+  width : 90%;
+  @include breakpoint($tab, true) {
+    width : 200px;
+  }
 }
 .nefo-map-simple-fieldset .form-item,
 .nefo-map-extended-fieldset .form-item {
