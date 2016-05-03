@@ -69,14 +69,14 @@
     background-image: url("../images/icons/newsletter.png");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 36px 30px;
+    background-size: 32px 30px;
     height: 100%;
   }
   .nefo-footer-banner-col4 {
     background-image: url("../images/icons/blog.png");
     background-repeat: no-repeat;
     background-position: left top;
-    background-size: 33px 32px;
+    background-size: 32px 32px;
     height: 100%;
   }
   .nefo-footer-banner-col-link {
@@ -88,10 +88,13 @@
     background-color: transparent; 
   }
   a {
-    font-size: $footer-font-size + 2px;
+    font-size: $footer-font-size;
+     @include breakpoint($desk, true) {
+       font-size: $footer-font-size + 2px;
+    }
     text-decoration: none;
     color: inherit;
-    padding-left: 42px;
+    padding-left: 34px;
     vertical-align: middle;
     &:hover {
       color: inherit;
