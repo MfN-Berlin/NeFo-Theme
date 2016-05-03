@@ -7,6 +7,15 @@
     height: auto;
   }
 }
+
+.nefo-view-block-news-title,
+.nefo-view-block-news-desc {
+  margin: 0 $mobile-content-margin;
+  @include breakpoint($tab) {
+    margin: 0;
+  }
+}
+
 .nefo-view-block-news-desc {
   padding-top: 10px;
   p {
@@ -22,7 +31,8 @@
   }
 }
 .view-block-newsipbes-link-all {
-  @extend %nefo-front-readmore-nav; 
+  @extend %nefo-front-readmore-nav;
+  text-align: right;
   a {
     @extend %nefo-front-readmore-nav-link;  
   }
@@ -30,8 +40,16 @@
 
 .view-nefo-view-block-newsipbes {
   margin-top: 20px;
+
+  .view-content {
+    border-bottom: $seperator-color 1px solid;
+  }
 }
 .nefo-view-block-newsipbes-row {
+  margin: 0 $mobile-content-margin;
+  @include breakpoint($tab) {
+    margin: 0;
+  }
   font-size: $view-list-title-font-size;
   line-height: $view-list-title-line-height;
   padding-bottom: 1em;

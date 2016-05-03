@@ -1,6 +1,13 @@
 //
 // Frontpage
 //
+.block-products-heading {
+  h2 {
+    @include nefo-heading;
+  }
+  margin-bottom: 10px;
+}
+
 .nefo-view-block-opinion-row,
 .nefo-view-block-factsheet-row,
 .nefo-view-block-report-row{
@@ -89,27 +96,32 @@
 // Studien 
 .view-nefo-view-block-study {
   margin-top: 20px;  
-}
-.nefo-view-block-study-row {
-  @extend %nefo-front-study-block;
-  margin-bottom: 10px;
-  @include breakpoint($tab) {
-    margin-bottom: 0;
-  }
-}
-.nefo-view-block-study-title {
-  height: 100%;
-  display: flex;
-  align-items: center
-} 
-.view-block-study-link-all {
-  clear: both;
-  @extend %nefo-front-readmore-nav; 
-  a {
-    @extend %nefo-front-readmore-nav-link;  
-  }
-}
 
+  .nefo-view-block-study-row {
+    @extend %nefo-front-study-block;
+    margin-bottom: 10px;
+    @include breakpoint($tab) {
+      margin-bottom: 0;
+    }
+  }
+  .nefo-view-block-study-title {
+    height: 100%;
+    display: flex;
+    align-items: center
+  }
+
+  .view-footer {
+    clear: both;
+  }
+
+  .view-block-study-link-all {
+    float: right;
+    @extend %nefo-front-readmore-nav;
+    a {
+      @extend %nefo-front-readmore-nav-link;
+    }
+  }
+}
 // Interview, Pressemitteilung, Artikel
 .nefo-view-block-interview-link,
 .nefo-view-block-press-release-link,
@@ -124,6 +136,14 @@
   a {
     @extend %nefo-front-readmore-nav-link;
     vertical-align: middle;
+  }
+}
+.nefo-view-block-interview-col2,
+.nefo-view-block-press-release-col2,
+.nefo-view-block-article-col2 {
+  margin: 0 $mobile-content-margin;
+  @include breakpoint($tab) {
+    margin: 0;
   }
 }
 .nefo-view-block-interview-title,
@@ -180,13 +200,6 @@
   .nefo-view-block-press-release-nav,
   .nefo-view-block-article-nav {
     @include nefo-front-readmore-nav;
-  }
-
-  .block-products-heading {
-    h2 {
-      @include nefo-heading;
-    }
-    margin-bottom: 10px;
   }
 
   //
