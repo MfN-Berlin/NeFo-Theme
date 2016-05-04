@@ -6,7 +6,7 @@
   .l-region--slider .nefo-slideshow-desc,
   .l-region--slider .owl-buttons {
     display: none; }
-  @media (min-width: 44em) {
+  @media (min-width: 540px) {
     .l-region--slider {
       padding: 40px 50px; }
       .l-region--slider .view-nefo-slider .owl-item img {
