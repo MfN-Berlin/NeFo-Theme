@@ -6,17 +6,11 @@ template = atlas-layout
 ; Regions
 regions[branding]       = Branding
 regions[header]         = Header
-regions[navigation]     = Navigation bar
+regions[navigation]     = Navigation
+
 regions[highlighted]    = Highlighted
 regions[help]           = Help
 regions[content]        = Content
-
-regions[featured]       = Featured
-regions[atlas]          = Forschungsatlas
-regions[news]           = Nachrichten
-regions[products]       = Aktuelle Nefo Produkte
-regions[misc]           = Events and News
-regions[studies]        = Studies
 
 regions[footer]         = Footer
 regions[footer_first]   = Footer First
@@ -28,5 +22,4 @@ regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/frontpage/atlas.layout.css
-
 

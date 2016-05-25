@@ -1071,6 +1071,12 @@ ul.pager .pager__item--current {
   .view-nefo-view-block-study .view-block-study-link-all {
     float: right; }
 
+.nefo-view-block-interview-img img,
+.nefo-view-block-press-release-img img,
+.nefo-view-block-article-img img {
+  width: 100%;
+  heigth: auto; }
+
 .nefo-view-block-interview-link-all,
 .nefo-view-block-press-release-link-all,
 .nefo-view-block-article-link-all {

@@ -3,9 +3,12 @@
 @import 'breakpoint';
 @import 'bourbon';
 
+@import '../../variables/colors-hsl';
+@import '../../variables/fonts';
 @import '../../variables/sizes';
 @import '../../variables/variables';
 
+@import '../../components/sidebar';
 
 // Sidebar
 .has-sidebar, 
