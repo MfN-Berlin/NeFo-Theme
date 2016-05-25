@@ -71,7 +71,10 @@
   <?php if ($snippet): ?>
     <p class="search-result__snippet" <?php print $content_attributes; ?>><?php print $snippet; ?></p>
   <?php endif; ?>
-  <?php if ($info): ?>
-    <footer class="search-result__info"><?php print $info; ?></footer>
+
+  <?php if (isset($info_split['date'])): ?>
+    <footer class="search-result__info">
+      <?php print $info_split['date']; ?>
+    </footer>
   <?php endif; ?>
 </article>
