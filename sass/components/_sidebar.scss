@@ -1,66 +1,44 @@
 // NeFo Sidebar Banner
-
 .nefo-sidebar-banner {
-  margin: 3*$vert-spacing-unit 0;
-  .nefo-sidebar-banner-col {
+  margin-top: $content-top-margin;
+  .nefo-sidebar-banner-row {
     width: 100%;
-    margin: auto;
     padding: 0;
     color: $text-color;
     text-transform: uppercase;
-    height: 34px;
+    height: 64px;     
   }
-  .nefo-sidebar-banner-col1 {
-    position: relative; 
-    background-image: url("../../../images/icons/publikationen.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 32px 32px;
-    height: 100%;
-  }
-  .nefo-sidebar-banner-col2 {
-    background-image: url("../../../images/icons/workshops.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 32px 32px;
-    height: 100%;
-  }
-  .nefo-sidebar-banner-col3 {
-    background-image: url("../../../images/icons/newsletter.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 32px 30px;
-    height: 100%;
-  }
-  .nefo-sidebar-banner-col4 {
-    background-image: url("../../../images/icons/blog.png");
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: 32px 32px;
-    height: 100%;
-  }
-  .nefo-sidebar-banner-col-link {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    width: 32px; 
-    height: 32px; 
-    background-color: transparent; 
-  }
-  a {
-    font-size: $footer-font-size;
-     @include breakpoint($desk, true) {
-       font-size: $footer-font-size + 2px;
-    }
-    text-decoration: none;
-    color: inherit;
-    padding-left: 40px;
+  .nefo-sidebar-banner-row-img {
+    line-height: 64px;
     vertical-align: middle;
-    &:hover {
-      color: inherit;
+    img {
+      margin-top: 16px;
+      width: 32px;
+      height: 32px;
+      border: 0;
     }
-    &:visited {
+    a {
+      text-decoration: none;
+    }
+  }
+  .nefo-sidebar-banner-row-link {
+    line-height: 64px;
+    vertical-align: top;
+    a {
+      font-size: $footer-font-size;
+       @include breakpoint($desk, true) {
+         font-size: $footer-font-size + 2px;
+      }
+      text-decoration: none;
       color: inherit;
+      padding-left: 8px;
+      vertical-align: middle;
+      &:hover {
+        color: inherit;
+      }
+      &:visited {
+        color: inherit;
+      }
     }
   }
 }

@@ -1336,6 +1336,11 @@ ul.pager .pager__item--current {
 #search-form .form-item-keys label {
   display: block; }
 
+.search-result h3 a {
+  color: #5091c7; }
+  .search-result h3 a:hover {
+    text-decoration: underline; }
+
 /*
  * Sample SCSS for adding Superfish styles to themes.
  *
