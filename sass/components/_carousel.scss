@@ -12,6 +12,10 @@
     display: none;
   }
 
+  .nefo-button {
+    @include button--green;
+  }
+
   @include breakpoint($tab) {
     padding: 40px $content-padding;
 
@@ -33,13 +37,10 @@
     }
 
     .nefo-button {
-      @include button--green;
       position: absolute;
       width: 120px;
-
       right: 160px;
       bottom: 0px;
-
     }
 
     .slider-content-right {
