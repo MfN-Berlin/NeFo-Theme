@@ -1,14 +1,16 @@
-.node__content a,
-.taxonomy-term__content a,
-.view-content a {
-  color: $nefo_o;
-  text-decoration: none;
+.not-front {
+  .node__content a,
+  .taxonomy-term__content a,
+  .view-content a {
+    color: $nefo_o;
+    text-decoration: none;
 
-  &:hover {
+    &:hover {
     text-decoration: underline;
   }
-}
+  }
 
-.tagclouds-term a {
-  color: $nefo_o;
+  .tagclouds-term a {
+    color: $nefo_o;
+  }
 }
