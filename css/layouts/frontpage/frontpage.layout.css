@@ -6,6 +6,18 @@
   .l-region--slider .nefo-slideshow-desc,
   .l-region--slider .owl-buttons {
     display: none; }
+  .l-region--slider .nefo-button {
+    border-radius: 4px;
+    display: table;
+    height: 40px;
+    width: 180px;
+    background-color: #7cae4a; }
+    .l-region--slider .nefo-button > a {
+      color: white;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      text-decoration: none; }
   @media (min-width: 540px) {
     .l-region--slider {
       padding: 40px 50px; }
@@ -20,21 +32,10 @@
       .l-region--slider .owl-buttons {
         display: block; }
       .l-region--slider .nefo-button {
-        border-radius: 4px;
-        display: table;
-        height: 40px;
-        width: 180px;
-        background-color: #7cae4a;
         position: absolute;
         width: 120px;
         right: 160px;
         bottom: 0px; }
-        .l-region--slider .nefo-button > a {
-          color: white;
-          display: table-cell;
-          text-align: center;
-          vertical-align: middle;
-          text-decoration: none; }
       .l-region--slider .slider-content-right {
         display: inline-block;
         width: 30%;

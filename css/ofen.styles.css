@@ -410,6 +410,19 @@ li {
   font-weight: normal;
   text-decoration: none; }
 
+.not-front .node__content a[href],
+.not-front .taxonomy-term__content a[href],
+.not-front .view-content a[href] {
+  color: #40769f;
+  text-decoration: none; }
+  .not-front .node__content a[href]:hover,
+  .not-front .taxonomy-term__content a[href]:hover,
+  .not-front .view-content a[href]:hover {
+    text-decoration: underline; }
+
+.not-front .tagclouds-term a[href] {
+  color: #40769f; }
+
 .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue {
   border-radius: 4px;
   display: table;

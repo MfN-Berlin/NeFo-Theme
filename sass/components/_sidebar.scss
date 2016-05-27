@@ -1,5 +1,9 @@
 // NeFo Sidebar Banner
 .nefo-sidebar-banner {
+  display: none;
+  @include breakpoint($tab, true) {
+    display: block;
+  }
   margin-top: $content-top-margin;
   .nefo-sidebar-banner-row {
     width: 100%;

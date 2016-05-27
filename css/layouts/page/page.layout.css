@@ -1,5 +1,9 @@
 .nefo-sidebar-banner {
+  display: none;
   margin-top: 65px; }
+  @media (min-width: 540px) {
+    .nefo-sidebar-banner {
+      display: block; } }
   .nefo-sidebar-banner .nefo-sidebar-banner-row {
     width: 100%;
     padding: 0;
