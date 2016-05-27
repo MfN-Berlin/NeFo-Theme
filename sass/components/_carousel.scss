@@ -2,6 +2,11 @@
 
   background-color: rgb(239,244,248);
 
+  .view-nefo-slider .owl-item img {
+    height: auto;
+    max-width: 100%;
+  }
+
   .nefo-slideshow-desc,
   .owl-buttons {
     display: none;
