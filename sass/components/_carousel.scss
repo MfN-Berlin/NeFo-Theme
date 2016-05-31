@@ -4,7 +4,7 @@
 
   .view-nefo-slider .owl-item img {
     height: auto;
-    max-width: 100%;
+    width: 100%;
   }
 
   .nefo-slideshow-desc,
@@ -19,11 +19,7 @@
   @include breakpoint($tab) {
     padding: 40px $content-padding;
 
-    .view-nefo-slider .owl-item img {
-      float:left;
-      max-width: 70%;
 
-    }
 
     .owl-controls {
       position: absolute;
@@ -43,6 +39,24 @@
       bottom: 0px;
     }
 
+    .slider-content-left {
+      position: relative;
+      float:left;
+      max-width: 70%;
+
+      a {
+        display: inline-block;
+        width: 100%
+      }
+
+      .slider-img-credit {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        color: white;
+      }
+    }
+
     .slider-content-right {
       display: inline-block;
       width: 30%;
@@ -52,5 +66,6 @@
         margin: 0;
       }
     }
+
   }
 }
