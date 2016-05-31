@@ -76,7 +76,8 @@
   // top menu hack for english site
   .i18n-en #block-menu-menu-nefo-top-menu {
     // Really no idea why i need that here and not above.
-    @include grid-span(1,1);
+    @include grid-span(0,1);
+    clear: both;
     ul.menu {
       margin-top: 0;
       margin-bottom: 0;
@@ -84,7 +85,7 @@
       display: block;
       text-align: right;
       li {
-        display: inline;;
+        display: inline;
 
         a {
           @include nefo-top-menu-link;
