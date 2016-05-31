@@ -450,9 +450,11 @@ li {
     margin-top: 65px; } }
 
 .file-image {
-  margin: 20px 0; }
+  margin: 20px 0;
+  max-width: 100%; }
   .file-image img {
-    padding-bottom: 8px; }
+    padding-bottom: 8px;
+    max-width: 100%; }
   .file-image .field--name-field-image-caption-text > div > div {
     font-size: 12px;
     line-height: 1.2; }

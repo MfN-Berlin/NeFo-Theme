@@ -12,8 +12,10 @@
 // Images
 .file-image {
   margin: $vert-spacing-unit 0;
+  max-width: 100%;
   img {
     padding-bottom: 8px;
+    max-width: 100%;
   }
   .field--name-field-image-caption-text > div > div {
     font-size: $caption-font-size;
