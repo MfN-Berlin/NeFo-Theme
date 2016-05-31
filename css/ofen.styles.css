@@ -1209,7 +1209,8 @@ ul.pager .pager__item--current {
   .nefo-view-list-news-content,
   .nefo-view-list-article-content,
   .nefo-view-list-press-release-content {
-    clear: both; }
+    clear: both;
+    overflow: hidden; }
   .nefo-view-list-interview-link,
   .nefo-view-list-news-link,
   .nefo-view-list-article-link,
