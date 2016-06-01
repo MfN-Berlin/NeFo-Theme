@@ -57,3 +57,25 @@
 #block-views-nefo-calendar-event-up-ical {
   float: none;
 }
+
+.page-events .view-display-id-nefo_events_all {
+  .views-row {
+    margin-bottom: 1rem;
+  }
+
+  .nefo-event--category {
+    font-size: 0.8rem;
+    color: gray;
+  }
+  @include layout-at(2 10,$tab) {
+    .views-row {
+      @include grid-span(2,1);
+    }
+    .nefo-event--date {
+      @include grid-span(1,1);
+    }
+    .nefo-event--content {
+      @include grid-span(1,2);
+    }
+  }
+}
