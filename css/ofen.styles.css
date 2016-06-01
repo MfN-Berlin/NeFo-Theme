@@ -822,11 +822,12 @@ a.nefo-institution-l-ext {
         font-weight: normal;
         text-decoration: none; }
   .i18n-en #block-menu-menu-nefo-top-menu {
-    width: 65.57377%;
+    width: -1.63934%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
-    clear: none; }
+    clear: none;
+    clear: both; }
     .i18n-en #block-menu-menu-nefo-top-menu ul.menu {
       margin-top: 0;
       margin-bottom: 0;
