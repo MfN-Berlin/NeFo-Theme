@@ -524,6 +524,33 @@ li {
 #block-views-nefo-calendar-event-up-ical {
   float: none; }
 
+.page-events .view-display-id-nefo_events_all .views-row {
+  margin-bottom: 1rem; }
+
+.page-events .view-display-id-nefo_events_all .nefo-event--category {
+  font-size: 0.8rem;
+  color: gray; }
+
+@media (min-width: 540px) {
+  .page-events .view-display-id-nefo_events_all .views-row {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .page-events .view-display-id-nefo_events_all .nefo-event--date {
+    width: 16.39344%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  .page-events .view-display-id-nefo_events_all .nefo-event--content {
+    width: 81.96721%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+
 .l-footer {
   padding-left: 50px;
   padding-right: 50px;
@@ -745,7 +772,12 @@ a.nefo-institution-l-ext {
 
 .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map h3 {
   font-size: 24px;
+  margin-left: 10px;
   margin-bottom: 0; }
+
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map p,
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .btn {
+  margin: 0 10px; }
 
 .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map img {
   display: none; }
@@ -766,7 +798,11 @@ a.nefo-institution-l-ext {
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none; }
+  .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map h3,
+  .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map p,
+  .l-region--atlas .block--nefo-blocks-builder-nefo-feature-map .btn {
+    margin: 0; } }
 
 .l-branding {
   padding: 5px 10px; }
@@ -1091,7 +1127,7 @@ ul.pager .pager__item--current {
 .nefo-view-block-press-release-img img,
 .nefo-view-block-article-img img {
   width: 100%;
-  heigth: auto; }
+  height: auto; }
 
 .nefo-view-block-interview-link-all,
 .nefo-view-block-press-release-link-all,
