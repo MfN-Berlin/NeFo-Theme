@@ -391,6 +391,18 @@
   line-height: $view-list-date-line-height;
 }
 
+.nefo-view-block-literaturtipp-img {
+  padding-bottom: 2rem;
+  border-bottom: #e0e0e0 1px solid;
+}
+.nefo-view-block-literaturtipp-more-link  {
+  @extend %nefo-front-readmore-nav;
+  text-align: right;
+  a {
+    @extend %nefo-front-readmore-nav-link;
+  }
+}
+
 // TagCloud
 .tagclouds-term {
   padding: 1em 1em;
