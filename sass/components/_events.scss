@@ -61,6 +61,11 @@
   float: none;
 }
 
+.page-events .l-main  {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .page-events .view-display-id-nefo_events_all {
   .views-row {
     margin-bottom: 1rem;
@@ -70,7 +75,7 @@
     font-size: 0.8rem;
     color: gray;
   }
-  @include layout-at(2 10,$tab) {
+  @include layout-at(2 5,$tab) {
     .views-row {
       @include grid-span(2,1);
     }
@@ -79,6 +84,17 @@
     }
     .nefo-event--content {
       @include grid-span(1,2);
+    }
+  }
+}
+
+.page-node.node-type-nefo-event {
+  .field {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include breakpoint($tab) {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
