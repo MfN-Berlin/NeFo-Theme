@@ -58,3 +58,17 @@
     text-decoration: none;
   }
 }
+
+.node--nefo-news {
+  .node__submitted,
+  .field--name-field-nefo-news-category,
+  .field--name-body,
+  .field--name-field-nefo-target-url {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include breakpoint($tab) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
