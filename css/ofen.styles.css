@@ -204,8 +204,7 @@ li {
     clear: none; } }
 
 @media (min-width: 540px) {
-  #block-views-nefo-calendar-event-up,
-  #block-views-nefo-calendar-event-up-ical {
+  #block-views-nefo-calendar-event-up {
     width: 45.45455%;
     float: left;
     margin-right: -100%;
@@ -354,7 +353,7 @@ li {
 .nefo-view-block-report,
 .nefo-view-block-opinion-nav,
 .nefo-view-block-factsheet-nav,
-.nefo-view-block-report-nav, .view-nefo-view-block-study .view-block-study-link-all {
+.nefo-view-block-report-nav, .view-nefo-view-block-study .view-block-study-link-all, .nefo-view-block-literaturtipp-more-link {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -365,7 +364,7 @@ li {
 .nefo-view-block-factsheet-link-all a,
 .nefo-view-block-report-link-all a, .view-nefo-view-block-study .view-block-study-link-all a, .nefo-view-block-interview-link-all a,
 .nefo-view-block-press-release-link-all a,
-.nefo-view-block-article-link-all a {
+.nefo-view-block-article-link-all a, .nefo-view-block-literaturtipp-more-link a {
   color: #40769f;
   font-size: 14px;
   font-weight: bold;
@@ -392,9 +391,8 @@ li {
     vertical-align: middle; }
 
 .view-nefo-view-block-study .nefo-view-block-study-row {
-  -webkit-align-items: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+      align-items: stretch;
   font-size: 16px;
   line-height: 1.6;
   background-color: #40769f;
@@ -487,13 +485,16 @@ li {
     .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--heading {
       font-weight: bold;
       background-color: #7cae4a;
-      color: white;
       padding-top: .7em;
       padding-bottom: .7em;
       background-image: url(../images/map.png);
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 28px 28px; }
+      .block--views.block--views-nefo-calendar-event-up ul .nefo-event--heading > a,
+      .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--heading > a {
+        color: white;
+        text-decoration: none; }
     .block--views.block--views-nefo-calendar-event-up ul .nefo-event--date,
     .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--date {
       display: inline-block;
@@ -524,6 +525,10 @@ li {
 #block-views-nefo-calendar-event-up-ical {
   float: none; }
 
+.page-events .l-main {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
 .page-events .view-display-id-nefo_events_all .views-row {
   margin-bottom: 1rem; }
 
@@ -539,22 +544,34 @@ li {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-nefo_events_all .nefo-event--date {
-    width: 16.39344%;
+    width: 27.77778%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
   .page-events .view-display-id-nefo_events_all .nefo-event--content {
-    width: 81.96721%;
+    width: 69.44444%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; } }
 
+.page-node.node-type-nefo-event .field {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 540px) {
+    .page-node.node-type-nefo-event .field {
+      padding-left: 0;
+      padding-right: 0; } }
+
 .l-footer {
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   background: white; }
+  @media (min-width: 540px) {
+    .l-footer {
+      padding-left: 50px;
+      padding-right: 50px; } }
 
 .l-region--footer-first h2,
 .l-region--footer-second h2,
@@ -844,12 +861,10 @@ a.nefo-institution-l-ext {
       line-height: initial; }
   #block-menu-menu-nefo-top-menu ul.menu {
     width: 100%;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
     #block-menu-menu-nefo-top-menu ul.menu li {
       display: inline; }
       #block-menu-menu-nefo-top-menu ul.menu li a {
@@ -964,6 +979,20 @@ Markup:
   .nefo-view-block-newsipbes-row a {
     color: #40769f;
     text-decoration: none; }
+
+.node--nefo-news .node__submitted,
+.node--nefo-news .field--name-field-nefo-news-category,
+.node--nefo-news .field--name-body,
+.node--nefo-news .field--name-field-nefo-target-url {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+  @media (min-width: 540px) {
+    .node--nefo-news .node__submitted,
+    .node--nefo-news .field--name-field-nefo-news-category,
+    .node--nefo-news .field--name-body,
+    .node--nefo-news .field--name-field-nefo-target-url {
+      padding-left: 0;
+      padding-right: 0; } }
 
 ul.pager .pager__item {
   display: inline-block;
@@ -1112,12 +1141,10 @@ ul.pager .pager__item--current {
         margin-bottom: 0; } }
   .view-nefo-view-block-study .nefo-view-block-study-title {
     height: 100%;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -ms-flex-align: center;
+        align-items: center; }
   .view-nefo-view-block-study .view-footer {
     clear: both; }
   .view-nefo-view-block-study .view-block-study-link-all {
@@ -1334,6 +1361,13 @@ ul.pager .pager__item--current {
   margin-bottom: 1em;
   font-size: 14px;
   line-height: 1.4; }
+
+.nefo-view-block-literaturtipp-img {
+  padding-bottom: 2rem;
+  border-bottom: #e0e0e0 1px solid; }
+
+.nefo-view-block-literaturtipp-more-link {
+  text-align: right; }
 
 .tagclouds-term {
   padding: 1em 1em;
