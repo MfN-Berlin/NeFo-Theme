@@ -348,7 +348,8 @@ li {
   text-decoration: none; }
 
 .block--views.block--views-nefo-calendar-event-up .more-link,
-.block--views.block--views-nefo-calendar-event-up-ical .more-link, .view-block-newsipbes-link-all, .nefo-view-block-opinion,
+.block--views.block--views-nefo-calendar-event-up-ical .more-link, .view-block-news-link-all,
+.view-block-newsipbes-link-all, .nefo-view-block-opinion,
 .nefo-view-block-factsheet,
 .nefo-view-block-report,
 .nefo-view-block-opinion-nav,
@@ -360,7 +361,8 @@ li {
   padding-bottom: 10px; }
 
 .block--views.block--views-nefo-calendar-event-up .more-link a,
-.block--views.block--views-nefo-calendar-event-up-ical .more-link a, .view-block-newsipbes-link-all a, .nefo-view-block-opinion-link-all a,
+.block--views.block--views-nefo-calendar-event-up-ical .more-link a, .view-block-news-link-all a,
+.view-block-newsipbes-link-all a, .nefo-view-block-opinion-link-all a,
 .nefo-view-block-factsheet-link-all a,
 .nefo-view-block-report-link-all a, .view-nefo-view-block-study .view-block-study-link-all a, .nefo-view-block-interview-link-all a,
 .nefo-view-block-press-release-link-all a,
@@ -960,8 +962,16 @@ Markup:
     color: #40769f;
     text-decoration: none; }
 
+.view-block-news-link-all,
 .view-block-newsipbes-link-all {
   text-align: right; }
+
+.view-nefo-view-block-news {
+  margin-top: 20px; }
+  .view-nefo-view-block-news .view-content::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .view-nefo-view-block-newsipbes {
   margin-top: 20px; }

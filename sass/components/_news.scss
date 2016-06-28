@@ -30,6 +30,7 @@
     text-decoration: none;
   }
 }
+.view-block-news-link-all,
 .view-block-newsipbes-link-all {
   @extend %nefo-front-readmore-nav;
   text-align: right;
@@ -37,7 +38,12 @@
     @extend %nefo-front-readmore-nav-link;  
   }
 }
-
+.view-nefo-view-block-news {
+  margin-top: 20px;
+  .view-content {
+    @include clearfix;
+  }
+}
 .view-nefo-view-block-newsipbes {
   margin-top: 20px;
 
