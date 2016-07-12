@@ -410,11 +410,13 @@ li {
   font-weight: normal;
   text-decoration: none; }
 
+.not-front .block__content a[href],
 .not-front .node__content a[href],
 .not-front .taxonomy-term__content a[href],
 .not-front .view-content a[href] {
   color: #40769f;
   text-decoration: none; }
+  .not-front .block__content a[href]:hover,
   .not-front .node__content a[href]:hover,
   .not-front .taxonomy-term__content a[href]:hover,
   .not-front .view-content a[href]:hover {
