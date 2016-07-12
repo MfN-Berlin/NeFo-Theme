@@ -19,17 +19,10 @@
   @include breakpoint($tab) {
     padding: 40px $content-padding;
 
-
-
     .owl-controls {
       position: absolute;
       right: 50px;
       bottom: 0px;
-    }
-
-    .nefo-slideshow-desc,
-    .owl-buttons {
-      display: block;
     }
 
     .nefo-button {
@@ -56,6 +49,13 @@
         color: white;
       }
     }
+    
+  @include breakpoint($desk) {    
+    .nefo-slideshow-desc,
+    .owl-buttons {
+      display: block;
+    }
+  }
 
     .slider-content-right {
       display: inline-block;

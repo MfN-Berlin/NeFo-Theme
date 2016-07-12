@@ -13,9 +13,7 @@ Markup:
   background-position: left 6px;
   background-size: 15px 15px;
   color: $header-login;
-  @include breakpoint($tab) {
-    float: left;
-  }
+  float: left;
 
   ul.menu {
     margin-top: 0;

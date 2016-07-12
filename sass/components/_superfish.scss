@@ -20,25 +20,19 @@ $superfish-1-background-color-level-third: $nefo-n;
 $superfish-1-background-color-level-fourth: $nefo-e;
 
 .l-region--navigation {
-  /* not quite sure exactly why 5em is the correct size.
-     the links have 1em vertical padding. first level + second level = 4em.
-     that would mean one line of text is .5em high. is that right?
-     */
-  //height: 5em;
   height: 43px;
   font-size: 20px;
   font-weight: bold;
   background-color: $superfish-1-background-color-level-second;
-  margin-top: 25px;
+  margin-top: 0;
+  @include breakpoint($desk) {
+    margin-top: 25px; 
+  }  
 }
 
 nav#block-superfish-1 {
-  //background-color: $nav-main-background;
-  //padding-left: 100px;
-  //padding-right: 100px;
   padding-left: 0px;
   padding-right: 0px;
-
   margin-top: 5px;
   @include breakpoint($desk) {
     margin-top: 0px;

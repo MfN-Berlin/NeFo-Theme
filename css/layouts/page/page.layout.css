@@ -14,12 +14,14 @@
     margin-top: 0;
     margin-bottom: 20px; }
 
-.nefo-sidebar-banner {
-  display: none;
-  margin-top: 65px; }
+#block-nefo-blocks-builder-nefo-sidebar-banner {
+  display: none; }
   @media (min-width: 540px) {
-    .nefo-sidebar-banner {
+    #block-nefo-blocks-builder-nefo-sidebar-banner {
       display: block; } }
+
+.nefo-sidebar-banner {
+  margin-top: 65px; }
   .nefo-sidebar-banner .nefo-sidebar-banner-row {
     width: 100%;
     padding: 0;
@@ -45,7 +47,7 @@
       color: inherit;
       padding-left: 8px;
       vertical-align: middle; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .nefo-sidebar-banner .nefo-sidebar-banner-row-link a {
           font-size: 14px; } }
       .nefo-sidebar-banner .nefo-sidebar-banner-row-link a:hover {

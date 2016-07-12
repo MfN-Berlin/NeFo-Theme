@@ -25,18 +25,37 @@
   //@include clearfix;
 }
 
-@include breakpoint($desk, true) {
 
+@include breakpoint($tab, true) {
   .l-header {
      @include grid-span(2, 1);
   }
+  @include layout($grid: 2 1, $gutter: .1) {
+    .l-branding {
+      @include grid-span(1, 1);
+    }
+  }
+  .l-region--header {
+    @include grid-span(2, 1);
+    clear: both;
+  }
+  .l-region--navigation {
+    @include grid-span(2, 1);
+    clear: both;
+  }
+}
 
+@include breakpoint($desk, true) {
+  .l-header {
+     @include grid-span(2, 1);
+  }
   @include layout($grid: 1 1, $gutter: .1) {
     .l-branding {
       @include grid-span(1, 1);
     }
     .l-region--header {
       @include grid-span(1, 2);
+      clear: none;
     }
     .l-region--navigation {
       @include grid-span(2, 1);
@@ -49,6 +68,9 @@
 // Content
 .l-content {
   @include breakpoint($tab) {
+    padding: 0 8px;
+  }
+  @include breakpoint($desk) {
     padding: 0 $content-padding;
   }
 }

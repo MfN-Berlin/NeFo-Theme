@@ -3,20 +3,29 @@
   img {
     width: 100%;
   }
+  @include breakpoint($desk) {
+    padding-left: 115px;
+  }
 }
 
+.l-region--header {
+  margin: 0 10px;
+  @include breakpoint($tab) {
+    padding-left: 20px;
+    padding-right: 115px;
+  }
+  @include breakpoint($desk) {
+    padding-left: 0;
+    padding-right: 115px;
+  }
+}
 .block--menu-menu-nefo-top-menu ul.menu {
   display: inline;
   padding: 0 5px;
-
-  li {
-    //display: inline;
-  }
 }
 
 // Top menu
 #block-menu-menu-nefo-top-menu {
-
   ul.menu {
     margin-top: 0;
     margin-bottom: 0;
@@ -30,36 +39,29 @@
   }
 }
 
+// Language switch
+#block-block-1 {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 16px;
+  .block__content {
+    line-height: initial;
+  }
+}
+
+
 @include breakpoint($tab) {
   .l-header {
     padding-top: 25px;
     background: $header-bg;
-
-    .l-branding {
-      padding-left: 115px;
-    }
-    .l-region--header {
-      padding-right: 115px;
-    }
   }
-
   #block-menu-menu-nefo-login-menu,
-  #block-superfish-2,
-  #block-block-1 {
+  #block-superfish-2 {
     display: inline-block;
-  }
-
-  #block-block-1 {
-    vertical-align: top;
-    margin-left: 10px;
-    .block__content {
-      line-height: initial;
-    }
   }
 
   // Top menu
   #block-menu-menu-nefo-top-menu {
-
     ul.menu {
       width: 100%;
       display: flex;
@@ -73,26 +75,11 @@
     }
   }
 
-  // top menu hack for english site
   .i18n-en #block-menu-menu-nefo-top-menu {
-    // Really no idea why i need that here and not above.
-    @include grid-span(0,1);
-    clear: both;
-    ul.menu {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding: 0;
-      display: block;
-      text-align: right;
-      li {
-        display: inline;
-
-        a {
-          @include nefo-top-menu-link;
-        }
-      }
-    }
+    width: 25%;
+    //padding-right: 360px;
   }
+
 }
 /* I let this stay here in case we want to support older browsers */
 //#block-menu-menu-nefo-top-menu {

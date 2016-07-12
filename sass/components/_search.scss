@@ -1,4 +1,10 @@
 /* --------------- Search Form ---------------- */
+
+#block-search-form {
+  display: inline-block;
+  float: right;
+}
+  
 /* Copied from core and then edited */
 @include breakpoint($tab) {
   #block-search-form {
@@ -46,27 +52,3 @@
   display: block;
 }
 
-//#block-search-form {
-//  display: inline-block;
-//  background-color: lightgrey;
-//
-//  padding: 5px;
-//
-//  .form-text {
-//    border: none;
-//    background: lightgrey;
-//  }
-//  //background-color: darkgray;
-//  //padding: 20px 0;
-//  //form {
-//  //  display: flex;
-//  //  .form-type-textfield {
-//  //    flex-grow: 1;
-//  //    input.form-text {
-//  //      width: 100%;
-//  //      border-style: none none solid;
-//  //      background-color: transparent;
-//  //    }
-//  //  }
-//  //}
-//}
