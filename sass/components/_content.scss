@@ -31,3 +31,23 @@
 .file-icon {
   padding-right: 4px;
 }
+
+.nefo-ckeditor-inline-container {
+  display: block;
+  font-size: $p-font-size;
+  line-height: 1.6;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+  .media-element-container {
+    display: inline;
+    .file-document {
+      display: inline;
+      .content {
+        display: inline;
+      }
+    }
+  }
+}

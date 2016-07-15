@@ -500,6 +500,22 @@ li {
 .file-icon {
   padding-right: 4px; }
 
+.nefo-ckeditor-inline-container {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  margin-top: 0em;
+  margin-bottom: 0.7em; }
+  .nefo-ckeditor-inline-container .media-element-container {
+    display: inline; }
+    .nefo-ckeditor-inline-container .media-element-container .file-document {
+      display: inline; }
+      .nefo-ckeditor-inline-container .media-element-container .file-document .content {
+        display: inline; }
+
 .block--views.block--views-nefo-calendar-event-up,
 .block--views.block--views-nefo-calendar-event-up-ical {
   position: relative; }
