@@ -7,7 +7,7 @@
  */
 function ofen_preprocess_file_entity(&$variables) {
   $elements = $variables['elements'];
-  if (($elements['#bundle'] == 'image') && ($elements['file']['#view_mode'] == 'default')) {
+  if (($elements['#bundle'] == 'image') && (!empty($elements['file']['#view_mode'])) && ($elements['file']['#view_mode'] == 'default')) {
     if (isset($elements['file']['#attributes']['style'])) {
       // Add all styles but height to <DIV id="file-<ID>">
       $variables['attributes_array']['style'] = preg_replace('|height: ?.+?\;|', '', $elements['file']['#attributes']['style']);
