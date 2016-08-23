@@ -14,8 +14,7 @@
 
 
 // Sidebar
-.has-sidebar, 
-.has-one-sidebar {
+.page-node {
   @include breakpoint($tab, true) {
     @include layout($grid: 8 4) {
       .l-content {
