@@ -14,8 +14,7 @@
 
 
 // Sidebar
-.page-node {
-  @include breakpoint($tab, true) {
+@include breakpoint($tab, true) {
     @include layout($grid: 8 4) {
       .l-content {
         @include grid-span(1, 1);
@@ -24,9 +23,9 @@
         @include grid-span(1, 2);
       }
     }
-  }
-
-  .l-region--sidebar {
-    padding-top: $vert-spacing-unit;
-  }
 }
+
+.l-region--sidebar {
+    padding-top: $vert-spacing-unit;
+}
+
