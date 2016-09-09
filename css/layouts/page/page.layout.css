@@ -55,6 +55,13 @@
       .nefo-sidebar-banner .nefo-sidebar-banner-row-link a:visited {
         color: inherit; }
 
+#block-shariff-shariff-block {
+  background-image: none;
+  border-bottom: none;
+  padding: 20px 0; }
+  #block-shariff-shariff-block a {
+    color: white; }
+
 @media (min-width: 540px) {
   .l-content {
     width: 65.30612%;

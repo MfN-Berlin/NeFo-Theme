@@ -53,3 +53,14 @@
 .l-region--sidebar > .block {
   @extend %block;
 }
+
+// Shariff sharing buttons
+#block-shariff-shariff-block {
+  background-image: none;
+  border-bottom: none;
+  padding: $vert-spacing-unit 0;
+  a {
+    color: white;
+  } 
+}
+
