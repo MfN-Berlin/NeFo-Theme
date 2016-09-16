@@ -162,6 +162,9 @@
     text-decoration: none;
   }
 }
+.nefo-view-block-interview-title {
+  margin-bottom: 0.5em;
+}
 
 
 @include breakpoint($desk) {
@@ -349,7 +352,6 @@
     line-height: $view-list-title-line-height;
     margin-top: 1em;
   }
-
 }
 
 // Literaturtipps
@@ -402,6 +404,35 @@
     @extend %nefo-front-readmore-nav-link;
   }
 }
+
+// Neu
+.field--name-field-nefo-interview-category {
+  a {
+    @extend %nefo-front-readmore-nav-link;
+    vertical-align: middle;
+    font-size: 16px;
+  }
+}
+.view-nefo-view-list-interviews-by-term {
+  span.date-display-single {
+    font-size: $h2-font-size;
+    font-weight: bold;
+  }
+}
+.nefo-view-block-interview-with, 
+.nefo-view-list-interview-with {
+  font-size: 14px;
+  line-height: 1.4;
+}
+.nefo-view-block-interview-quotation {
+  margin-bottom: 0.5em;
+}
+.field--name-field-nefo-interview-thema {
+  font-size: $h3-font-size;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
 
 // TagCloud
 .tagclouds-term {

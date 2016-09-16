@@ -62,6 +62,18 @@
   #block-shariff-shariff-block a {
     color: white; }
 
+.nefo-view-block-further-topics {
+  margin-top: 1em; }
+  .nefo-view-block-further-topics .view-header p {
+    font-weight: bold;
+    margin-bottom: 0.5em; }
+
+.nefo-view-block-further-topics-row {
+  margin-top: 0;
+  margin-bottom: 0.7em;
+  margin-left: 0;
+  margin-right: 0; }
+
 @media (min-width: 540px) {
   .l-content {
     width: 65.30612%;

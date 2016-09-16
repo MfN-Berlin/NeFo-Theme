@@ -11,7 +11,7 @@
 @import '../../abstractions/mixins';
 
 @import '../../components/sidebar';
-
+@import '../../components/further_topics';
 
 // Sidebar
 @include breakpoint($tab, true) {
