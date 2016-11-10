@@ -1,0 +1,48 @@
+// Hamburger menu
+#sidr-0-button {
+  text-decoration: none;
+  color: $main-menu-color;
+  font-size: $hamburger-font-size;
+  background-color: $navigation-border-color;
+  @include breakpoint($mobile) {
+    margin-right: 8px;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  @include breakpoint($tab) {
+    margin-right: 20px;
+    padding: 6px 12px;
+    border-radius: 6px;
+  }
+}
+
+// Sidr
+.sidr {
+  color: $main-menu-color;
+  background-color: $navigation-bg-color;
+  font-weight: bold;
+  font-size: 1.0em;
+  box-shadow: inset 0 0 5px 5px $navigation-bg-color;
+  ul {
+    border-top: 1px solid $navigation-shadow-color;
+    border-bottom: 1px solid $navigation-border-color;
+    li {
+      border-top: 1px solid $navigation-border-color;
+      border-bottom: 1px solid $navigation-shadow-color;
+      a,
+      span,
+      ul li a, 
+      ul li span {
+        color: $main-menu-color;
+        background-color: $navigation-bg-color;
+      }
+      &:hover > a,
+      ul li:hover > a {
+        color: $main-menu-color;
+        background-color: $main-menu-bg-active-color;
+        box-shadow: inset 0 0 15px 3px $navigation-shadow-color;  
+      }
+    }
+  }  
+  
+}

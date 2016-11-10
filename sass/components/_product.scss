@@ -166,7 +166,84 @@
   margin-bottom: 0.5em;
 }
 
+//
+// Global
+//
 
+// List
+.nefo-view-list-opinion-row ,
+.nefo-view-list-factsheet-row,
+.nefo-view-list-study-row,
+.nefo-view-list-workshop-row,
+.nefo-view-list-report-row,
+.nefo-view-list-product-row {
+      margin-top: 1em;
+      margin-bottom: 1em;
+      margin-left: 0;
+      margin-right: 0;
+}
+.nefo-view-list-opinion-title,
+.nefo-view-list-factsheet-title,
+.nefo-view-list-study-title,
+.nefo-view-list-workshop-title,
+.nefo-view-list-report-title,
+.nefo-view-list-product-title {
+    font-size: $view-list-title-font-size;
+    line-height: $view-list-title-line-height;
+}
+.nefo-view-list-opinion-desc,
+.nefo-view-block-factsheet-desc ,
+.nefo-view-list-study-desc,
+.nefo-view-list-workshop-desc,
+.nefo-view-list-report-desc {
+    font-size: $view-list-desc-font-size;
+    line-height: $view-list-desc-line-height;
+    text-align: left;
+}
+
+// Unsere Themen
+.nefo-view-list-product-row {
+    margin-bottom: 2em;
+}
+.nefo-view-list-product-title,
+.nefo-view-list-product-icon,
+.nefo-view-list-product-date,
+.nefo-product-icon {
+    vertical-align: middle;
+}
+.nefo-view-list-product-icon {
+    padding: 0 8px;
+}
+.nefo-view-list-product-date {
+    font-size: $view-list-date-font-size;
+    line-height: $view-list-date-line-height;
+    white-space: nowrap;
+}
+.nefo-product-icon {
+    width: 50px;
+    height: 50px;
+  @include breakpoint($mobile) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+// Interviews, News, Artikel, Pressemitteilungen
+.nefo-view-list-interview-row,
+.nefo-view-list-news-row,
+.nefo-view-list-article-row,
+.nefo-view-list-press-release-row {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1em;
+    border-bottom: $separator-width solid $separator-color;
+    clear: both;
+}
+
+
+// Desktop
 @include breakpoint($desk) {
   .block--views-nefo-view-block-interview-block,
   .block--views-nefo-block-press-release-block,
@@ -212,77 +289,11 @@
     @include nefo-front-readmore-nav;
   }
 
+
   //
-  // Page
+  // Desktop: Page
   //
-
-  // List
-  .nefo-view-list-opinion-row ,
-  .nefo-view-list-factsheet-row,
-  .nefo-view-list-study-row,
-  .nefo-view-list-workshop-row,
-  .nefo-view-list-report-row,
-  .nefo-view-list-product-row {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin-left: 0;
-      margin-right: 0;
-  }
-  .nefo-view-list-opinion-title,
-  .nefo-view-list-factsheet-title,
-  .nefo-view-list-study-title,
-  .nefo-view-list-workshop-title,
-  .nefo-view-list-report-title,
-  .nefo-view-list-product-title {
-    font-size: $view-list-title-font-size;
-    line-height: $view-list-title-line-height;
-  }
-  .nefo-view-list-opinion-desc,
-  .nefo-view-block-factsheet-desc ,
-  .nefo-view-list-study-desc,
-  .nefo-view-list-workshop-desc,
-  .nefo-view-list-report-desc {
-    font-size: $view-list-desc-font-size;
-    line-height: $view-list-desc-line-height;
-    text-align: left;
-  }
-
-  // Unsere Themen
-  .nefo-view-list-product-row {
-    margin-bottom: 2em;
-  }
-  .nefo-view-list-product-title,
-  .nefo-view-list-product-icon,
-  .nefo-view-list-product-date,
-  .nefo-product-icon {
-    vertical-align: middle;
-  }
-  .nefo-view-list-product-icon {
-    padding: 0 8px;
-  }
-  .nefo-view-list-product-date {
-    font-size: $view-list-date-font-size;
-    line-height: $view-list-date-line-height;
-    white-space: nowrap;
-  }
-  .nefo-product-icon {
-    width: 50px;
-    height: 50px;
-  }
-
   // Interviews, News, Artikel, Pressemitteilungen
-  .nefo-view-list-interview-row,
-  .nefo-view-list-news-row,
-  .nefo-view-list-article-row,
-  .nefo-view-list-press-release-row {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 1em;
-    border-bottom: $separator-width solid $separator-color;
-    clear: both;
-  }
   .nefo-view-list-interview-content,
   .nefo-view-list-news-content,
   .nefo-view-list-article-content,
@@ -352,7 +363,7 @@
     line-height: $view-list-title-line-height;
     margin-top: 1em;
   }
-}
+} // Desk
 
 // Literaturtipps
 .nefo-view-list-literature-tip-row {

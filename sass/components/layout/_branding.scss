@@ -12,11 +12,13 @@
 .l-region--branding {
   // Mobile
   @include breakpoint($mobile, true) {
-    display: inline-block;;
+    display: inline-block;
+    float: right;
   }
   // Tab
   @include breakpoint($tab, true) {
-    display: inline-block;;
+    display: inline-block;
+    float: right;
   }
   // Desktop
   @include breakpoint($desk, true) {

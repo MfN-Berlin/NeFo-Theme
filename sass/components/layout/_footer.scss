@@ -3,6 +3,13 @@
 .l-footer {
   @include breakpoint($mobile) {
     padding: 0 $horz-spacing-unit;
+    .l-region--footer-first,
+    .l-region--footer-second,
+    .l-region--footer-third,
+    .l-region--footer-fourth,
+    .l-region--footer-fifth {
+      display: none;
+    }
   }  
   @include breakpoint($tab) {
     padding: 0 $horz-spacing-unit;

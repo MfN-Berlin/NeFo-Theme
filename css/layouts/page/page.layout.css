@@ -15,7 +15,18 @@
     margin-bottom: 20px; }
 
 .l-region--sidebar {
-  margin-top: 20px; }
+  margin-top: 20px;
+  /*  
+  @include breakpoint($tab) {
+    padding: 0 $horz-spacing-unit;
+  }
+  @include breakpoint($desk) {
+    padding: 0 $horz-spacing-desk;
+  }
+  */ }
+  @media (max-width: 539px) {
+    .l-region--sidebar {
+      padding: 0 1em; } }
 
 .nefo-view-block-further-topics {
   margin-top: 1em; }
