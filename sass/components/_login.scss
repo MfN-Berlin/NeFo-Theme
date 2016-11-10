@@ -1,12 +1,8 @@
-/*
-Login Button
+// Login Button
+#block-menu-menu-nefo-login-menu {
+  display: inline-block;
+}
 
-The Login Button
-
-Markup:
-  <div class="login">Login</div>
-
-*/
 .block--menu-menu-nefo-login-menu {
   background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;

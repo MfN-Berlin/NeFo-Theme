@@ -3,29 +3,41 @@
 @import 'breakpoint';
 @import 'bourbon';
 
-@import '../../variables/colors-hsl';
+@import '../../variables/variables';
+@import '../../variables/colors';
 @import '../../variables/fonts';
 @import '../../variables/sizes';
-@import '../../variables/variables';
-
 @import '../../abstractions/mixins';
 
-@import '../../components/sidebar';
+@import '../../components/layout/sidebar';
 @import '../../components/further_topics';
 
 // Sidebar
-@include breakpoint($tab, true) {
-    @include layout($grid: 8 4) {
-      .l-content {
-        @include grid-span(1, 1);
-      }
-      .l-region--sidebar {
-        @include grid-span(1, 2);
-      }
+@include breakpoint($mobile, true) {
+  @include layout($grid: 1) {
+    .l-content,
+    .l-region--sidebar {
+      @include grid-span(1, 1);
     }
+  }
 }
-
-.l-region--sidebar {
-    padding-top: $vert-spacing-unit;
+@include breakpoint($tab, true) {
+  @include layout($grid: 8 4) {
+    .l-content {
+      @include grid-span(1, 1);
+    }
+    .l-region--sidebar {
+      @include grid-span(1, 2);
+    }
+  }
 }
-
+@include breakpoint($desk, true) {
+  @include layout($grid: 12 4) {
+    .l-content {
+      @include grid-span(1, 1);
+    }
+    .l-region--sidebar {
+      @include grid-span(1, 2);
+    }
+  }
+}

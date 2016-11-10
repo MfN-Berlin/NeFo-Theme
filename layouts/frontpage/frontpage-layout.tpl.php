@@ -22,6 +22,8 @@
         </div>
 
         <?php print render($page['header']); ?>
+        <?php print render($page['header_first']); ?>
+        <?php print render($page['header_second']); ?>
         <?php print render($page['navigation']); ?>
     </header>
 

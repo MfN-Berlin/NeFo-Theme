@@ -1,3 +1,11 @@
+body {
+  max-width: $max-screen-width;
+  margin: 0 auto;
+  font-family: ProximaNova, sans-serif;
+  font-size: $main-font-size;
+  line-height: 1.6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -29,13 +37,6 @@
   font-weight: bold;
 }
 
-body {
-  max-width: $nav-ul-width;
-  margin: 0 auto;
-  font-family: ProximaNova, sans-serif;
-  font-size: $main-font-size;
-  line-height: 1.6;
-}
 
 
 
@@ -101,4 +102,47 @@ li {
   margin-bottom: 0.7em;
   font-size: $p-font-size;
 }
+
+// Headings
+h1,
+h2,
+h3,
+h4 {
+  &>a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+// Links
+.not-front {
+  .block__content a[href],
+  .node__content a[href],
+  .taxonomy-term__content a[href],
+  .view-content a[href] {
+    color: $nefo_f;
+    text-decoration: none;
+
+    &:hover {
+    text-decoration: underline;
+  }
+  }
+
+  .tagclouds-term a[href] {
+    color: $nefo_f;
+  }
+}
+
+// Box
+.l-region--atlas,
+.l-region--news,
+.l-region--misc,
+.l-region--products,
+.l-region--studies,
+.block--views-nefo-view-block-interview-block,
+.block--views-nefo-block-press-release-block,
+.block--views-nefo-block-article-block {
+  @extend %block;
+}
+
 

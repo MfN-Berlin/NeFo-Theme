@@ -1,7 +1,67 @@
-//
-// Forschungsatlas
+// Frontpage block
+.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map {
+  h2 {
+    @include nefo-heading;
+    position: relative;
+    top: 20px;
+  }
+  h3 {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+  p,
+  .btn {
+    margin: 0 10px;
+  }
+  img {
+    @include breakpoint($mobile) {
+      display: none;
+    }
+    @include breakpoint($tab) {
+      display: block;
+      width: 100%;
+    }
+    @include breakpoint($desk) {
+      display: block;
+      width: 100%;
+    }
+  }
+  .feature-map-text .btn--blue{
+    @extend %button--blue;
+  }
+
+  @include layout-at(2 1, $tab) {
+    .feature-map-img {
+      @include grid-span(1, 1);
+    }
+    .feature-map-text {
+      @include grid-span(1, 2);
+    }
+    h3,
+    p,
+    .btn {
+      margin: 0;
+    }
+  }
+  @include layout-at(2 1, $desk) {
+    .feature-map-img {
+      @include grid-span(1, 1);
+    }
+    .feature-map-text {
+      @include grid-span(1, 2);
+    }
+    h3,
+    p,
+    .btn {
+      margin: 0;
+    }
+  }
+}
+
+
+// Forschungsatlas page
 // forschung/forschungsakteure/forschungsatlas
-//
 .nefo-map-page-wrapper {
   background-color: rgb(239,244,248);
 }
@@ -10,7 +70,11 @@
 .nefo-map-search-form-wrapper {
   margin-left: 1em;
   margin-bottom: 1em;
-  @include breakpoint($tab, true) {
+  @include breakpoint($tab) {
+    float: left;
+    margin: 0 2em;
+  }
+  @include breakpoint($desk) {
     float: left;
     margin: 0 2em;
   }
@@ -31,9 +95,9 @@
 .nefo-map-simple-fieldset select,
 .nefo-map-extended-fieldset select,
 .nefo-map-simple-fieldset input {
-  width : 90%;
-  @include breakpoint($tab, true) {
-    width : 200px;
+  width : 200px;
+  @include breakpoint($mobile) {
+    width: 90%;
   }
 }
 .nefo-map-simple-fieldset .form-item,
@@ -103,124 +167,4 @@ a.nefo-institution-l-ext {
   background-color: rgb(255, 255, 255);
 }
 
-//
-// Frontpage blocks
-//
-
-.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map {
-
-  h2 {
-    @include nefo-heading;
-    position: relative;
-    top: 20px;
-  }
-  h3 {
-    font-size: 24px;
-    margin-left: 10px;
-    margin-bottom: 0;
-  }
-  p,
-  .btn {
-    margin: 0 10px;
-  }
-  img {
-    display: none;
-    @include breakpoint($tab) {
-      display: block;
-      width: 100%;
-    }
-  }
-  .feature-map-text .btn--blue{
-    @extend %button--blue;
-  }
-
-  @include layout-at(2 1, $tab) {
-    .feature-map-img {
-      @include grid-span(1, 1);
-    }
-    .feature-map-text {
-      @include grid-span(1, 2);
-    }
-    h3,
-    p,
-    .btn {
-      margin: 0;
-    }
-  }
-}
-
-
-//.l-region--atlas {
-//  .block--block-1 {
-//    position: relative;
-//    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1), white),
-//    url("/sites/nefo.biodiv.naturkundemuseum-berlin.de/files/map.png");
-//    background-size: 1200px 400px;
-//    background-position: top left;
-//  }
-//  .feature-block {
-//    padding-top: 50px;
-//    padding-right: 50px;
-//
-//    h2 {
-//      @include nefo-heading;
-//    }
-//
-//    h3 {
-//      font-size: 22px;
-//      margin-top: 15px;
-//      margin-bottom: 15px;
-//    }
-//
-//    .button--atlas {
-//      position: absolute;
-//      bottom: 60px;
-//      a, a:visited {
-//        text-decoration: none;
-//        background-color: $button-second-bg;
-//        color: $h2-text;
-//        padding: 15px;
-//        border-radius: 4px;
-//        font-size: 16px;
-//      }
-//      a:hover {
-//        background-color: $button-second-bg;
-//      }
-//    }
-//  }
-//
-//  .view-view-researcher-profile {
-//    padding: 50px;
-//
-//    .view-content {
-//      width: 80%;
-//      box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-//      background-color: white;
-//      padding: 20px 20px 20px 20px;
-//
-//      .views-row {
-//
-//        overflow: auto;
-//        h3 {
-//          color: $emphasis-text;
-//          font-size: 20px;
-//        }
-//        img {
-//          float: left;
-//        }
-//
-//      }
-//    }
-//
-//    .views-field-field-researcher-picture {
-//      width: 170px;
-//    }
-//
-//    .views-field-field-researcher-fascinated,
-//    .views-field-field-researcher-deficit,
-//    .views-field-field-researcher-important,
-//    .views-field-field-researcher-interdiscipline {
-//      margin-left: 180px;
-//    }
-//  }
 

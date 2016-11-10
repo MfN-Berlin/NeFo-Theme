@@ -1,0 +1,52 @@
+// HEADER
+.l-header {
+  background: $header-bg;  
+  
+  @include breakpoint($mobile) {
+    padding-top: 8px;
+    .l-region--header,
+    .l-region--header-first,
+    .l-region--header-second {
+      padding-left: 8px;
+    } 
+    .l-region--header-first {
+      padding-right: 8px;
+    }
+    .l-region--header-second {
+      padding-top: 8px;
+    }
+  }
+    
+  @include breakpoint($tab) {
+    padding-top: 16px;
+    .l-region--header,
+    .l-region--header-first,
+    .l-region--header-second {
+      padding-left: 10px;
+    } 
+    .l-region--header-first {
+      padding-right: 20px;
+    }
+    .l-region--header-second {
+      padding-top: ($vert-spacing-unit / 2);
+    }
+  }
+  
+  @include breakpoint($desk) {
+    padding-top: 24px;
+    .l-region--header,
+    .l-region--header-second {
+      padding-left: 10px;
+    }
+    .l-region--header-first,
+    .l-region--header-second {
+      padding-right: $horz-spacing-desk;
+    }
+    .l-region--header-second {
+      padding-top: $vert-spacing-unit;
+    }
+  } 
+}
+
+
+

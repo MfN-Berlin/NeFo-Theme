@@ -4,33 +4,35 @@
 @import 'breakpoint';
 @import 'bourbon';
 
-
 @import 'variables/variables';
 @import 'variables/fonts';
 @import 'variables/sizes';
-@import 'variables/colors-hsl';
+@import 'variables/colors';
 @import 'base/base';
-@import 'layout/grid';
 
 @import 'abstractions/mixins';
 
-@import 'components/links';
+@import 'components/layout/grid';
+@import 'components/layout/header';
+@import 'components/layout/branding';
+@import 'components/layout/navigation';
+@import 'components/layout/main';
+@import 'components/layout/footer';
 
-@import 'components/box';
+
+//@import 'components/box';
 @import 'components/buttons';
 @import 'components/color-rule';
-@import 'components/content';
+@import 'components/shariff';
+@import 'components/footer_banner';
+
 @import 'components/events';
-@import 'components/footer';
-@import 'components/forschungsatlas';
-@import 'components/header';
-@import 'components/headings';
 @import 'components/login';
 @import 'components/news';
 @import 'components/pager';
 @import 'components/product';
 @import 'components/search';
 @import 'components/search_results';
-@import 'components/superfish';
 @import 'components/superfish-2';
-
+@import 'components/language_switch';
+@import 'components/tb_megamenu';

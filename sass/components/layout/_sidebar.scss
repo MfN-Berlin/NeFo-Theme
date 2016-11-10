@@ -1,0 +1,8 @@
+// SIDEBAR
+.l-region--sidebar > .block {
+  @extend %block;
+}
+.l-region--sidebar {
+  margin-top: $vert-spacing-unit;
+}
+

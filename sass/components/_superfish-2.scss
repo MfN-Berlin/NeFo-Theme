@@ -1,12 +1,8 @@
 // Top menu
-#block-superfish-2 {
-  padding-left: 2em;
-  float: left;
-}
 #block-superfish-2 ul.menu li {
   display: inline; 
   margin-right: 1em;
   a {
-    @extend %nefo-top-menu-link;
+    @include nefo-top-menu-link;
   }
 }

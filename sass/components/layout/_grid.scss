@@ -1,0 +1,149 @@
+// Mobile first
+@include add-grid(1);
+@include add-gutter(.2);
+
+.l-page,
+.l-header,
+.l-main,
+.l-footer,
+.l-content,
+.color-rule {
+  @include grid-span(1, 1);
+}
+
+// HEADER
+.l-header {
+  // Mobile: 1
+  @include breakpoint($mobile, true) {
+    @include layout($grid: 1 1  , $gutter: .1) {
+      .l-branding {
+        @include grid-span(2, 1);
+      }
+      .l-region--header {
+        @include grid-span(1, 1);
+        clear: both;
+      }
+      .l-region--header-first {
+        @include grid-span(1, 2);
+      }
+      .l-region--header-second {
+        @include grid-span(2, 1);
+      }
+      .l-region--navigation {
+        @include grid-span(2, 1);
+      }     
+    }
+  }
+  // Tab: 12
+  @include breakpoint($tab, true) {
+    @include layout($grid: 6 6 , $gutter: .1) {
+      .l-branding {
+        @include grid-span(2, 1);
+      }
+      .l-region--header {
+        @include grid-span(1, 1);
+        clear: both;
+      }
+      .l-region--header-first {
+        @include grid-span(1, 2);
+      }
+      .l-region--header-second {
+        @include grid-span(2, 1);
+        clear: right;
+      }
+      .l-region--navigation {
+        @include grid-span(2, 1);
+        clear: both;
+      }
+    }
+  }
+  // Desktop: 16
+  @include breakpoint($desk, true) {
+    @include layout($grid: 8 4 4, $gutter: .1) {
+      .l-branding {
+        @include grid-span(1, 1);
+      }
+      .l-region--header {
+        @include grid-span(1, 2);
+//        clear: none;
+      }
+      .l-region--header-first {
+        @include grid-span(1, 3);
+      }
+      .l-region--header-second {
+        @include grid-span(2, 2);
+        clear: right;
+      }
+      .l-region--navigation {
+        @include grid-span(3, 1);
+        clear: both;
+      }
+    }
+  }
+}
+
+
+// MAIN
+// KISS
+
+
+// FOOTER
+.l-footer {
+  // Mobile: 1
+  @include breakpoint($mobile, true) {
+    @include layout(1) {
+      .l-region--footer-first,
+      .l-region--footer-second,
+      .l-region--footer-third,
+      .l-region--footer-fourth,
+      .l-region--footer-fifth,
+      .l-region--footer-sixth {
+        @include grid-span(1, 1);
+      }
+    }      
+  }
+  @include breakpoint($tab, true) {
+    @include layout(3) {
+      .l-region--footer-first {
+        @include grid-span(1, 1);
+      }
+      .l-region--footer-second,
+      .l-region--footer-fifth {
+        @include grid-span(1, 2);
+      }
+      .l-region--footer-third,
+      .l-region--footer-sixth {
+        @include grid-span(1, 3);      
+      }
+      .l-region--footer-fourth {
+        @include grid-span(1, 1);
+        clear:both;
+      }
+    }
+  }
+  @include breakpoint($desk, true) {
+    @include layout(6) {
+      @include layout($gutter: .05) {
+        .l-region--footer-first {
+          @include grid-span(1, 1);
+        }
+        .l-region--footer-second {
+          @include grid-span(1, 2);
+        }
+        .l-region--footer-third {
+          @include grid-span(1, 3);
+        }
+        .l-region--footer-fourth {
+          @include grid-span(1, 4);
+        }
+        .l-region--footer-fifth {
+          @include grid-span(1, 5);
+        }
+        .l-region--footer-sixth {
+          @include grid-span(1, 6);
+        }
+      }
+    }
+  }
+}
+

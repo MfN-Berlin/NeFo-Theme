@@ -1,57 +1,15 @@
-
-.l-footer {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @include breakpoint($tab) {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-  background: $footer-bg;
-}
-
-.l-region--footer-first,
-.l-region--footer-second,
-.l-region--footer-third,
-.l-region--footer-fourth,
-.l-region--footer-fifth,
-.l-region--footer-sixth {
-  h2 {
-    font-size: $footer-font-size + 2px;
-    text-transform: uppercase;
-    color: $footer-header-text;
-    margin-bottom: 5px;
-    font-weight: bold;
-  }
-  ul {
-    padding-left: 0;
-    margin-top: 0;
-  }
-  li {
-    overflow-x: hidden;
-    padding-bottom: 5px;
-    margin-bottom: 0;
-  }
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $footer-text-color;
-    font-size: $footer-font-size;
-    font-weight: bold;
-  }
-}
-
 .nefo-footer-banner {
   margin: $vert-spacing-unit 0;
   .nefo-footer-banner-col {
     float: left;
-    width: 50%;
+    width: 25%;
     margin: auto;
     padding: 0;
     color: $text-color;
     text-transform: uppercase;
     height: 34px;
-    @include breakpoint($tab, true) {
-      width: 25%;
+    @include breakpoint($mobile) {
+      width: 50%;
     }
   }
   .nefo-footer-banner-col1 {

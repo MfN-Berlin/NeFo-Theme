@@ -1,0 +1,14 @@
+.l-region--navigation {
+  // Mobile
+  @include breakpoint($mobile, true) {
+    display: none;
+  }
+  // Tab
+  @include breakpoint($tab, true) {
+    display: none;
+  }
+  // Desktop
+  @include breakpoint($desk, true) {
+    display: block;
+  }
+}

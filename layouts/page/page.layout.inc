@@ -6,6 +6,8 @@ template = page-layout
 ; Regions
 regions[branding]       = Branding
 regions[header]         = Header
+regions[header_first]   = Header First
+regions[header_second]  = Header Second
 regions[navigation]     = Navigation
 
 regions[highlighted]    = Highlighted

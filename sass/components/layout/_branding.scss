@@ -1,0 +1,25 @@
+.l-branding {
+  padding: 5px 10px;
+  img {
+    width: 80%;
+    max-width: 450px;
+  }
+  @include breakpoint($desk) {
+    padding-left: (2 * $horz-spacing-desk);
+  }
+}
+
+.l-region--branding {
+  // Mobile
+  @include breakpoint($mobile, true) {
+    display: inline-block;;
+  }
+  // Tab
+  @include breakpoint($tab, true) {
+    display: inline-block;;
+  }
+  // Desktop
+  @include breakpoint($desk, true) {
+    display: none;
+  }
+}

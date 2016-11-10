@@ -1,0 +1,44 @@
+// FOOTER
+
+.l-footer {
+  @include breakpoint($mobile) {
+    padding: 0 $horz-spacing-unit;
+  }  
+  @include breakpoint($tab) {
+    padding: 0 $horz-spacing-unit;
+  }
+  @include breakpoint($desk) {
+    padding: 0 $horz-spacing-desk;
+  }
+}
+
+.l-region--footer-first,
+.l-region--footer-second,
+.l-region--footer-third,
+.l-region--footer-fourth,
+.l-region--footer-fifth,
+.l-region--footer-sixth {
+  h2 {
+    font-size: $footer-font-size + 2px;
+    text-transform: uppercase;
+    color: $footer-header-text;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  ul {
+    padding-left: 0;
+    margin-top: 0;
+  }
+  li {
+    overflow-x: hidden;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $footer-text-color;
+    font-size: $footer-font-size;
+    font-weight: bold;
+  }
+}

@@ -13,9 +13,9 @@ function ofen_preprocess_node(&$variables) {
       unset($variables['content']['links']['blog']['#links']['blog_usernames_blog']);
     }
   }
-  
-  // Change string Submitted 
+
+  // Change string Submitted
   $date = format_date($variables['created'] , 'nefo_date_type_din5008');
   $variables['submitted'] = t('Created')  .' '. $date;
-  
+
 }

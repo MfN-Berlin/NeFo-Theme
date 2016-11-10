@@ -2,7 +2,8 @@
 @import 'breakpoint';
 @import 'bourbon';
 
-@import '../../variables/colors-hsl';
+@import '../../variables/variables';
+@import '../../variables/colors';
 @import '../../variables/sizes';
 @import '../../variables/fonts';
 @import '../../abstractions/mixins';

@@ -1,0 +1,28 @@
+#block-nefo-blocks-builder-nefo-language-switch {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 2px;
+  @include breakpoint($mobile) {
+    margin-left: 16px;
+  }
+  @include breakpoint($tab) {
+    margin-left: (2*$horz-spacing-desk);
+  }
+  @include breakpoint($desk) {
+    margin-left: $horz-spacing-desk;
+  }
+  
+  ul.menu {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline; 
+      margin: 0;
+      padding: 0;
+      a {
+        //@extend %nefo-top-menu-link;
+        @include nefo-top-menu-link;
+       }
+    }    
+  } 
+}

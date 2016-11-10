@@ -1,13 +1,30 @@
-// Content
+// MAIN
+
 .l-main {
   margin-bottom: $vert-spacing-unit;
 }
+
+// Content
+.l-content {
+  @include breakpoint($mobile) {
+    padding: 0 $horz-spacing-unit;
+  }  
+  @include breakpoint($tab) {
+    padding: 0 $horz-spacing-unit;
+  }
+  @include breakpoint($desk) {
+    padding: 0 $horz-spacing-desk;
+  }
+}
+
+
+/*
 .l-content {
   @include breakpoint($desk, true) {
     margin-top: $content-top-margin;
   }
 }
-
+*/
 
 // Images
 .file-image {

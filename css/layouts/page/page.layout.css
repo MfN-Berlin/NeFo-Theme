@@ -14,53 +14,8 @@
     margin-top: 0;
     margin-bottom: 20px; }
 
-#block-nefo-blocks-builder-nefo-sidebar-banner {
-  display: none; }
-  @media (min-width: 540px) {
-    #block-nefo-blocks-builder-nefo-sidebar-banner {
-      display: block; } }
-
-.nefo-sidebar-banner {
-  margin-top: 65px; }
-  .nefo-sidebar-banner .nefo-sidebar-banner-row {
-    width: 100%;
-    padding: 0;
-    color: #575656;
-    text-transform: uppercase;
-    height: 64px; }
-  .nefo-sidebar-banner .nefo-sidebar-banner-row-img {
-    line-height: 64px;
-    vertical-align: middle; }
-    .nefo-sidebar-banner .nefo-sidebar-banner-row-img img {
-      margin-top: 16px;
-      width: 32px;
-      height: 32px;
-      border: 0; }
-    .nefo-sidebar-banner .nefo-sidebar-banner-row-img a {
-      text-decoration: none; }
-  .nefo-sidebar-banner .nefo-sidebar-banner-row-link {
-    line-height: 64px;
-    vertical-align: top; }
-    .nefo-sidebar-banner .nefo-sidebar-banner-row-link a {
-      font-size: 12px;
-      text-decoration: none;
-      color: inherit;
-      padding-left: 8px;
-      vertical-align: middle; }
-      @media (min-width: 1024px) {
-        .nefo-sidebar-banner .nefo-sidebar-banner-row-link a {
-          font-size: 14px; } }
-      .nefo-sidebar-banner .nefo-sidebar-banner-row-link a:hover {
-        color: inherit; }
-      .nefo-sidebar-banner .nefo-sidebar-banner-row-link a:visited {
-        color: inherit; }
-
-#block-shariff-shariff-block {
-  background-image: none;
-  border-bottom: none;
-  padding: 20px 0; }
-  #block-shariff-shariff-block a {
-    color: white; }
+.l-region--sidebar {
+  margin-top: 20px; }
 
 .nefo-view-block-further-topics {
   margin-top: 1em; }
@@ -74,7 +29,16 @@
   margin-left: 0;
   margin-right: 0; }
 
-@media (min-width: 540px) {
+@media (max-width: 539px) {
+  .l-content,
+  .l-region--sidebar {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+
+@media (min-width: 540px) and (max-width: 979px) {
   .l-content {
     width: 65.30612%;
     float: left;
@@ -88,5 +52,16 @@
     margin-right: 0;
     clear: none; } }
 
-.l-region--sidebar {
-  padding-top: 20px; }
+@media (min-width: 980px) {
+  .l-content {
+    width: 73.84615%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  .l-region--sidebar {
+    width: 24.61538%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
