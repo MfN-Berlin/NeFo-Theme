@@ -7,13 +7,5 @@
   @include breakpoint($mobile) {
     padding: 0 $horz-spacing-unit;
   }
-  /*  
-  @include breakpoint($tab) {
-    padding: 0 $horz-spacing-unit;
-  }
-  @include breakpoint($desk) {
-    padding: 0 $horz-spacing-desk;
-  }
-  */
 }
 

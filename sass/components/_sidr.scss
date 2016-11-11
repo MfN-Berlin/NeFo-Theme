@@ -3,7 +3,7 @@
   text-decoration: none;
   color: $main-menu-color;
   font-size: $hamburger-font-size;
-  background-color: $navigation-border-color;
+  background-color: $navigation-bg-color;//$navigation-border-color;
   @include breakpoint($mobile) {
     margin-right: 8px;
     padding: 4px 8px;
