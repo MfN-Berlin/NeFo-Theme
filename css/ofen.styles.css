@@ -414,7 +414,7 @@ h4 > a {
         padding-top: 8px; }
       .l-header .l-region--header,
       .l-header .l-region--header-first {
-        padding-top: 78px; } }
+        padding-top: 58px; } }
   @media (min-width: 540px) and (max-width: 979px) {
     .l-header {
       padding-top: 16px;
@@ -1415,7 +1415,7 @@ ul.pager .pager__item--current {
   @media (max-width: 539px) {
     .sidr {
       width: 100%;
-      top: 78px; } }
+      top: 74px; } }
 
 @media (min-width: 980px) {
   .tb-megamenu {
