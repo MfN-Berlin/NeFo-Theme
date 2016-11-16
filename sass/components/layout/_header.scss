@@ -1,6 +1,6 @@
 // HEADER
 .l-header {
-  background: $header-bg;  
+  background: $header-bg;
   
   @include breakpoint($mobile) {
     padding-top: 8px;
@@ -15,6 +15,11 @@
     }
     .l-region--header-second {
       padding-top: 8px;
+    }
+    
+    .l-region--header,
+    .l-region--header-first {
+      padding-top: 78px;
     }
   }
     
