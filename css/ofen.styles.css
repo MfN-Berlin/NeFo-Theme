@@ -414,7 +414,7 @@ h4 > a {
         padding-top: 8px; }
       .l-header .l-region--header,
       .l-header .l-region--header-first {
-        padding-top: 58px; } }
+        padding-top: 77px; } }
   @media (min-width: 540px) and (max-width: 979px) {
     .l-header {
       padding-top: 16px;
@@ -1290,12 +1290,6 @@ ul.pager .pager__item--current {
   display: inline-block;
   float: right; }
 
-/* Copied from core and then edited */
-@media (min-width: 540px) and (max-width: 979px) {
-  #block-search-form {
-    display: inline-block;
-    float: right; } }
-
 #block-search-form .content {
   margin-top: 0; }
 
@@ -1305,6 +1299,10 @@ ul.pager .pager__item--current {
   /* LTR */
   font-size: 1em;
   width: 9em; }
+  @media (max-width: 539px) {
+    #search-form input#edit-keys,
+    #block-search-form .form-item-search-block-form input {
+      width: 100px; } }
 
 #search-block-form input.form-text,
 #search-form input.form-text {
@@ -1345,6 +1343,10 @@ ul.pager .pager__item--current {
     font-size: 14px;
     font-weight: normal;
     text-decoration: none; }
+
+@media (max-width: 539px) {
+  #block-superfish-2 ul.menu li:nth-child(3) {
+    display: none; } }
 
 #block-nefo-blocks-builder-nefo-language-switch {
   display: inline-block;

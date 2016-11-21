@@ -4,13 +4,6 @@
   float: right;
 }
   
-/* Copied from core and then edited */
-@include breakpoint($tab) {
-  #block-search-form {
-    display: inline-block;
-    float: right;
-  }
-}
 #block-search-form .content {
   margin-top: 0;
 }
@@ -19,6 +12,9 @@
   float: left; /* LTR */
   font-size: 1em;
   width: 9em;
+  @include breakpoint($mobile) {
+    width: 100px;
+  }
 }
 #search-block-form,
 #search-form {

@@ -6,3 +6,11 @@
     @include nefo-top-menu-link;
   }
 }
+
+#block-superfish-2 ul.menu {
+  @include breakpoint($mobile) {
+    li:nth-child(3) {
+      display: none;
+    }   
+  }
+}
