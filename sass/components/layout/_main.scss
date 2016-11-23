@@ -17,15 +17,6 @@
   }
 }
 
-
-/*
-.l-content {
-  @include breakpoint($desk, true) {
-    margin-top: $content-top-margin;
-  }
-}
-*/
-
 // Images
 .file-image {
   margin: $vert-spacing-unit 0;
@@ -33,6 +24,7 @@
   img {
     padding-bottom: 8px;
     max-width: 100%;
+    height: auto;
   }
   .field--name-field-image-caption-text > div > div {
     font-size: $caption-font-size;
