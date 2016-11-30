@@ -15,7 +15,7 @@
     
   }
   @include breakpoint($desk) {
-    padding-left: (2 * $horz-spacing-desk);
+    padding-left: $horz-spacing-desk;
   }
 }
 

@@ -7,3 +7,76 @@
     color: white;
   } 
 }
+
+// Social Links: NeFo Social Links Top & Bottom
+#block-nefo-blocks-builder-nefo-social-links-top,
+#block-nefo-blocks-builder-nefo-social-links-bottom {
+  ul.nefo-social-links-top,
+  ul.nefo-social-links-bottom {
+    float: right;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    list-style: none;
+    line-height: 1;
+    li {
+      float: right;
+      padding: 0;
+      margin: 0 0 0 3px;
+      a {
+        @include nefo-top-menu-link;
+        @include breakpoint($mobile) {
+          font-size: 20px;
+        }
+        @include breakpoint($tab) {
+          font-size: 22px;
+        }
+        @include breakpoint($desk) {
+          font-size: 24px;
+        }
+      }
+    }    
+  }
+}
+#block-nefo-blocks-builder-nefo-social-links-top {
+  float: right;
+  ul.nefo-social-links-top {
+    width: 70px;
+    li {
+      padding-left: 8px;
+    }
+  }
+  @include breakpoint($mobile) {
+    display: none;
+  }
+  @include breakpoint($tab) {
+    display: inline-block;
+  }
+  @include breakpoint($desk) {
+    display: inline-block;
+  }
+}
+#block-nefo-blocks-builder-nefo-social-links-bottom {
+  float: left;
+  ul.nefo-social-links-bottom {
+    li {
+      padding-right: 16px;
+    }
+    li.nefo-social-link-contact {
+      padding-right: 32px;
+      padding-top: 3px; 
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+  @include breakpoint($mobile) {
+    display: block;
+  }
+  @include breakpoint($tab) {
+    display: none;
+  }
+  @include breakpoint($desk) {
+    display: none;
+  }
+}

@@ -25,7 +25,7 @@
     
   @include breakpoint($tab) {
     padding-top: 16px;
-    padding-bottom: 12px;
+    //padding-bottom: 12px;
     .l-region--header,
     .l-region--header-first,
     .l-region--header-second {
@@ -35,7 +35,10 @@
       padding-right: 20px;
     }
     .l-region--header-second {
-      padding-top: ($vert-spacing-unit / 2);
+      //padding-top: ($vert-spacing-unit / 2);
+      height: 2 * $vert-spacing-unit;
+      display:flex;
+      align-items:center;
     }
   }
   
@@ -43,14 +46,16 @@
     padding-top: 24px;
     .l-region--header,
     .l-region--header-second {
-      padding-left: 10px;
+      padding-left: 0;
     }
     .l-region--header-first,
     .l-region--header-second {
       padding-right: $horz-spacing-desk;
     }
     .l-region--header-second {
-      padding-top: $vert-spacing-unit;
+      height: 2 * $vert-spacing-unit;
+      display:flex;
+      align-items:center;
     }
   } 
 }

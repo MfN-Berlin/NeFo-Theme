@@ -1,15 +1,18 @@
 // Top menu
-#block-superfish-2 ul.menu li {
-  display: inline; 
-  margin-right: 1em;
-  a {
-    @include nefo-top-menu-link;
+#block-superfish-2 {
+  ul.menu li {
+    display: inline; 
+    margin-right: 10px;
+    a {
+      @include nefo-top-menu-link;
+    }
   }
 }
 
+
 #block-superfish-2 ul.menu {
   @include breakpoint($mobile) {
-    li:nth-child(3) {
+    li:nth-last-child(1) {
       display: none;
     }   
   }
