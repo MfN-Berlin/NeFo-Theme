@@ -1652,3 +1652,18 @@ ul.pager .pager__item--current {
   .nefo-view-list-interview-col2 {
     width: 120px;
     float: right; } }
+
+#block-nefo-blocks-builder-nefo-newsletter2go-press-news,
+#block-nefo-blocks-builder-nefo-newsletter2go-biodiv-news,
+#block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news,
+#nl2go--form,
+#nl2go--submit {
+  font-family: ProximaNova, sans-serif; }
+
+#block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news {
+  font-size: .9em; }
+  #block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news input {
+    max-width: 150px; }
+  #block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news input.nl2go--submit {
+    max-width: 100%;
+    font-size: 1.1em !important; }
