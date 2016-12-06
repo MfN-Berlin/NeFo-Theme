@@ -1,0 +1,21 @@
+// Frontpage
+.node--blog--teaser {
+  border-bottom: $separator-width solid $separator-color;
+}
+
+// Page
+.nefo-content-author {
+  margin: 0;
+  padding: 0;
+  clear: both;
+  .nefo-content-author_image {
+    float: left;
+    margin-right: 0.7em;
+    margin-bottom: 0.7em;
+  }
+  .nefo-content-author-data {
+  }
+}
+.node--blog .field--type-text-with-summary {
+  clear: both;
+}

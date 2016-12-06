@@ -119,7 +119,8 @@ h4 {
   .block__content a[href],
   .node__content a[href],
   .taxonomy-term__content a[href],
-  .view-content a[href] {
+  .view-content a[href],
+  .node--blog--teaser a[href] {
     color: $nefo_f;
     text-decoration: none;
 

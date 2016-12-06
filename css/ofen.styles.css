@@ -98,13 +98,15 @@ h4 > a {
 .not-front .block__content a[href],
 .not-front .node__content a[href],
 .not-front .taxonomy-term__content a[href],
-.not-front .view-content a[href] {
+.not-front .view-content a[href],
+.not-front .node--blog--teaser a[href] {
   color: #40769f;
   text-decoration: none; }
   .not-front .block__content a[href]:hover,
   .not-front .node__content a[href]:hover,
   .not-front .taxonomy-term__content a[href]:hover,
-  .not-front .view-content a[href]:hover {
+  .not-front .view-content a[href]:hover,
+  .not-front .node--blog--teaser a[href]:hover {
     text-decoration: underline; }
 
 .not-front .tagclouds-term a[href] {
@@ -1667,3 +1669,18 @@ ul.pager .pager__item--current {
   #block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news input.nl2go--submit {
     max-width: 100%;
     font-size: 1.1em !important; }
+
+.node--blog--teaser {
+  border-bottom: 2px solid #e0e0e0; }
+
+.nefo-content-author {
+  margin: 0;
+  padding: 0;
+  clear: both; }
+  .nefo-content-author .nefo-content-author_image {
+    float: left;
+    margin-right: 0.7em;
+    margin-bottom: 0.7em; }
+
+.node--blog .field--type-text-with-summary {
+  clear: both; }
