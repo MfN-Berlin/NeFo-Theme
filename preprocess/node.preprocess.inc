@@ -9,31 +9,30 @@ function ofen_preprocess_node(&$variables) {
 
   // Content type blog
   if($variables['type'] == 'blog') {
-    // Custom field blog_author
+    $author_profile = profile2_load_by_user($variables['uid'], 'researcher');
     $variables['nefo_blog_author_data'] = array();
-    if (!empty($variables['field_blog_author'])) {
-      $author_profile = $variables['field_blog_author']['0']['entity'];
+    if (!empty($author_profile)) {
       $name = $author_profile->field_researcher_name[LANGUAGE_NONE][0]['value'];
       $link = $author_profile->field_researcher_personal_www[LANGUAGE_NONE][0]['url'];
       $institution = $author_profile->field_researcher_institutio_name[LANGUAGE_NONE][0]['value'];
-      $variables['nefo_blog_author_data']['author'] = empty($link) ? $name : l($name, $link);
-      $variables['nefo_blog_author_data']['institution'] = !empty($institution) ? $institution : '';
+      $variables['nefo_blog_author_data']['author'] = t('from') .' '. (empty($link) ? $name : l($name, $link));
+      $variables['nefo_blog_author_data']['author'] .= (!empty($institution)) ? ', '. $institution : '';
       $picture = array();
       if (!empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['uri'])) {
-        $picture['credit'] = !empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_file_image_credit_text'][LANGUAGE_NONE][0]['value']) ?
-          $author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_file_image_credit_text'][LANGUAGE_NONE][0]['value'] : '';
-        $picture['caption'] = !empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_image_caption_text'][LANGUAGE_NONE][0]['value']) ?
+        $caption = !empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_image_caption_text'][LANGUAGE_NONE][0]['value']) ?
           $author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_image_caption_text'][LANGUAGE_NONE][0]['value'] : '';
+        $credit = !empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_file_image_credit_text'][LANGUAGE_NONE][0]['value']) ?
+          $author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_file_image_credit_text'][LANGUAGE_NONE][0]['value'] : '';
+        $picture['caption'] = $caption . ((!empty($caption) && !empty($credit)) ? ', ' : '') . $credit;
         $picture['image'] = array(
           '#theme' => 'image_style',
           '#path' => $author_profile->field_researcher_picture[LANGUAGE_NONE][0]['uri'],
           '#style_name' => 'thumbnail',
           '#alt' => $variables['nefo_blog_author_data']['author'],
-          '#title' => $picture['caption'] ."\n". $picture['credit'],
+          '#title' => $caption ."\n". $credit,
         );
       }
       $variables['nefo_blog_author_data']['picture'] = $picture;
-      unset($variables['content']['field_blog_author']);
     }
     if (isset($variables['content']['links']['blog']['#links']['blog_usernames_blog'])) {
       unset($variables['content']['links']['blog']['#links']['blog_usernames_blog']);

@@ -1677,10 +1677,11 @@ ul.pager .pager__item--current {
   margin: 0;
   padding: 0;
   clear: both; }
-  .nefo-content-author .nefo-content-author_image {
-    float: left;
-    margin-right: 0.7em;
-    margin-bottom: 0.7em; }
+  .nefo-content-author .nefo-content-author-image-caption {
+    font-size: 12px;
+    line-height: 1.2; }
+  .nefo-content-author .nefo-content-author-name {
+    margin-top: 0.7em; }
 
 .node--blog .field--type-text-with-summary {
   clear: both; }
