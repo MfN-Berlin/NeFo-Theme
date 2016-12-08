@@ -12,11 +12,11 @@ function ofen_preprocess_node(&$variables) {
     $author_profile = profile2_load_by_user($variables['uid'], 'researcher');
     $variables['nefo_blog_author_data'] = array();
     if (!empty($author_profile)) {
-      $name = $author_profile->field_researcher_name[LANGUAGE_NONE][0]['value'];
-      $link = $author_profile->field_researcher_personal_www[LANGUAGE_NONE][0]['url'];
-      $institution = $author_profile->field_researcher_institutio_name[LANGUAGE_NONE][0]['value'];
-      $variables['nefo_blog_author_data']['author'] = t('from') .' '. (empty($link) ? $name : l($name, $link));
-      $variables['nefo_blog_author_data']['author'] .= (!empty($institution)) ? ', '. $institution : '';
+      $variables['nefo_blog_author_data']['author'] = t('from') .' '. (empty($author_profile->field_researcher_personal_www[LANGUAGE_NONE][0]['url']) ?
+          $author_profile->field_researcher_name[LANGUAGE_NONE][0]['value'] :
+          l($author_profile->field_researcher_name[LANGUAGE_NONE][0]['value'], $author_profile->field_researcher_personal_www[LANGUAGE_NONE][0]['url']));
+      $variables['nefo_blog_author_data']['author'] .= (!empty($author_profile->field_researcher_institutio_name[LANGUAGE_NONE][0]['value'])) ?
+          ', '. $author_profile->field_researcher_institutio_name[LANGUAGE_NONE][0]['value'] : '';
       $picture = array();
       if (!empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['uri'])) {
         $caption = !empty($author_profile->field_researcher_picture[LANGUAGE_NONE][0]['field_image_caption_text'][LANGUAGE_NONE][0]['value']) ?
