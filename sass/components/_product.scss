@@ -220,8 +220,7 @@
   }
 }
 
-// Interviews, News, Artikel, Pressemitteilungen
-.nefo-view-list-news-row,
+// Interviews, Artikel, Pressemitteilungen
 .nefo-view-list-article-row,
 .nefo-view-list-press-release-row {
     margin-top: 1em;
@@ -276,61 +275,47 @@
   //
   // Desktop: Page
   //
-  // Interviews, News, Artikel, Pressemitteilungen
-  .nefo-view-list-news-content,
+  // Interviews, Artikel, Pressemitteilungen
   .nefo-view-list-article-content,
   .nefo-view-list-press-release-content {
     clear: both;
     overflow: hidden;
   }
-  .nefo-view-list-news-link,
   .nefo-view-list-article-link,
   .nefo-view-list-press-release-link {
     font-size: $view-list-title-font-size;
     line-height: $view-list-title-line-height;
   }
 
-  .nefo-view-list-news-img,
   .nefo-view-list-article-img,
   .nefo-view-list-press-release-img {
     margin-bottom: 8px;
   }
-  .nefo-view-list-news-img-caption,
   .nefo-view-list-article-img-caption,
   .nefo-view-list-press-release-img-caption {
     font-size: $view-list-caption-font-size;
     line-height: $view-list-caption-line-height;
   }
-  .nefo-view-list-news-img-credit,
   .nefo-view-list-article-img-credit,
   .nefo-view-list-press-release-img-credit {
     font-size: $view-list-credit-font-size;
     line-height: $view-list-credit-line-height;
   }
-  .nefo-view-list-news-col2,
   .nefo-view-list-article-col2,
   .nefo-view-list-press-release-col2 {
     width: 120px;
     float: right;
   }
-  .nefo-view-list-news-col1,
   .nefo-view-list-article-col1,
   .nefo-view-list-press-release-col1 {
     margin-right: 130px;
   }
-  // News, Artikel, Pressemitteilungen
-  .nefo-view-list-news-date,
+  // Artikel, Pressemitteilungen
   .nefo-view-list-article-date,
   .nefo-view-list-press-release-date {
     margin-bottom: 1em;
     font-size: $view-list-date-font-size;
     line-height: $view-list-date-line-height;
-  }
-  // Interviews, News
-  .nefo-view-list-news-category {
-    font-size: $view-list-title-font-size;
-    line-height: $view-list-title-line-height;
-    padding-bottom: 1em;
   }
 } // Desk
 

@@ -311,19 +311,19 @@ a.nefo-institution-l-ext {
 
 @media (min-width: 540px) and (max-width: 979px) {
   .l-region--news .nefo-view-block-news-row:nth-of-type(1) {
-    width: 28.57143%;
+    width: 31.25%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
   .l-region--news .nefo-view-block-news-row:nth-of-type(2) {
-    width: 28.57143%;
+    width: 31.25%;
     float: left;
     margin-right: -100%;
-    margin-left: 35.71429%;
+    margin-left: 34.375%;
     clear: none; }
   .l-region--news .nefo-view-block-news-row:nth-of-type(3) {
-    width: 28.57143%;
+    width: 31.25%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -331,19 +331,19 @@ a.nefo-institution-l-ext {
 
 @media (min-width: 980px) {
   .l-region--news .nefo-view-block-news-row:nth-of-type(1) {
-    width: 28.57143%;
+    width: 32.25806%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
   .l-region--news .nefo-view-block-news-row:nth-of-type(2) {
-    width: 28.57143%;
+    width: 32.25806%;
     float: left;
     margin-right: -100%;
-    margin-left: 35.71429%;
+    margin-left: 33.87097%;
     clear: none; }
   .l-region--news .nefo-view-block-news-row:nth-of-type(3) {
-    width: 28.57143%;
+    width: 32.25806%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -410,13 +410,13 @@ a.nefo-institution-l-ext {
 
 @media (min-width: 540px) and (max-width: 979px) {
   .l-region--misc #block-views-nefo-calendar-event-up {
-    width: 44.44444%;
+    width: 47.61905%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
   .l-region--misc #block-views-nefo-view-block-newsipbes-block {
-    width: 44.44444%;
+    width: 47.61905%;
     float: right;
     margin-left: 0;
     margin-right: 0;

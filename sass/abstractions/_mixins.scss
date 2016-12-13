@@ -67,7 +67,31 @@
   background-position: right;
   padding-right: 15px;
 }
+@mixin nefo-front-readmore-nav-link {
+  color: $h2-bg;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-image: url("../images/arrow-right-more.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 15px;
+}
+
 %nefo-front-readmore-nav-button {
+  background-color: $nefo-n;
+  border-radius: 4px;
+  padding: 0.5em 2em;
+  & > a {
+    color: $more-button-text;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+@mixin nefo-front-readmore-nav-button {
   background-color: $nefo-n;
   border-radius: 4px;
   padding: 0.5em 2em;

@@ -38,7 +38,7 @@
     }
   }
   @include breakpoint($tab, true) {
-    @include layout(3) {
+    @include layout(3, 0.1) {
       @for $i from 1 through 3 {
         .nefo-view-block-news-row:nth-of-type(#{$i}) {
           @include grid-span(1, $i)
@@ -47,7 +47,7 @@
     }
   } 
   @include breakpoint($desk, true) {
-    @include layout(3) {
+    @include layout(3, 0.05) {
       @for $i from 1 through 3 {
         .nefo-view-block-news-row:nth-of-type(#{$i}) {
           @include grid-span(1, $i)
@@ -107,7 +107,7 @@
     }
   }
   @include breakpoint($tab, true) {
-    @include layout(2) {
+    @include layout(2, 0.1) {
       #block-views-nefo-calendar-event-up {
         @include grid-span(1, 1);
       }
