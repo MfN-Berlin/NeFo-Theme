@@ -168,7 +168,7 @@ h4 > a {
 .block--views.block--views-nefo-calendar-event-up-ical .more-link a, .nefo-view-block-opinion-link-all a,
 .nefo-view-block-factsheet-link-all a,
 .nefo-view-block-report-link-all a, .view-nefo-view-block-study .view-block-study-link-all a, .nefo-view-block-press-release-link-all a,
-.nefo-view-block-article-link-all a, .nefo-view-block-interview-link-all a, .field--name-field-nefo-interview-category a {
+.nefo-view-block-article-link-all a {
   color: #40769f;
   font-size: 14px;
   font-weight: bold;
@@ -179,12 +179,12 @@ h4 > a {
   padding-right: 15px; }
 
 .nefo-view-block-press-release-link,
-.nefo-view-block-article-link, .nefo-view-block-interview-link {
+.nefo-view-block-article-link {
   background-color: #7cae4a;
   border-radius: 4px;
   padding: 0.5em 2em; }
   .nefo-view-block-press-release-link > a,
-  .nefo-view-block-article-link > a, .nefo-view-block-interview-link > a {
+  .nefo-view-block-article-link > a {
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -1552,6 +1552,7 @@ ul.pager .pager__item--current {
 
 .nefo-view-block-interview-img img {
   width: 100%;
+  max-width: 430px;
   height: auto; }
 
 .nefo-view-block-interview-img-credit {
@@ -1559,9 +1560,29 @@ ul.pager .pager__item--current {
   font-size: 12px;
   font-weight: bold; }
 
+.nefo-view-block-interview-link {
+  background-color: #7cae4a;
+  border-radius: 4px;
+  padding: 0.5em 2em; }
+  .nefo-view-block-interview-link > a {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle; }
+
 .nefo-view-block-interview-link-all {
   float: right; }
   .nefo-view-block-interview-link-all a {
+    color: #40769f;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
     vertical-align: middle; }
 
 .nefo-view-block-interview-col2 {
@@ -1589,6 +1610,14 @@ ul.pager .pager__item--current {
   clear: both; }
 
 .field--name-field-nefo-interview-category a {
+  color: #40769f;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  background-image: url("../images/arrow-right-more.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-right: 15px;
   vertical-align: middle;
   font-size: 16px; }
 
@@ -1622,21 +1651,13 @@ ul.pager .pager__item--current {
 .nefo-view-list-interview-col1 {
   margin-top: 8px; }
 
-@media (min-width: 540px) and (max-width: 979px) {
-  .nefo-view-block-interview-img img {
-    width: 250px; }
-  .nefo-view-block-interview-col1 {
-    float: left; }
+@media (max-width: 539px) {
   .nefo-view-block-interview-col2 {
-    margin-left: 260px; }
-  .nefo-view-block-interview-nav {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
-  .nefo-view-block-interview-link-all {
-    padding-left: 2em;
-    float: none; } }
+    margin-top: 20px; } }
+
+@media (min-width: 540px) and (max-width: 979px) {
+  .nefo-view-block-interview-col2 {
+    margin-top: 20px; } }
 
 @media (min-width: 980px) {
   .nefo-view-block-interview-col1 {

@@ -5,6 +5,7 @@
 .nefo-view-block-interview-img {
   img {
     width: 100%;
+    max-width: 430px;
     height: auto;
   }
 }
@@ -14,12 +15,12 @@
   font-weight: bold;
 }
 .nefo-view-block-interview-link {
-  @extend %nefo-front-readmore-nav-button;
+  @include nefo-front-readmore-nav-button;
 }
 .nefo-view-block-interview-link-all {
   float: right;
   a {
-    @extend %nefo-front-readmore-nav-link;
+    @include nefo-front-readmore-nav-link;
     vertical-align: middle;
   }
 }
@@ -53,7 +54,7 @@
 }
 .field--name-field-nefo-interview-category {
   a {
-    @extend %nefo-front-readmore-nav-link;
+    @include nefo-front-readmore-nav-link;
     vertical-align: middle;
     font-size: 16px;
   }
@@ -92,27 +93,16 @@
 
 
 // Tab
-@include breakpoint($tab) {
-  .nefo-view-block-interview-img {
-    img {
-      width: 250px;
-    }
-  }
-  .nefo-view-block-interview-col1 {
-    float: left;
-   }
+@include breakpoint($mobile) {
   .nefo-view-block-interview-col2 {
-    margin-left: 260px;
-  }
-  .nefo-view-block-interview-nav {
-    @include nefo-front-readmore-nav;
-  }
-  .nefo-view-block-interview-link-all {
-    padding-left: 2em;
-    float: none;
+    margin-top: $vert-spacing-unit;
   }
 }
-
+@include breakpoint($tab) {
+  .nefo-view-block-interview-col2 {
+    margin-top: $vert-spacing-unit;
+  }
+}
 // Desktop
 @include breakpoint($desk) {
   // Frontpage
