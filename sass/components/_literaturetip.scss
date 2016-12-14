@@ -1,6 +1,4 @@
 .nefo-view-list-literature-tip-row {
-//  padding-top: 2em;
-//  padding-bottom: 4em;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: $vert-spacing-unit;
@@ -8,11 +6,6 @@
   border-bottom: $separator-width solid $separator-color;
   clear: both;
 }
-.nefo-view-list-literature-tip-title,
-.nefo-view-list-literature-tip-desc {
-  //padding-left: 1em;
-}
-
 .nefo-view-list-literature-tip-link {
   font-size: $view-list-title-font-size;
   line-height: $view-list-title-line-height;
