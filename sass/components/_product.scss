@@ -319,57 +319,6 @@
   }
 } // Desk
 
-// Literaturtipps
-.nefo-view-list-literature-tip-row {
-  padding-top: 2em;
-  padding-bottom: 4em;
-  margin-left: 0;
-  margin-right: 0;
-  min-height: 300px;
-  border-bottom: $separator-width solid $separator-color;
-  clear: both;
-}
-.nefo-view-list-literature-tip-col1 {
-  width: 150px;
-  float: left;
-}
-.nefo-view-list-literature-tip-col2 {
-  margin-left: 160px;
-  width: auto;
-}
-.nefo-view-list-literature-tip-title,
-.nefo-view-list-literature-tip-desc {
-  padding-left: 1em;
-}
-.nefo-view-list-literature-tip-img {
- box-shadow: 8px 8px 4px #888;
-}
-.nefo-view-list-literature-tip-img img {
- max-height: 212px;
-}
-.nefo-view-list-literature-tip-link {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-  padding-left: 1em;
-}
-.nefo-view-list-literature-tip-date {
-  margin-bottom: 1em;
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height;
-}
-
-.nefo-view-block-literaturtipp-img {
-  padding-bottom: 2rem;
-  border-bottom: #e0e0e0 1px solid;
-}
-.nefo-view-block-literaturtipp-more-link  {
-  @extend %nefo-front-readmore-nav;
-  text-align: right;
-  a {
-    @extend %nefo-front-readmore-nav-link;
-  }
-}
-
 
 // TagCloud
 .tagclouds-term {
