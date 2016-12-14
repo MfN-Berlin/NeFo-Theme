@@ -74,6 +74,9 @@ p {
 strong {
   font-weight: bold; }
 
+em, i {
+  font-style: italic; }
+
 ul {
   display: block;
   list-style-type: disc;
