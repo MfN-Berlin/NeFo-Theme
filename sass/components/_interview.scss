@@ -24,9 +24,6 @@
     vertical-align: middle;
   }
 }
-.nefo-view-block-interview-col2 {
-  margin: 0 $mobile-content-margin;
-}
 .nefo-view-block-interview-title {
   margin-bottom: 0.5em;
   a {
@@ -90,14 +87,13 @@
   margin-top: 8px;
 }
 
-
-
-// Tab
+// Mobile
 @include breakpoint($mobile) {
   .nefo-view-block-interview-col2 {
     margin-top: $vert-spacing-unit;
   }
 }
+// Tab
 @include breakpoint($tab) {
   .nefo-view-block-interview-col2 {
     margin-top: $vert-spacing-unit;
