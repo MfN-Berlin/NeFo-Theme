@@ -12,7 +12,8 @@
 }
 .nefo-view-block-news-row {
   @include breakpoint($mobile) {
-    margin-bottom: $mobile-content-margin;
+    margin-top: $vert-spacing-unit;
+    border-bottom: $separator-color 1px solid;
   }    
 }
 .view-nefo-view-block-news {
@@ -20,10 +21,10 @@
     margin-top: 0;
   }    
   @include breakpoint($tab) {
-    margin-top: 20px;
+    margin-top: $vert-spacing-unit;
   } 
   @include breakpoint($desk) {
-    margin-top: 20px;
+    margin-top: $vert-spacing-unit;
   } 
   .view-content {
     @include clearfix;
@@ -45,6 +46,11 @@
     margin: 0 $mobile-content-margin;
     height: 6em;
   } 
+}
+.nefo-view-block-news-img {
+  @include breakpoint($mobile) {
+    margin-bottom: $mobile-content-margin;
+  }     
 }
 .view-block-news-link-all,
 .view-block-newsipbes-link-all {
