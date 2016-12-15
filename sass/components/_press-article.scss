@@ -1,0 +1,115 @@
+// Frontpage
+.block--views-nefo-view-block-article-block {
+  clear: both;
+}
+.nefo-view-block-article-img {
+  img {
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+  }
+}
+.nefo-view-block-article-img-credit {
+  padding-top: 4px;
+  font-size: $view-list-credit-font-size;
+  font-weight: bold;
+}
+.nefo-view-block-article-link {
+  @include nefo-front-readmore-nav-button;
+}
+.nefo-view-block-article-link-all {
+  float: right;
+  a {
+    @include nefo-front-readmore-nav-link;
+    vertical-align: middle;
+  }
+}
+.nefo-view-block-article-title {
+  margin-bottom: 0.5em;
+  margin-top: 0;
+  a {
+    color: $h2-bg;
+    text-decoration: none;
+  }
+}
+
+// Page
+.nefo-view-list-article-row {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1em;
+    border-bottom: $separator-width solid $separator-color;
+    clear: both;
+}
+.nefo-view-list-article-date {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height;
+}
+.nefo-view-list-article-img-caption {
+  font-size: $view-list-caption-font-size;
+  line-height: $view-list-caption-line-height;
+}
+.nefo-view-list-article-img-credit {
+  font-size: $view-list-credit-font-size;
+  line-height: $view-list-credit-line-height;
+}
+.nefo-view-list-article-link {
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
+}
+.nefo-view-list-article-col1 {
+  margin-top: 8px;
+}
+
+// Mobile
+@include breakpoint($mobile) {
+  // Frontpage
+  .nefo-view-block-article-col2 {
+    margin-top: $vert-spacing-unit;
+  }
+}
+// Tab
+@include breakpoint($tab) {
+  // Frontpage
+  .nefo-view-block-article-col2 {
+    margin-top: $vert-spacing-unit;
+  }
+}
+// Desktop
+@include breakpoint($desk) {
+  // Frontpage
+  .nefo-view-block-article-col1 {
+    float: left;
+   }
+  .nefo-view-block-article-col2 {
+    margin-left: 450px;
+  }
+  .nefo-view-block-article-nav {
+    @include nefo-front-readmore-nav;
+  }
+  .nefo-view-block-article-link-all {
+    padding-left: 1em;
+    float: none;
+  }
+  // List
+  .nefo-view-list-article-content {
+    clear: both;
+    overflow: hidden;
+  }
+  .nefo-view-list-article-img {
+    margin-bottom: 8px;
+  }
+  .nefo-view-list-article-col1 {
+    margin-right: 130px;
+    margin-top: 0;
+  }
+  .nefo-view-list-article-col2 {
+    width: 120px;
+    float: right;
+  }  
+}
+
+
