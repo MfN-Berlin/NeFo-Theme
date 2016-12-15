@@ -72,6 +72,32 @@ h6 {
   margin-top: 2.33em;
   margin-bottom: 2.33em;
 }
+// Mobile
+@include breakpoint($mobile) {
+  h1 {
+    font-size: $h1-font-size-mobile;
+  } 
+  h2 {
+    font-size: $h2-font-size-mobile;
+  } 
+  h3 {
+    font-size: $h3-font-size-mobile;
+  }  
+}
+// Tab
+@include breakpoint($tab) {
+  h1 {
+    font-size: $h1-font-size-tab;
+  } 
+  h2 {
+    font-size: $h2-font-size-tab;
+  } 
+  h3 {
+    font-size: $h3-font-size-tab;
+  }  
+}
+
+
 
 p {
   font-size: $p-font-size;
