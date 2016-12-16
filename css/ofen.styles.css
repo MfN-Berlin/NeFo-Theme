@@ -1206,7 +1206,7 @@ ul.pager .pager__item--current {
       text-decoration: none; }
     @media (max-width: 539px) {
       .view-nefo-view-block-study .nefo-view-block-study-row {
-        height: 4em;
+        height: 6em;
         margin-bottom: 10px; } }
     @media (min-width: 540px) and (max-width: 979px) {
       .view-nefo-view-block-study .nefo-view-block-study-row {

@@ -126,7 +126,7 @@
   .nefo-view-block-study-row {
     @include nefo-front-study-block;
     @include breakpoint($mobile) {
-      height: 4em;
+      height: 6em;
       margin-bottom: $mobile-content-margin;
     }
     @include breakpoint($tab) {
