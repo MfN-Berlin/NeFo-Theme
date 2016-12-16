@@ -1,13 +1,20 @@
 //
 // Frontpage
 //
+// Stellungnahmen, Faktenblätter, Berichte
 .block-products-heading {
   h2 {
     @include nefo-heading;
   }
-  margin-bottom: 10px;
 }
-
+.block--views-nefo-view-block-opinion-block,
+.block--views-nefo-view-block-factsheet-block,
+.block--views-nefo-view-block-report-block {
+  border-bottom: 4px solid $events-bg;
+  h2 {
+    margin-bottom: 20px;
+  }
+}
 .nefo-view-block-opinion-row,
 .nefo-view-block-factsheet-row,
 .nefo-view-block-report-row{
@@ -19,6 +26,11 @@
 .nefo-view-block-factsheet-img,
 .nefo-view-block-report-img {
   position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 360px;
+  }
   &::after {
     @include blackoverlay;
   }
@@ -29,27 +41,41 @@
   position: absolute;
   top: 50px;
   z-index: 2;
-  padding: 0 10px;
+  padding: 0 8px;
+  @include breakpoint($tab) {
+    top: 20px;
+  }
 }
 .nefo-view-block-opinion-title,
 .nefo-view-block-factsheet-title,
 .nefo-view-block-report-title {
-  @extend %no_style_link;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 100%;
+  padding: 0;
+  margin-bottom: 8px;
+  @include breakpoint($tab) {
+    margin-bottom: 4px;
+    font-size: 18px;
+  }   
   a {
-    font-size: 20px;
-    font-weight: bold;
     color: white;
+    text-decoration: none;
   }
 }
 .nefo-view-block-opinion-desc,
 .nefo-view-block-factsheet-desc,
 .nefo-view-block-report-desc {
-  @extend %no_style_link;
+  font-size: 16px;
+  line-height: 100%;
+  padding: 0;
+  @include breakpoint($tab) {
+    font-size: 14px;
+  }   
   a {
     color: white;
-    font-size: 16px;
+    text-decoration: none;
   }
-  padding: 0;
 }
 .nefo-view-block-opinion,
 .nefo-view-block-factsheet,
@@ -57,51 +83,57 @@
 .nefo-view-block-opinion-nav,
 .nefo-view-block-factsheet-nav,
 .nefo-view-block-report-nav {
-  @extend %nefo-front-readmore-nav;
+  @include nefo-front-readmore-nav;
   display: inline-block;
+  @include breakpoint($tab) {
+    display: block;
+  }
+  padding-left: 0;
 }
-
 .nefo-view-block-opinion,
 .nefo-view-block-factsheet,
 .nefo-view-block-report {
   text-transform: uppercase;
-
   padding-right: 0;
+  font-size: 16px;
+  @include breakpoint($desk) {
+    letter-spacing: -1px;
+  }
 }
 .nefo-view-block-opinion-nav,
 .nefo-view-block-factsheet-nav,
 .nefo-view-block-report-nav {
   float: right;
-  padding-top: 12px;
+  padding-top: $mobile-content-margin;
   padding-left: 0;
 }
-
 .nefo-view-block-opinion-link-all,
 .nefo-view-block-factsheet-link-all,
 .nefo-view-block-report-link-all {
   a {
-    @extend %nefo-front-readmore-nav-link;
-  }
-}
-
-.block--views-nefo-view-block-opinion-block,
-.block--views-nefo-view-block-factsheet-block,
-.block--views-nefo-view-block-report-block {
-  border-bottom: 4px solid $events-bg;
-  h2 {
-    margin-bottom: 20px;
+    @include nefo-front-readmore-nav-link;
+    padding-right: 15px;
+    @include breakpoint($desk) {
+      padding-right: 8px;
+    }
   }
 }
 
 // Studien 
 .view-nefo-view-block-study {
-  margin-top: 20px;  
-
+  margin-top: $vert-spacing-unit;
+  
   .nefo-view-block-study-row {
-    @extend %nefo-front-study-block;
-    margin-bottom: 10px;
+    @include nefo-front-study-block;
+    @include breakpoint($mobile) {
+      height: 4em;
+      margin-bottom: $mobile-content-margin;
+    }
     @include breakpoint($tab) {
-      margin-bottom: 0;
+      margin-bottom: $vert-spacing-unit;
+      &:nth-of-type(3) {
+        clear:both !important;
+      }
     }
   }
   .nefo-view-block-study-title {
@@ -109,70 +141,30 @@
     display: flex;
     align-items: center
   }
-
   .view-footer {
     clear: both;
   }
-
   .view-block-study-link-all {
     float: right;
-    @extend %nefo-front-readmore-nav;
+    @include nefo-front-readmore-nav;
     a {
-      @extend %nefo-front-readmore-nav-link;
+      @include nefo-front-readmore-nav-link;
     }
   }
 }
-// Interview, Pressemitteilung, Artikel
-.nefo-view-block-press-release-img,
-.nefo-view-block-article-img {
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-.nefo-view-block-press-release-link,
-.nefo-view-block-article-link {
-  @extend %nefo-front-readmore-nav-button;
-}
-.nefo-view-block-press-release-link-all,
-.nefo-view-block-article-link-all {
-  //padding-left: 2em;
-  float: right;
-  a {
-    @extend %nefo-front-readmore-nav-link;
-    vertical-align: middle;
-  }
-}
-.nefo-view-block-press-release-col2,
-.nefo-view-block-article-col2 {
-  margin: 0 $mobile-content-margin;
-  @include breakpoint($tab) {
-    margin: 0;
-  }
-}
-.nefo-view-block-press-release-title,
-.nefo-view-block-article-title {
-  a {
-    color: $h2-bg;
-    text-decoration: none;
-  }
-}
 
 //
-// Global
+// Page
 //
 
-// List
+// Listen
 .nefo-view-list-opinion-row ,
 .nefo-view-list-factsheet-row,
 .nefo-view-list-study-row,
 .nefo-view-list-workshop-row,
 .nefo-view-list-report-row,
 .nefo-view-list-product-row {
-      margin-top: 1em;
-      margin-bottom: 1em;
-      margin-left: 0;
-      margin-right: 0;
+  margin: 1em 0;
 }
 .nefo-view-list-opinion-title,
 .nefo-view-list-factsheet-title,
@@ -180,145 +172,48 @@
 .nefo-view-list-workshop-title,
 .nefo-view-list-report-title,
 .nefo-view-list-product-title {
-    font-size: $view-list-title-font-size;
-    line-height: $view-list-title-line-height;
+  font-size: $view-list-title-font-size;
+  line-height: $view-list-title-line-height;
 }
 .nefo-view-list-opinion-desc,
-.nefo-view-block-factsheet-desc ,
 .nefo-view-list-study-desc,
 .nefo-view-list-workshop-desc,
 .nefo-view-list-report-desc {
-    font-size: $view-list-desc-font-size;
-    line-height: $view-list-desc-line-height;
-    text-align: left;
+  font-size: $view-list-desc-font-size;
+  line-height: $view-list-desc-line-height;
+  text-align: left;
 }
 
 // Unsere Themen
 .nefo-view-list-product-row {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 .nefo-view-list-product-title,
 .nefo-view-list-product-icon,
 .nefo-view-list-product-date,
 .nefo-product-icon {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 .nefo-view-list-product-icon {
-    padding: 0 8px;
+    padding: 0;
 }
 .nefo-view-list-product-date {
-    font-size: $view-list-date-font-size;
-    line-height: $view-list-date-line-height;
-    white-space: nowrap;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height;
+  white-space: nowrap;
 }
 .nefo-product-icon {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
   @include breakpoint($mobile) {
     width: 25px;
     height: 25px;
   }
+  @include breakpoint($tab) {
+    width: 40px;
+    height: 40px;    
+  }
 }
-
-// Interviews, Artikel, Pressemitteilungen
-.nefo-view-list-article-row,
-.nefo-view-list-press-release-row {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 1em;
-    border-bottom: $separator-width solid $separator-color;
-    clear: both;
-}
-
-
-// Desktop
-@include breakpoint($desk) {
-  .block--views-nefo-block-press-release-block,
-  .block--views-nefo-block-article-block {
-    clear: both;
-  }
-  .view-nefo-block-press-release,
-  .view-nefo-block-article {
-    margin-top: 20px;
-  }
-  .nefo-view-block-press-release-row,
-  .nefo-view-block-article-row {
-  }
-  .nefo-view-block-press-release-col1,
-  .nefo-view-block-article-col1 {
-    float: left;
-   }
-  .nefo-view-block-press-release-col2,
-  .nefo-view-block-article-col2 {
-    margin-left: 450px;
-  }
-
-  .nefo-view-block-press-release-link-all,
-  .nefo-view-block-article-link-all {
-    padding-left: 2em;
-    float: none;
-  }
-  .nefo-view-block-press-release-img-credit,
-  .nefo-view-block-article-img-credit {
-    padding-top: 4px;
-    font-size: $view-list-credit-font-size;
-    font-weight: bold;
-  }
-  .nefo-view-block-press-release-nav,
-  .nefo-view-block-article-nav {
-    @include nefo-front-readmore-nav;
-  }
-
-
-  //
-  // Desktop: Page
-  //
-  // Interviews, Artikel, Pressemitteilungen
-  .nefo-view-list-article-content,
-  .nefo-view-list-press-release-content {
-    clear: both;
-    overflow: hidden;
-  }
-  .nefo-view-list-article-link,
-  .nefo-view-list-press-release-link {
-    font-size: $view-list-title-font-size;
-    line-height: $view-list-title-line-height;
-  }
-
-  .nefo-view-list-article-img,
-  .nefo-view-list-press-release-img {
-    margin-bottom: 8px;
-  }
-  .nefo-view-list-article-img-caption,
-  .nefo-view-list-press-release-img-caption {
-    font-size: $view-list-caption-font-size;
-    line-height: $view-list-caption-line-height;
-  }
-  .nefo-view-list-article-img-credit,
-  .nefo-view-list-press-release-img-credit {
-    font-size: $view-list-credit-font-size;
-    line-height: $view-list-credit-line-height;
-  }
-  .nefo-view-list-article-col2,
-  .nefo-view-list-press-release-col2 {
-    width: 120px;
-    float: right;
-  }
-  .nefo-view-list-article-col1,
-  .nefo-view-list-press-release-col1 {
-    margin-right: 130px;
-  }
-  // Artikel, Pressemitteilungen
-  .nefo-view-list-article-date,
-  .nefo-view-list-press-release-date {
-    margin-bottom: 1em;
-    font-size: $view-list-date-font-size;
-    line-height: $view-list-date-line-height;
-  }
-} // Desk
-
 
 // TagCloud
 .tagclouds-term {

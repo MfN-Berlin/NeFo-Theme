@@ -42,6 +42,11 @@
     text-decoration: none;
   }
 }
+@mixin no-style-link {
+  a {
+    text-decoration: none;
+  }
+}
 
 %nefo-front-readmore-nav {
   padding-left: 10px;
@@ -105,7 +110,7 @@
   }
 }
 
-%nefo-front-study-block {
+@mixin nefo-front-study-block {
   align-items: stretch;
   font-size: $view-list-title-font-size;
   line-height: $view-list-title-line-height;

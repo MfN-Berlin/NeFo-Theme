@@ -141,16 +141,20 @@
     }
   }
   @include breakpoint($tab, true) {
-    @include layout(4, 0.05) {
-      @for $i from 1 through 4 {
-        .nefo-view-block-study-row:nth-of-type(#{$i}) {
-            @include grid-span(1, $i)
+    @include layout(2, 0.1) {
+      $n: 0;
+      @for $i from 1 through 2 {
+        @for $j from 1 through 2 {
+          $n: $n + 1;
+          .nefo-view-block-study-row:nth-of-type(#{$n}) {
+              @include grid-span(1, $j)
+          }
         }
       }
     }
   }
   @include breakpoint($desk, true) {
-    @include layout(4) {
+    @include layout(4, 0.05) {
       @for $i from 1 through 4 {
         .nefo-view-block-study-row:nth-of-type(#{$i}) {
             @include grid-span(1, $i)
