@@ -18,6 +18,11 @@
   background-color: $nefo-o;
 }
 
+@mixin button--blue {
+  @extend %button;
+  background-color: $nefo-o;
+}
+
 @mixin button--green {
   border-radius: 4px;
   display: table;

@@ -4,108 +4,127 @@
     height: auto;
     width: 100%;
   }
-
   .nefo-button {
     @include button--green;
   }
-  
-  @include breakpoint($mobile) {
-    .nefo-slideshow-desc,
-    .owl-buttons {
-      display: none;
-    }    
+  .nefo-slideshow-desc,
+  .owl-buttons {
+    display: none;
   }
+  .slider-img-credit {
+    padding-top: 4px;
+    font-size: $view-list-credit-font-size;
+    font-weight: bold;
+  }  
 
-  @include breakpoint($tab) {
-    padding: 40px $horz-spacing-desk;
-    .nefo-slideshow-desc,
-    .owl-buttons {
-      display: none;
+  @include breakpoint($mobile) {
+    .slider-img-credit {
+      padding-left: $horz-spacing-unit;
+    }
+    .slider-content-right {
+      padding: 0 $horz-spacing-unit;
+    }    
+  } // mobile
+  @include breakpoint($tab-2) {
+    .slider-img-credit {
+      padding-left: $horz-spacing-unit;
+    }
+    .slider-content-right {
+      padding: 0 $horz-spacing-unit;
     }  
-    .owl-controls {
-      position: absolute;
-      right: 50px;
-      bottom: 0px;
+  } // tab-2
+  @include breakpoint($tab-3-1) {
+    .slider-img-credit {
+      padding-left: $horz-spacing-unit;
     }
-
-    .nefo-button {
-      position: absolute;
-      width: 120px;
-      right: 160px;
-      bottom: 0px;
-    }
+    .slider-content-right {
+      padding: 0 $horz-spacing-unit;
+    }  
+  } // tab-3-1
+  @include breakpoint($tab-3-2) {
+    padding: $vert-spacing-unit $horz-spacing-unit;
 
     .slider-content-left {
       position: relative;
       float:left;
       max-width: 70%;
-
       a {
         display: inline-block;
         width: 100%
       }
-
       .slider-img-credit {
         position: absolute;
-        bottom: 5px;
-        left: 5px;
+        bottom: 10px;
+        left: 10px;
         color: white;
+        padding-top: 0;
       }
     }
     .slider-content-right {
       display: inline-block;
       width: 30%;
-      padding-left: 15px;
-
+      padding-left: 10px;
       h2 {
         margin: 0;
       }
     }
-  }
-    
+    .owl-controls {
+      position: absolute;
+      right: 80px;
+      bottom: 0px;
+    }
+    .nefo-button {
+      position: absolute;
+      width: 120px;
+      right: 80px;
+      bottom: 40px;
+    }
+  } // tab-3-2
   @include breakpoint($desk) {
-    padding: 40px $horz-spacing-desk;
-    .nefo-slideshow-desc,
-    .owl-buttons {
+    padding: $vert-spacing-unit $vert-spacing-unit;
+    .nefo-slideshow-desc {
       display: block;
     }
-    .owl-controls {
-      position: absolute;
-      right: 50px;
-      bottom: 0px;
-    }
-    .nefo-button {
-      position: absolute;
-      width: 120px;
-      right: 160px;
-      bottom: 0px;
-    }
-
     .slider-content-left {
       position: relative;
       float:left;
       max-width: 70%;
-
       a {
         display: inline-block;
         width: 100%
       }
-
+      img {
+        min-height: 360px; 
+        margin: 0;
+        padding: 0;
+      }
       .slider-img-credit {
         position: absolute;
-        bottom: 5px;
-        left: 5px;
+        bottom: 10px;
+        left: 10px;
         color: white;
+        padding-top: 0;
       }
     }
     .slider-content-right {
       display: inline-block;
       width: 30%;
-      padding-left: 15px;
-
+      padding-left: 10px;
       h2 {
         margin: 0;
       }
+    }
+    .owl-controls {
+      position: absolute;
+      right: 10px;
+      bottom: 0px;
+    }
+    .nefo-button {
+      position: absolute;
+      width: 120px;
+      right: 150px;
+      bottom: 0px;
     }
   }
 }
+

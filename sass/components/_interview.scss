@@ -2,27 +2,50 @@
 .block--views-nefo-view-block-interview-block {
   clear: both;
 }
+.view-nefo-view-block-interview {
+  .view-content {
+  }
+}
+.nefo-view-block-interview-row {
+}
+.nefo-view-block-interview-col1 {
+  @include breakpoint($tab-2) {
+    width: 100%;
+    max-width: $image-block-width-interview;
+  }
+  @include breakpoint($tab-3) {
+    width: 48%;
+    max-width: $image-block-width-interview;
+    float: left;
+  }  
+  @include breakpoint($desk) {
+    float: left;
+  }  
+}
+.nefo-view-block-interview-col2 {
+  @include breakpoint($mobile) {
+    margin-top: $vert-spacing-unit;
+  }
+  @include breakpoint($tab-2) {
+    margin-top: $vert-spacing-unit;
+  }
+  @include breakpoint($tab-3) {
+    margin-left: 50%;
+  }  
+  @include breakpoint($desk) {
+     margin-left: 450px;
+  }
+}
 .nefo-view-block-interview-img {
   img {
     width: 100%;
-    max-width: 430px;
-    height: auto;
+    max-width: 100%;
   }
 }
 .nefo-view-block-interview-img-credit {
   padding-top: 4px;
   font-size: $view-list-credit-font-size;
   font-weight: bold;
-}
-.nefo-view-block-interview-link {
-  @include nefo-front-readmore-nav-button;
-}
-.nefo-view-block-interview-link-all {
-  float: right;
-  a {
-    @include nefo-front-readmore-nav-link;
-    vertical-align: middle;
-  }
 }
 .nefo-view-block-interview-title {
   margin-bottom: 0.5em;
@@ -38,6 +61,26 @@
     text-decoration: none;
   }
 }
+.nefo-view-block-interview-nav {
+  @include breakpoint($desk) {
+    @include nefo-front-readmore-nav;
+  } 
+}
+.nefo-view-block-interview-link {
+  @include nefo-front-readmore-nav-button;
+}
+.nefo-view-block-interview-link-all {
+  float: right;
+  a {
+    @include nefo-front-readmore-nav-link;
+    vertical-align: middle;
+  }
+  @include breakpoint($desk) {
+    padding-left: 1em;
+    float: none;
+  }  
+}
+
 
 // Page
 .nefo-view-list-interview-row {
@@ -87,34 +130,8 @@
   margin-top: 8px;
 }
 
-// Mobile
-@include breakpoint($mobile) {
-  .nefo-view-block-interview-col2 {
-    margin-top: $vert-spacing-unit;
-  }
-}
-// Tab
-@include breakpoint($tab) {
-  .nefo-view-block-interview-col2 {
-    margin-top: $vert-spacing-unit;
-  }
-}
 // Desktop
 @include breakpoint($desk) {
-  // Frontpage
-  .nefo-view-block-interview-col1 {
-    float: left;
-   }
-  .nefo-view-block-interview-col2 {
-    margin-left: 450px;
-  }
-  .nefo-view-block-interview-nav {
-    @include nefo-front-readmore-nav;
-  }
-  .nefo-view-block-interview-link-all {
-    padding-left: 1em;
-    float: none;
-  }
   // List
   .nefo-view-list-interview-content {
     clear: both;

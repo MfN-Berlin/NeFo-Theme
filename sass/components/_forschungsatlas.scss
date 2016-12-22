@@ -1,66 +1,131 @@
+//
 // Frontpage block
-.l-region--atlas .block--nefo-blocks-builder-nefo-feature-map {
+//
+.block--nefo-blocks-builder-nefo-feature-map {
+  h3,
+  p,
+  .btn {
+    margin: 0;
+    margin-top: $mobile-content-margin;
+  }
   h2 {
     @include nefo-heading;
     position: relative;
-    top: 20px;
   }
   h3 {
     font-size: 24px;
     margin-left: 10px;
     margin-bottom: 0;
   }
-  p,
-  .btn {
-    margin: 0 10px;
-  }
   img {
-    @include breakpoint($mobile) {
-      display: none;
-    }
-    @include breakpoint($tab) {
-      display: block;
-      width: 100%;
-    }
-    @include breakpoint($desk) {
-      display: block;
-      width: 100%;
-    }
+    display: block;
+    width: 100%;
   }
   .feature-map-text .btn--blue{
-    @extend %button--blue;
+    @include button--blue;
   }
 
-  @include layout-at(2 1, $tab) {
-    .feature-map-img {
-      @include grid-span(1, 1);
+  @include breakpoint($mobile) {
+    @include layout(1) {
+      .feature-map-img {
+        @include grid-span(1, 1);
+      }
+      .feature-map-text {
+        @include grid-span(1, 1);
+        h2 {
+          display: none;
+        }
+        h3 {
+          display: none;
+        }
+      }
+      img {
+        display: none;
+      }
+    }    
+  } // mobile
+  @include breakpoint($tab-2) {
+    @include layout(1) {
+      .feature-map-img {
+        @include grid-span(1, 1);
+      }
+      .feature-map-text {
+        @include grid-span(1, 1);
+        h2 {
+          display: none;
+        }
+        h3 {
+          display: none;
+        }
+      }
+      img {
+        max-height: 240px;
+      }
     }
-    .feature-map-text {
-      @include grid-span(1, 2);
+  } // tab-2
+  @include breakpoint($tab-3-1) {
+    @include layout(1 2, .05) {
+      .feature-map-img {
+        @include grid-span(1, 1);
+        img {
+          min-height: 176px;
+        }
+      }
+      .feature-map-text {
+        @include grid-span(1, 2);
+        h2 {
+          display: none;
+        }
+        h3 {
+          display: none;
+        }
+        padding-top: 80px;
+      }
     }
-    h3,
-    p,
-    .btn {
-      margin: 0;
+  } // tab-3-1
+  @include breakpoint($tab-3-2) {
+    @include layout(6 4, .1) {
+      .feature-map-img {
+        @include grid-span(1, 1);
+        h2 {
+          display: none;
+        }
+        h3 {
+          display: none;
+        }
+        img {
+          min-height: 290px;
+        }
+      }
+      .feature-map-text {
+        @include grid-span(1, 2);
+        h3 {
+          margin-top: 0;
+        }        
+      }
     }
-  }
-  @include layout-at(2 1, $desk) {
-    .feature-map-img {
-      @include grid-span(1, 1);
+  } // tab-3-2
+  @include breakpoint($desk) {
+    @include layout(2 1, .1) {
+      .feature-map-img {
+        @include grid-span(1, 1);
+        h2 {
+          display: none;
+        }
+        h3 {
+          display: none;
+        }
+      }
+      .feature-map-text {
+        @include grid-span(1, 2);
+      }
     }
-    .feature-map-text {
-      @include grid-span(1, 2);
-    }
-    h3,
-    p,
-    .btn {
-      margin: 0;
-    }
-  }
+  } // desk
 }
 
-
+//
 // Forschungsatlas page
+//
 // forschung/forschungsakteure/forschungsatlas
 .nefo-map-page-wrapper {
   background-color: rgb(239,244,248);

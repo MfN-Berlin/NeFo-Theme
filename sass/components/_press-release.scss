@@ -1,30 +1,53 @@
 // Frontpage
-.block--views-nefo-view-block-press-release-block {
+.block--views-nefo-view-block-article-block {
   clear: both;
 }
-.nefo-view-block-press-release-img {
-  img {
-    width: 100%;
-    max-width: 430px;
-    height: auto;
+.view-nefo-block-article {
+  .view-content {
   }
 }
-.nefo-view-block-press-release-img-credit {
+.nefo-view-block-article-row {
+}
+.nefo-view-block-article-col1 {
+  @include breakpoint($tab-2) {
+    width: 100%;
+    max-width: $image-block-width-interview;
+  }
+  @include breakpoint($tab-3) {
+    width: 48%;
+    max-width: $image-block-width-interview;
+    float: left;
+  }  
+  @include breakpoint($desk) {
+    float: left;
+  }
+}
+.nefo-view-block-article-col2 {
+  @include breakpoint($mobile) {
+    margin-top: $vert-spacing-unit;
+  }
+  @include breakpoint($tab-2) {
+    margin-top: $vert-spacing-unit;
+  }
+  @include breakpoint($tab-3) {
+    margin-left: 50%;
+  }
+  @include breakpoint($desk) {
+     margin-left: 450px;
+  }
+}
+.nefo-view-block-article-img {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.nefo-view-block-article-img-credit {
   padding-top: 4px;
   font-size: $view-list-credit-font-size;
   font-weight: bold;
 }
-.nefo-view-block-press-release-link {
-  @include nefo-front-readmore-nav-button;
-}
-.nefo-view-block-press-release-link-all {
-  float: right;
-  a {
-    @include nefo-front-readmore-nav-link;
-    vertical-align: middle;
-  }
-}
-.nefo-view-block-press-release-title {
+.nefo-view-block-article-title {
   margin-bottom: 0.5em;
   margin-top: 0;
   a {
@@ -32,9 +55,28 @@
     text-decoration: none;
   }
 }
+.nefo-view-block-article-nav {
+  @include breakpoint($desk) {
+    @include nefo-front-readmore-nav;
+  } 
+}
+.nefo-view-block-article-link {
+  @include nefo-front-readmore-nav-button;
+}
+.nefo-view-block-article-link-all {
+  float: right;
+  a {
+    @include nefo-front-readmore-nav-link;
+    vertical-align: middle;
+  }
+  @include breakpoint($desk) {
+    padding-left: 1em;
+    float: none;
+  }   
+}
 
 // Page
-.nefo-view-list-press-release-row {
+.nefo-view-list-article-row {
     margin-top: 1em;
     margin-bottom: 2em;
     margin-left: 0;
@@ -64,36 +106,8 @@
   margin-top: 8px;
 }
 
-// Mobile
-@include breakpoint($mobile) {
-  // Frontpage
-  .nefo-view-block-press-release-col2 {
-    margin-top: $vert-spacing-unit;
-  }
-}
-// Tab
-@include breakpoint($tab) {
-  // Frontpage
-  .nefo-view-block-press-release-col2 {
-    margin-top: $vert-spacing-unit;
-  }
-}
 // Desktop
 @include breakpoint($desk) {
-  // Frontpage
-  .nefo-view-block-press-release-col1 {
-    float: left;
-   }
-  .nefo-view-block-press-release-col2 {
-    margin-left: 450px;
-  }
-  .nefo-view-block-press-release-nav {
-    @include nefo-front-readmore-nav;
-  }
-  .nefo-view-block-press-release-link-all {
-    padding-left: 1em;
-    float: none;
-  }
   // List
   .nefo-view-list-press-release-content {
     clear: both;
@@ -111,5 +125,4 @@
     float: right;
   }  
 }
-
 

@@ -3,31 +3,36 @@
 //
 
 // BIODIV
-.l-region--news {
-  img {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-  }
-}
-.nefo-view-block-news-row {
-  @include breakpoint($mobile) {
-    margin-top: $vert-spacing-unit;
-    border-bottom: $separator-color 1px solid;
-  }    
-}
 .view-nefo-view-block-news {
   @include breakpoint($mobile) {
     margin-top: 0;
-  }    
-  @include breakpoint($tab) {
+  }
+  @include breakpoint($tab-2) {
+    margin-top: 0;
+  } 
+  @include breakpoint($tab-3) {
     margin-top: $vert-spacing-unit;
   } 
   @include breakpoint($desk) {
     margin-top: $vert-spacing-unit;
   } 
-  .view-content {
+  .view-content,
+  .view-footer {
+    @include breakpoint($tab-2) {
+      width: 100%;
+      max-width: $image-block-width;
+    }
     @include clearfix;
+  }
+}
+.nefo-view-block-news-row {
+  @include breakpoint($mobile) {
+    margin: $vert-spacing-unit 0;
+    border-bottom: $separator-color 1px solid;
+  }
+  @include breakpoint($tab-2) {
+    margin: $vert-spacing-unit 0;
+    border-bottom: $separator-color 1px solid;
   }
 }
 .nefo-view-block-news-title {
@@ -37,8 +42,13 @@
   }
   @include breakpoint($mobile) {
     margin: 0;
-  }    
-  @include breakpoint($tab) {
+    margin-bottom: $mobile-content-margin;
+  }
+  @include breakpoint($tab-2) {
+    margin: 0;
+    margin-bottom: $mobile-content-margin;
+  }  
+  @include breakpoint($tab-3) {
     margin: 0;
     height: 6em;
   } 
@@ -48,9 +58,16 @@
   } 
 }
 .nefo-view-block-news-img {
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
   @include breakpoint($mobile) {
     margin-bottom: $mobile-content-margin;
-  }     
+  }
+  @include breakpoint($tab-2) {
+    margin-bottom: $mobile-content-margin;
+  }   
 }
 .view-block-news-link-all,
 .view-block-newsipbes-link-all {
