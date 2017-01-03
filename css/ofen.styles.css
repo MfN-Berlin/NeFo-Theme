@@ -478,39 +478,6 @@ h4 > a {
   .l-content {
     padding: 0 50px; } }
 
-.file-image {
-  margin: 20px 0;
-  max-width: 100%; }
-  .file-image img {
-    padding-bottom: 8px;
-    max-width: 100%;
-    height: auto; }
-  .file-image .field--name-field-image-caption-text > div > div {
-    font-size: 12px;
-    line-height: 1.2; }
-  .file-image .field--name-field-file-image-credit-text > div > div {
-    font-size: 12px;
-    line-height: 1.2; }
-
-.file-icon {
-  padding-right: 4px; }
-
-.nefo-ckeditor-inline-container {
-  display: block;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 300;
-  color: black;
-  text-align: left;
-  margin-top: 0em;
-  margin-bottom: 0.7em; }
-  .nefo-ckeditor-inline-container .media-element-container {
-    display: inline; }
-    .nefo-ckeditor-inline-container .media-element-container .file-document {
-      display: inline; }
-      .nefo-ckeditor-inline-container .media-element-container .file-document .content {
-        display: inline; }
-
 @media (max-width: 479px) {
   .l-footer {
     padding: 0 1em; }
@@ -1664,9 +1631,10 @@ ul.pager .pager__item--current {
   margin-bottom: 1em; }
 
 .nefo-view-block-interview-with,
-.nefo-view-list-interview-with {
+.field--name-field-nefo-interview-with {
   font-size: 14px;
-  line-height: 1.4; }
+  line-height: 1.4;
+  margin: 10px 0; }
 
 .field--name-field-nefo-interview-thema {
   font-size: 32px;
@@ -1860,68 +1828,68 @@ ul.pager .pager__item--current {
     width: 120px;
     float: right; } }
 
-.block--views-nefo-view-block-article-block {
+.block--views-nefo-view-block-press-release-block {
   clear: both; }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  .nefo-view-block-article-col1 {
+  .nefo-view-block-press-release-col1 {
     width: 100%;
     max-width: 430px; } }
 
 @media (min-width: 640px) and (max-width: 979px) {
-  .nefo-view-block-article-col1 {
+  .nefo-view-block-press-release-col1 {
     width: 48%;
     max-width: 430px;
     float: left; } }
 
 @media (min-width: 980px) {
-  .nefo-view-block-article-col1 {
+  .nefo-view-block-press-release-col1 {
     float: left; } }
 
 @media (max-width: 479px) {
-  .nefo-view-block-article-col2 {
+  .nefo-view-block-press-release-col2 {
     margin-top: 20px; } }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  .nefo-view-block-article-col2 {
+  .nefo-view-block-press-release-col2 {
     margin-top: 20px; } }
 
 @media (min-width: 640px) and (max-width: 979px) {
-  .nefo-view-block-article-col2 {
+  .nefo-view-block-press-release-col2 {
     margin-left: 50%; } }
 
 @media (min-width: 980px) {
-  .nefo-view-block-article-col2 {
+  .nefo-view-block-press-release-col2 {
     margin-left: 450px; } }
 
-.nefo-view-block-article-img img {
+.nefo-view-block-press-release-img img {
   width: 100%;
   max-width: 100%; }
 
-.nefo-view-block-article-img-credit {
+.nefo-view-block-press-release-img-credit {
   padding-top: 4px;
   font-size: 12px;
   font-weight: bold; }
 
-.nefo-view-block-article-title {
+.nefo-view-block-press-release-title {
   margin-bottom: 0.5em;
   margin-top: 0; }
-  .nefo-view-block-article-title a {
+  .nefo-view-block-press-release-title a {
     color: #40769f;
     text-decoration: none; }
 
 @media (min-width: 980px) {
-  .nefo-view-block-article-nav {
+  .nefo-view-block-press-release-nav {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px; } }
 
-.nefo-view-block-article-link {
+.nefo-view-block-press-release-link {
   background-color: #7cae4a;
   border-radius: 4px;
   padding: 0.5em 2em; }
-  .nefo-view-block-article-link > a {
+  .nefo-view-block-press-release-link > a {
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -1929,9 +1897,9 @@ ul.pager .pager__item--current {
     text-align: center;
     vertical-align: middle; }
 
-.nefo-view-block-article-link-all {
+.nefo-view-block-press-release-link-all {
   float: right; }
-  .nefo-view-block-article-link-all a {
+  .nefo-view-block-press-release-link-all a {
     color: #40769f;
     font-size: 14px;
     font-weight: bold;
@@ -1942,11 +1910,11 @@ ul.pager .pager__item--current {
     padding-right: 15px;
     vertical-align: middle; }
   @media (min-width: 980px) {
-    .nefo-view-block-article-link-all {
+    .nefo-view-block-press-release-link-all {
       padding-left: 1em;
       float: none; } }
 
-.nefo-view-list-article-row {
+.nefo-view-list-press-release-row {
   margin-top: 1em;
   margin-bottom: 2em;
   margin-left: 0;
@@ -1987,3 +1955,36 @@ ul.pager .pager__item--current {
   .nefo-view-list-press-release-col2 {
     width: 120px;
     float: right; } }
+
+.file-image {
+  max-width: 100%; }
+  .file-image img {
+    padding-bottom: 8px;
+    max-width: 100%;
+    height: auto; }
+  .file-image .field--name-field-image-caption-text > div > div {
+    font-size: 12px;
+    line-height: 1.2; }
+  .file-image .field--name-field-file-image-credit-text > div > div {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 8px; }
+
+.file-icon {
+  padding-right: 4px; }
+
+.nefo-ckeditor-inline-container {
+  display: block;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: black;
+  text-align: left;
+  margin-top: 0em;
+  margin-bottom: 0.7em; }
+  .nefo-ckeditor-inline-container .media-element-container {
+    display: inline; }
+    .nefo-ckeditor-inline-container .media-element-container .file-document {
+      display: inline; }
+      .nefo-ckeditor-inline-container .media-element-container .file-document .content {
+        display: inline; }
