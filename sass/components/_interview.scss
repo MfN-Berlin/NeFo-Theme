@@ -105,9 +105,10 @@
   margin-bottom: 1em;  
 }
 .nefo-view-block-interview-with, 
-.nefo-view-list-interview-with {
+.field--name-field-nefo-interview-with {
   font-size: 14px;
   line-height: 1.4;
+  margin: $mobile-content-margin 0;
 }
 .field--name-field-nefo-interview-thema {
   font-size: $h1-font-size;
