@@ -20,7 +20,6 @@
       margin: 0;
       padding: 0;
       a {
-        //@extend %nefo-top-menu-link;
         @include nefo-top-menu-link;
        }
     }    
