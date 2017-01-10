@@ -114,6 +114,11 @@ h4 > a {
   text-decoration: none;
   color: inherit; }
 
+.submitted {
+  margin-bottom: 1em;
+  font-size: 14px;
+  line-height: 1.4; }
+
 .not-front .block__content a[href],
 .not-front .node__content a[href],
 .not-front .taxonomy-term__content a[href],
@@ -1613,17 +1618,10 @@ ul.pager .pager__item--current {
   border-bottom: 2px solid #e0e0e0;
   clear: both; }
 
-.field--name-field-nefo-interview-category a {
-  color: #40769f;
+.nefo-view-list-interview-date {
+  margin-bottom: 1em;
   font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  background-image: url("../images/arrow-right-more.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-right: 15px;
-  vertical-align: middle;
-  font-size: 16px; }
+  line-height: 1.4; }
 
 .nefo-product-interview-page-title {
   font-size: 18px;
