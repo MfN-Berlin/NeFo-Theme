@@ -7,6 +7,10 @@ function ofen_preprocess_node(&$variables) {
   // You can use preprocess hooks to modify the variables before they are passed
   // to the theme function or template file.
 
+  // Change string Submitted
+  $date = format_date($variables['created'] , 'nefo_date_type_din5008');
+  $variables['submitted'] = t('Created')  .' '. $date;
+
   // Content type blog
   if($variables['type'] == 'blog') {
     $author_profile = profile2_load_by_user($variables['uid'], 'researcher');
@@ -38,9 +42,5 @@ function ofen_preprocess_node(&$variables) {
       unset($variables['content']['links']['blog']['#links']['blog_usernames_blog']);
     }
   } // if(blog)
-
-  // Change string Submitted
-  $date = format_date($variables['created'] , 'nefo_date_type_din5008');
-  $variables['submitted'] = t('Created')  .' '. $date;
 
 }

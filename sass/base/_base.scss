@@ -144,6 +144,13 @@ h4 {
   }
 }
 
+// Submitted 
+.submitted {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height;
+}
+
 // Links
 .not-front {
   .block__content a[href],

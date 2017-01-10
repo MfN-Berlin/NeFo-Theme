@@ -92,12 +92,10 @@
     border-bottom: $separator-width solid $separator-color;
     clear: both;
 }
-.field--name-field-nefo-interview-category {
-  a {
-    @include nefo-front-readmore-nav-link;
-    vertical-align: middle;
-    font-size: 16px;
-  }
+.nefo-view-list-interview-date {
+  margin-bottom: 1em;
+  font-size: $view-list-date-font-size;
+  line-height: $view-list-date-line-height;
 }
 .nefo-product-interview-page-title {
   font-size: $h3-font-size;
