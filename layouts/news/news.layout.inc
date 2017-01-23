@@ -1,7 +1,7 @@
-name = Ofen Page
-description = Ofen Page Layout
+name = Ofen News Page
+description = Ofen News Page Layout
 preview = preview.png
-template = page-layout
+template = news-layout
 
 ; Regions
 regions[branding]       = Branding
@@ -25,6 +25,5 @@ regions[footer_sixth]   = Footer Sixth
 regions[footer]         = Footer
 
 ; Stylesheets
-stylesheets[all][] = css/layouts/page/page.layout.css
-
+stylesheets[all][] = css/layouts/news/news.layout.css
 

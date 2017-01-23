@@ -1,0 +1,43 @@
+// Import variables, abstractions, base styles and components.
+@import 'singularitygs';
+@import 'breakpoint';
+@import 'bourbon';
+
+@import '../../variables/variables';
+@import '../../variables/colors';
+@import '../../variables/fonts';
+@import '../../variables/sizes';
+@import '../../abstractions/mixins';
+
+@import '../../components/layout/sidebar';
+@import '../../components/further_topics';
+
+// Sidebar
+@include breakpoint($mobile, true) {
+  @include layout($grid: 1) {
+    .l-content,
+    .l-region--sidebar {
+      @include grid-span(1, 1);
+    }
+  }
+}
+@include breakpoint($tab, true) {
+  @include layout($grid: 8 4) {
+    .l-content {
+      @include grid-span(1, 1);
+    }
+    .l-region--sidebar {
+      @include grid-span(1, 2);
+    }
+  }
+}
+@include breakpoint($desk, true) {
+  @include layout($grid: 12 4) {
+    .l-content {
+      @include grid-span(1, 1);
+    }
+    .l-region--sidebar {
+      @include grid-span(1, 2);
+    }
+  }
+}

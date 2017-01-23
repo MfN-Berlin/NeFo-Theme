@@ -12,5 +12,12 @@ function ofen_preprocess_page(&$variables) {
     $variables['title_attributes_array']['class'][] = 'nefo-product-interview-page-title';
   }
 
+  // If nefo_news content type, add custom variable
+  if ((isset($variables['node']->type)) && ($variables['node']->type == 'nefo_news')) {
+    $node = node_load($variables['node']->nid);
+    $output = field_view_field('node', $node, 'field_nefo_news_category', array('label' => 'hidden'));
+    $variables['nefo_news_category'] = $output;
+  }
+
 }
 

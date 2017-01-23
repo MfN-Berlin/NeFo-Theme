@@ -11,7 +11,7 @@ function ofen_preprocess_node(&$variables) {
   $date = format_date($variables['created'] , 'nefo_date_type_din5008');
   $variables['submitted'] = t('Created')  .' '. $date;
 
-  // Content type blog
+  // Content type "blog"
   if($variables['type'] == 'blog') {
     $author_profile = profile2_load_by_user($variables['uid'], 'researcher');
     $variables['nefo_blog_author_data'] = array();
@@ -43,4 +43,12 @@ function ofen_preprocess_node(&$variables) {
     }
   } // if(blog)
 
+
+  // Content type "nefo_news"
+  if($variables['type'] == 'nefo_news' && $variables['page']) {
+    hide($variables['content']['field_nefo_news_category']);
+  } // if(nefo_news)
+
 }
+
+

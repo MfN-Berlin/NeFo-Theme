@@ -984,6 +984,14 @@ h4 > a {
   .nefo-view-list-news-col1 {
     margin-right: 130px; } }
 
+.field--name-field-nefo-news-category {
+  margin-top: 20px; }
+  .field--name-field-nefo-news-category a {
+    color: #40769f;
+    text-decoration: none; }
+    .field--name-field-nefo-news-category a:hover {
+      text-decoration: underline; }
+
 ul.pager .pager__item {
   display: inline-block;
   width: 34px;

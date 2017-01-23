@@ -157,4 +157,16 @@
 }
 
 
+.field--name-field-nefo-news-category {
+  margin-top: $vert-spacing-unit;
+  a {
+    color: $nefo_f;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }    
+  }
+
+}
 
