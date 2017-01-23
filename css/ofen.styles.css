@@ -753,7 +753,7 @@ h4 > a {
     text-align: right; }
   .block--views.block--views-nefo-calendar-event-up .view-content,
   .block--views.block--views-nefo-calendar-event-up-ical .view-content {
-    border-bottom: #e0e0e0 1px solid; }
+    border-bottom: 1px solid #e0e0e0; }
 
 #block-views-nefo-calendar-event-up-ical {
   float: none; }
@@ -855,12 +855,12 @@ h4 > a {
 @media (max-width: 479px) {
   .nefo-view-block-news-row {
     margin: 20px 0;
-    border-bottom: #e0e0e0 1px solid; } }
+    border-bottom: 1px solid #e0e0e0; } }
 
 @media (min-width: 480px) and (max-width: 639px) {
   .nefo-view-block-news-row {
     margin: 20px 0;
-    border-bottom: #e0e0e0 1px solid; } }
+    border-bottom: 1px solid #e0e0e0; } }
 
 .nefo-view-block-news-title a {
   color: #40769f;
@@ -929,7 +929,7 @@ h4 > a {
     margin-top: 1em; } }
 
 .view-nefo-view-block-newsipbes .view-content {
-  border-bottom: #e0e0e0 1px solid; }
+  border-bottom: 1px solid #e0e0e0; }
 
 .nefo-view-block-newsipbes-row {
   font-size: 16px;

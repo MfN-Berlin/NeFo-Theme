@@ -28,11 +28,11 @@
 .nefo-view-block-news-row {
   @include breakpoint($mobile) {
     margin: $vert-spacing-unit 0;
-    border-bottom: $separator-color 1px solid;
+    border-bottom: 1px solid $separator-color;
   }
   @include breakpoint($tab-2) {
     margin: $vert-spacing-unit 0;
-    border-bottom: $separator-color 1px solid;
+    border-bottom: 1px solid $separator-color;
   }
 }
 .nefo-view-block-news-title {
@@ -90,7 +90,7 @@
     margin-top: 1em;
   } 
   .view-content {
-    border-bottom: $separator-color 1px solid;
+    border-bottom: 1px solid $separator-color;
   }
 }
 .nefo-view-block-newsipbes-row {
