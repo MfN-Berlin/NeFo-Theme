@@ -156,31 +156,78 @@
 //
 
 // Listen
-.nefo-view-list-opinion-row ,
-.nefo-view-list-factsheet-row,
-.nefo-view-list-study-row,
 .nefo-view-list-workshop-row,
-.nefo-view-list-report-row,
 .nefo-view-list-product-row {
   margin: 1em 0;
 }
-.nefo-view-list-opinion-title,
-.nefo-view-list-factsheet-title,
-.nefo-view-list-study-title,
 .nefo-view-list-workshop-title,
-.nefo-view-list-report-title,
 .nefo-view-list-product-title {
   font-size: $view-list-title-font-size;
   line-height: $view-list-title-line-height;
 }
-.nefo-view-list-opinion-desc,
-.nefo-view-list-study-desc,
-.nefo-view-list-workshop-desc,
-.nefo-view-list-report-desc {
+.nefo-view-list-workshop-desc {
   font-size: $view-list-desc-font-size;
   line-height: $view-list-desc-line-height;
   text-align: left;
 }
+
+
+// NeFo-Produkt Bericht, NeFo-Produkt Faktenblatt, NeFo-Produkt Stellungnahme, NeFo-Produkt Studie 
+.nefo-view-list-document-row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: $vert-spacing-unit;
+  min-height: $image-document-icon-height;
+  border-bottom: $separator-width solid $separator-color;
+  clear: both;
+}
+
+@include breakpoint($mobile) {
+  .nefo-view-list-document-icon {
+   box-shadow: 8px 8px 4px #888;
+  }
+  .nefo-view-list-document-icon img {
+   max-width: ($image-document-icon-width - 30);
+   height: auto;
+  }
+  .nefo-view-list-document-col1 {
+    max-width: ($image-document-icon-width - 30);
+  }
+}
+@include breakpoint($tab) {
+  .nefo-view-list-document-icon {
+   box-shadow: 8px 8px 4px #888;
+  }
+  .nefo-view-list-document-icon img {
+   max-width: ($image-document-icon-width - 30);
+   height: auto;
+  }
+  .nefo-view-list-document-col1 {
+    width: ($image-document-icon-width - 30);
+    float: left;
+  }
+  .nefo-view-list-document-col2 {
+    margin-left: ($image-document-icon-width - 14);;
+    width: auto;
+  }
+}
+@include breakpoint($desk) {
+  .nefo-view-list-document-icon {
+   box-shadow: 8px 8px 4px #888;
+  }
+  .nefo-view-list-document-icon img {
+   max-height: $image-document-icon-height;
+  }
+  .nefo-view-list-document-col1 {
+    width: $image-document-icon-width;
+    float: left;
+  }
+  .nefo-view-list-document-col2 {
+    margin-left: ($image-document-icon-width + 20);
+    width: auto;
+  }
+}
+
 
 // Unsere Themen
 .nefo-view-list-product-row {
