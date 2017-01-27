@@ -48,9 +48,13 @@
     margin: 0;
     margin-bottom: $mobile-content-margin;
   }  
-  @include breakpoint($tab-3) {
-    margin: 0;
-    height: 6em;
+  @include breakpoint($tab-3-1) {
+    margin: 0 $mobile-content-margin;
+    height: 10em;
+  } 
+  @include breakpoint($tab-3-2) {
+    margin: 0 $mobile-content-margin;
+    height: 8em;
   } 
   @include breakpoint($desk) {
     margin: 0 $mobile-content-margin;
@@ -61,6 +65,19 @@
   img {
     width: 100%;
     max-width: 100%;
+    height: auto;
+    @include breakpoint($tab-3-1) {
+      max-height: ($image-block-height - 70);
+    } 
+    @include breakpoint($tab-3-2) {
+      max-height: ($image-block-height - 70);
+    } 
+    @include breakpoint($desk) {
+      max-height: ($image-block-height - 70);
+    }    
+    
+    
+    
   }
   @include breakpoint($mobile) {
     margin-bottom: $mobile-content-margin;

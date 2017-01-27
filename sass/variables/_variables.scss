@@ -1,6 +1,4 @@
 // Break points
-//$mobile_width: 400px;
-//$tablet-width: 540px;
 $tablet-width: 480px;
 $tablet-width-2: 640px;
 $tablet-width-3: 768px;
@@ -23,7 +21,9 @@ $separator-width: 2px;
 $mobile-content-margin: 10px;
 
 // Images
-$image-block-width: 360px;
+//$image-block-width: 360px;
+$image-block-width: 480px;
+$image-block-height: 270px;
 $image-block-width-interview: 430px;
 $image-document-icon-width: 150px;
 $image-document-icon-height: 225px;
