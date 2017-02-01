@@ -6,7 +6,8 @@ $tab-3: $tablet-width-2 ($desktop-width - 1);
 $tab-3-1: $tablet-width-2 ($tablet-width-3 - 1);
 $tab-3-2: $tablet-width-3 ($desktop-width - 1);
 $desk: $desktop-width;
-
+$desk-2: $desktop-width ($desktop-width-2 - 1);
+$desk-3: $desktop-width-2;
 
 
 //$nav-ul-width: 1133px;

@@ -66,49 +66,41 @@
   } 
 }
 
-// Products
+// Aktuelle Produkte
 .l-region--products {
   @include breakpoint($mobile, true) {
     @include layout(1) {
-      #block-views-nefo-view-block-opinion-block,
-      #block-views-nefo-view-block-factsheet-block,
-      #block-views-nefo-view-block-report-block {
-        @include grid-span(1, 1);
+      @for $i from 1 through 3 {
+        .nefo-view-block-news-row:nth-of-type(#{$i}) {
+          @include grid-span(1, 1)
+        }
       }
     }
   }
   @include breakpoint($tab-2, true) {
     @include layout(1) {
-      #block-views-nefo-view-block-opinion-block,
-      #block-views-nefo-view-block-factsheet-block,
-      #block-views-nefo-view-block-report-block {
-        @include grid-span(1, 1);
+      @for $i from 1 through 3 {
+        .nefo-view-block-news-row:nth-of-type(#{$i}) {
+          @include grid-span(1, 1)
+        }
       }
     }
   }
   @include breakpoint($tab-3, true) {
     @include layout(3, 0.05) {
-      #block-views-nefo-view-block-opinion-block {
-        @include grid-span(1, 1);
-      }
-      #block-views-nefo-view-block-factsheet-block {
-        @include grid-span(1, 2);
-      }
-      #block-views-nefo-view-block-report-block {
-        @include grid-span(1, 3);
+      @for $i from 1 through 3 {
+        .nefo-view-block-current-products-row:nth-of-type(#{$i}) {
+          @include grid-span(1, $i)
+        }
       }
     }
-  }
+  } 
   @include breakpoint($desk, true) {
     @include layout(3, 0.05) {
-      #block-views-nefo-view-block-opinion-block {
-        @include grid-span(1, 1);
-      }
-      #block-views-nefo-view-block-factsheet-block {
-        @include grid-span(1, 2);
-      }
-      #block-views-nefo-view-block-report-block {
-        @include grid-span(1, 3);
+      @for $i from 1 through 3 {
+        .nefo-view-block-current-products-row:nth-of-type(#{$i}) {
+          @include grid-span(1, $i)
+        }
       }
     }
   } 

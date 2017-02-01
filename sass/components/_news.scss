@@ -75,9 +75,6 @@
     @include breakpoint($desk) {
       max-height: ($image-block-height - 70);
     }    
-    
-    
-    
   }
   @include breakpoint($mobile) {
     margin-bottom: $mobile-content-margin;
@@ -184,6 +181,5 @@
       text-decoration: underline;
     }    
   }
-
 }
 

@@ -1,15 +1,8 @@
 //
 // Frontpage
 //
-// Stellungnahmen, Faktenblätter, Berichte
-.block-products-heading {
-  h2 {
-    @include nefo-heading;
-  }
-}
-.block--views-nefo-view-block-opinion-block,
-.block--views-nefo-view-block-factsheet-block,
-.block--views-nefo-view-block-report-block {
+// Aktuelle Produkte: Stellungnahmen, Faktenblätter, Berichte
+.nefo-view-block-current-products-row {
   border-bottom: 4px solid $events-bg;
   h2 {
     margin-bottom: 20px;
@@ -18,9 +11,7 @@
      border: none;
   }  
 }
-.nefo-view-block-opinion-row,
-.nefo-view-block-factsheet-row,
-.nefo-view-block-report-row{
+.nefo-view-block-current-products-row {
   position: relative;
   overflow: hidden;
   margin-top: 20px;
@@ -30,43 +21,87 @@
     border-bottom: 4px solid $events-bg;
   }
 }
-.nefo-view-block-opinion-img,
-.nefo-view-block-factsheet-img,
-.nefo-view-block-report-img {
+.nefo-view-block-current-products-img {
   position: relative;
   img {
     width: 100%;
     max-width: 100%;
+    height: auto;
+    @include breakpoint($tab-3-1) {
+      max-height: ($image-block-height - 70);
+    } 
+    @include breakpoint($tab-3-2) {
+      max-height: ($image-block-height - 70);
+    } 
+    @include breakpoint($desk) {
+      max-height: ($image-block-height - 70);
+    } 
   }
   &::after {
     @include blackoverlay;
   }
 
 }
-.nefo-view-block-opinion-text,
-.nefo-view-block-factsheet-text,
-.nefo-view-block-report-text {
+.nefo-view-block-current-products-text {
   position: absolute;
   top: 50px;
   z-index: 2;
   padding: 0 8px;
+
+  @include breakpoint($mobile) {
+    top: 100px;
+  }
+  @include breakpoint($tab-2) {
+    top: 120px;
+  }  
+  @include breakpoint($tab-3-1) {
+    top: 35px;
+    padding: 0 6px;
+  }
+  @include breakpoint($tab-3-2) {
+    top: 35px;
+  }
+  @include breakpoint($desk-2) {
+    top: 40px;
+  } 
+  @include breakpoint($desk-3) {
+    top: 75px;
+  } 
 }
-.nefo-view-block-opinion-title,
-.nefo-view-block-factsheet-title,
-.nefo-view-block-report-title {
+.nefo-view-block-current-products-title {
   font-size: 20px;
   font-weight: bold;
   line-height: 100%;
   padding: 0;
-  margin-bottom: 8px;
+  margin: 0;
   a {
     color: white;
     text-decoration: none;
   }
+  @include breakpoint($mobile) {
+    margin-bottom: 16px;
+  }
+  @include breakpoint($tab-2) {
+    margin-bottom: 1em;
+  } 
+  @include breakpoint($tab-3-1) {
+    font-size: 16px;
+    font-weight: normal;
+  } 
+  @include breakpoint($tab-3-2) {
+    font-weight: normal;
+  }
+  @include breakpoint($desk-2) {
+    height: 4em;
+    margin-bottom: 8px;
+  } 
+  @include breakpoint($desk-3) {
+    height: 3em;
+    margin-bottom: 16px;
+  }   
+  
 }
-.nefo-view-block-opinion-desc,
-.nefo-view-block-factsheet-desc,
-.nefo-view-block-report-desc {
+.nefo-view-block-current-products-desc {
   font-size: 16px;
   line-height: 100%;
   padding: 0;
@@ -74,13 +109,27 @@
     color: white;
     text-decoration: none;
   }
+  @include breakpoint($mobile) {
+    display: block;
+  }
+  @include breakpoint($tab-2) {
+    display: block;
+  } 
+  @include breakpoint($tab-3-1) {
+    display: none;
+  }
+  @include breakpoint($tab-3-2) {
+    display: none;
+  }
+  @include breakpoint($desk-2) {
+    display: block;
+  } 
+  @include breakpoint($desk-3) {
+    display: block;
+  }
 }
-.nefo-view-block-opinion,
-.nefo-view-block-factsheet,
-.nefo-view-block-report,
-.nefo-view-block-opinion-nav,
-.nefo-view-block-factsheet-nav,
-.nefo-view-block-report-nav {
+.nefo-view-block-current-products-type,
+.nefo-view-block-current-products-nav {
   @include nefo-front-readmore-nav;
   display: inline-block;
   @include breakpoint($tab-3) {
@@ -88,9 +137,7 @@
   }
   padding-left: 0;
 }
-.nefo-view-block-opinion,
-.nefo-view-block-factsheet,
-.nefo-view-block-report {
+.nefo-view-block-current-products-type {
   text-transform: uppercase;
   padding-right: 0;
   font-size: 16px;
@@ -98,16 +145,12 @@
     letter-spacing: -1px;
   }
 }
-.nefo-view-block-opinion-nav,
-.nefo-view-block-factsheet-nav,
-.nefo-view-block-report-nav {
+.nefo-view-block-current-products-nav {
   float: right;
   padding-top: $mobile-content-margin;
   padding-left: 0;
 }
-.nefo-view-block-opinion-link-all,
-.nefo-view-block-factsheet-link-all,
-.nefo-view-block-report-link-all {
+.nefo-view-block-current-products-link-all {
   a {
     @include nefo-front-readmore-nav-link;
     padding-right: 15px;
