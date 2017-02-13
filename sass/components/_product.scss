@@ -48,7 +48,13 @@
   z-index: 2;
   padding: 0 8px;
 
-  @include breakpoint($mobile) {
+  @include breakpoint($mobile-2) {
+    top: 80px;
+  }
+  @include breakpoint($mobile-2-2) {
+    top: 65px;
+  }
+  @include breakpoint($mobile-2-3) {
     top: 100px;
   }
   @include breakpoint($tab-2) {
@@ -78,8 +84,14 @@
     color: white;
     text-decoration: none;
   }
-  @include breakpoint($mobile) {
-    margin-bottom: 16px;
+  @include breakpoint($mobile-2) {
+    margin-bottom: 0;
+  }
+  @include breakpoint($mobile-2-2) {
+    margin-bottom: 8px;
+  }
+  @include breakpoint($mobile-2-3) {
+    margin-bottom: 8px;
   }
   @include breakpoint($tab-2) {
     margin-bottom: 1em;
@@ -96,8 +108,8 @@
     margin-bottom: 8px;
   } 
   @include breakpoint($desk-3) {
-    height: 3em;
-    margin-bottom: 16px;
+    height: 4em;
+    margin-bottom: 8px;
   }   
   
 }
@@ -109,7 +121,13 @@
     color: white;
     text-decoration: none;
   }
-  @include breakpoint($mobile) {
+  @include breakpoint($mobile-2) {
+    display: none;
+  }
+  @include breakpoint($mobile-2-2) {
+    display: block;
+  }
+  @include breakpoint($mobile-2-3) {
     display: block;
   }
   @include breakpoint($tab-2) {
