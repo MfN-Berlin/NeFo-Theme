@@ -166,23 +166,16 @@ h4 > a {
     margin-top: 0;
     margin-bottom: 20px; }
 
-.block--views.block--views-nefo-calendar-event-up .more-link,
-.block--views.block--views-nefo-calendar-event-up-ical .more-link {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.block--views.block--views-nefo-calendar-event-up .more-link a,
-.block--views.block--views-nefo-calendar-event-up-ical .more-link a {
-  color: #40769f;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  background-image: url("../images/arrow-right-more.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-right: 15px; }
+.nefo-link-back-list-all {
+  margin: 1em 0;
+  padding-top: 8px;
+  border-top: 2px solid #e0e0e0; }
+  .nefo-link-back-list-all a {
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+    vertical-align: middle; }
 
 .l-page,
 .l-header,
@@ -750,7 +743,21 @@ h4 > a {
     padding: 10px; }
   .block--views.block--views-nefo-calendar-event-up .more-link,
   .block--views.block--views-nefo-calendar-event-up-ical .more-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: right; }
+    .block--views.block--views-nefo-calendar-event-up .more-link a,
+    .block--views.block--views-nefo-calendar-event-up-ical .more-link a {
+      color: #40769f;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      background-image: url("../images/arrow-right-more.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+      padding-right: 15px; }
   .block--views.block--views-nefo-calendar-event-up .view-content,
   .block--views.block--views-nefo-calendar-event-up-ical .view-content {
     border-bottom: 1px solid #e0e0e0; }
@@ -1102,7 +1109,13 @@ ul.pager .pager__item--current {
   top: 50px;
   z-index: 2;
   padding: 0 8px; }
-  @media (max-width: 479px) {
+  @media (max-width: 379px) {
+    .nefo-view-block-current-products-text {
+      top: 80px; } }
+  @media (min-width: 380px) and (max-width: 409px) {
+    .nefo-view-block-current-products-text {
+      top: 65px; } }
+  @media (min-width: 410px) and (max-width: 479px) {
     .nefo-view-block-current-products-text {
       top: 100px; } }
   @media (min-width: 480px) and (max-width: 639px) {
@@ -1131,9 +1144,15 @@ ul.pager .pager__item--current {
   .nefo-view-block-current-products-title a {
     color: white;
     text-decoration: none; }
-  @media (max-width: 479px) {
+  @media (max-width: 379px) {
     .nefo-view-block-current-products-title {
-      margin-bottom: 16px; } }
+      margin-bottom: 0; } }
+  @media (min-width: 380px) and (max-width: 409px) {
+    .nefo-view-block-current-products-title {
+      margin-bottom: 8px; } }
+  @media (min-width: 410px) and (max-width: 479px) {
+    .nefo-view-block-current-products-title {
+      margin-bottom: 8px; } }
   @media (min-width: 480px) and (max-width: 639px) {
     .nefo-view-block-current-products-title {
       margin-bottom: 1em; } }
@@ -1150,8 +1169,8 @@ ul.pager .pager__item--current {
       margin-bottom: 8px; } }
   @media (min-width: 1123px) {
     .nefo-view-block-current-products-title {
-      height: 3em;
-      margin-bottom: 16px; } }
+      height: 4em;
+      margin-bottom: 8px; } }
 
 .nefo-view-block-current-products-desc {
   font-size: 16px;
@@ -1160,7 +1179,13 @@ ul.pager .pager__item--current {
   .nefo-view-block-current-products-desc a {
     color: white;
     text-decoration: none; }
-  @media (max-width: 479px) {
+  @media (max-width: 379px) {
+    .nefo-view-block-current-products-desc {
+      display: none; } }
+  @media (min-width: 380px) and (max-width: 409px) {
+    .nefo-view-block-current-products-desc {
+      display: block; } }
+  @media (min-width: 410px) and (max-width: 479px) {
     .nefo-view-block-current-products-desc {
       display: block; } }
   @media (min-width: 480px) and (max-width: 639px) {

@@ -12,10 +12,6 @@
     vertical-align: middle;
     text-decoration: none; }
 
-.l-region--sidebar #block-researcher-contact .button,
-.l-region--sidebar #block-researcher-signup .button {
-  background-color: #5091c7; }
-
 .view-view-researcher-profile .table {
   display: table;
   border-collapse: separate;
@@ -63,6 +59,7 @@
       text-align: center; }
     .l-region--sidebar #block-researcher-contact .button,
     .l-region--sidebar #block-researcher-signup .button {
+      background-color: #5091c7;
       margin: 0 auto; }
   .l-region--sidebar #block-researcher-contact {
     background-color: #a9c041; }

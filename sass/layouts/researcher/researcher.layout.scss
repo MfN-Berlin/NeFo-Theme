@@ -65,7 +65,7 @@
       text-align: center;
     }
     .button {
-      @extend %button--blue;
+      @include button--blue;
       margin: 0 auto;
     }
   }

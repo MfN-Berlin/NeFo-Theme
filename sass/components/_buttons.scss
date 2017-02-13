@@ -13,11 +13,6 @@
   }
 }
 
-%button--blue {
-  @extend %button;
-  background-color: $nefo-o;
-}
-
 @mixin button--blue {
   @extend %button;
   background-color: $nefo-o;

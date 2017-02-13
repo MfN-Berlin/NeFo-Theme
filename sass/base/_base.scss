@@ -183,3 +183,17 @@ h4 {
   @include block;
 }
 
+.nefo-link-back-list-all {
+  margin: 1em 0;
+  padding-top: 8px;
+  border-top: $separator-width solid $separator-color;
+  a {
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+    vertical-align: middle;    
+  }
+}
+.nefo-target-url {
+}
