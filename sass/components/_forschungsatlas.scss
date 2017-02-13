@@ -192,7 +192,7 @@
   font-size: $view-list-title-font-size;
   line-height: $view-list-title-line-height;
   background-color: #a9c041;
-  @extend %no_style_link;
+  @include no_style_link;
   a {
     color: white;
   }

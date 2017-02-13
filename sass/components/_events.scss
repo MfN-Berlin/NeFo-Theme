@@ -45,10 +45,10 @@
   }
 
   .more-link {
-    @extend %nefo-front-readmore-nav;
+    @include nefo-front-readmore-nav;
     text-align: right;
     a {
-      @extend %nefo-front-readmore-nav-link;
+      @include nefo-front-readmore-nav-link;
     }
   }
 

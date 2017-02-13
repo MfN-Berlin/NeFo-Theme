@@ -10,7 +10,6 @@
   margin-bottom: 20px;
 }
 
-
 @mixin blackoverlay {
   content: " ";
   width: 100%;
@@ -23,8 +22,7 @@
   z-index: 1;
 }
 
-
-%block {
+@mixin block {
   position: relative;
   padding-bottom: 40px;
   border-bottom: 2px solid rgb(229,229,229);
@@ -38,22 +36,10 @@
   }
 }
 
-%no_style_link {
-  a {
-    text-decoration: none;
-  }
-}
 @mixin no-style-link {
   a {
     text-decoration: none;
   }
-}
-
-%nefo-front-readmore-nav {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
 @mixin nefo-front-readmore-nav {
@@ -63,16 +49,6 @@
   padding-bottom: 10px;
 }
 
-%nefo-front-readmore-nav-link {
-  color: $h2-bg;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  background-image: url("../images/arrow-right-more.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  padding-right: 15px;
-}
 @mixin nefo-front-readmore-nav-link {
   color: $h2-bg;
   font-size: 14px;
@@ -84,19 +60,6 @@
   padding-right: 15px;
 }
 
-%nefo-front-readmore-nav-button {
-  background-color: $nefo-n;
-  border-radius: 4px;
-  padding: 0.5em 2em;
-  & > a {
-    color: $more-button-text;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-  }
-}
 @mixin nefo-front-readmore-nav-button {
   background-color: $nefo-n;
   border-radius: 4px;

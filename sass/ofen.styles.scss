@@ -8,9 +8,9 @@
 @import 'variables/fonts';
 @import 'variables/sizes';
 @import 'variables/colors';
+@import 'abstractions/mixins';
 @import 'base/base';
 
-@import 'abstractions/mixins';
 
 @import 'components/layout/grid';
 @import 'components/layout/header';

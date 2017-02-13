@@ -180,6 +180,6 @@ h4 {
 .block--views-nefo-view-block-interview-block,
 .block--views-nefo-block-press-release-block,
 .block--views-nefo-block-article-block {
-  @extend %block;
+  @include block;
 }
 
