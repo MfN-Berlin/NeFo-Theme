@@ -151,26 +151,6 @@ h4 {
   line-height: $view-list-date-line-height;
 }
 
-// Links
-.not-front {
-  .block__content a[href],
-  .node__content a[href],
-  .taxonomy-term__content a[href],
-  .view-content a[href],
-  .node--blog--teaser a[href] {
-    color: $nefo_f;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .tagclouds-term a[href] {
-    color: $nefo_f;
-  }
-}
-
 // Box
 .l-region--atlas,
 .l-region--news,
@@ -183,17 +163,3 @@ h4 {
   @include block;
 }
 
-.nefo-link-back-list-all {
-  margin: 1em 0;
-  padding-top: 8px;
-  border-top: $separator-width solid $separator-color;
-  a {
-    background-image: url("../images/arrow-right-more.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 15px;
-    vertical-align: middle;    
-  }
-}
-.nefo-target-url {
-}

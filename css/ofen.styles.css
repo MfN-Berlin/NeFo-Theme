@@ -119,23 +119,6 @@ h4 > a {
   font-size: 14px;
   line-height: 1.4; }
 
-.not-front .block__content a[href],
-.not-front .node__content a[href],
-.not-front .taxonomy-term__content a[href],
-.not-front .view-content a[href],
-.not-front .node--blog--teaser a[href] {
-  color: #40769f;
-  text-decoration: none; }
-  .not-front .block__content a[href]:hover,
-  .not-front .node__content a[href]:hover,
-  .not-front .taxonomy-term__content a[href]:hover,
-  .not-front .view-content a[href]:hover,
-  .not-front .node--blog--teaser a[href]:hover {
-    text-decoration: underline; }
-
-.not-front .tagclouds-term a[href] {
-  color: #40769f; }
-
 .l-region--atlas,
 .l-region--news,
 .l-region--misc,
@@ -165,17 +148,6 @@ h4 > a {
     padding: 0 10px;
     margin-top: 0;
     margin-bottom: 20px; }
-
-.nefo-link-back-list-all {
-  margin: 1em 0;
-  padding-top: 8px;
-  border-top: 2px solid #e0e0e0; }
-  .nefo-link-back-list-all a {
-    background-image: url("../images/arrow-right-more.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 15px;
-    vertical-align: middle; }
 
 .l-page,
 .l-header,
@@ -536,6 +508,34 @@ h4 > a {
   color: #4279a3;
   font-size: 12px;
   font-weight: bold; }
+
+.not-front .block__content a[href],
+.not-front .node__content a[href],
+.not-front .taxonomy-term__content a[href],
+.not-front .view-content a[href],
+.not-front .node--blog--teaser a[href] {
+  color: #40769f;
+  text-decoration: none; }
+  .not-front .block__content a[href]:hover,
+  .not-front .node__content a[href]:hover,
+  .not-front .taxonomy-term__content a[href]:hover,
+  .not-front .view-content a[href]:hover,
+  .not-front .node--blog--teaser a[href]:hover {
+    text-decoration: underline; }
+
+.not-front .tagclouds-term a[href] {
+  color: #40769f; }
+
+.nefo-link-back-list-all {
+  margin: 1em 0;
+  padding-top: 8px;
+  border-top: 2px solid #e0e0e0; }
+  .nefo-link-back-list-all a {
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+    vertical-align: middle; }
 
 .color-rule {
   height: 3px;
