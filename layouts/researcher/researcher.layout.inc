@@ -24,6 +24,7 @@ regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/researcher/researcher.layout.css
+stylesheets[print][] = css/ofen.print.css
 
 ; Scripts
 scripts[] = js/ofen_researcher.behaviors.js

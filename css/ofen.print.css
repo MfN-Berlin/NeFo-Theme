@@ -1,0 +1,32 @@
+.l-content,
+.l-region--sidebar {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+.color-rule {
+  display: none; }
+
+.l-header {
+  display: none; }
+
+.l-main .l-region--sidebar {
+  display: none; }
+
+.l-main .l-content {
+  widh: 100%; }
+  .l-main .l-content #block-shariff-shariff-block {
+    display: none; }
+
+.nefo-map-search-form-wrapper {
+  float: none;
+  page-break-after: always; }
+
+#nefo-map-wrapper {
+  width: 100%;
+  page-break-after: always; }
+
+.l-footer {
+  display: none; }

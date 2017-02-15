@@ -1,0 +1,54 @@
+// Import variables, abstractions, base styles and components.
+@import 'singularitygs';
+@import 'breakpoint';
+@import 'bourbon';
+
+@import 'variables/variables';
+@import 'variables/sizes';
+
+
+// Sidebar
+ @include layout($grid: 1) {
+  .l-content,
+  .l-region--sidebar {
+     @include grid-span(1, 1);
+  }
+}
+
+// Decoration
+.color-rule{
+  display: none;
+}
+
+// Header
+.l-header {
+  display: none;
+}
+
+// Main
+.l-main {
+  .l-region--sidebar {
+    display: none;
+  }
+  .l-content {
+    widh: 100%;
+    #block-shariff-shariff-block {
+      display: none;
+    }
+  }
+}
+.nefo-map-search-form-wrapper {
+  float: none;
+  page-break-after: always;
+}
+#nefo-map-wrapper {
+  width: 100%;
+  page-break-after: always;
+}
+
+// Footer
+.l-footer {
+  display: none;
+}
+
+

@@ -26,4 +26,6 @@ regions[footer]         = Footer
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/news/news.layout.css
+stylesheets[print][] = css/ofen.print.css
+
 

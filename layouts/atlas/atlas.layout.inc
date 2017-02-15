@@ -24,4 +24,4 @@ regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/atlas/atlas.layout.css
-
+stylesheets[print][] = css/ofen.print.css

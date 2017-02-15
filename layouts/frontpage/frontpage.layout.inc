@@ -34,5 +34,5 @@ regions[footer_sixth]   = Footer Sixth
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css
-
+stylesheets[print][] = css/ofen.print.css
 
