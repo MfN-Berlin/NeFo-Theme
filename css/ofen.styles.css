@@ -1308,7 +1308,7 @@ ul.pager .pager__item--current {
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 20px;
-  min-height: 225px;
+  min-height: 250px;
   border-bottom: 2px solid #e0e0e0;
   clear: both; }
 
@@ -1336,9 +1336,10 @@ ul.pager .pager__item--current {
 
 @media (min-width: 980px) {
   .nefo-view-list-document-icon {
-    box-shadow: 8px 8px 4px #888; }
+    box-shadow: 8px 8px 4px #888;
+    max-height: 212px; }
   .nefo-view-list-document-icon img {
-    max-height: 225px; }
+    max-height: 212px; }
   .nefo-view-list-document-col1 {
     width: 150px;
     float: left; }

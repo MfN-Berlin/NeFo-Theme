@@ -238,7 +238,7 @@
   margin-left: 0;
   margin-right: 0;
   margin-bottom: $vert-spacing-unit;
-  min-height: $image-document-icon-height;
+  min-height: ($image-document-icon-height + 25);
   border-bottom: $separator-width solid $separator-color;
   clear: both;
 }
@@ -275,9 +275,10 @@
 @include breakpoint($desk) {
   .nefo-view-list-document-icon {
    box-shadow: 8px 8px 4px #888;
+   max-height: 212px;
   }
   .nefo-view-list-document-icon img {
-   max-height: $image-document-icon-height;
+   max-height: 212px;
   }
   .nefo-view-list-document-col1 {
     width: $image-document-icon-width;

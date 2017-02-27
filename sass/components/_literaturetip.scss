@@ -61,6 +61,7 @@
 @include breakpoint($desk) {
   .nefo-view-list-literature-tip-img {
    box-shadow: 8px 8px 4px #888;
+   max-height: 212px;
   }
   .nefo-view-list-literature-tip-img img {
    max-height: 212px;
