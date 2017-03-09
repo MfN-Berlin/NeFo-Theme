@@ -103,8 +103,8 @@
       hide($content['links']);
       if (!empty($variables['nefo_blog_author_data'])) {
         print '<div class="nefo-content-author">';
-        print '<div class="nefo-content-author-image">'. drupal_render($variables['nefo_blog_author_data']['picture']['image']) .'</div>'.
-              '<div class="nefo-content-author-image-caption">'. $variables['nefo_blog_author_data']['picture']['caption'] .'</div>';
+        print '<div class="nefo-content-author-image">'. drupal_render($variables['nefo_blog_author_data']['picture']['image']) .'</div>';
+        //print '<div class="nefo-content-author-image-caption">'. $variables['nefo_blog_author_data']['picture']['caption'] .'</div>';
         print '<p class="nefo-content-author-name">'. $variables['nefo_blog_author_data']['author'] .'</p>';
         print '</div>';
       }
