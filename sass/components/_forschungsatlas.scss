@@ -201,7 +201,8 @@
 #nefo-map-table-result-list td:first-child {
   padding-left: 1em;
 }
-#nefo-map-table-result-list th:last-child {
+#nefo-map-table-result-list th:last-child,
+#nefo-map-table-result-list td:last-child {
   padding-right: 1em;
 }
 #nefo-map-table-result-list td {
@@ -218,15 +219,6 @@
 #nefo-map-table-result-list tr.even {
   background-color: #EEE;
 }
-a.nefo-institution-l-ext {
-  background-image: url('../images/icons/external-link.png');
-  background-repeat: no-repeat;
-  background-position: center right;
-  padding-right: 16px;
-  font-size: 12px;
-  font-style: italic;
-}
-
 .nefo-map-pager-wrapper {
   padding: 0.5em 0;
   background-color: rgb(255, 255, 255);
@@ -240,4 +232,19 @@ a.nefo-institution-l-ext {
   pointer-events: none;
 }
 
+// Institution
+a.nefo-subdivision-l, 
+a.forschungsatlas-subdivision-l {
+  padding-right: 1em;
+}
+a.nefo-institution-l-ext,
+a.forschungsatlas-institution-l-ext {
+  background-image: url('../../../images/icons/external-link.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  padding-left: 1em;
+  padding-right: 16px;
+  font-size: 12px;
+  font-style: italic;
+}
 
