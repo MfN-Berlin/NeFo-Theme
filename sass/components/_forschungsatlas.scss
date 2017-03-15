@@ -232,4 +232,12 @@ a.nefo-institution-l-ext {
   background-color: rgb(255, 255, 255);
 }
 
+// Leaflet Map controls z-index was too high 
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 499; /* was 1000 */
+  pointer-events: none;
+}
+
 

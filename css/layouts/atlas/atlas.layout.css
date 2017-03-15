@@ -241,3 +241,10 @@ a.nefo-institution-l-ext {
 .nefo-map-pager-wrapper {
   padding: 0.5em 0;
   background-color: white; }
+
+.leaflet-top,
+.leaflet-bottom {
+  position: absolute;
+  z-index: 499;
+  /* was 1000 */
+  pointer-events: none; }
