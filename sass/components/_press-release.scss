@@ -11,7 +11,7 @@
 .nefo-view-block-press-release-col1 {
   @include breakpoint($tab-2) {
     width: 100%;
-    max-width: $image-block-width-interview;
+    max-width: 100%;
   }
   @include breakpoint($tab-3) {
     width: 48%;
@@ -40,6 +40,7 @@
   img {
     width: 100%;
     max-width: 100%;
+    height: auto;
   }
 }
 .nefo-view-block-press-release-img-credit {

@@ -20,7 +20,7 @@
   .view-footer {
     @include breakpoint($tab-2) {
       width: 100%;
-      max-width: $image-block-width;
+      max-width: 100%;
     }
     @include clearfix;
   }
