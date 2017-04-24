@@ -1598,11 +1598,11 @@ ul.pager .pager__item--current {
   background-color: #A9C041;
   border-color: #A9C041; }
 
-.tb-megamenu ul.level-0 li:nth-child(5),
-.tb-megamenu ul.level-0 li:nth-child(6) {
+.tb-megamenu ul.level-0 li:nth-child(6),
+.tb-megamenu ul.level-0 li:nth-child(7) {
   background-color: #FFF; }
-  .tb-megamenu ul.level-0 li:nth-child(5) a,
-  .tb-megamenu ul.level-0 li:nth-child(6) a {
+  .tb-megamenu ul.level-0 li:nth-child(6) a,
+  .tb-megamenu ul.level-0 li:nth-child(7) a {
     color: #5295CC;
     border-color: #FFF; }
 
