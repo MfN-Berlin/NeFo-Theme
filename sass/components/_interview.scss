@@ -150,4 +150,22 @@
   }  
 }
 
+// Small Block
+.nefo-view-small-block-interview {
+  .nefo-view-small-block-interview-content {
+    padding-bottom: 1em;
+    border-bottom: #e0e0e0 1px solid;
+    .nefo-view-block-interview-img-credit {
+      font-weight: normal;
+    }
+    p {
+      margin-top: 0.7em;
+    }
+  }
+  .nefo-view-small-block-interview-nav {
+    padding-top: 10px;
+    text-align: right;
+  } 
+}
+
 

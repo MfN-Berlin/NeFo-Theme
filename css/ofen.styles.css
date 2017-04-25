@@ -1763,6 +1763,18 @@ ul.pager .pager__item--current {
     width: 120px;
     float: right; } }
 
+.nefo-view-small-block-interview .nefo-view-small-block-interview-content {
+  padding-bottom: 1em;
+  border-bottom: #e0e0e0 1px solid; }
+  .nefo-view-small-block-interview .nefo-view-small-block-interview-content .nefo-view-block-interview-img-credit {
+    font-weight: normal; }
+  .nefo-view-small-block-interview .nefo-view-small-block-interview-content p {
+    margin-top: 0.7em; }
+
+.nefo-view-small-block-interview .nefo-view-small-block-interview-nav {
+  padding-top: 10px;
+  text-align: right; }
+
 #block-nefo-blocks-builder-nefo-newsletter2go-press-news,
 #block-nefo-blocks-builder-nefo-newsletter2go-biodiv-news,
 #block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news,
