@@ -19,15 +19,14 @@
 }
 
 .nefo-link-back-list-all {
-  margin: 1em 0;
-  padding-top: 8px;
+  @include nefo-front-readmore-nav;
+  margin-top: 1em;
   border-top: $separator-width solid $separator-color;
+  text-align: right;
   a {
-    background-image: url("../images/arrow-right-more.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    padding-right: 15px;
-    vertical-align: middle;    
+    @include nefo-front-readmore-nav-link;
+    font-size: inherit;
+    font-weight: normal;
   }
 }
 .nefo-target-url {
