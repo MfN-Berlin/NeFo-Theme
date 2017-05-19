@@ -61,12 +61,25 @@
   float: none;
 }
 
+
+//
+// Page
+//
 .page-events .l-main  {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .page-events .view-display-id-nefo_events_all {
+  h3 {
+    font-weight: bold;
+    border-top: $separator-width solid $separator-color;
+    padding-top: 1em;
+  }
+  h3:nth-of-type(1) {
+    border-top: none;
+    padding-top: 0;
+  }
   .views-row {
     margin-bottom: 1rem;
   }
