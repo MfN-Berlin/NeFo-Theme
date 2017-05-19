@@ -105,7 +105,7 @@
     ?>
     <?php if ($page): ?>
       <div class="nefo-link-back-list-all">
-        <a href="/schnittstellen/produkte/literaturtipps/">alle Literaturtipps</a>
+        <a href="/presse/">alle Pressemitteilungen</a>
       </div>
     <?php endif; ?>
   </div>

@@ -103,9 +103,11 @@
       hide($content['links']);
       print render($content);
     ?>
-    <div class="nefo-link-back-list-all">
-      <a href="/events">alle Events</a>
-    </div>
+    <?php if ($page): ?>
+      <div class="nefo-link-back-list-all">
+        <a href="/events">alle Events</a>
+      </div>
+    <?php endif; ?>
   </div>
 
   <?php print render($content['links']); ?>

@@ -110,6 +110,11 @@
       }
       print render($content);
     ?>
+    <?php if ($page): ?>
+      <div class="nefo-link-back-list-all">
+        <a href="/blogs">alle NeFo-Blogs</a>
+      </div>
+    <?php endif; ?>
   </div>
 
   <?php print render($content['links']); ?>

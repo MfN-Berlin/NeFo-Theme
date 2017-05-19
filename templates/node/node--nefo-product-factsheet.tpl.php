@@ -104,9 +104,9 @@
       print render($content);
     ?>
     <?php if ($page): ?>
-      <div class="nefo-link-back-list-all">
-        <a href="/schnittstellen/produkte/literaturtipps/">alle Literaturtipps</a>
-      </div>
+    <div class="nefo-link-back-list-all">
+      <a href="/schnittstellen/produkte/faktenblaetter/">alle Faktenblätter</a>
+    </div>
     <?php endif; ?>
   </div>
 

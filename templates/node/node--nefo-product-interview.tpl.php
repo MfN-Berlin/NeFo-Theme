@@ -105,6 +105,11 @@
       hide($content['field_nefo_interview_thema']);
       print render($content);
     ?>
+    <?php if ($page): ?>
+      <div class="nefo-link-back-list-all">
+        <a href="/schnittstellen/produkte/interviews/">alle Interviews</a>
+      </div>
+    <?php endif; ?>
   </div>
 
   <?php print render($content['links']); ?>
