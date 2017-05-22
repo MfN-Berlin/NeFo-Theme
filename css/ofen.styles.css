@@ -559,7 +559,8 @@ h4 > a {
 #block-shariff-shariff-block {
   background-image: none;
   border-bottom: none;
-  padding: 20px 0; }
+  padding: 20px 0;
+  clear: both; }
   #block-shariff-shariff-block a {
     color: white; }
 
