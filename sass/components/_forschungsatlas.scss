@@ -42,7 +42,7 @@
       img {
         display: none;
       }
-    }    
+    }
   } // mobile
   @include breakpoint($tab-2) {
     @include layout(1) {
@@ -101,7 +101,7 @@
         @include grid-span(1, 2);
         h3 {
           margin-top: 0;
-        }        
+        }
       }
     }
   } // tab-3-2
@@ -137,16 +137,16 @@
   margin-bottom: 1em;
   @include breakpoint($tab) {
     float: left;
-    margin: 0 2em;
+    margin: 0 1em;
   }
   @include breakpoint($desk) {
     float: left;
-    margin: 0 2em;
+    margin: 0 1em;
   }
 }
 .nefo-map-simple-fieldset,
 .nefo-map-extended-fieldset {
-  margin-top: 1em;  
+  margin-top: 1em;
 }
 .nefo-map-simple-fieldset .fieldset-legend,
 .nefo-map-extended-fieldset .fieldset-legend {
@@ -168,6 +168,14 @@
 .nefo-map-simple-fieldset .form-item,
 .nefo-map-extended-fieldset .form-item {
   margin-bottom: 0;
+}
+.nefo-map-simple-fieldset {
+  .form-checkbox {
+	width : 16px;
+  }
+  label {
+    font-weight: bold;
+  }
 }
 
 #nefo-map-form-action .form-submit {
@@ -224,7 +232,7 @@
   background-color: rgb(255, 255, 255);
 }
 
-// Leaflet Map controls z-index was too high 
+// Leaflet Map controls z-index was too high
 .leaflet-top,
 .leaflet-bottom {
   position: absolute;
@@ -233,7 +241,7 @@
 }
 
 // Institution
-a.nefo-subdivision-l, 
+a.nefo-subdivision-l,
 a.forschungsatlas-subdivision-l {
   padding-right: 1em;
 }

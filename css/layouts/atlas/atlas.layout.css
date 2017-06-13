@@ -150,11 +150,11 @@
   @media (min-width: 480px) and (max-width: 979px) {
     .nefo-map-search-form-wrapper {
       float: left;
-      margin: 0 2em; } }
+      margin: 0 1em; } }
   @media (min-width: 980px) {
     .nefo-map-search-form-wrapper {
       float: left;
-      margin: 0 2em; } }
+      margin: 0 1em; } }
 
 .nefo-map-simple-fieldset,
 .nefo-map-extended-fieldset {
@@ -186,6 +186,12 @@
 .nefo-map-simple-fieldset .form-item,
 .nefo-map-extended-fieldset .form-item {
   margin-bottom: 0; }
+
+.nefo-map-simple-fieldset .form-checkbox {
+  width: 16px; }
+
+.nefo-map-simple-fieldset label {
+  font-weight: bold; }
 
 #nefo-map-form-action .form-submit {
   margin-top: 1em; }

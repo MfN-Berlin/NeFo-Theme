@@ -76,25 +76,25 @@ h6 {
 @include breakpoint($mobile) {
   h1 {
     font-size: $h1-font-size-mobile;
-  } 
+  }
   h2 {
     font-size: $h2-font-size-mobile;
-  } 
+  }
   h3 {
     font-size: $h3-font-size-mobile;
-  }  
+  }
 }
 // Tab
 @include breakpoint($tab) {
   h1 {
     font-size: $h1-font-size-tab;
-  } 
+  }
   h2 {
     font-size: $h2-font-size-tab;
-  } 
+  }
   h3 {
     font-size: $h3-font-size-tab;
-  }  
+  }
 }
 
 
@@ -110,7 +110,7 @@ p {
 }
 
 strong {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 em, i {
@@ -124,7 +124,7 @@ ol {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 40px; 
+  padding-left: 40px;
 }
 ul {
   list-style-type: disc;
@@ -150,7 +150,7 @@ h4 {
   }
 }
 
-// Submitted 
+// Submitted
 .submitted {
   margin-bottom: 1em;
   font-size: $view-list-date-font-size;
@@ -169,3 +169,13 @@ h4 {
   @include block;
 }
 
+// Form
+input.form-submit {
+  margin-right: 1em;
+  height: 34px;
+  cursor: pointer;
+  border: none;
+  color: #FFF;
+  background-color: $nefo-e;
+  font-weight: bold;
+}
