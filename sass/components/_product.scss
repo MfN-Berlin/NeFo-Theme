@@ -9,11 +9,11 @@
   }
   @include breakpoint($tab-2) {
      border: none;
-  }  
+  }
 }
 .nefo-view-block-current-products-row {
-  position: relative;
-  overflow: hidden;
+  //position: relative;
+  //overflow: hidden;
   margin-top: 20px;
   @include breakpoint($tab-2) {
     width: 100%;
@@ -22,130 +22,50 @@
   }
 }
 .nefo-view-block-current-products-img {
-  position: relative;
+  //position: relative;
   img {
     width: 100%;
     max-width: 100%;
     height: auto;
     @include breakpoint($tab-3-1) {
       max-height: ($image-block-height - 70);
-    } 
+    }
     @include breakpoint($tab-3-2) {
       max-height: ($image-block-height - 70);
-    } 
+    }
     @include breakpoint($desk) {
       max-height: ($image-block-height - 70);
-    } 
+    }
   }
-  &::after {
-    @include blackoverlay;
-  }
-
 }
-.nefo-view-block-current-products-text {
-  position: absolute;
-  top: 50px;
-  z-index: 2;
-  padding: 0 8px;
 
-  @include breakpoint($mobile-2) {
-    top: 80px;
-  }
-  @include breakpoint($mobile-2-2) {
-    top: 65px;
-  }
-  @include breakpoint($mobile-2-3) {
-    top: 100px;
-  }
-  @include breakpoint($tab-2) {
-    top: 120px;
-  }  
-  @include breakpoint($tab-3-1) {
-    top: 35px;
-    padding: 0 6px;
-  }
-  @include breakpoint($tab-3-2) {
-    top: 35px;
-  }
-  @include breakpoint($desk-2) {
-    top: 40px;
-  } 
-  @include breakpoint($desk-3) {
-    top: 75px;
-  } 
-}
 .nefo-view-block-current-products-title {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 100%;
-  padding: 0;
-  margin: 0;
   a {
-    color: white;
+    color: $h2-bg;
     text-decoration: none;
   }
-  @include breakpoint($mobile-2) {
-    margin-bottom: 0;
-  }
-  @include breakpoint($mobile-2-2) {
-    margin-bottom: 8px;
-  }
-  @include breakpoint($mobile-2-3) {
-    margin-bottom: 8px;
+  @include breakpoint($mobile) {
+    margin: 0;
+    margin-bottom: $mobile-content-margin;
   }
   @include breakpoint($tab-2) {
-    margin-bottom: 1em;
-  } 
+    margin: 0;
+    margin-bottom: $mobile-content-margin;
+  }
   @include breakpoint($tab-3-1) {
-    font-size: 16px;
-    font-weight: normal;
-  } 
-  @include breakpoint($tab-3-2) {
-    font-weight: normal;
-  }
-  @include breakpoint($desk-2) {
-    height: 4em;
-    margin-bottom: 8px;
-  } 
-  @include breakpoint($desk-3) {
-    height: 4em;
-    margin-bottom: 8px;
-  }   
-  
-}
-.nefo-view-block-current-products-desc {
-  font-size: 16px;
-  line-height: 100%;
-  padding: 0;
-  a {
-    color: white;
-    text-decoration: none;
-  }
-  @include breakpoint($mobile-2) {
-    display: none;
-  }
-  @include breakpoint($mobile-2-2) {
-    display: block;
-  }
-  @include breakpoint($mobile-2-3) {
-    display: block;
-  }
-  @include breakpoint($tab-2) {
-    display: block;
-  } 
-  @include breakpoint($tab-3-1) {
-    display: none;
+    margin: 0 $mobile-content-margin;
+    height: 10em;
   }
   @include breakpoint($tab-3-2) {
-    display: none;
+    margin: 0 $mobile-content-margin;
+    height: 8em;
   }
-  @include breakpoint($desk-2) {
-    display: block;
-  } 
-  @include breakpoint($desk-3) {
-    display: block;
+  @include breakpoint($desk) {
+    margin: 0 $mobile-content-margin;
+    height: 6em;
   }
 }
+
 .nefo-view-block-current-products-type,
 .nefo-view-block-current-products-nav {
   @include nefo-front-readmore-nav;
@@ -178,10 +98,10 @@
   }
 }
 
-// Studien 
+// Studien
 .view-nefo-view-block-study {
   margin-top: $vert-spacing-unit;
-  
+
   .nefo-view-block-study-row {
     @include nefo-front-study-block;
     @include breakpoint($mobile) {
@@ -233,7 +153,7 @@
 }
 
 
-// NeFo-Produkt Bericht, NeFo-Produkt Faktenblatt, NeFo-Produkt Stellungnahme, NeFo-Produkt Studie 
+// NeFo-Produkt Bericht, NeFo-Produkt Faktenblatt, NeFo-Produkt Stellungnahme, NeFo-Produkt Studie
 .nefo-view-list-document-row {
   margin-left: 0;
   margin-right: 0;
@@ -318,7 +238,7 @@
   }
   @include breakpoint($tab) {
     width: 40px;
-    height: 40px;    
+    height: 40px;
   }
 }
 
@@ -326,7 +246,7 @@
 .tagclouds-term {
   padding: 1em 1em;
   vertical-align: baseline;
-  line-height: $tagclouds-term-line-height; 
+  line-height: $tagclouds-term-line-height;
 }
 .block--tagclouds {
   text-align: center;
