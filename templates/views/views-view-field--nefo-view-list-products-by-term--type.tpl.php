@@ -49,6 +49,12 @@ if (!empty($row)) {
 		case 'nefo_product_workshop':
 			$icon = '<img class="nefo-product-icon" alt="Workshop" title="Workshop" src="/'. $path .'/images/icons/products/Bericht.png">';
 			break;
+        case 'nefo_news':
+			$icon = '<img class="nefo-product-icon" alt="News" title="Workshop" src="/'. $path .'/images/icons/products/Pressemitteilung.png">';
+			break;
+		case 'nefo_event':
+			$icon = '<img class="nefo-product-icon" alt="Event" title="Workshop" src="/'. $path .'/images/icons/products/Artikel.png">';
+			break;
 		default:
 			$icon = '';
 	}
