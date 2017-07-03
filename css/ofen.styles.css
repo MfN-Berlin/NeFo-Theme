@@ -838,6 +838,36 @@ input.form-submit {
       padding-left: 0;
       padding-right: 0; } }
 
+@media (max-width: 479px) {
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid-wrapper,
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid,
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext-wrapper,
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext {
+    width: 100%; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-submit-button {
+    clear: both; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .form-submit {
+    margin-top: 0;
+    margin-bottom: 1em; } }
+
+@media (min-width: 480px) and (max-width: 979px) {
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid,
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext {
+    width: 100%; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-widget-filter-combine {
+    clear: both; } }
+
+@media (min-width: 980px) {
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid {
+    max-width: 220px; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext {
+    max-width: 200px; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-submit-button {
+    clear: both; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .form-submit {
+    margin-top: 0;
+    margin-bottom: 20px; } }
+
 #block-menu-menu-nefo-login-menu {
   display: inline-block; }
 
