@@ -1,0 +1,48 @@
+// Page: /events
+.views-exposed-form-nefo-calendar-nefo-events-all,
+.views-exposed-form-nefo-view-list-news-page {
+  .views-exposed-form {
+    .views-exposed-widgets {
+      @include breakpoint($mobile) {
+        #edit-tid-wrapper,
+        #edit-tid,
+        #edit-volltext-wrapper,
+        #edit-volltext {
+          width: 100%;
+        }
+        .views-submit-button {
+          clear:both;
+        }
+        .form-submit {
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+      }
+      @include breakpoint($tab) {
+        #edit-tid,
+        #edit-volltext {
+          width: 100%;
+        }
+        .views-widget-filter-combine {
+          clear:both;
+        }
+
+      }
+      @include breakpoint($desk) {
+        #edit-tid {
+          max-width: 220px;
+        }
+        #edit-volltext {
+          max-width: 200px;
+        }
+        .views-submit-button {
+          clear:both;
+        }
+        .form-submit {
+          margin-top: 0;
+          margin-bottom: $vert-spacing-unit;
+        }
+      }
+    } //views-exposed-widgets
+  } //views-exposed-form
+}

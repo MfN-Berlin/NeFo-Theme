@@ -9,13 +9,13 @@
   }
   @include breakpoint($tab-2) {
     margin-top: 0;
-  } 
+  }
   @include breakpoint($tab-3) {
     margin-top: $vert-spacing-unit;
-  } 
+  }
   @include breakpoint($desk) {
     margin-top: $vert-spacing-unit;
-  } 
+  }
   .view-content,
   .view-footer {
     @include breakpoint($tab-2) {
@@ -47,19 +47,19 @@
   @include breakpoint($tab-2) {
     margin: 0;
     margin-bottom: $mobile-content-margin;
-  }  
+  }
   @include breakpoint($tab-3-1) {
     margin: 0 $mobile-content-margin;
     height: 10em;
-  } 
+  }
   @include breakpoint($tab-3-2) {
     margin: 0 $mobile-content-margin;
     height: 8em;
-  } 
+  }
   @include breakpoint($desk) {
     margin: 0 $mobile-content-margin;
     height: 6em;
-  } 
+  }
 }
 .nefo-view-block-news-img {
   img {
@@ -68,27 +68,27 @@
     height: auto;
     @include breakpoint($tab-3-1) {
       max-height: ($image-block-height - 70);
-    } 
+    }
     @include breakpoint($tab-3-2) {
       max-height: ($image-block-height - 70);
-    } 
+    }
     @include breakpoint($desk) {
       max-height: ($image-block-height - 70);
-    }    
+    }
   }
   @include breakpoint($mobile) {
     margin-bottom: $mobile-content-margin;
   }
   @include breakpoint($tab-2) {
     margin-bottom: $mobile-content-margin;
-  }   
+  }
 }
 .view-block-news-link-all,
 .view-block-newsipbes-link-all {
   @include nefo-front-readmore-nav;
   text-align: right;
   a {
-    @include nefo-front-readmore-nav-link;  
+    @include nefo-front-readmore-nav-link;
   }
 }
 
@@ -96,13 +96,13 @@
 .view-nefo-view-block-newsipbes {
   @include breakpoint($mobile) {
     margin-top: 0;
-  }    
+  }
   @include breakpoint($tab) {
     margin-top: 1em;
-  } 
+  }
   @include breakpoint($desk) {
     margin-top: 1em;
-  } 
+  }
   .view-content {
     border-bottom: 1px solid $separator-color;
   }
@@ -110,13 +110,13 @@
 .nefo-view-block-newsipbes-row {
   @include breakpoint($mobile) {
     margin: 0;
-  }    
+  }
   @include breakpoint($tab) {
     margin: 0;
-  } 
+  }
   @include breakpoint($desk) {
     margin: 0 $mobile-content-margin;
-  } 
+  }
   font-size: $view-list-title-font-size;
   line-height: $view-list-title-line-height;
   padding-bottom: 1em;
@@ -179,7 +179,8 @@
 
     &:hover {
       text-decoration: underline;
-    }    
+    }
   }
 }
+
 
