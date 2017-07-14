@@ -1,5 +1,6 @@
 .block--views.block--views-nefo-calendar-event-up,
-.block--views.block--views-nefo-calendar-event-up-ical {
+.block--views.block--views-nefo-calendar-event-up-ical,
+.block--nefo-tags-blocks-builder {
   position: relative;
   h2 {
     @include nefo-heading;
@@ -13,12 +14,12 @@
       background-color: $events-bg;
       padding-top: .7em;
       padding-bottom: .7em;
-      //background-image: url(../images/map.png);
       background-repeat: no-repeat;
       background-position: right center;
       background-size: 28px 28px;
+      color: white;
       &>a {
-        color: white;
+        color: white !important;
         text-decoration: none;
       }
     }

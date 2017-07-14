@@ -716,10 +716,12 @@ input.form-submit {
     display: table; }
 
 .block--views.block--views-nefo-calendar-event-up,
-.block--views.block--views-nefo-calendar-event-up-ical {
+.block--views.block--views-nefo-calendar-event-up-ical,
+.block--nefo-tags-blocks-builder {
   position: relative; }
   .block--views.block--views-nefo-calendar-event-up h2,
-  .block--views.block--views-nefo-calendar-event-up-ical h2 {
+  .block--views.block--views-nefo-calendar-event-up-ical h2,
+  .block--nefo-tags-blocks-builder h2 {
     text-transform: uppercase;
     font-size: 12pt;
     font-weight: bold;
@@ -730,51 +732,63 @@ input.form-submit {
     margin-top: 0;
     margin-bottom: 20px; }
   .block--views.block--views-nefo-calendar-event-up ul,
-  .block--views.block--views-nefo-calendar-event-up-ical ul {
+  .block--views.block--views-nefo-calendar-event-up-ical ul,
+  .block--nefo-tags-blocks-builder ul {
     list-style-type: none;
     padding: 0px; }
     .block--views.block--views-nefo-calendar-event-up ul .nefo-event--heading,
-    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--heading {
+    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--heading,
+    .block--nefo-tags-blocks-builder ul .nefo-event--heading {
       font-weight: bold;
       background-color: #7cae4a;
       padding-top: .7em;
       padding-bottom: .7em;
       background-repeat: no-repeat;
       background-position: right center;
-      background-size: 28px 28px; }
+      background-size: 28px 28px;
+      color: white; }
       .block--views.block--views-nefo-calendar-event-up ul .nefo-event--heading > a,
-      .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--heading > a {
-        color: white;
+      .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--heading > a,
+      .block--nefo-tags-blocks-builder ul .nefo-event--heading > a {
+        color: white !important;
         text-decoration: none; }
     .block--views.block--views-nefo-calendar-event-up ul .nefo-event--date,
-    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--date {
+    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--date,
+    .block--nefo-tags-blocks-builder ul .nefo-event--date {
       display: inline-block;
       margin-right: 5px; }
     .block--views.block--views-nefo-calendar-event-up ul .nefo-event--location,
-    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--location {
+    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--location,
+    .block--nefo-tags-blocks-builder ul .nefo-event--location {
       display: inline-block;
       margin-left: 5px; }
     .block--views.block--views-nefo-calendar-event-up ul .nefo-event--title a,
-    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--title a {
+    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--title a,
+    .block--nefo-tags-blocks-builder ul .nefo-event--title a {
       text-decoration: none;
       color: #575656; }
     .block--views.block--views-nefo-calendar-event-up ul .nefo-event--title a:visited,
-    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--title a:visited {
+    .block--views.block--views-nefo-calendar-event-up-ical ul .nefo-event--title a:visited,
+    .block--nefo-tags-blocks-builder ul .nefo-event--title a:visited {
       color: #575656; }
   .block--views.block--views-nefo-calendar-event-up .nefo-event--heading,
   .block--views.block--views-nefo-calendar-event-up .nefo-event--title,
   .block--views.block--views-nefo-calendar-event-up-ical .nefo-event--heading,
-  .block--views.block--views-nefo-calendar-event-up-ical .nefo-event--title {
+  .block--views.block--views-nefo-calendar-event-up-ical .nefo-event--title,
+  .block--nefo-tags-blocks-builder .nefo-event--heading,
+  .block--nefo-tags-blocks-builder .nefo-event--title {
     padding: 10px; }
   .block--views.block--views-nefo-calendar-event-up .more-link,
-  .block--views.block--views-nefo-calendar-event-up-ical .more-link {
+  .block--views.block--views-nefo-calendar-event-up-ical .more-link,
+  .block--nefo-tags-blocks-builder .more-link {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: right; }
     .block--views.block--views-nefo-calendar-event-up .more-link a,
-    .block--views.block--views-nefo-calendar-event-up-ical .more-link a {
+    .block--views.block--views-nefo-calendar-event-up-ical .more-link a,
+    .block--nefo-tags-blocks-builder .more-link a {
       color: #40769f;
       font-size: 14px;
       font-weight: bold;
@@ -784,7 +798,8 @@ input.form-submit {
       background-position: right;
       padding-right: 15px; }
   .block--views.block--views-nefo-calendar-event-up .view-content,
-  .block--views.block--views-nefo-calendar-event-up-ical .view-content {
+  .block--views.block--views-nefo-calendar-event-up-ical .view-content,
+  .block--nefo-tags-blocks-builder .view-content {
     border-bottom: 1px solid #e0e0e0; }
 
 #block-views-nefo-calendar-event-up-ical {
