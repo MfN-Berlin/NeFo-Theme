@@ -155,6 +155,9 @@ h4 > a {
     margin-top: 0;
     margin-bottom: 20px; }
 
+select.form-select {
+  background-color: #FFF; }
+
 input.form-submit {
   margin-right: 1em;
   height: 34px;
@@ -2062,45 +2065,72 @@ ul.pager .pager__item--current {
       .nefo-ckeditor-inline-container .media-element-container .file-document .content {
         display: inline; }
 
-@media (max-width: 479px) {
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid-wrapper,
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid,
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext-wrapper,
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-tid-wrapper,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-tid,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-volltext-wrapper,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-volltext {
-    width: 100%; }
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-submit-button,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-submit-button {
-    clear: both; }
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .form-submit,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .form-submit {
-    margin-top: 0;
-    margin-bottom: 1em; } }
-
-@media (min-width: 480px) and (max-width: 979px) {
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid,
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-tid,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-volltext {
-    width: 100%; }
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-widget-filter-combine,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-widget-filter-combine {
-    clear: both; } }
-
-@media (min-width: 980px) {
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-tid,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-tid {
-    max-width: 220px; }
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets #edit-volltext,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets #edit-volltext {
-    max-width: 200px; }
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-submit-button,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-submit-button {
-    clear: both; }
-  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .form-submit,
-  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .form-submit {
-    margin-top: 0;
-    margin-bottom: 20px; } }
+.views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root,
+.views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root {
+  border: solid 1px #a9c041;
+  border-top: none;
+  box-shadow: 0px -3px 0 #a9c041;
+  padding: 12px;
+  margin: 0 0 20px; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root legend,
+  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root legend {
+    background: white;
+    padding: 0 6px;
+    margin: 0;
+    margin-left: -3px;
+    font-size: 20px;
+    font-weight: 300; }
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2,
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3,
+  .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4,
+  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2,
+  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3,
+  .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 {
+    float: none;
+    min-height: 32px; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2 .fieldset-title,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3 .fieldset-title,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 .fieldset-title,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2 .fieldset-title,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3 .fieldset-title,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 .fieldset-title {
+      color: #40769f;
+      font-size: 16px; }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 {
+      float: left;
+      margin-left: 1em; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-tid,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-tid {
+      max-width: 220px; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-volltext,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-volltext {
+      max-width: 200px; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-5,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-5 {
+      clear: both;
+      margin-left: 1em; } }
+  @media (min-width: 980px) {
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 {
+      float: left;
+      margin-left: 1em; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-tid,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-tid {
+      max-width: 220px; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-volltext,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-volltext {
+      max-width: 200px; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-5,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-5 {
+      clear: both;
+      margin-left: 1em; } }
