@@ -24,6 +24,9 @@
           #edit-container-container-4 {
             float: none;
             min-height: 32px;
+            .fieldset-legend {
+              font-size: $p-font-size;
+            }
             .fieldset-title {
               color: $nefo_f;
               font-size: $p-font-size;

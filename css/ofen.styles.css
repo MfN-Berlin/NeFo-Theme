@@ -2088,6 +2088,13 @@ ul.pager .pager__item--current {
   .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 {
     float: none;
     min-height: 32px; }
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2 .fieldset-legend,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3 .fieldset-legend,
+    .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 .fieldset-legend,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2 .fieldset-legend,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3 .fieldset-legend,
+    .views-exposed-form-nefo-view-list-news-page .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 .fieldset-legend {
+      font-size: 16px; }
     .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-2 .fieldset-title,
     .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-3 .fieldset-title,
     .views-exposed-form-nefo-calendar-nefo-events-all .views-exposed-form .views-exposed-widgets .views-ef-fieldset-container-root .fieldset-wrapper #edit-container-container-4 .fieldset-title,
