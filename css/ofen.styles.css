@@ -564,6 +564,24 @@ input.form-submit {
     font-size: inherit;
     font-weight: normal; }
 
+.nefo-view-block-link-all {
+  margin-top: 2rem;
+  border-top: #e0e0e0 1px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right; }
+  .nefo-view-block-link-all a {
+    color: #40769f;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px; }
+
 .color-rule {
   height: 3px;
   background-image: linear-gradient(to right, #4291a3 0%, #437eb6 30%, #accc44 60%, #7eb24b 100%); }
@@ -2215,3 +2233,17 @@ ul.pager .pager__item--current {
   .nefo-view-list-literature-tip-col2 {
     margin-left: 170px;
     width: auto; } }
+
+.nefo-view-list-row {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e0e0e0;
+  clear: both; }
+
+.nefo-view-block-row .nefo-view-block-video-thumbnail img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }

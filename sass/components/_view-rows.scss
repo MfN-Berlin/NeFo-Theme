@@ -1,0 +1,22 @@
+// Page
+.nefo-view-list-row {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1em;
+    border-bottom: $separator-width solid $separator-color;
+    clear: both;
+}
+
+
+.nefo-view-block-row {
+  .nefo-view-block-video-thumbnail {
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+

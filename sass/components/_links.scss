@@ -31,3 +31,13 @@
 }
 .nefo-target-url {
 }
+
+.nefo-view-block-link-all {
+  margin-top: 2rem;
+  border-top: #e0e0e0 1px solid;
+  @include nefo-front-readmore-nav;
+  text-align: right;
+  a {
+    @include nefo-front-readmore-nav-link;
+  }
+}
