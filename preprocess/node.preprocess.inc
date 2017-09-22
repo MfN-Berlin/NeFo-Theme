@@ -46,7 +46,17 @@ function ofen_preprocess_node(&$variables) {
 
   // Content type "nefo_news"
   if($variables['type'] == 'nefo_news' && $variables['page']) {
+    // Don't show category on page
     hide($variables['content']['field_nefo_news_category']);
+    // Change link "all News" if taxonomy term is "NeFo-Produkt Pressemitteilung"
+    if (!empty($variables['field_nefo_news_category'][0]['tid'])) {
+      if ($variables['field_nefo_news_category'][0]['tid'] == 75) {
+        $variables['nefo_link_back_to_list'] = l('alle Pressemitteilungen', 'presse');
+      }
+      else {
+        $variables['nefo_link_back_to_list'] = l('alle News', 'news');
+      }
+    }
   } // if(nefo_news)
 
 }

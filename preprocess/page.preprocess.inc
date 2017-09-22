@@ -19,5 +19,13 @@ function ofen_preprocess_page(&$variables) {
     $variables['nefo_news_category'] = $output;
   }
 
+  // Change title of Presse page (view "NeFo-Übersichtstabelle News per Begriff")
+  if (empty($variables['node'])) {
+    $current_path = drupal_get_path_alias();
+    if($current_path == 'presse') {
+      drupal_set_title('Presse');
+    }
+  }
+
 }
 

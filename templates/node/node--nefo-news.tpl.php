@@ -105,7 +105,7 @@
     ?>
     <?php if ($page): ?>
       <div class="nefo-link-back-list-all">
-        <a href="/news">alle News</a>
+        <?php print $nefo_link_back_to_list; ?>
       </div>
     <?php endif; ?>
   </div>
