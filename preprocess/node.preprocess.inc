@@ -59,6 +59,29 @@ function ofen_preprocess_node(&$variables) {
     }
   } // if(nefo_news)
 
+  // Content type "nefo_product_document"
+  if($variables['type'] == 'nefo_product_document' && $variables['page']) {
+    // Don't show category on page
+    hide($variables['content']['field_nefo_product_field_type']);
+    // Create link to taxonomy term page
+    $taxonomy_term = field_get_items('node', $variables['node'], 'field_nefo_taxonomy_document');
+    $tid = intval($taxonomy_term[0]['tid']);
+    switch ($tid) {
+      case 76:
+         $variables['nefo_link_back_to_list'] = l('alle Berichte', 'produkte/berichte');
+        break;
+      case 77:
+         $variables['nefo_link_back_to_list'] = l('alle Faktenblätter', 'produkte/faktenblaetter');
+        break;
+      case 78:
+         $variables['nefo_link_back_to_list'] = l('alle Stellungnahmen', 'produkte/stellungnahmen');
+        break;
+      case 79:
+         $variables['nefo_link_back_to_list'] = l('alle Studien', 'produkte/studien');
+        break;
+    }
+  } // if(nefo_product_document)
+
 }
 
 

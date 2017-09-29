@@ -214,3 +214,5 @@ function ofen_preprocess_search_result(&$vars) {
     $date = $vars['result']['date'];
     $vars['info_split']['date'] = format_date($date, 'custom', 'j. F Y');
 }
+
+
