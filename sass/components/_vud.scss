@@ -1,0 +1,20 @@
+.page-node {
+  .l-content {
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.vud-widget-thumbs {
+  margin: 0;
+  margin-right: 10px;
+  position: unset;
+  float: unset;
+  text-align: right;
+  .vote-current-score,
+  .voted-how {
+    display: none;
+  }
+}
+

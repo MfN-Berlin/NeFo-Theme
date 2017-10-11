@@ -736,6 +736,19 @@ input.form-submit {
     content: "";
     display: table; }
 
+.page-node .l-content h1 {
+  margin-bottom: 0; }
+
+.vud-widget-thumbs {
+  margin: 0;
+  margin-right: 10px;
+  position: unset;
+  float: unset;
+  text-align: right; }
+  .vud-widget-thumbs .vote-current-score,
+  .vud-widget-thumbs .voted-how {
+    display: none; }
+
 .block--views.block--views-nefo-calendar-event-up,
 .block--views.block--views-nefo-calendar-event-up-ical,
 .block--nefo-tags-blocks-builder {
@@ -2118,3 +2131,24 @@ ul.pager .pager__item--current {
   width: 100%;
   max-width: 100%;
   height: auto; }
+
+.views-table {
+  width: 100%;
+  margin: 20px 0; }
+  .views-table th {
+    background: none repeat scroll 0 0 #A9C041;
+    font-weight: bold;
+    padding: 1em; }
+  .views-table td, .views-table th {
+    vertical-align: middle;
+    padding: 8px 10px;
+    border: 0; }
+  .views-table tr {
+    border: 1px; }
+  .views-table tr.even, .views-table tr.odd {
+    border-style: solid;
+    border-color: #DDD;
+    background: #F3F4EE;
+    transition: all, 0.15s; }
+  .views-table tr.odd {
+    background: #FFF; }

@@ -20,3 +20,31 @@
   }
 }
 
+// Table
+.views-table {
+  width: 100%;
+  margin: $vert-spacing-unit 0;
+  th {
+    background: none repeat scroll 0 0 $table-th-bg-color;
+    font-weight: bold;
+    padding: 1em;
+  }
+  td, th {
+    vertical-align: middle;
+    padding: 8px 10px;
+    border: 0;
+  }
+  tr {
+    border: 1px;
+  }
+  tr.even, tr.odd {
+    border-style: solid;
+    border-color: $table-tr-border-color;
+    background: $table-tr-even-bg-color;
+    transition: all, 0.15s;
+  }
+  tr.odd {
+      background: $table-tr-odd-bg-color;
+  }
+}
+
