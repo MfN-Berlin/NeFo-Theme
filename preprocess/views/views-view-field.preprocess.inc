@@ -6,7 +6,9 @@
 function ofen_preprocess_views_view_field(&$variables) {
   $view = $variables['view'];
 
-  // View: NeFo-Übersichtstabelle Produkte per Begriff
+  /**
+   * View: NeFo-Übersichtstabelle Produkte per Begriff
+   */
   if ($view->name == 'nefo_view_list_products_by_term') {
     if ($variables['field']->options['id'] == 'type_1') {
       $tid = intval($variables['row']->taxonomy_term_data_field_data_field_nefo_taxonomy_document_t);
@@ -15,7 +17,9 @@ function ofen_preprocess_views_view_field(&$variables) {
     }
   }
 
-  // View: NeFo-Block Aktuelle Produkte
+  /**
+   * View: NeFo-Block Aktuelle Produkte
+   */
   if ($view->name == 'nefo_current_products') {
     // Field:Wrapper 2
     if ($variables['field']->options['id'] == 'nothing_1') {
@@ -113,16 +117,16 @@ function _ofen_get_nefo_product_type($node_type, $tid) {
   $type = '';
   // Taxonomy: NeFo-Dokument
   switch ($tid) {
-      case 76:
+      case 79:
         $type = 'nefo_product_report';
         break;
-      case 77:
+      case 76:
         $type = 'nefo_product_factsheet';
         break;
-      case 78:
+      case 77:
         $type = 'nefo_product_opinion';
         break;
-      case 79:
+      case 78:
         $type = 'nefo_product_study';
         break;
       default:
