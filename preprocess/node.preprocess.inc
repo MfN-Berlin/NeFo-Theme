@@ -67,16 +67,16 @@ function ofen_preprocess_node(&$variables) {
     $taxonomy_term = field_get_items('node', $variables['node'], 'field_nefo_taxonomy_document');
     $tid = intval($taxonomy_term[0]['tid']);
     switch ($tid) {
-      case 76:
+      case 79:
          $variables['nefo_link_back_to_list'] = l('alle Berichte', 'produkte/berichte');
         break;
-      case 77:
+      case 76:
          $variables['nefo_link_back_to_list'] = l('alle Faktenblätter', 'produkte/faktenblaetter');
         break;
-      case 78:
+      case 77:
          $variables['nefo_link_back_to_list'] = l('alle Stellungnahmen', 'produkte/stellungnahmen');
         break;
-      case 79:
+      case 78:
          $variables['nefo_link_back_to_list'] = l('alle Studien', 'produkte/studien');
         break;
     }
