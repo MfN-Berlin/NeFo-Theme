@@ -1781,14 +1781,6 @@ ul.pager .pager__item--current {
 #nl2go--submit {
   font-family: ProximaNova, sans-serif; }
 
-#block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news {
-  font-size: .9em; }
-  #block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news input {
-    max-width: 150px; }
-  #block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news input.nl2go--submit {
-    max-width: 100%;
-    font-size: 1.1em !important; }
-
 .node--blog--teaser {
   border-bottom: 2px solid #e0e0e0; }
 
