@@ -18,3 +18,18 @@
   }
 }
 
+.vud-widget-thumbs {
+  .up-score {
+    border: 1px solid $vud-thumb-border-color;
+    padding: 4px 8px;
+    background-color: $vud-thumb-bg-color;
+    border-radius: 8px;
+  }
+  .down-score {
+    margin-left: 1px;
+    border: 1px solid $vud-thumb-border-color;
+    padding: 4px 8px;
+    background-color: $vud-thumb-bg-color;
+    border-radius: 8px;    
+  }
+}
