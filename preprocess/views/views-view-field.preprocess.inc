@@ -18,19 +18,24 @@ function ofen_preprocess_views_view_field(&$variables) {
   }
 
   /**
-   * View: NeFo-Block Aktuelle Produkte
+   * View: NeFo-Block Current Products
+   * Aktuelle Produkte: Stellungnahmen, Faktenblätter, Berichte, Studien, NeFo-Artikel
    */
-  if ($view->name == 'nefo_current_products') {
-    // Field:Wrapper 2
-    if ($variables['field']->options['id'] == 'nothing_1') {
-      $tid = intval($variables['row']->taxonomy_term_data_field_data_field_nefo_taxonomy_document_t);
-      $node_type = $variables['row']->node_field_data_field_nefo_slide_product_refer_type;
-      $variables['output'] = _ofen_get_product_display_name($node_type, $tid);
+  if ($view->name == 'nefo_block_current_products') {
+    // Image
+    if ($variables['field']->options['id'] == 'field_nefo_slide_product_img') {
+      if (empty($variables['row']->field_field_nefo_article_img) && empty($variables['row']->field_field_nefo_slide_product_img)) {
+        $tid = intval($variables['row']->taxonomy_term_data_field_data_field_nefo_taxonomy_document_t);
+        $nid = $variables['row']->nid;
+        $node_type = $variables['row']->node_type;
+        $image = _ofen_get_product_frontpage_image($node_type, $tid);
+        $variables['output'] = l($image, "node/$nid", array('html' => TRUE));
+      }
     }
-    // Field:Wrapper 3
-    if ($variables['field']->options['id'] == 'nothing_2') {
+    // Link
+    if ($variables['field']->options['id'] == 'type') {
       $tid = intval($variables['row']->taxonomy_term_data_field_data_field_nefo_taxonomy_document_t);
-      $node_type = $variables['row']->node_field_data_field_nefo_slide_product_refer_type;
+      $node_type = $variables['row']->node_type;
       $variables['output'] = _ofen_get_product_display_link($node_type, $tid);
     }
   }
@@ -77,20 +82,27 @@ function _ofen_get_product_document_icon($node_type, $tid) {
 }
 
 
-function _ofen_get_product_display_name($node_type, $tid) {
-  $products = array(
-      'nefo_product_report'     => 'Berichte',
-      'nefo_product_factsheet'  => 'Faktenblätter',
-      'nefo_product_opinion'    => 'Stellungnahmen',
-      'nefo_product_workshop'   => 'Workshops',
-      'nefo_product_study'      => 'Studien',
-      'blog'                    => 'Blogs',
-  );
-
+function _ofen_get_product_frontpage_image($node_type, $tid) {
+  $path = drupal_get_path('theme', 'ofen');
   $type = _ofen_get_nefo_product_type($node_type, $tid);
-  $display_name = (!empty($products[$type])) ? $products[$type] : '';
+  switch ($type) {
+		case 'nefo_product_report':
+			$image = '<img class="nefo-product-icon" alt="Bericht" title="Bericht" src="/'. $path .'/images/icons/current-products/Bericht.png">';
+			break;
+		case 'nefo_product_factsheet':
+			$image = '<img class="nefo-product-icon" alt="Faktenblatt" title="Faktenblatt" src="/'. $path .'/images/icons/current-products/Faktenblatt.png">';
+			break;
+		case 'nefo_product_opinion':
+			$image = '<img class="nefo-product-icon" alt="Stellungnahme" title="Stellungnahme" src="/'. $path .'/images/icons/current-products/Stellungnahme.png">';
+			break;
+		case 'nefo_product_study':
+			$image = '<img class="nefo-product-icon" alt="Studie" title="Studie" src="/'. $path .'/images/icons/current-products/Studie.png">';
+			break;
+		default:
+			$image = '';
+  }
 
-  return $display_name;
+  return $image;
 }
 
 
@@ -100,14 +112,11 @@ function _ofen_get_product_display_link($node_type, $tid) {
       'nefo_product_factsheet'  => array('alle Faktenblätter', '/produkte/faktenblaetter'),
       'nefo_product_opinion'    => array('alle Stellungnahmen', '/produkte/stellungnahmen'),
       'nefo_product_study'      => array('alle Studien', '/produkte/studien'),
-      'nefo_product_workshop'   => array('alle Workshops', '/schnittstellen/produkte/workshops'),
-      'blog'                    => array('alle Blogs', '/blogs'),
+      'nefo_product_article'      => array('alle Artikel', '/schnittstellen/produkte/artikel'),
   );
 
   $type = _ofen_get_nefo_product_type($node_type, $tid);
-  $display_link = (!empty($products[$type])) ? '<span class="nefo-view-block-current-products-link-all">'.
-                                            l($products[$type][0], $products[$type][1]) .'</span>'
-                                       : '';
+  $display_link = (!empty($products[$type])) ? l($products[$type][0], $products[$type][1]) : '';
 
   return $display_link;
 }

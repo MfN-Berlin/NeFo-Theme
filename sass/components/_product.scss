@@ -1,102 +1,109 @@
 //
 // Frontpage
 //
-// Aktuelle Produkte: Stellungnahmen, Faktenblätter, Berichte
-.nefo-view-block-current-products-row {
-  border-bottom: 4px solid $events-bg;
-  h2 {
-    margin-bottom: 20px;
-  }
-  @include breakpoint($tab-2) {
-     border: none;
-  }
-}
-.nefo-view-block-current-products-row {
-  //position: relative;
-  //overflow: hidden;
-  margin-top: 20px;
-  @include breakpoint($tab-2) {
-    width: 100%;
-    max-width: 100%;
-    border-bottom: 4px solid $events-bg;
-  }
-}
-.nefo-view-block-current-products-img {
-  //position: relative;
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    @include breakpoint($tab-3-1) {
-      max-height: ($image-block-height - 70);
-    }
-    @include breakpoint($tab-3-2) {
-      max-height: ($image-block-height - 70);
-    }
-    @include breakpoint($desk) {
-      max-height: ($image-block-height - 70);
-    }
-  }
-}
-
-.nefo-view-block-current-products-title {
-  a {
-    color: $h2-bg;
-    text-decoration: none;
-  }
+// Aktuelle Produkte: Stellungnahmen, Faktenblätter, Berichte, Studien, NeFo-Artikel
+.view-nefo-block-current-products {
   @include breakpoint($mobile) {
-    margin: 0;
-    margin-bottom: $mobile-content-margin;
+    margin-top: 0;
   }
   @include breakpoint($tab-2) {
-    margin: 0;
-    margin-bottom: $mobile-content-margin;
+    margin-top: 0;
   }
-  @include breakpoint($tab-3-1) {
-    margin: 0 $mobile-content-margin;
-    height: 10em;
-  }
-  @include breakpoint($tab-3-2) {
-    margin: 0 $mobile-content-margin;
-    height: 8em;
-  }
-  @include breakpoint($desk) {
-    margin: 0 $mobile-content-margin;
-    height: 6em;
-  }
-}
-
-.nefo-view-block-current-products-type,
-.nefo-view-block-current-products-nav {
-  @include nefo-front-readmore-nav;
-  display: inline-block;
   @include breakpoint($tab-3) {
-    display: block;
+    margin-top: $vert-spacing-unit;
   }
-  padding-left: 0;
-}
-.nefo-view-block-current-products-type {
-  text-transform: uppercase;
-  padding-right: 0;
-  font-size: 16px;
   @include breakpoint($desk) {
-    letter-spacing: -1px;
+    margin-top: $vert-spacing-unit;
   }
-}
-.nefo-view-block-current-products-nav {
-  float: right;
-  padding-top: $mobile-content-margin;
-  padding-left: 0;
-}
-.nefo-view-block-current-products-link-all {
-  a {
-    @include nefo-front-readmore-nav-link;
-    padding-right: 15px;
-    @include breakpoint($desk) {
-      padding-right: 8px;
+  .view-content {
+    @include breakpoint($tab-2) {
+      width: 100%;
+      max-width: 100%;
     }
   }
-}
+
+  .nefo-block-current-products-row {
+    @include breakpoint($mobile) {
+      margin: $vert-spacing-unit 0;
+      border-bottom: 1px solid $separator-color;
+    }
+    @include breakpoint($tab-2) {
+      margin: $vert-spacing-unit 0;
+      border-bottom: 1px solid $separator-color;
+    }    
+    @include breakpoint($tab-3) {
+      margin-bottom: $vert-spacing-unit;
+      &:nth-of-type(4) {
+        clear:both !important;
+      }
+    }
+    @include breakpoint($desk) {
+      margin-bottom: $vert-spacing-unit;
+      &:nth-of-type(4) {
+        clear:both !important;
+      }
+    }
+    
+    .nefo-block-current-products-title {
+      a {
+        color: $h2-bg;
+        text-decoration: none;
+      }
+      @include breakpoint($mobile) {
+        margin: 0;
+        margin-bottom: $mobile-content-margin;
+      }
+      @include breakpoint($tab-2) {
+        margin: 0;
+        margin-bottom: $mobile-content-margin;
+      }
+      @include breakpoint($tab-3-1) {
+        margin: 0 $mobile-content-margin;
+        height: 10em;
+      }
+      @include breakpoint($tab-3-2) {
+        margin: 0 $mobile-content-margin;
+        height: 8em;
+      }
+      @include breakpoint($desk) {
+        margin: 0 $mobile-content-margin;
+        height: 6em;
+      }
+    }
+    
+    .nefo-block-current-products-img {
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        @include breakpoint($tab-3-1) {
+          max-height: ($image-block-height - 70);
+        }
+        @include breakpoint($tab-3-2) {
+          max-height: ($image-block-height - 70);
+        }
+        @include breakpoint($desk) {
+          max-height: ($image-block-height - 70);
+        }
+      }
+      @include breakpoint($mobile) {
+        margin-bottom: $mobile-content-margin;
+      }
+      @include breakpoint($tab-2) {
+        margin-bottom: $mobile-content-margin;
+      }
+    }
+    
+    .nefo-block-current-products-link-all {
+      @include nefo-front-readmore-nav;
+      text-align: right;
+      a {
+        @include nefo-front-readmore-nav-link;
+      }
+    }
+  }//nefo-block-current-products-row
+}//view-nefo-block-current-products
+
 
 // Studien
 .view-nefo-view-block-study {

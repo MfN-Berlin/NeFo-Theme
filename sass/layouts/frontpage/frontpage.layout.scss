@@ -70,8 +70,8 @@
 .l-region--products {
   @include breakpoint($mobile, true) {
     @include layout(1) {
-      @for $i from 1 through 3 {
-        .nefo-view-block-news-row:nth-of-type(#{$i}) {
+      @for $i from 1 through 6 {
+        .nefo-block-current-products-roww:nth-of-type(#{$i}) {
           @include grid-span(1, 1)
         }
       }
@@ -79,8 +79,8 @@
   }
   @include breakpoint($tab-2, true) {
     @include layout(1) {
-      @for $i from 1 through 3 {
-        .nefo-view-block-news-row:nth-of-type(#{$i}) {
+      @for $i from 1 through 6 {
+        .nefo-block-current-products-row:nth-of-type(#{$i}) {
           @include grid-span(1, 1)
         }
       }
@@ -88,23 +88,32 @@
   }
   @include breakpoint($tab-3, true) {
     @include layout(3, 0.05) {
-      @for $i from 1 through 3 {
-        .nefo-view-block-current-products-row:nth-of-type(#{$i}) {
-          @include grid-span(1, $i)
+      $n: 0;
+      @for $i from 1 through 2 {
+        @for $j from 1 through 3 {
+          $n: $n + 1;
+          .nefo-block-current-products-row:nth-of-type(#{$n}) {
+            @include grid-span(1, $j)
+          }
         }
       }
     }
   } 
   @include breakpoint($desk, true) {
     @include layout(3, 0.05) {
-      @for $i from 1 through 3 {
-        .nefo-view-block-current-products-row:nth-of-type(#{$i}) {
-          @include grid-span(1, $i)
+      $n: 0;
+      @for $i from 1 through 2 {
+        @for $j from 1 through 3 {
+          $n: $n + 1;
+          .nefo-block-current-products-row:nth-of-type(#{$n}) {
+            @include grid-span(1, $j)
+          }
         }
       }
     }
   } 
-}
+}//l-region--products
+
 
 // Miscellaneous (Events and News)
 .l-region--misc {
