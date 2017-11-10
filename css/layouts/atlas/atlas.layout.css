@@ -10,11 +10,13 @@
     vertical-align: middle;
     text-decoration: none; }
 
-.block--nefo-blocks-builder-nefo-feature-map h3,
-.block--nefo-blocks-builder-nefo-feature-map p,
+@media (max-width: 640px) {
+  .block--nefo-blocks-builder-nefo-feature-map {
+    margin-top: 40px; } }
+
 .block--nefo-blocks-builder-nefo-feature-map .btn {
   margin: 0;
-  margin-top: 10px; }
+  margin-top: 20px; }
 
 .block--nefo-blocks-builder-nefo-feature-map h2 {
   text-transform: uppercase;
@@ -31,115 +33,11 @@
 .block--nefo-blocks-builder-nefo-feature-map h3 {
   font-size: 24px;
   margin-left: 10px;
-  margin-bottom: 0; }
-
-.block--nefo-blocks-builder-nefo-feature-map img {
-  display: block;
-  width: 100%; }
+  margin-bottom: 0;
+  visibility: hidden; }
 
 .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue {
   background-color: #5091c7; }
-
-@media (max-width: 479px) {
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-img {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-text {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h2 {
-      display: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h3 {
-      display: none; }
-  .block--nefo-blocks-builder-nefo-feature-map img {
-    display: none; } }
-
-@media (min-width: 480px) and (max-width: 639px) {
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-img {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-text {
-    width: 100%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h2 {
-      display: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h3 {
-      display: none; }
-  .block--nefo-blocks-builder-nefo-feature-map img {
-    max-height: 240px; } }
-
-@media (min-width: 640px) and (max-width: 767px) {
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-img {
-    width: 32.78689%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-img img {
-      min-height: 176px; }
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-text {
-    width: 65.57377%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none;
-    padding-top: 80px; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h2 {
-      display: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h3 {
-      display: none; } }
-
-@media (min-width: 768px) and (max-width: 979px) {
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-img {
-    width: 59.40594%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-img h2 {
-      display: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-img h3 {
-      display: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-img img {
-      min-height: 290px; }
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-text {
-    width: 39.60396%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-text h3 {
-      margin-top: 0; } }
-
-@media (min-width: 980px) {
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-img {
-    width: 64.51613%;
-    float: left;
-    margin-right: -100%;
-    margin-left: 0;
-    clear: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-img h2 {
-      display: none; }
-    .block--nefo-blocks-builder-nefo-feature-map .feature-map-img h3 {
-      display: none; }
-  .block--nefo-blocks-builder-nefo-feature-map .feature-map-text {
-    width: 32.25806%;
-    float: right;
-    margin-left: 0;
-    margin-right: 0;
-    clear: none; } }
 
 .nefo-map-page-wrapper {
   background-color: #eff4f8; }

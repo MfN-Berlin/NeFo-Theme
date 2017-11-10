@@ -11,12 +11,18 @@
 
 
 .nefo-view-block-row {
+  .nefo-view-block-image-thumbnail,
   .nefo-view-block-video-thumbnail {
     img {
       width: 100%;
       max-width: 100%;
       height: auto;
     }
+  }
+  .nefo-view-block-image-credit {
+    font-size: $view-list-credit-font-size;
+    font-weight: bold;
+    margin-bottom: 4px;
   }
 }
 

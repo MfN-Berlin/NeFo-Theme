@@ -27,7 +27,7 @@ if (!empty($view->name) && $view->name == 'nefo_view_block_video') {
   if (!empty($row)) {
     list($node_url, $video_url) = explode("|:|", $output);
     $video_id = basename($video_url);
-    $output = '<div class="nefo-view-block-video-thumbnail">
+    $output = '<div class="nefo-view-block-image-thumbnail">
         <a href="'. $node_url .'">
           <img src="https://i1.ytimg.com/vi/'. $video_id .'/hqdefault.jpg">
         </a>
