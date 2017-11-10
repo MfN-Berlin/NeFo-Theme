@@ -1,82 +1,10 @@
+//
 // Frontpage
-.block--views-nefo-view-block-article-block {
-  clear: both;
-}
-.view-nefo-block-article {
-  .view-content {
-  }
-}
-.nefo-view-block-article-row {
-}
-.nefo-view-block-article-col1 {
-  @include breakpoint($tab-2) {
-    width: 100%;
-    max-width: 100%;
-  }
-  @include breakpoint($tab-3) {
-    width: 48%;
-    max-width: $image-block-width-interview;
-    float: left;
-  }  
-  @include breakpoint($desk) {
-    float: left;
-  }
-}
-.nefo-view-block-article-col2 {
-  @include breakpoint($mobile) {
-    margin-top: $vert-spacing-unit;
-  }
-  @include breakpoint($tab-2) {
-    margin-top: $vert-spacing-unit;
-  }
-  @include breakpoint($tab-3) {
-    margin-left: 50%;
-  }
-  @include breakpoint($desk) {
-     margin-left: 450px;
-  }
-}
-.nefo-view-block-article-img {
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-}
-.nefo-view-block-article-img-credit {
-  padding-top: 4px;
-  font-size: $view-list-credit-font-size;
-  font-weight: bold;
-}
-.nefo-view-block-article-title {
-  margin-bottom: 0.5em;
-  margin-top: 0;
-  a {
-    color: $h2-bg;
-    text-decoration: none;
-  }
-}
-.nefo-view-block-article-nav {
-  @include breakpoint($desk) {
-    @include nefo-front-readmore-nav;
-  } 
-}
-.nefo-view-block-article-link {
-  @include nefo-front-readmore-nav-button;
-}
-.nefo-view-block-article-link-all {
-  float: right;
-  a {
-    @include nefo-front-readmore-nav-link;
-    vertical-align: middle;
-  }
-  @include breakpoint($desk) {
-    padding-left: 1em;
-    float: none;
-  }   
-}
+//
 
+//
 // Page
+//
 .nefo-view-list-article-row {
     margin-top: 1em;
     margin-bottom: 2em;

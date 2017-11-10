@@ -3,59 +3,33 @@
 //
 // Aktuelle Produkte: Stellungnahmen, Faktenblätter, Berichte, Studien, NeFo-Artikel
 .view-nefo-block-current-products {
-  @include breakpoint($mobile) {
-    margin-top: 0;
-  }
-  @include breakpoint($tab-2) {
-    margin-top: 0;
-  }
-  @include breakpoint($tab-3) {
+  margin-top: 0;
+  @include breakpoint(min-width $tablet-width-2) {
     margin-top: $vert-spacing-unit;
   }
-  @include breakpoint($desk) {
-    margin-top: $vert-spacing-unit;
-  }
-  .view-content {
-    @include breakpoint($tab-2) {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-
+  
   .nefo-block-current-products-row {
-    @include breakpoint($mobile) {
+    @include breakpoint(max-width $tablet-width-2) {
       margin: $vert-spacing-unit 0;
       border-bottom: 1px solid $separator-color;
     }
-    @include breakpoint($tab-2) {
-      margin: $vert-spacing-unit 0;
-      border-bottom: 1px solid $separator-color;
-    }    
-    @include breakpoint($tab-3) {
-      margin-bottom: $vert-spacing-unit;
-      &:nth-of-type(4) {
-        clear:both !important;
+    @include breakpoint(min-width $tablet-width-2) {
+      &:nth-of-type(1),
+      &:nth-of-type(2),
+      &:nth-of-type(3) {
+        margin-bottom: $vert-spacing-unit;
       }
-    }
-    @include breakpoint($desk) {
-      margin-bottom: $vert-spacing-unit;
       &:nth-of-type(4) {
         clear:both !important;
       }
     }
     
     .nefo-block-current-products-title {
+      margin: 0;
+      margin-bottom: $mobile-content-margin;
       a {
         color: $h2-bg;
         text-decoration: none;
-      }
-      @include breakpoint($mobile) {
-        margin: 0;
-        margin-bottom: $mobile-content-margin;
-      }
-      @include breakpoint($tab-2) {
-        margin: 0;
-        margin-bottom: $mobile-content-margin;
       }
       @include breakpoint($tab-3-1) {
         margin: 0 $mobile-content-margin;
@@ -76,20 +50,11 @@
         width: 100%;
         max-width: 100%;
         height: auto;
-        @include breakpoint($tab-3-1) {
+        @include breakpoint(min-width $tablet-width-2) {
           max-height: ($image-block-height - 70);
-        }
-        @include breakpoint($tab-3-2) {
-          max-height: ($image-block-height - 70);
-        }
-        @include breakpoint($desk) {
-          max-height: ($image-block-height - 70);
-        }
+        }        
       }
-      @include breakpoint($mobile) {
-        margin-bottom: $mobile-content-margin;
-      }
-      @include breakpoint($tab-2) {
+      @include breakpoint(max-width $tablet-width-2) {
         margin-bottom: $mobile-content-margin;
       }
     }
@@ -104,40 +69,6 @@
   }//nefo-block-current-products-row
 }//view-nefo-block-current-products
 
-
-// Studien
-.view-nefo-view-block-study {
-  margin-top: $vert-spacing-unit;
-
-  .nefo-view-block-study-row {
-    @include nefo-front-study-block;
-    @include breakpoint($mobile) {
-      height: 6em;
-      margin-bottom: $mobile-content-margin;
-    }
-    @include breakpoint($tab) {
-      margin-bottom: $vert-spacing-unit;
-      &:nth-of-type(3) {
-        clear:both !important;
-      }
-    }
-  }
-  .nefo-view-block-study-title {
-    height: 100%;
-    display: flex;
-    align-items: center
-  }
-  .view-footer {
-    clear: both;
-  }
-  .view-block-study-link-all {
-    float: right;
-    @include nefo-front-readmore-nav;
-    a {
-      @include nefo-front-readmore-nav-link;
-    }
-  }
-}
 
 //
 // Page

@@ -163,9 +163,10 @@ h4 {
 .l-region--misc,
 .l-region--products,
 .l-region--studies,
-.block--views-nefo-view-block-interview-block,
-.block--views-nefo-block-press-release-block,
-.block--views-nefo-block-article-block {
+.l-region--interviews {
+//.block--views-nefo-view-block-interview-block,
+//.block--views-nefo-block-press-release-block,
+//.block--views-nefo-block-article-block {
   @include block;
 }
 

@@ -17,22 +17,14 @@
     font-weight: bold;
   }  
 
-  @include breakpoint($mobile) {
-    .slider-img-credit {
-      padding-left: $horz-spacing-unit;
-    }
-    .slider-content-right {
-      padding: 0 $horz-spacing-unit;
-    }    
-  } // mobile
-  @include breakpoint($tab-2) {
+  @include breakpoint(max-width $tablet-width-2) {
     .slider-img-credit {
       padding-left: $horz-spacing-unit;
     }
     .slider-content-right {
       padding: 0 $horz-spacing-unit;
     }  
-  } // tab-2
+  }
   @include breakpoint($tab-3-1) {
     .slider-img-credit {
       padding-left: $horz-spacing-unit;

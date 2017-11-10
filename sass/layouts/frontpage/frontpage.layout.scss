@@ -28,7 +28,7 @@
 
 // News
 .l-region--news {
-  @include breakpoint($mobile, true) {
+  @include breakpoint(max-width $tablet-width-2, true) {
     @include layout(1) {
       @for $i from 1 through 3 {
         .nefo-view-block-news-row:nth-of-type(#{$i}) {
@@ -37,25 +37,7 @@
       }
     }
   }
-  @include breakpoint($tab-2, true) {
-    @include layout(1) {
-      @for $i from 1 through 3 {
-        .nefo-view-block-news-row:nth-of-type(#{$i}) {
-          @include grid-span(1, 1)
-        }
-      }
-    }
-  }
-  @include breakpoint($tab-3, true) {
-    @include layout(3, 0.05) {
-      @for $i from 1 through 3 {
-        .nefo-view-block-news-row:nth-of-type(#{$i}) {
-          @include grid-span(1, $i)
-        }
-      }
-    }
-  } 
-  @include breakpoint($desk, true) {
+  @include breakpoint(min-width $tablet-width-2, true) {
     @include layout(3, 0.05) {
       @for $i from 1 through 3 {
         .nefo-view-block-news-row:nth-of-type(#{$i}) {
@@ -68,7 +50,7 @@
 
 // Aktuelle Produkte
 .l-region--products {
-  @include breakpoint($mobile, true) {
+  @include breakpoint(max-width $tablet-width-2, true) {
     @include layout(1) {
       @for $i from 1 through 6 {
         .nefo-block-current-products-roww:nth-of-type(#{$i}) {
@@ -77,109 +59,62 @@
       }
     }
   }
-  @include breakpoint($tab-2, true) {
-    @include layout(1) {
-      @for $i from 1 through 6 {
-        .nefo-block-current-products-row:nth-of-type(#{$i}) {
-          @include grid-span(1, 1)
+  @include breakpoint(min-width $tablet-width-2, true) {
+    @include layout(3, 0.05) {
+      $n: 0;
+      @for $i from 1 through 2 {
+        @for $j from 1 through 3 {
+          $n: $n + 1;
+          .nefo-block-current-products-row:nth-of-type(#{$n}) {
+            @include grid-span(1, $j)
+          }
         }
       }
     }
   }
-  @include breakpoint($tab-3, true) {
-    @include layout(3, 0.05) {
-      $n: 0;
-      @for $i from 1 through 2 {
-        @for $j from 1 through 3 {
-          $n: $n + 1;
-          .nefo-block-current-products-row:nth-of-type(#{$n}) {
-            @include grid-span(1, $j)
-          }
-        }
-      }
-    }
-  } 
-  @include breakpoint($desk, true) {
-    @include layout(3, 0.05) {
-      $n: 0;
-      @for $i from 1 through 2 {
-        @for $j from 1 through 3 {
-          $n: $n + 1;
-          .nefo-block-current-products-row:nth-of-type(#{$n}) {
-            @include grid-span(1, $j)
-          }
-        }
-      }
-    }
-  } 
 }//l-region--products
 
 
 // Miscellaneous (Events and News)
 .l-region--misc {
-  @include breakpoint($mobile, true) {
+}
+
+
+// Studies
+.l-region--studies {
+}
+
+
+// Inteviews (Interview and Research atlas)
+// See ticket #407
+.l-region--interviews {
+  @include breakpoint(max-width $tablet-width-2, true) {
     @include layout(1) {
-      #block-views-nefo-calendar-event-up,
-      #block-views-nefo-view-block-newsipbes-block {
+      #block-views-nefo-view-block-interview-block,
+      #block-nefo-blocks-builder-nefo-feature-map {
         @include grid-span(1, 1);
       }
     }
   }
-  @include breakpoint($tab, true) {
+  @include breakpoint($tablet-width-2 ($desktop-width - 1), true) {
     @include layout(2, 0.1) {
-      #block-views-nefo-calendar-event-up {
+      #block-views-nefo-view-block-interview-block {
         @include grid-span(1, 1);
       }
-      #block-views-nefo-view-block-newsipbes-block {
+      #block-nefo-blocks-builder-nefo-feature-map {
         @include grid-span(1, 2);
       }   
     }
   }
   @include breakpoint($desk, true) {
     @include layout(2) {
-      #block-views-nefo-calendar-event-up {
+      #block-views-nefo-view-block-interview-block {
         @include grid-span(1, 1);
       }
-      #block-views-nefo-view-block-newsipbes-block {
+      #block-nefo-blocks-builder-nefo-feature-map {
         @include grid-span(1, 2);
       }   
     }
   }
-}
-
-
-// Studies
-.l-region--studies {
-  @include breakpoint($mobile, true) {
-    @include layout(1) {
-      @for $i from 1 through 4 {
-        .nefo-view-block-study-row:nth-of-type(#{$i}) {
-            @include grid-span(1, 1)
-        }
-      }
-    }
-  }
-  @include breakpoint($tab, true) {
-    @include layout(2, 0.1) {
-      $n: 0;
-      @for $i from 1 through 2 {
-        @for $j from 1 through 2 {
-          $n: $n + 1;
-          .nefo-view-block-study-row:nth-of-type(#{$n}) {
-              @include grid-span(1, $j)
-          }
-        }
-      }
-    }
-  }
-  @include breakpoint($desk, true) {
-    @include layout(4, 0.05) {
-      @for $i from 1 through 4 {
-        .nefo-view-block-study-row:nth-of-type(#{$i}) {
-            @include grid-span(1, $i)
-        }
-      }
-    }
-  }  
 }
 

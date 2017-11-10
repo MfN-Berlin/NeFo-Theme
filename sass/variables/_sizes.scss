@@ -1,19 +1,9 @@
 // Grid
 $mobile: max-width ($tablet-width - 1);
-$mobile-2: max-width ($mobile-width-2 - 1);
-$mobile-2-2: $mobile-width-2 ($mobile-width-3 - 1);
-$mobile-2-3: $mobile-width-3 ($tablet-width - 1);
 $tab: $tablet-width ($desktop-width - 1);
-$tab-2: $tablet-width ($tablet-width-2 - 1);
-$tab-3: $tablet-width-2 ($desktop-width - 1);
 $tab-3-1: $tablet-width-2 ($tablet-width-3 - 1);
 $tab-3-2: $tablet-width-3 ($desktop-width - 1);
 $desk: $desktop-width;
-$desk-2: $desktop-width ($desktop-width-2 - 1);
-$desk-3: $desktop-width-2;
-
-
-//$nav-ul-width: 1133px;
 
 $size-news-h3: 16px;
 $size-news-p: 14px;

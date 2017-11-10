@@ -2,11 +2,12 @@
 // Frontpage block
 //
 .block--nefo-blocks-builder-nefo-feature-map {
-  h3,
-  p,
+  @include breakpoint(max-width $tablet-width-2) {
+    margin-top: 2 * $vert-spacing-unit;
+  }
   .btn {
     margin: 0;
-    margin-top: $mobile-content-margin;
+    margin-top: $vert-spacing-unit;
   }
   h2 {
     @include nefo-heading;
@@ -16,112 +17,13 @@
     font-size: 24px;
     margin-left: 10px;
     margin-bottom: 0;
-  }
-  img {
-    display: block;
-    width: 100%;
+    visibility: hidden;
   }
   .feature-map-text .btn--blue{
     @include button--blue;
   }
-
-  @include breakpoint($mobile) {
-    @include layout(1) {
-      .feature-map-img {
-        @include grid-span(1, 1);
-      }
-      .feature-map-text {
-        @include grid-span(1, 1);
-        h2 {
-          display: none;
-        }
-        h3 {
-          display: none;
-        }
-      }
-      img {
-        display: none;
-      }
-    }
-  } // mobile
-  @include breakpoint($tab-2) {
-    @include layout(1) {
-      .feature-map-img {
-        @include grid-span(1, 1);
-      }
-      .feature-map-text {
-        @include grid-span(1, 1);
-        h2 {
-          display: none;
-        }
-        h3 {
-          display: none;
-        }
-      }
-      img {
-        max-height: 240px;
-      }
-    }
-  } // tab-2
-  @include breakpoint($tab-3-1) {
-    @include layout(1 2, .05) {
-      .feature-map-img {
-        @include grid-span(1, 1);
-        img {
-          min-height: 176px;
-        }
-      }
-      .feature-map-text {
-        @include grid-span(1, 2);
-        h2 {
-          display: none;
-        }
-        h3 {
-          display: none;
-        }
-        padding-top: 80px;
-      }
-    }
-  } // tab-3-1
-  @include breakpoint($tab-3-2) {
-    @include layout(6 4, .1) {
-      .feature-map-img {
-        @include grid-span(1, 1);
-        h2 {
-          display: none;
-        }
-        h3 {
-          display: none;
-        }
-        img {
-          min-height: 290px;
-        }
-      }
-      .feature-map-text {
-        @include grid-span(1, 2);
-        h3 {
-          margin-top: 0;
-        }
-      }
-    }
-  } // tab-3-2
-  @include breakpoint($desk) {
-    @include layout(2 1, .1) {
-      .feature-map-img {
-        @include grid-span(1, 1);
-        h2 {
-          display: none;
-        }
-        h3 {
-          display: none;
-        }
-      }
-      .feature-map-text {
-        @include grid-span(1, 2);
-      }
-    }
-  } // desk
 }
+
 
 //
 // Forschungsatlas page
