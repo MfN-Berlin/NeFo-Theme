@@ -31,10 +31,18 @@
   position: relative; }
 
 .block--nefo-blocks-builder-nefo-feature-map h3 {
-  font-size: 24px;
-  margin-left: 10px;
-  margin-bottom: 0;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
   visibility: hidden; }
+
+.block--nefo-blocks-builder-nefo-feature-map img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px; }
+
+.block--nefo-blocks-builder-nefo-feature-map p {
+  display: none; }
 
 .block--nefo-blocks-builder-nefo-feature-map .feature-map-text .btn--blue {
   background-color: #5091c7; }

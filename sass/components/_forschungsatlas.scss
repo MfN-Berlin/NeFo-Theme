@@ -14,10 +14,18 @@
     position: relative;
   }
   h3 {
-    font-size: 24px;
-    margin-left: 10px;
-    margin-bottom: 0;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
     visibility: hidden;
+  }
+  img {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  p {
+    display: none;
   }
   .feature-map-text .btn--blue{
     @include button--blue;

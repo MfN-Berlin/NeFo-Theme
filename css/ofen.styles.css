@@ -1466,9 +1466,6 @@ ul.pager .pager__item--current {
   .nefo-view-block-interview-row .nefo-view-block-interview-title a {
     color: #40769f;
     text-decoration: none; }
-  @media (min-width: 768px) {
-    .nefo-view-block-interview-row .nefo-view-block-interview-title {
-      display: none; } }
 
 .nefo-view-block-interview-row .nefo-view-block-interview-img img {
   width: 100%;
@@ -1479,6 +1476,22 @@ ul.pager .pager__item--current {
   padding-top: 4px;
   font-size: 12px;
   font-weight: bold; }
+
+.nefo-view-block-interview-row .nefo-view-block-interview-link-all {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right; }
+  .nefo-view-block-interview-row .nefo-view-block-interview-link-all a {
+    color: #40769f;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px; }
 
 .nefo-view-list-interview-row {
   margin-top: 1em;
@@ -1818,6 +1831,22 @@ ul.pager .pager__item--current {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 4px; }
+
+.nefo-view-block-nav-link-all {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right; }
+  .nefo-view-block-nav-link-all a {
+    color: #40769f;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px; }
 
 .views-table {
   width: 100%;
