@@ -1234,6 +1234,52 @@ ul.pager .pager__item--current {
 .nefo-pdf-icon {
   padding-left: 8px; }
 
+.node--nefo-product-document--full .node__content .field--name-field-nefo-description {
+  margin-top: 1em; }
+
+@media (min-width: 980px) {
+  .node--nefo-product-document--full .node__content .vud-widget vud-widget-thumbs {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .node--nefo-product-document--full .node__content .field--name-field-nefo-product-icon {
+    width: 24.96879%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    max-height: 212px; }
+  .node--nefo-product-document--full .node__content .field--name-field-nefo-description {
+    width: 74.90637%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    height: 75%;
+    margin-top: 0; }
+  .node--nefo-product-document--full .node__content .field--name-field-nefo-product-document {
+    width: 74.90637%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .node--nefo-product-document--full .node__content .nefo-link-back-list-all {
+    clear: both !important;
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+
+.node--nefo-product-document--full .node__content .field--name-field-nefo-product-icon img {
+  max-height: 212px;
+  box-shadow: 8px 8px 4px #888; }
+
+.nefo-page-title-text {
+  margin-left: 8px; }
+
 #block-search-form {
   display: inline-block;
   float: right; }
@@ -1644,6 +1690,29 @@ ul.pager .pager__item--current {
 
 .file-icon {
   padding-right: 4px; }
+
+.file-document,
+.field--name-field-nefo-product-document {
+  margin: 8px 0; }
+  .file-document .file,
+  .field--name-field-nefo-product-document .file {
+    display: table; }
+    .file-document .file .file-icon,
+    .field--name-field-nefo-product-document .file .file-icon {
+      display: table-cell;
+      padding: 0;
+      margin: 0;
+      margin-right: 8px; }
+      .file-document .file .file-icon img,
+      .field--name-field-nefo-product-document .file .file-icon img {
+        height: 45px;
+        vertical-align: top; }
+    .file-document .file .file-link,
+    .field--name-field-nefo-product-document .file .file-link {
+      display: table-cell;
+      vertical-align: top;
+      padding: 0;
+      margin: 0; }
 
 .nefo-ckeditor-inline-container {
   display: block;

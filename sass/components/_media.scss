@@ -23,6 +23,32 @@
   padding-right: 4px;
 }
 
+
+// Documents
+.file-document,
+.field--name-field-nefo-product-document {
+  margin: 8px 0;
+  .file {
+    display: table;
+    .file-icon {
+      display: table-cell;
+      padding: 0;
+      margin: 0;
+      margin-right: 8px;
+      img {
+        height: 45px;
+        vertical-align: top;
+      }
+    }
+    .file-link {
+      display: table-cell;
+      vertical-align: top;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
 .nefo-ckeditor-inline-container {
   display: block;
   font-size: $p-font-size;

@@ -194,3 +194,49 @@
   padding-left: 8px;
 }
 
+
+// Full node
+.node--nefo-product-document--full {
+  .node__content {
+    .field--name-field-nefo-description {
+        margin-top: 1em;
+    }
+    @include breakpoint($desk) {
+        @include layout(2 6, 0.01) {
+          .vud-widget vud-widget-thumbs {
+            @include grid-span(2, 1)
+          }
+          .field--name-field-nefo-product-icon {
+            @include grid-span(1, 1)
+            max-height: 212px;
+          }
+          .field--name-field-nefo-description {
+            @include grid-span(1, 2)
+            height: 75%;
+            margin-top: 0;
+          }
+          .field--name-field-nefo-product-document {
+            @include grid-span(1, 2)
+          }
+          .nefo-link-back-list-all {
+            clear: both !important;
+            @include grid-span(2, 1)
+          }
+        }
+    }//desk
+    .field--name-field-nefo-product-icon {
+        img {
+          max-height: 212px;
+          box-shadow: 8px 8px 4px #888;
+        }        
+    }
+  }
+}
+
+// Title with icon
+.nefo-page-title-icon {
+}
+.nefo-page-title-text {
+  margin-left: 8px;
+}
+
