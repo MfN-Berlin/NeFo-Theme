@@ -1,14 +1,6 @@
-// Page
-.nefo-view-list-row {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 1em;
-    border-bottom: $separator-width solid $separator-color;
-    clear: both;
-}
-
+//
+// Block
+//
 .nefo-view-block-row {
   .nefo-view-block-image-thumbnail,
   .nefo-view-block-video-thumbnail {
@@ -24,7 +16,6 @@
     margin-bottom: 4px;
   }
 }
-
 .nefo-view-block-nav-link-all {
   @include nefo-front-readmore-nav;
   text-align: right;
@@ -32,6 +23,113 @@
     @include nefo-front-readmore-nav-link;
   }
 }
+
+
+//
+// Page
+//
+
+.nefo-view-article-teaser-list-row {
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: $separator-width solid $separator-color;
+  clear: both;
+}
+.nefo-article-teaser-horizontal-layout {
+}
+.nefo-article-teaser-header-container {
+  @include breakpoint($desk) {
+    width: 100%;
+    .nefo-article-teaser-category,
+    .nefo-article-teaser-date {
+      margin: 0;
+    }
+    .nefo-article-teaser-category {
+      display: inline-block;
+      width: 49%;
+    }
+    .nefo-article-teaser-date {
+      display: inline-block;
+      width: 49%;
+      text-align: right;
+    }
+  }  
+  h1.nefo-article-teaser-title-smaller {
+    font-size: $h2-font-size;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    width: 100%;
+  }
+}
+.nefo-article-teaser-image-container {
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .nefo-article-teaser-image-meta {
+    margin-bottom: 1em;
+    .nefo-article-teaser-image-caption,
+    .nefo-article-teaser-image-credit {
+      margin: 0;
+      font-size: $credit-font-size;
+      line-height: $credit-line-height;
+    }
+    .nefo-article-teaser-image-caption {
+      margin-bottom: 4px;
+    }
+  }
+}
+.nefo-article-teaser-content-container {
+  .nefo-article-teaser-synopsis {
+  }
+  .nefo-article-teaser-target-link {
+  }
+}
+
+@include breakpoint($desk) {
+  .nefo-article-teaser-wrapper {
+    width: 100%;
+    display: table;
+    .nefo-article-teaser-image-container {
+       display: table-cell;
+       vertical-align: top;
+       width: 246px;
+       height: 138px;       
+       img {
+         width: 100%;
+         height: auto;           
+         margin-top: 4px;
+         max-width: 246px;
+         max-height: 138px;
+       }
+       .nefo-article-teaser-image-meta {
+         display: none;
+       }
+    }
+    .nefo-article-teaser-content-container {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 1em;
+    }
+  }
+}
+
+
+
+// List (nefo_view_list_videos)
+.nefo-view-list-row {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 1em;
+    border-bottom: $separator-width solid $separator-color;
+    clear: both;
+}
+
 
 // Table
 .views-table {
