@@ -28,7 +28,6 @@
 //
 // Page
 //
-
 .nefo-view-article-teaser-list-row {
   margin: 0;
   margin-top: 1em;
@@ -40,12 +39,29 @@
 .nefo-article-teaser-horizontal-layout {
 }
 .nefo-article-teaser-header-container {
-  @include breakpoint($desk) {
+  .nefo-article-teaser-category,
+  .nefo-article-teaser-date {
+    margin: 0;
+  }
+  .nefo-article-teaser-date {
+    font-size: $date-font-size;
+    line-height: $date-line-height;
+  }
+  h1.nefo-article-teaser-title-smaller {
+    font-size: $h2-font-size;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
     width: 100%;
-    .nefo-article-teaser-category,
-    .nefo-article-teaser-date {
-      margin: 0;
+  }
+}
+.nefo-article-teaser-with-category {
+  width: 100%;
+  @include breakpoint(max-width ($desk - 1)) {
+    .nefo-article-teaser-category {
+      margin-bottom: 0.5em;
     }
+  }
+  @include breakpoint($desk) {
     .nefo-article-teaser-category {
       display: inline-block;
       width: 49%;
@@ -55,12 +71,6 @@
       width: 49%;
       text-align: right;
     }
-  }  
-  h1.nefo-article-teaser-title-smaller {
-    font-size: $h2-font-size;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    width: 100%;
   }
 }
 .nefo-article-teaser-image-container {
@@ -74,8 +84,8 @@
     .nefo-article-teaser-image-caption,
     .nefo-article-teaser-image-credit {
       margin: 0;
-      font-size: $credit-font-size;
-      line-height: $credit-line-height;
+      font-size: $credits-font-size;
+      line-height: $credits-line-height;
     }
     .nefo-article-teaser-image-caption {
       margin-bottom: 4px;
@@ -86,6 +96,7 @@
   .nefo-article-teaser-synopsis {
   }
   .nefo-article-teaser-target-link {
+    font-weight: normal;
   }
 }
 

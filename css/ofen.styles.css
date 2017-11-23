@@ -1916,25 +1916,33 @@ ul.pager .pager__item--current {
   border-bottom: 2px solid #e0e0e0;
   clear: both; }
 
-@media (min-width: 980px) {
-  .nefo-article-teaser-header-container {
-    width: 100%; }
-    .nefo-article-teaser-header-container .nefo-article-teaser-category,
-    .nefo-article-teaser-header-container .nefo-article-teaser-date {
-      margin: 0; }
-    .nefo-article-teaser-header-container .nefo-article-teaser-category {
-      display: inline-block;
-      width: 49%; }
-    .nefo-article-teaser-header-container .nefo-article-teaser-date {
-      display: inline-block;
-      width: 49%;
-      text-align: right; } }
+.nefo-article-teaser-header-container .nefo-article-teaser-category,
+.nefo-article-teaser-header-container .nefo-article-teaser-date {
+  margin: 0; }
+
+.nefo-article-teaser-header-container .nefo-article-teaser-date {
+  font-size: 14px;
+  line-height: 1.4; }
 
 .nefo-article-teaser-header-container h1.nefo-article-teaser-title-smaller {
   font-size: 24px;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   width: 100%; }
+
+.nefo-article-teaser-with-category {
+  width: 100%; }
+  @media (max-width: 979px) {
+    .nefo-article-teaser-with-category .nefo-article-teaser-category {
+      margin-bottom: 0.5em; } }
+  @media (min-width: 980px) {
+    .nefo-article-teaser-with-category .nefo-article-teaser-category {
+      display: inline-block;
+      width: 49%; }
+    .nefo-article-teaser-with-category .nefo-article-teaser-date {
+      display: inline-block;
+      width: 49%;
+      text-align: right; } }
 
 .nefo-article-teaser-image-container img {
   width: 100%;
@@ -1950,6 +1958,9 @@ ul.pager .pager__item--current {
     line-height: 1.2; }
   .nefo-article-teaser-image-container .nefo-article-teaser-image-meta .nefo-article-teaser-image-caption {
     margin-bottom: 4px; }
+
+.nefo-article-teaser-content-container .nefo-article-teaser-target-link {
+  font-weight: normal; }
 
 @media (min-width: 980px) {
   .nefo-article-teaser-wrapper {
