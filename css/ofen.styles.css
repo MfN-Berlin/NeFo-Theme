@@ -988,50 +988,6 @@ input.form-submit {
     background-position: right;
     padding-right: 15px; }
 
-.nefo-view-list-news-row {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #e0e0e0;
-  clear: both; }
-
-.nefo-view-list-news-category {
-  font-size: 16px;
-  line-height: 1.6;
-  padding-bottom: 1em; }
-
-.nefo-view-list-news-date {
-  margin-bottom: 1em;
-  font-size: 14px;
-  line-height: 1.4; }
-
-.nefo-view-list-news-link {
-  font-size: 16px;
-  line-height: 1.6; }
-
-.nefo-view-list-news-img {
-  margin-bottom: 8px; }
-
-@media (min-width: 980px) {
-  .nefo-view-list-news-content {
-    clear: both;
-    overflow: hidden; }
-  .nefo-view-list-news-col2 {
-    width: 120px;
-    float: right; }
-  .nefo-view-list-news-col1 {
-    margin-right: 130px; } }
-
-.field--name-field-nefo-news-category {
-  margin-top: 20px; }
-  .field--name-field-nefo-news-category a {
-    color: #40769f;
-    text-decoration: none; }
-    .field--name-field-nefo-news-category a:hover {
-      text-decoration: underline; }
-
 ul.pager .pager__item {
   display: inline-block;
   width: 34px;
