@@ -25,7 +25,7 @@
 if (!empty($row)) {
 	$path = drupal_get_path('theme', 'ofen');
 	$link = count($row->field_field_nefo_workshop_url);
-	$workshop_type = ($link) ? '' : '<img class="nefo-pdf-icon" alt="" title="application/pdf" src="/'. $path .'/images/icons/application-pdf.png">';
+	//$workshop_type = ($link) ? '' : '<img class="nefo-pdf-icon" alt="" title="application/pdf" src="/'. $path .'/images/icons/application-pdf.png">';
 	$output = $output .' '. $workshop_type;
 }
 
