@@ -35,73 +35,40 @@
 //
 // Page
 //
-.nefo-view-list-interview-row {
-    margin-top: 1em;
-    margin-bottom: 2em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-bottom: 1em;
-    border-bottom: $separator-width solid $separator-color;
-    clear: both;
-}
-.nefo-view-list-interview-date {
-  margin-bottom: 1em;
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height;
-}
 .nefo-product-interview-page-title {
-  font-size: $h3-font-size;
+  font-size: $h2-font-size;
   margin-top: 1em;
-  margin-bottom: 1em;  
+  margin-bottom: 1em;
+  @include breakpoint($mobile) {
+    font-size: $h2-font-size-mobile;
+  }
+  @include breakpoint($tab) {
+    font-size: $h3-font-size-tab;
+  }
 }
 .nefo-view-block-interview-with, 
 .field--name-field-nefo-interview-with {
-  font-size: 14px;
-  line-height: 1.4;
   margin: $mobile-content-margin 0;
+  font-weight: 500;
+  color: #4d4d4d;
 }
 .field--name-field-nefo-interview-thema {
   font-size: $h1-font-size;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
-}
-.nefo-view-list-interview-img-caption {
-  font-size: $view-list-caption-font-size;
-  line-height: $view-list-caption-line-height;
-}
-.nefo-view-list-interview-img-credit {
-  font-size: $view-list-credit-font-size;
-  line-height: $view-list-credit-line-height;
-}
-.nefo-view-list-interview-link {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-}
-.nefo-view-list-interview-col1 {
-  margin-top: 8px;
+  font-weight: 600;
+  @include breakpoint($mobile) {
+    font-size: $h1-font-size-mobile;
+  }
+  @include breakpoint($tab) {
+    font-size: $h1-font-size-tab;
+  }
 }
 
-// Desktop
-@include breakpoint($desk) {
-  // List
-  .nefo-view-list-interview-content {
-    clear: both;
-    overflow: hidden;
-  }
-  .nefo-view-list-interview-img {
-    margin-bottom: 8px;
-  }
-  .nefo-view-list-interview-col1 {
-    margin-right: 130px;
-    margin-top: 0;
-  }
-  .nefo-view-list-interview-col2 {
-    width: 120px;
-    float: right;
-  }  
-}
 
-// Small Block
+//
+// Block
+//
 .nefo-view-small-block-interview {
   .nefo-view-small-block-interview-content {
     padding-bottom: 1em;

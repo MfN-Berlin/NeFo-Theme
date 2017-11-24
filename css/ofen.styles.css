@@ -988,6 +988,14 @@ input.form-submit {
     background-position: right;
     padding-right: 15px; }
 
+.field--name-field-nefo-news-category {
+  margin-top: 20px; }
+  .field--name-field-nefo-news-category a {
+    color: #40769f;
+    text-decoration: none; }
+    .field--name-field-nefo-news-category a:hover {
+      text-decoration: underline; }
+
 ul.pager .pager__item {
   display: inline-block;
   width: 34px;
@@ -1492,63 +1500,34 @@ ul.pager .pager__item--current {
     background-position: right;
     padding-right: 15px; }
 
-.nefo-view-list-interview-row {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #e0e0e0;
-  clear: both; }
-
-.nefo-view-list-interview-date {
-  margin-bottom: 1em;
-  font-size: 14px;
-  line-height: 1.4; }
-
 .nefo-product-interview-page-title {
-  font-size: 18px;
+  font-size: 24px;
   margin-top: 1em;
   margin-bottom: 1em; }
+  @media (max-width: 479px) {
+    .nefo-product-interview-page-title {
+      font-size: 18px; } }
+  @media (min-width: 480px) and (max-width: 979px) {
+    .nefo-product-interview-page-title {
+      font-size: 18px; } }
 
 .nefo-view-block-interview-with,
 .field--name-field-nefo-interview-with {
-  font-size: 14px;
-  line-height: 1.4;
-  margin: 10px 0; }
+  margin: 10px 0;
+  font-weight: 500;
+  color: #4d4d4d; }
 
 .field--name-field-nefo-interview-thema {
   font-size: 32px;
   margin-top: 0.67em;
-  margin-bottom: 0.67em; }
-
-.nefo-view-list-interview-img-caption {
-  font-size: 12px;
-  line-height: 1.2; }
-
-.nefo-view-list-interview-img-credit {
-  font-size: 12px;
-  line-height: 1.2; }
-
-.nefo-view-list-interview-link {
-  font-size: 16px;
-  line-height: 1.6; }
-
-.nefo-view-list-interview-col1 {
-  margin-top: 8px; }
-
-@media (min-width: 980px) {
-  .nefo-view-list-interview-content {
-    clear: both;
-    overflow: hidden; }
-  .nefo-view-list-interview-img {
-    margin-bottom: 8px; }
-  .nefo-view-list-interview-col1 {
-    margin-right: 130px;
-    margin-top: 0; }
-  .nefo-view-list-interview-col2 {
-    width: 120px;
-    float: right; } }
+  margin-bottom: 0.67em;
+  font-weight: 600; }
+  @media (max-width: 479px) {
+    .field--name-field-nefo-interview-thema {
+      font-size: 20px; } }
+  @media (min-width: 480px) and (max-width: 979px) {
+    .field--name-field-nefo-interview-thema {
+      font-size: 24px; } }
 
 .nefo-view-small-block-interview .nefo-view-small-block-interview-content {
   padding-bottom: 1em;
@@ -1635,10 +1614,12 @@ ul.pager .pager__item--current {
     height: auto; }
   .file-image .field--name-field-image-caption-text > div > div {
     font-size: 12px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-weight: 600; }
   .file-image .field--name-field-file-image-credit-text > div > div {
     font-size: 12px;
     line-height: 1.2;
+    font-weight: 600;
     margin-bottom: 8px; }
 
 .file-icon {
@@ -1870,15 +1851,25 @@ ul.pager .pager__item--current {
   clear: both; }
 
 .nefo-article-teaser-header-container .nefo-article-teaser-category,
-.nefo-article-teaser-header-container .nefo-article-teaser-date {
+.nefo-article-teaser-header-container .nefo-article-teaser-date,
+.nefo-article-teaser-header-container .nefo-article-teaser-title-meta {
   margin: 0; }
 
 .nefo-article-teaser-header-container .nefo-article-teaser-date {
   font-size: 14px;
   line-height: 1.4; }
 
-.nefo-article-teaser-header-container h2.nefo-article-teaser-title-smaller {
+.nefo-article-teaser-header-container h2.nefo-article-teaser-title-smaller,
+.nefo-article-teaser-header-container h2.nefo-article-teaser-title-bold {
   width: 100%; }
+
+.nefo-article-teaser-header-container h2.nefo-article-teaser-title-bold {
+  font-weight: 600; }
+
+.nefo-article-teaser-header-container .nefo-article-teaser-title-meta {
+  margin-bottom: 0.83em;
+  font-weight: 600;
+  color: #4d4d4d; }
 
 .nefo-article-teaser-with-category {
   width: 100%; }
@@ -1905,7 +1896,8 @@ ul.pager .pager__item--current {
   .nefo-article-teaser-image-container .nefo-article-teaser-image-meta .nefo-article-teaser-image-credit {
     margin: 0;
     font-size: 12px;
-    line-height: 1.2; }
+    line-height: 1.2;
+    font-weight: 600; }
   .nefo-article-teaser-image-container .nefo-article-teaser-image-meta .nefo-article-teaser-image-caption {
     margin-bottom: 4px; }
 

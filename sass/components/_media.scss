@@ -10,10 +10,12 @@
   .field--name-field-image-caption-text > div > div {
     font-size: $caption-font-size;
     line-height: $caption-line-height;
+    font-weight: 600;
   }
   .field--name-field-file-image-credit-text > div > div {
     font-size: $credit-font-size;
     line-height: $credit-line-height;
+    font-weight: 600;
     margin-bottom: 8px;
   }
 }
