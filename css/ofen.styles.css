@@ -1877,10 +1877,7 @@ ul.pager .pager__item--current {
   font-size: 14px;
   line-height: 1.4; }
 
-.nefo-article-teaser-header-container h1.nefo-article-teaser-title-smaller {
-  font-size: 24px;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
+.nefo-article-teaser-header-container h2.nefo-article-teaser-title-smaller {
   width: 100%; }
 
 .nefo-article-teaser-with-category {
@@ -1937,14 +1934,14 @@ ul.pager .pager__item--current {
       vertical-align: top;
       padding-left: 1em; } }
 
-.nefo-view-list-row {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-bottom: 1em;
-  border-bottom: 2px solid #e0e0e0;
-  clear: both; }
+@media (max-width: 979px) {
+  .nefo-article-teaser-video-wrapper .file-video-oembed iframe {
+    width: 100%;
+    max-width: 100%; } }
+
+.nefo-article-teaser-video-wrapper .nefo-article-teaser-content-container {
+  display: block;
+  padding: 0; }
 
 .views-table {
   width: 100%;
