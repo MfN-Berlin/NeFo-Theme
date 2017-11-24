@@ -22,6 +22,11 @@
     font-size: $view-list-credit-font-size;
     font-weight: bold;
   }
+  .nefo-view-block-interview-with {
+    font-weight: 500;
+    font-size: 80%;
+    color: #4d4d4d; 
+  } 
   .nefo-view-block-interview-link-all {
     @include nefo-front-readmore-nav;
     text-align: right;
@@ -46,7 +51,6 @@
     font-size: $h3-font-size-tab;
   }
 }
-.nefo-view-block-interview-with, 
 .field--name-field-nefo-interview-with {
   margin: $mobile-content-margin 0;
   font-weight: 500;

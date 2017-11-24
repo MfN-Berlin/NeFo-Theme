@@ -1484,6 +1484,11 @@ ul.pager .pager__item--current {
   font-size: 12px;
   font-weight: bold; }
 
+.nefo-view-block-interview-row .nefo-view-block-interview-with {
+  font-weight: 500;
+  font-size: 80%;
+  color: #4d4d4d; }
+
 .nefo-view-block-interview-row .nefo-view-block-interview-link-all {
   padding-left: 10px;
   padding-right: 10px;
@@ -1511,7 +1516,6 @@ ul.pager .pager__item--current {
     .nefo-product-interview-page-title {
       font-size: 18px; } }
 
-.nefo-view-block-interview-with,
 .field--name-field-nefo-interview-with {
   margin: 10px 0;
   font-weight: 500;
