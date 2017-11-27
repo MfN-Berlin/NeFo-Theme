@@ -7,15 +7,13 @@
   clear: both;
 }
 .nefo-view-list-literature-tip-link {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-  padding-left: 1em;
+  font-size: $p-font-size;
   margin-bottom: 1em;
 }
 .nefo-view-list-literature-tip-date {
   margin-bottom: 1em;
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height;
+  font-size: $date-font-size;
+  line-height: $date-line-height;
 }
 .nefo-view-block-literaturtipp-img {
   padding-bottom: 2rem;

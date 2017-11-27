@@ -41,17 +41,17 @@ body {
 // H1-H6 tags
 // see http://www.w3schools.com/tags/tag_hn.asp
 h1 {
-  font-size: $h1-font-size;
+  @include font-size($h1-font-sizes);
   margin-top: 0.67em;
   margin-bottom: 0.67em;
 }
 h2 {
-  font-size: $h2-font-size;
+  @include font-size($h2-font-sizes);
   margin-top: 0.83em;
   margin-bottom: 0.83em;
 }
 h3 {
-  font-size: $h3-font-size;
+  @include font-size($h3-font-sizes);
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -70,35 +70,10 @@ h6 {
   margin-top: 2.33em;
   margin-bottom: 2.33em;
 }
-// Mobile
-@include breakpoint($mobile) {
-  h1 {
-    font-size: $h1-font-size-mobile;
-  }
-  h2 {
-    font-size: $h2-font-size-mobile;
-  }
-  h3 {
-    font-size: $h3-font-size-mobile;
-  }
-}
-// Tab
-@include breakpoint($tab) {
-  h1 {
-    font-size: $h1-font-size-tab;
-  }
-  h2 {
-    font-size: $h2-font-size-tab;
-  }
-  h3 {
-    font-size: $h3-font-size-tab;
-  }
-}
-
 
 p {
   font-size: $p-font-size;
-  line-height: 1.6;
+  line-height: $p-line-height;
   font-weight: 300;
   color: black;
   margin-top: 0em;
@@ -150,8 +125,8 @@ h4 {
 // Submitted
 .submitted {
   margin-bottom: 1em;
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height;
+  font-size: $date-font-size;
+  line-height: $date-line-height;
 }
 
 // Box
@@ -177,3 +152,8 @@ input.form-submit {
   background-color: $nefo-e;
   font-weight: bold;
 }
+
+input, select, textarea, button {
+  font-family:inherit;
+}
+

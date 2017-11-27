@@ -33,19 +33,37 @@ body {
   font-weight: bold; }
 
 h1 {
-  font-size: 32px;
+  font-size: 20px;
   margin-top: 0.67em;
   margin-bottom: 0.67em; }
+  @media screen and (min-width: 480px) {
+    h1 {
+      font-size: 24px; } }
+  @media screen and (min-width: 980px) {
+    h1 {
+      font-size: 32px; } }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 0.83em;
   margin-bottom: 0.83em; }
+  @media screen and (min-width: 480px) {
+    h2 {
+      font-size: 20px; } }
+  @media screen and (min-width: 980px) {
+    h2 {
+      font-size: 24px; } }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 1em;
   margin-bottom: 1em; }
+  @media screen and (min-width: 480px) {
+    h3 {
+      font-size: 18px; } }
+  @media screen and (min-width: 980px) {
+    h3 {
+      font-size: 20px; } }
 
 h4 {
   font-size: 16px;
@@ -61,22 +79,6 @@ h6 {
   font-size: 11px;
   margin-top: 2.33em;
   margin-bottom: 2.33em; }
-
-@media (max-width: 479px) {
-  h1 {
-    font-size: 20px; }
-  h2 {
-    font-size: 18px; }
-  h3 {
-    font-size: 16px; } }
-
-@media (min-width: 480px) and (max-width: 979px) {
-  h1 {
-    font-size: 24px; }
-  h2 {
-    font-size: 20px; }
-  h3 {
-    font-size: 18px; } }
 
 p {
   font-size: 16px;
@@ -162,6 +164,9 @@ input.form-submit {
   color: #FFF;
   background-color: #a9c041;
   font-weight: bold; }
+
+input, select, textarea, button {
+  font-family: inherit; }
 
 .l-page,
 .l-header,
@@ -1101,19 +1106,8 @@ ul.pager .pager__item--current {
       background-position: right;
       padding-right: 15px; }
 
-.nefo-view-list-workshop-row,
-.nefo-view-list-product-row {
-  margin: 1em 0; }
-
-.nefo-view-list-workshop-title,
-.nefo-view-list-product-title {
-  font-size: 16px;
-  line-height: 1.6; }
-
-.nefo-view-list-workshop-desc {
-  font-size: 14px;
-  line-height: 1.4;
-  text-align: left; }
+.nefo-view-list-workshop-row {
+  margin: 1.5em 0; }
 
 .nefo-view-list-document-row {
   margin-left: 0;
@@ -1506,15 +1500,15 @@ ul.pager .pager__item--current {
     padding-right: 15px; }
 
 .nefo-product-interview-page-title {
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 1em;
   margin-bottom: 1em; }
-  @media (max-width: 479px) {
+  @media screen and (min-width: 480px) {
     .nefo-product-interview-page-title {
-      font-size: 18px; } }
-  @media (min-width: 480px) and (max-width: 979px) {
+      font-size: 20px; } }
+  @media screen and (min-width: 980px) {
     .nefo-product-interview-page-title {
-      font-size: 18px; } }
+      font-size: 24px; } }
 
 .field--name-field-nefo-interview-with {
   margin: 10px 0;
@@ -1522,16 +1516,16 @@ ul.pager .pager__item--current {
   color: #4d4d4d; }
 
 .field--name-field-nefo-interview-thema {
-  font-size: 32px;
+  font-size: 20px;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   font-weight: 600; }
-  @media (max-width: 479px) {
-    .field--name-field-nefo-interview-thema {
-      font-size: 20px; } }
-  @media (min-width: 480px) and (max-width: 979px) {
+  @media screen and (min-width: 480px) {
     .field--name-field-nefo-interview-thema {
       font-size: 24px; } }
+  @media screen and (min-width: 980px) {
+    .field--name-field-nefo-interview-thema {
+      font-size: 32px; } }
 
 .nefo-view-small-block-interview .nefo-view-small-block-interview-content {
   padding-bottom: 1em;
@@ -1544,13 +1538,6 @@ ul.pager .pager__item--current {
 .nefo-view-small-block-interview .nefo-view-small-block-interview-nav {
   padding-top: 10px;
   text-align: right; }
-
-#block-nefo-blocks-builder-nefo-newsletter2go-press-news,
-#block-nefo-blocks-builder-nefo-newsletter2go-biodiv-news,
-#block-nefo-blocks-builder-nefo-newsletter2go-ipbes-news,
-#nl2go--form,
-#nl2go--submit {
-  font-family: ProximaNova, sans-serif; }
 
 .node--blog--teaser {
   border-bottom: 2px solid #e0e0e0; }
@@ -1713,8 +1700,6 @@ ul.pager .pager__item--current {
 
 .nefo-view-list-literature-tip-link {
   font-size: 16px;
-  line-height: 1.6;
-  padding-left: 1em;
   margin-bottom: 1em; }
 
 .nefo-view-list-literature-tip-date {

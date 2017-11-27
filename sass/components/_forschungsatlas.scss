@@ -103,12 +103,12 @@
   width: 100%;
 }
 #nefo-map-table-result-list caption {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
+  font-size: $p-font-size;
+  line-height: $p-line-height;
 }
 #nefo-map-table-result-list th {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
+  font-size: $p-font-size;
+  line-height: $p-line-height;
   background-color: #a9c041;
   @include no_style_link;
   a {
@@ -124,8 +124,8 @@
   padding-right: 1em;
 }
 #nefo-map-table-result-list td {
-  font-size: $view-list-desc-font-size;
-  line-height: 2 * $view-list-desc-font-size;
+  font-size: $date-font-size;
+  line-height: 2;
 }
 #nefo-map-table-result-list td.active {
   //background-color: #DDD;

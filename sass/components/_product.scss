@@ -74,22 +74,10 @@
 // Page
 //
 
-// Listen
-.nefo-view-list-workshop-row,
-.nefo-view-list-product-row {
-  margin: 1em 0;
+// Workshops
+.nefo-view-list-workshop-row {
+  margin: 1.5em 0;
 }
-.nefo-view-list-workshop-title,
-.nefo-view-list-product-title {
-  font-size: $view-list-title-font-size;
-  line-height: $view-list-title-line-height;
-}
-.nefo-view-list-workshop-desc {
-  font-size: $view-list-desc-font-size;
-  line-height: $view-list-desc-line-height;
-  text-align: left;
-}
-
 
 // NeFo-Produkt Bericht, NeFo-Produkt Faktenblatt, NeFo-Produkt Stellungnahme, NeFo-Produkt Studie
 .nefo-view-list-document-row {
@@ -163,8 +151,8 @@
     padding: 0;
 }
 .nefo-view-list-product-date {
-  font-size: $view-list-date-font-size;
-  line-height: $view-list-date-line-height;
+  font-size: $date-font-size;
+  line-height: $date-line-height;
   white-space: nowrap;
 }
 .nefo-product-icon {

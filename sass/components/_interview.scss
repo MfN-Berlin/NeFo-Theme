@@ -19,7 +19,7 @@
   }
   .nefo-view-block-interview-img-credit {
     padding-top: 4px;
-    font-size: $view-list-credit-font-size;
+    font-size: $credits-font-size;
     font-weight: bold;
   }
   .nefo-view-block-interview-with {
@@ -41,15 +41,9 @@
 // Page
 //
 .nefo-product-interview-page-title {
-  font-size: $h2-font-size;
+  @include font-size($h2-font-sizes);
   margin-top: 1em;
   margin-bottom: 1em;
-  @include breakpoint($mobile) {
-    font-size: $h2-font-size-mobile;
-  }
-  @include breakpoint($tab) {
-    font-size: $h3-font-size-tab;
-  }
 }
 .field--name-field-nefo-interview-with {
   margin: $mobile-content-margin 0;
@@ -57,16 +51,10 @@
   color: #4d4d4d;
 }
 .field--name-field-nefo-interview-thema {
-  font-size: $h1-font-size;
+  @include font-size($h1-font-sizes);
   margin-top: 0.67em;
   margin-bottom: 0.67em;
   font-weight: 600;
-  @include breakpoint($mobile) {
-    font-size: $h1-font-size-mobile;
-  }
-  @include breakpoint($tab) {
-    font-size: $h1-font-size-tab;
-  }
 }
 
 

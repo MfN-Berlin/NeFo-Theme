@@ -132,7 +132,7 @@
 
 #nefo-map-table-result-list td {
   font-size: 14px;
-  line-height: 28px; }
+  line-height: 2; }
 
 #nefo-map-table-result-list td.active {
   background-color: inherit; }
