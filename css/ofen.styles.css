@@ -1596,6 +1596,12 @@ ul.pager .pager__item--current {
       vertical-align: top;
       padding: 0;
       margin: 0; }
+  .file-document .field--name-field-file-document-desc,
+  .field--name-field-nefo-product-document .field--name-field-file-document-desc {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 90%;
+    color: #4d4d4d; }
 
 .nefo-ckeditor-inline-container {
   display: block;
