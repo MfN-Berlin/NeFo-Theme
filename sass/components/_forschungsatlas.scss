@@ -65,7 +65,6 @@
 }
 .nefo-map-simple-fieldset legend,
 .nefo-map-extended-fieldset legend {
-  //padding-bottom: 1em;
 }
 .nefo-map-simple-fieldset select,
 .nefo-map-extended-fieldset select,
@@ -101,6 +100,8 @@
 #nefo-map-table-result-list {
   margin-top: 4em;
   width: 100%;
+  //background-color: #a9c041;
+  border: 1px solid #BE7;
 }
 #nefo-map-table-result-list caption {
   font-size: $p-font-size;
@@ -126,16 +127,24 @@
 #nefo-map-table-result-list td {
   font-size: $date-font-size;
   line-height: 2;
+  padding: 0.5em 0;
 }
 #nefo-map-table-result-list td.active {
-  //background-color: #DDD;
   background-color: inherit;
 }
 #nefo-map-table-result-list tr.odd {
-  background-color: #E0E0E0;
+  background-color: #F8FFF0;
 }
 #nefo-map-table-result-list tr.even {
-  background-color: #EEE;
+  background-color: #F9FED9;
+}
+a.forschungsatlas-institution-l {
+  color: #336699;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover{
+    text-decoration: underline;
+  }
 }
 .nefo-map-pager-wrapper {
   padding: 0.5em 0;
@@ -146,14 +155,54 @@
 .leaflet-top,
 .leaflet-bottom {
   position: absolute;
-  z-index: 499; /* was 1000 */
+  z-index: 499;
   pointer-events: none;
 }
 
-// Institution
+
+// Institution display
+#forschungsatlas-institution {
+  padding: 1em .5em;
+}
+#forschungsatlas-institution-abbrev {
+  padding: 0;
+}
+#forschungsatlas-institution-abbrev,
+#forschungsatlas-institution-url,
+#forschungsatlas-institution-orgtype,
+#forschungsatlas-institution-changed {
+  display: table;
+  .forschungsatlas-institution-h,
+  .forschungsatlas-institution-c {
+    display: table-cell;
+  }
+  .forschungsatlas-institution-h {
+    padding-right: 1em;
+  }
+}
+
+#forschungsatlas-institution-url {
+  a {
+    color: #336699;
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
+#forschungsatlas-institution-belonging,
+#forschungsatlas-institution-subdivision {
+  margin-top: .5em;
+}
+
 a.nefo-subdivision-l,
 a.forschungsatlas-subdivision-l {
   padding-right: 1em;
+  color: #336699;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }  
 }
 a.nefo-institution-l-ext,
 a.forschungsatlas-institution-l-ext {
@@ -164,5 +213,7 @@ a.forschungsatlas-institution-l-ext {
   padding-right: 16px;
   font-size: 12px;
   font-style: italic;
+  color: #336699;
+  text-decoration: none;
 }
 
