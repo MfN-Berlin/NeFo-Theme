@@ -1,37 +1,81 @@
 .l-branding {
-  padding: 5px 10px;
-  img {
-    width: 80%;
-    max-width: 450px;
+  margin:0;
+  padding:0;
+  .nefo-logo-mobile,
+  .nefo-logo-tablet,
+  .nefo-logo-desktop {
+    display: none; 
   }
   @include breakpoint($mobile) {
-    position: fixed;
+    padding: 0 10px;
+    padding-top: 4px;
     background-color: $header-bg;
-    z-index: 1000000;
-    top: 0px;
-    padding: 8px 10px;
+    .nefo-logo-mobile {
+      display: inherit;
+      width: 100%;
+      max-width: 128px;
+    }
   }  
-  @include breakpoint($tab) {
-    
+  @include breakpoint($tab-header) {
+    padding: 5px 10px;
+    .nefo-logo-tablet {
+      display: inherit;
+      width: 100%;
+      max-width: 128px;          
+    }
   }
-  @include breakpoint($desk) {
+  @include breakpoint($desk-header) {
+    padding: 5px 10px;
     padding-left: $horz-spacing-desk;
+    .nefo-logo-desktop {
+      display: inherit;
+      width: 80%;
+      max-width: 450px;      
+    }
+  }
+}
+
+.branding-blocks {
+  float: right;
+  .branding-block-second {
+    @include breakpoint($mobile) {
+      margin-top: 48px;
+      margin-right: 8px;      
+    }
+    @include breakpoint($tab) {
+      margin-top: 52px;
+      margin-right: 20px;      
+    }
+  }  
+}
+
+@include breakpoint($desk) {
+  .branding-blocks {
+    margin-right: 10px;
+    .branding-block-first,
+    .branding-block-second {
+      display: inline-block;
+    }
+    .branding-block-second {
+      margin-left: 16px;
+    }
   }
 }
 
 .l-region--branding {
   // Mobile
-  @include breakpoint($mobile, true) {
-    display: inline-block;
+  @include breakpoint($mobile) {
+    display: table;
     float: right;
   }
   // Tab
-  @include breakpoint($tab, true) {
-    display: inline-block;
+  @include breakpoint($tab) {
+    display: table;
     float: right;
   }
   // Desktop
-  @include breakpoint($desk, true) {
-    display: none;
+  @include breakpoint($desk) {
+   display: table;
+   float: right;
   }
 }

@@ -4,4 +4,6 @@ $tab: $tablet-width ($desktop-width - 1);
 $tab-3-1: $tablet-width-2 ($tablet-width-3 - 1);
 $tab-3-2: $tablet-width-3 ($desktop-width - 1);
 $desk: $desktop-width;
-
+// Header only
+$tab-header: $tablet-width ($desktop-width-2 - 1);
+$desk-header: min-width $desktop-width-2;

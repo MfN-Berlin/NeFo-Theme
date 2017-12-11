@@ -3,42 +3,28 @@
   background: $header-bg;
   
   @include breakpoint($mobile) {
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 0;
     .l-region--header,
     .l-region--header-first,
     .l-region--header-second {
       padding-left: 8px;
     } 
-    .l-region--header-first {
-      padding-right: 8px;
-    }
+    .l-region--header-first,
     .l-region--header-second {
       padding-top: 8px;
-    }
-    
-    .l-region--header,
-    .l-region--header-first {
-      padding-top: 77px;
     }
   }
     
   @include breakpoint($tab) {
     padding-top: 16px;
-    //padding-bottom: 12px;
     .l-region--header,
     .l-region--header-first,
     .l-region--header-second {
       padding-left: 10px;
     } 
-    .l-region--header-first {
-      padding-right: 20px;
-    }
+    .l-region--header-first,
     .l-region--header-second {
-      //padding-top: ($vert-spacing-unit / 2);
-      height: 2 * $vert-spacing-unit;
-      display:flex;
-      align-items:center;
+      margin-bottom: 8px;
     }
   }
   
@@ -53,9 +39,7 @@
       padding-right: $horz-spacing-desk;
     }
     .l-region--header-second {
-      height: 2 * $vert-spacing-unit;
-      display:flex;
-      align-items:center;
+      margin-top: -32px;
     }
   } 
 }

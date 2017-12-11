@@ -2,13 +2,30 @@
     <div class="color-rule"></div>
     <header class="l-header" role="banner">
       <div class="l-branding">
-        <?php if ($logo): ?>
-          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-        <?php endif; ?>
+<?php
+if ($logo) {
+  $path = drupal_get_path('theme', 'ofen');
+  print '<a href="'. $front_page .'" title="'. t('Home') .'" rel="home" class="site-logo">';
+  print '<img class="nefo-logo-mobile" src="/'. $path .'/images/logos/nefo-logo-mobile.png" alt="'. t('Home') .'" />';
+  print '<img class="nefo-logo-tablet" src="/'. $path .'/images/logos/nefo-logo-tablet.png" alt="'. t('Home') .'" />';
+  print '<img class="nefo-logo-desktop" src="/'. $path .'/images/logos/nefo-logo-desktop.png" alt="'. t('Home') .'" />';
+  print '</a>';
+}
+?>
 
-        <?php print render($page['branding']); ?>
-      </div>
-        <?php print render($page['header']); ?>
+            <div class="branding-blocks">
+              <div class="branding-block-first">
+                <?php print render($page['branding']); ?>
+              </div>
+              <div class="branding-block-second">
+                <?php print render($page['header']); ?>
+              </div>
+            </div>
+
+        </div><!-- l-branding -->
+
+        <?php print render($page['header_first']); ?>
+        <?php print render($page['header_second']); ?>
         <?php print render($page['navigation']); ?>
 
     </header>

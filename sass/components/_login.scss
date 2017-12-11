@@ -1,16 +1,22 @@
 // Login Button
 #block-menu-menu-nefo-login-menu {
-  display: inline-block;
+  display: block;
+  h2 {
+    display: none;
+  }
+  margin-top: 0.5em;
+  margin-bottom: $horz-spacing-desk;
+  @include breakpoint($mobile) {
+    margin-bottom: (2 * $horz-spacing-desk);
+  }
 }
-
+  
 .block--menu-menu-nefo-login-menu {
   background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;
   background-position: left 6px;
   background-size: 15px 15px;
   color: $header-login;
-  float: left;
-
   ul.menu {
     margin-top: 0;
     padding-left: 0;
@@ -18,6 +24,7 @@
       padding-top: 3px;
       line-height: initial;
       overflow: hidden;
+      text-transform: none;
     }
   }
 
@@ -26,6 +33,7 @@
     text-decoration: none;
     color: inherit;
     margin-left: 17px;
+    text-transform: none;
     &:hover {
       color: inherit;
     }
@@ -34,3 +42,4 @@
     }
   }
 }
+

@@ -10,13 +10,13 @@
 }
 
 // Social Links: NeFo Social Links Top & Bottom
-#block-nefo-blocks-builder-nefo-social-links-top,
-#block-nefo-blocks-builder-nefo-social-links-bottom {
-  ul.nefo-social-links-top,
-  ul.nefo-social-links-bottom {
-    float: right;
+#block-nefo-blocks-builder-nefo-social-links-top {
+  ul.nefo-social-links-top {
     padding: 0;
-    margin: 0;
+    margin: 4px $horz-spacing-unit 0 (0.5 * $horz-spacing-unit);
+    @include breakpoint($tab) {
+      margin: 4px (2 * $horz-spacing-desk) 0 $horz-spacing-desk;
+    }
     overflow: hidden;
     list-style: none;
     line-height: 1;
@@ -40,44 +40,19 @@
   }
 }
 #block-nefo-blocks-builder-nefo-social-links-top {
-  float: right;
+  display: table-cell;
+  vertical-align: middle;
   ul.nefo-social-links-top {
-    width: 140px;
     li {
-      padding-left: 8px;
+        @include breakpoint($mobile) {
+          padding-left: 8px;
+        }
+        @include breakpoint($tab) {
+          padding-left: 16px;
+        }
+        @include breakpoint($desk) {
+          padding-left: 24px;
+        }
     }
-  }
-  @include breakpoint($mobile) {
-    display: none;
-  }
-  @include breakpoint($tab) {
-    display: inline-block;
-  }
-  @include breakpoint($desk) {
-    display: inline-block;
-  }
-}
-#block-nefo-blocks-builder-nefo-social-links-bottom {
-  float: left;
-  ul.nefo-social-links-bottom {
-    li {
-      padding-right: 16px;
-    }
-    li.nefo-social-link-contact {
-      padding-right: 32px;
-      padding-top: 3px; 
-      a {
-        font-size: 14px;
-      }
-    }
-  }
-  @include breakpoint($mobile) {
-    display: block;
-  }
-  @include breakpoint($tab) {
-    display: none;
-  }
-  @include breakpoint($desk) {
-    display: none;
   }
 }

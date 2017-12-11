@@ -2,18 +2,22 @@
 #block-superfish-2 {
   ul.menu li {
     display: inline; 
-    margin-right: 10px;
+    margin-right: 1.4em;
+    @include breakpoint($mobile) {
+      margin-right: 10px;
+    }    
     a {
       @include nefo-top-menu-link;
+      @include breakpoint($mobile) {
+        font-size: 14px;
+      }
+    }
+  }
+  @include breakpoint($desk) {
+    float: right;
+    ul.menu li.last {
+      margin-right: 0;
     }
   }
 }
 
-
-#block-superfish-2 ul.menu {
-  @include breakpoint($mobile) {
-    li:nth-last-child(1) {
-      display: none;
-    }   
-  }
-}

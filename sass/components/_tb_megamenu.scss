@@ -2,7 +2,6 @@
   @include breakpoint($desk, true) {
     background-color: $navigation-bg-color;
     border-bottom: 3px solid $navigation-border-color;
-    //margin-bottom: 3px;
   }
 
   .nav-collapse {
@@ -10,11 +9,9 @@
       > {
         li {
           background-color: $main-menu-bg-color;
-          //margin-bottom: 3px;
           margin-bottom: 0;
           > a {
             border-color: $main-menu-bg-color;
-            //color: $main-menu-color !important;
             color: $main-menu-color;
             text-decoration: none;
             &:hover, &:focus {
@@ -130,5 +127,11 @@
   }
 }//.tb-megamenu
 
+
+@include breakpoint($desk) {
+  #block-system-main-menu {
+    display: none;  
+  }
+}
 
 

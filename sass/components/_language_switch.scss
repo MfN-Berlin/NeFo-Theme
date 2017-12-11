@@ -1,17 +1,8 @@
 #block-nefo-blocks-builder-nefo-language-switch {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 2px;
-  @include breakpoint($mobile) {
-    margin-left: 16px;
-  }
-  @include breakpoint($tab) {
-    margin-left: (2*$horz-spacing-desk);
-  }
+  display: table-cell;
   @include breakpoint($desk) {
-    margin-left: $horz-spacing-desk;
+    padding-top: 4px;
   }
-  
   ul.menu {
     margin: 0;
     padding: 0;

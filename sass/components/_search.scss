@@ -3,7 +3,6 @@
   display: inline-block;
   float: right;
 }
-  
 #block-search-form .content {
   margin-top: 0;
 }
@@ -13,7 +12,10 @@
   font-size: 1em;
   width: 9em;
   @include breakpoint($mobile) {
-    width: 100px;
+    width: 172px;
+  }
+  @include breakpoint($tab) {
+    width: 260px;
   }
 }
 #search-block-form,
@@ -32,7 +34,6 @@
     cursor: pointer;
     text-indent: -9999px;
     border: none;
-    //border-color: #e4e4e4 #d2d2d2 #b4b4b4;
     background: url(../images/search-button.png) no-repeat center top;
     overflow: hidden;
 

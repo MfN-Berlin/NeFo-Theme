@@ -20,11 +20,9 @@
         @include grid-span(2, 1);
       }
       .l-region--header {
-        @include grid-span(1, 1);
-        clear: both;
       }
       .l-region--header-first {
-        @include grid-span(1, 2);
+        @include grid-span(2, 1);
       }
       .l-region--header-second {
         @include grid-span(2, 1);
@@ -41,19 +39,15 @@
         @include grid-span(2, 1);
       }
       .l-region--header {
-        @include grid-span(1, 1);
-        clear: both;
       }
       .l-region--header-first {
-        @include grid-span(1, 2);
+        @include grid-span(2, 1);
       }
       .l-region--header-second {
         @include grid-span(2, 1);
-        clear: right;
       }
       .l-region--navigation {
         @include grid-span(2, 1);
-        clear: both;
       }
     }
   }
@@ -61,18 +55,15 @@
   @include breakpoint($desk, true) {
     @include layout($grid: 8 4 4, $gutter: .1) {
       .l-branding {
-        @include grid-span(1, 1);
+        @include grid-span(3, 1);
       }
       .l-region--header {
-        @include grid-span(1, 2);
-//        clear: none;
       }
       .l-region--header-first {
-        @include grid-span(1, 3);
-      }
+        @include grid-span(1, 1);
+      }      
       .l-region--header-second {
         @include grid-span(2, 2);
-        clear: right;
       }
       .l-region--navigation {
         @include grid-span(3, 1);
@@ -92,6 +83,7 @@
   // Mobile: 1
   @include breakpoint($mobile, true) {
     @include layout(1) {
+      .l-region--footer,
       .l-region--footer-first,
       .l-region--footer-second,
       .l-region--footer-third,
@@ -104,8 +96,12 @@
   }
   @include breakpoint($tab, true) {
     @include layout(3) {
+      .l-region--footer {
+        @include grid-span(3, 1);
+      }
       .l-region--footer-first {
         @include grid-span(1, 1);
+        clear: both;
       }
       .l-region--footer-second,
       .l-region--footer-fifth {
@@ -124,8 +120,12 @@
   @include breakpoint($desk, true) {
     @include layout(6) {
       @include layout($gutter: .05) {
+        .l-region--footer {
+          @include grid-span(6, 1);
+        }
         .l-region--footer-first {
           @include grid-span(1, 1);
+          clear:both;
         }
         .l-region--footer-second {
           @include grid-span(1, 2);
