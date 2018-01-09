@@ -1,5 +1,6 @@
 // Login Button
-#block-menu-menu-nefo-login-menu {
+#block-menu-menu-nefo-login-menu,
+#block-menu-menu-nefo-login-menu-2 {
   display: block;
   h2 {
     display: none;
@@ -11,7 +12,8 @@
   }
 }
   
-.block--menu-menu-nefo-login-menu {
+.block--menu-menu-nefo-login-menu,
+.block--menu-menu-nefo-login-menu-2 {
   background-image: url("../images/icons/login.png");
   background-repeat: no-repeat;
   background-position: left 6px;
@@ -40,6 +42,31 @@
     &:visited {
       color: inherit;
     }
+  }
+}
+
+@include breakpoint($mobile) {
+  #block-menu-menu-nefo-login-menu {
+    display: none;
+  }
+  #block-menu-menu-nefo-login-menu-2 {
+    display: block;
+  }
+}
+@include breakpoint($tab) {
+  #block-menu-menu-nefo-login-menu {
+    display: block;
+  }
+  #block-menu-menu-nefo-login-menu-2 {
+    display: none;
+  }
+}
+@include breakpoint($desk) {
+  #block-menu-menu-nefo-login-menu {
+    display: block;
+  }
+  #block-menu-menu-nefo-login-menu-2 {
+    display: none;
   }
 }
 
