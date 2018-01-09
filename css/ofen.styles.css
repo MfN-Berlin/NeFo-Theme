@@ -607,6 +607,24 @@ input, select, textarea, button {
     background-position: right;
     padding-right: 15px; }
 
+@media (max-width: 479px) {
+  #backtotop {
+    width: 50px;
+    height: 50px;
+    background-size: 50px 50px; } }
+
+@media (min-width: 480px) and (max-width: 979px) {
+  #backtotop {
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px; } }
+
+@media (min-width: 980px) {
+  #backtotop {
+    width: 70px;
+    height: 70px;
+    background-size: 70px 70px; } }
+
 .color-rule {
   height: 3px;
   background-image: linear-gradient(to right, #4291a3 0%, #437eb6 30%, #accc44 60%, #7eb24b 100%); }
