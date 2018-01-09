@@ -7,3 +7,6 @@ $desk: $desktop-width;
 // Header only
 $tab-header: $tablet-width ($desktop-width-2 - 1);
 $desk-header: min-width $desktop-width-2;
+// Branding only
+$mobile-small-1: max-width ($mobile-small-width - 1);
+$mobile-small-2: $mobile-small-width ($tablet-width - 1);

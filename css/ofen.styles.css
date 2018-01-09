@@ -395,7 +395,16 @@ input, select, textarea, button {
   .l-branding .nefo-logo-tablet,
   .l-branding .nefo-logo-desktop {
     display: none; }
-  @media (max-width: 479px) {
+  @media (max-width: 374px) {
+    .l-branding {
+      padding: 0 4px;
+      padding-top: 4px;
+      background-color: #f9f9f9; }
+      .l-branding .nefo-logo-mobile {
+        display: inherit;
+        max-width: 25%;
+        margin-top: 8px; } }
+  @media (min-width: 375px) and (max-width: 479px) {
     .l-branding {
       padding: 0 10px;
       padding-top: 4px;

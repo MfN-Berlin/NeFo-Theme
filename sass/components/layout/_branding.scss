@@ -6,7 +6,17 @@
   .nefo-logo-desktop {
     display: none; 
   }
-  @include breakpoint($mobile) {
+  @include breakpoint($mobile-small-1) {
+    padding: 0 4px;
+    padding-top: 4px;
+    background-color: $header-bg;
+    .nefo-logo-mobile {
+      display: inherit;
+      max-width: 25%;
+      margin-top: 8px;
+    }
+  }
+  @include breakpoint($mobile-small-2) {
     padding: 0 10px;
     padding-top: 4px;
     background-color: $header-bg;
@@ -15,7 +25,7 @@
       width: 100%;
       max-width: 128px;
     }
-  }  
+  }
   @include breakpoint($tab-header) {
     padding: 5px 10px;
     .nefo-logo-tablet {
