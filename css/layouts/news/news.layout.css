@@ -20,17 +20,46 @@
     .l-region--sidebar {
       padding: 0 1em; } }
 
-.nefo-view-block-further-topics {
+.nefo-further-topics-block {
+  position: relative;
+  padding-bottom: 40px;
+  border-bottom: 2px solid #e5e5e5;
+  background-image: linear-gradient(to top, #f3f3f3 0px, rgba(243, 243, 243, 0.01) 40px);
+  margin-top: 20px; }
+  .nefo-further-topics-block h2.block__title {
+    text-transform: uppercase;
+    font-size: 12pt;
+    font-weight: bold;
+    display: inline-block;
+    background-color: #40769f;
+    color: white;
+    padding: 0 10px;
+    margin-top: 0;
+    margin-bottom: 20px; }
+
+.nefo-further-topics-block-content {
   margin-top: 1em; }
-  .nefo-view-block-further-topics .view-header p {
+  .nefo-further-topics-block-content .view-header p {
     font-weight: bold;
     margin-bottom: 0.5em; }
 
-.nefo-view-block-further-topics-row {
+.nefo-further-topics-block-content-row {
   margin-top: 0;
-  margin-bottom: 0.7em;
+  margin-bottom: 2em;
   margin-left: 0;
   margin-right: 0; }
+  .nefo-further-topics-block-content-row h2 {
+    margin: 0;
+    line-height: 1; }
+  .nefo-further-topics-block-content-row p {
+    line-height: 1.1;
+    margin-top: 8px;
+    margin-bottom: 0; }
+  .nefo-further-topics-block-content-row .nefo-product-icon {
+    width: 40px;
+    height: 40px; }
+  .nefo-further-topics-block-content-row .nefo-page-title-text {
+    margin-left: 0; }
 
 @media (max-width: 479px) {
   .l-content,

@@ -6,7 +6,11 @@
 //
 // Page
 //
-.nefo-view-block-further-topics {
+.nefo-further-topics-block {
+  @include block;
+  margin-top: $vert-spacing-unit;
+}
+.nefo-further-topics-block-content {
   margin-top: 1em;
   .view-header {
     p {
@@ -15,9 +19,26 @@
     }
   }
 }
-.nefo-view-block-further-topics-row {
-    margin-top: 0;
-    margin-bottom: 0.7em;
+.nefo-further-topics-block-content-row {
+  margin-top: 0;
+  margin-bottom: 2em;
+  margin-left: 0;
+  margin-right: 0;
+  h2 {
+    margin: 0;
+    //margin-bottom: 8px;
+    line-height: 1;
+  }
+  p {
+    line-height: 1.1;
+    margin-top: 8px;
+    margin-bottom: 0;
+  }
+  .nefo-product-icon {
+    width: 40px;
+    height: 40px;    
+  }
+  .nefo-page-title-text {
     margin-left: 0;
-    margin-right: 0;
+  }
 }
