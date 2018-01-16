@@ -1191,6 +1191,9 @@ ul.pager .pager__item--current {
     margin-left: 170px;
     width: auto; } }
 
+.view-nefo-view-list-products-by-term {
+  margin-top: 20px; }
+
 .nefo-view-list-product-row {
   margin-bottom: 2em; }
 
