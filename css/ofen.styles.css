@@ -1624,34 +1624,49 @@ ul.pager .pager__item--current {
 .file-icon {
   padding-right: 4px; }
 
+.field--name-field-nefo-workshop-file,
+.field--name-field-workshop-announcement,
 .file-document,
 .field--name-field-nefo-product-document {
   margin: 8px 0; }
+  .field--name-field-nefo-workshop-file .file,
+  .field--name-field-workshop-announcement .file,
   .file-document .file,
   .field--name-field-nefo-product-document .file {
     display: table; }
+    .field--name-field-nefo-workshop-file .file .file-icon,
+    .field--name-field-workshop-announcement .file .file-icon,
     .file-document .file .file-icon,
     .field--name-field-nefo-product-document .file .file-icon {
       display: table-cell;
       padding: 0;
       margin: 0;
       margin-right: 8px; }
+      .field--name-field-nefo-workshop-file .file .file-icon img,
+      .field--name-field-workshop-announcement .file .file-icon img,
       .file-document .file .file-icon img,
       .field--name-field-nefo-product-document .file .file-icon img {
         height: 45px;
         vertical-align: top; }
+    .field--name-field-nefo-workshop-file .file .file-link,
+    .field--name-field-workshop-announcement .file .file-link,
     .file-document .file .file-link,
     .field--name-field-nefo-product-document .file .file-link {
       display: table-cell;
       vertical-align: top;
       padding: 0;
       margin: 0; }
+  .field--name-field-nefo-workshop-file .field--name-field-file-document-desc,
+  .field--name-field-workshop-announcement .field--name-field-file-document-desc,
   .file-document .field--name-field-file-document-desc,
   .field--name-field-nefo-product-document .field--name-field-file-document-desc {
     margin: 0 !important;
     padding: 0 !important;
     font-size: 90%;
     color: #4d4d4d; }
+
+.field--name-field-workshop-announcement .field__item {
+  margin-bottom: 8px; }
 
 .nefo-ckeditor-inline-container {
   display: block;

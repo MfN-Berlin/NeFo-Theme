@@ -27,6 +27,8 @@
 
 
 // Documents
+.field--name-field-nefo-workshop-file,
+.field--name-field-workshop-announcement,
 .file-document,
 .field--name-field-nefo-product-document {
   margin: 8px 0;
@@ -54,6 +56,12 @@
     padding: 0 !important;
     font-size: 90%;
     color: #4d4d4d;
+  }
+}
+
+.field--name-field-workshop-announcement {
+  .field__item {
+    margin-bottom: 8px;
   }
 }
 

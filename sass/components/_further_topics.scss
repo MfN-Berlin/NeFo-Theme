@@ -6,7 +6,8 @@
 //
 // Page
 //
-.nefo-further-topics-block {
+.nefo-further-topics-block,
+.block--views-nefo-block-workshop-tags-block {
   @include block;
   margin-top: $vert-spacing-unit;
 }
