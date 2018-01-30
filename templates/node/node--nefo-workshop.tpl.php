@@ -103,7 +103,7 @@
       hide($content['links']);
       print render($content);
       // View: NeFo-Block Workshop Tags
-      $block = block_load('views', 'nefo_block_workshop_tags-block2');
+      $block = block_load('views', 'nefo_block_workshop_tags-block');
       print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))))
 
     ?>
