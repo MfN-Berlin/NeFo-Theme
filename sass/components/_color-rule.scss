@@ -5,8 +5,6 @@ $cr-green-second-stop : rgba(126,178,75,1);
 
 .color-rule {
   height: 3px;
-  //background-color: rgb(66,145,163); // Old browsers
-  //@include filter-gradient(#4291a3, #7eb24b, horizontal); // IE6-9
   @include background-image(
           linear-gradient(left,
                   rgba(66,145,163,1) 0%,

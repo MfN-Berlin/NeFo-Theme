@@ -5,8 +5,11 @@
  * Template overrides as well as (pre-)process and alter hooks for the
  * ofen theme.
  */
-function startsWith($haystack, $needle) {
-    // search backwards starting from haystack length characters from the end
+
+/**
+ * Search backwards starting from haystack length characters from the end
+ */
+function ofen_starts_with($haystack, $needle) {
     return $needle === "" || strrpos($haystack, $needle, -strlen($haystack)) !== FALSE;
 }
 
@@ -107,10 +110,12 @@ function ofen_item_list($variables) {
     return $output;
 }
 
-
-function ofen_preprocess_search_result(&$vars) {
-    $date = $vars['result']['date'];
-    $vars['info_split']['date'] = format_date($date, 'custom', 'j. F Y');
+/**
+ * Format date on search result page: 10. Januar 2018
+ */
+function ofen_preprocess_search_result(&$variables) {
+    $date = $variables['result']['date'];
+    $variables['info_split']['date'] = format_date($date, 'custom', 'j. F Y');
 }
 
 
