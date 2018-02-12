@@ -1,5 +1,5 @@
-<div class="color-rule"></div>
-    <div <?php print $attributes; ?>>
+<div <?php print $attributes; ?>>
+    <div class="color-rule"></div>
     <header class="l-header" role="banner">
         <div class="l-branding">
 <?php
