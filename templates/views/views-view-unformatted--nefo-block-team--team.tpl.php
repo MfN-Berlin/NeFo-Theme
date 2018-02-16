@@ -15,14 +15,16 @@ if (!empty($title)) {
   else {
     $block = block_load('nefo_blocks_builder', 'nefo_sponsor_ufz');
   }
-  print drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+  $block_content = _block_render_blocks(array($block));
+  $block_build = _block_get_renderable_array($block_content);
+  print drupal_render($block_build);
 
   foreach ($rows as $delta => $row) {
     print '<div'. $row_attributes[$delta] .'>';
     print $row;
     print '</div>';
   }
-  print '</div>';
+  print '</div>'; //nefo-block-team-col
 }
 
 ?>
