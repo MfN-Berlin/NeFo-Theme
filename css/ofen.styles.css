@@ -741,32 +741,6 @@ input, select, textarea, button {
     content: "";
     display: table; }
 
-.page-node .l-content h1 {
-  margin-bottom: 0; }
-
-.vud-widget-thumbs {
-  margin: 0;
-  margin-right: 10px;
-  position: unset;
-  float: unset;
-  text-align: right; }
-  .vud-widget-thumbs .vote-current-score,
-  .vud-widget-thumbs .voted-how {
-    display: none; }
-
-.vud-widget-thumbs .up-score {
-  border: 1px solid #A9C041;
-  padding: 4px 8px;
-  background-color: #F8FECD;
-  border-radius: 8px; }
-
-.vud-widget-thumbs .down-score {
-  margin-left: 1px;
-  border: 1px solid #A9C041;
-  padding: 4px 8px;
-  background-color: #F8FECD;
-  border-radius: 8px; }
-
 .block--views.block--views-nefo-calendar-event-up,
 .block--views.block--views-nefo-calendar-event-up-ical,
 .block--nefo-tags-blocks-builder {
