@@ -1890,6 +1890,11 @@ ul.pager .pager__item--current {
   .nefo-article-teaser-image-container .nefo-article-teaser-image-meta .nefo-article-teaser-image-caption {
     margin-bottom: 4px; }
 
+.nefo-article-teaser-content-container .nefo-article-teaser-event-date {
+  margin-bottom: 0.7em; }
+  .nefo-article-teaser-content-container .nefo-article-teaser-event-date .date-display-range {
+    display: inline; }
+
 .nefo-article-teaser-content-container .nefo-article-teaser-target-link {
   font-weight: normal; }
 

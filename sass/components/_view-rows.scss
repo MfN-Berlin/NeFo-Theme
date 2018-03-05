@@ -101,6 +101,12 @@
   }
 }
 .nefo-article-teaser-content-container {
+  .nefo-article-teaser-event-date {
+    margin-bottom: 0.7em;
+    .date-display-range {
+      display: inline;
+    }
+  }
   .nefo-article-teaser-synopsis {
   }
   .nefo-article-teaser-target-link {
