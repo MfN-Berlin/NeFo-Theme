@@ -35,10 +35,28 @@
     font-size: 12px;
     font-weight: bold; }
   @media (max-width: 640px) {
-    .l-region--slider .slider-img-credit {
-      padding-left: 1em; }
-    .l-region--slider .slider-content-right {
-      padding: 0 1em; } }
+    .l-region--slider {
+      position: relative;
+      padding-bottom: 40px;
+      border-bottom: 2px solid #e5e5e5;
+      background-image: linear-gradient(to top, #f3f3f3 0px, rgba(243, 243, 243, 0.01) 40px); }
+      .l-region--slider h2.block__title {
+        text-transform: uppercase;
+        font-size: 12pt;
+        font-weight: bold;
+        display: inline-block;
+        background-color: #40769f;
+        color: white;
+        padding: 0 10px;
+        margin-top: 0;
+        margin-bottom: 20px; }
+      .l-region--slider .nefo-slideshow-url {
+        float: right;
+        height: 32px; }
+      .l-region--slider .slider-img-credit {
+        padding-left: 1em; }
+      .l-region--slider .slider-content-right {
+        padding: 0 1em; } }
   @media (min-width: 640px) and (max-width: 767px) {
     .l-region--slider .slider-img-credit {
       padding-left: 1em; }
@@ -112,6 +130,32 @@
         width: 120px;
         right: 150px;
         bottom: 0px; } }
+
+#block-views-nefo-view-block-news-block,
+#block-views-7923aa1841ffb8935a0f5d840fc5988d {
+  display: none; }
+
+#block-views-nefo-view-block-news-slider,
+#block-views-7fff8ea15f8dbd6591f2746d1d101614 {
+  display: block; }
+  #block-views-nefo-view-block-news-slider .owl-controls,
+  #block-views-7fff8ea15f8dbd6591f2746d1d101614 .owl-controls {
+    margin: 0; }
+    #block-views-nefo-view-block-news-slider .owl-controls .owl-buttons,
+    #block-views-7fff8ea15f8dbd6591f2746d1d101614 .owl-controls .owl-buttons {
+      display: none; }
+  #block-views-nefo-view-block-news-slider .view-block-news-link-all,
+  #block-views-7fff8ea15f8dbd6591f2746d1d101614 .view-block-news-link-all {
+    margin: 0;
+    padding: 0; }
+
+@media (min-width: 640px) {
+  #block-views-nefo-view-block-news-block,
+  #block-views-7923aa1841ffb8935a0f5d840fc5988d {
+    display: block; }
+  #block-views-nefo-view-block-news-slider,
+  #block-views-7fff8ea15f8dbd6591f2746d1d101614 {
+    display: none; } }
 
 @media (max-width: 640px) {
   .block--nefo-blocks-builder-nefo-feature-map {

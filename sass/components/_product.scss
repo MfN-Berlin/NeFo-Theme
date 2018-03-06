@@ -23,52 +23,49 @@
         clear:both !important;
       }
     }
-    
-    .nefo-block-current-products-title {
-      margin: 0;
-      margin-bottom: $mobile-content-margin;
-      a {
-        color: $h2-bg;
-        text-decoration: none;
-      }
-      @include breakpoint($tab-3-1) {
-        margin: 0 $mobile-content-margin;
-        height: 10em;
-      }
-      @include breakpoint($tab-3-2) {
-        margin: 0 $mobile-content-margin;
-        height: 8em;
-      }
-      @include breakpoint($desk) {
-        margin: 0 $mobile-content-margin;
-        height: 6em;
-      }
-    }
-    
-    .nefo-block-current-products-img {
-      img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        @include breakpoint(min-width $tablet-width-2) {
-          max-height: ($image-block-height - 70);
-        }        
-      }
-      @include breakpoint(max-width $tablet-width-2) {
-        margin-bottom: $mobile-content-margin;
-      }
-    }
-    
-    .nefo-block-current-products-link-all {
-      @include nefo-front-readmore-nav;
-      text-align: right;
-      a {
-        @include nefo-front-readmore-nav-link;
-      }
-    }
   }//nefo-block-current-products-row
 }//view-nefo-block-current-products
 
+.nefo-block-current-products-title {
+  margin: 0;
+  margin-bottom: $mobile-content-margin;
+  a {
+    color: $h2-bg;
+    text-decoration: none;
+  }
+  @include breakpoint($tab-3-1) {
+    margin: 0 $mobile-content-margin;
+    height: 10em;
+  }
+  @include breakpoint($tab-3-2) {
+    margin: 0 $mobile-content-margin;
+    height: 8em;
+  }
+  @include breakpoint($desk) {
+    margin: 0 $mobile-content-margin;
+    height: 6em;
+  }
+}
+.nefo-block-current-products-img {
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    @include breakpoint(min-width $tablet-width-2) {
+      max-height: ($image-block-height - 70);
+    }        
+  }
+  @include breakpoint(max-width $tablet-width-2) {
+    margin-bottom: $mobile-content-margin;
+  }
+}
+.nefo-block-current-products-link-all {
+  @include nefo-front-readmore-nav;
+  text-align: right;
+  a {
+    @include nefo-front-readmore-nav-link;
+  }
+}
 
 //
 // Page

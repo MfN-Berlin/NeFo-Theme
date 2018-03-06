@@ -1,3 +1,4 @@
+// Slide Show
 .l-region--slider {
   background-color: rgb(239,244,248);
   .view-nefo-slider .owl-item img {
@@ -18,12 +19,17 @@
   }  
 
   @include breakpoint(max-width $tablet-width-2) {
+    @include block;
+    .nefo-slideshow-url {
+      float: right;
+      height: 32px;
+    }
     .slider-img-credit {
       padding-left: $horz-spacing-unit;
     }
     .slider-content-right {
       padding: 0 $horz-spacing-unit;
-    }  
+    }
   }
   @include breakpoint($tab-3-1) {
     .slider-img-credit {
@@ -117,6 +123,37 @@
       right: 150px;
       bottom: 0px;
     }
+  }
+}
+
+// News & Products
+#block-views-nefo-view-block-news-block,
+#block-views-7923aa1841ffb8935a0f5d840fc5988d {
+  display: none;
+}
+#block-views-nefo-view-block-news-slider,
+#block-views-7fff8ea15f8dbd6591f2746d1d101614 {
+  display: block;
+  .owl-controls  {
+    margin: 0;
+    .owl-buttons {
+      display: none;
+    }    
+  }
+
+  .view-block-news-link-all {
+    margin: 0;
+    padding: 0;
+  }
+}
+@include breakpoint(min-width $tablet-width-2) {
+  #block-views-nefo-view-block-news-block,
+  #block-views-7923aa1841ffb8935a0f5d840fc5988d {
+    display: block;
+  }
+  #block-views-nefo-view-block-news-slider,
+  #block-views-7fff8ea15f8dbd6591f2746d1d101614 {
+    display: none;
   }
 }
 

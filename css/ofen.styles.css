@@ -1075,49 +1075,53 @@ ul.pager .pager__item--current {
       margin-bottom: 20px; }
     .view-nefo-block-current-products .nefo-block-current-products-row:nth-of-type(4) {
       clear: both !important; } }
-  .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-title {
-    margin: 0;
-    margin-bottom: 10px; }
-    .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-title a {
-      color: #40769f;
-      text-decoration: none; }
-    @media (min-width: 640px) and (max-width: 767px) {
-      .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-title {
-        margin: 0 10px;
-        height: 10em; } }
-    @media (min-width: 768px) and (max-width: 979px) {
-      .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-title {
-        margin: 0 10px;
-        height: 8em; } }
-    @media (min-width: 980px) {
-      .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-title {
-        margin: 0 10px;
-        height: 6em; } }
-  .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-img img {
-    width: 100%;
-    max-width: 100%;
-    height: auto; }
-    @media (min-width: 640px) {
-      .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-img img {
-        max-height: 200px; } }
-  @media (max-width: 640px) {
-    .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-img {
-      margin-bottom: 10px; } }
-  .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-link-all {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: right; }
-    .view-nefo-block-current-products .nefo-block-current-products-row .nefo-block-current-products-link-all a {
-      color: #40769f;
-      font-size: 14px;
-      font-weight: bold;
-      text-decoration: none;
-      background-image: url("../images/arrow-right-more.jpg");
-      background-repeat: no-repeat;
-      background-position: right;
-      padding-right: 15px; }
+
+.nefo-block-current-products-title {
+  margin: 0;
+  margin-bottom: 10px; }
+  .nefo-block-current-products-title a {
+    color: #40769f;
+    text-decoration: none; }
+  @media (min-width: 640px) and (max-width: 767px) {
+    .nefo-block-current-products-title {
+      margin: 0 10px;
+      height: 10em; } }
+  @media (min-width: 768px) and (max-width: 979px) {
+    .nefo-block-current-products-title {
+      margin: 0 10px;
+      height: 8em; } }
+  @media (min-width: 980px) {
+    .nefo-block-current-products-title {
+      margin: 0 10px;
+      height: 6em; } }
+
+.nefo-block-current-products-img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+  @media (min-width: 640px) {
+    .nefo-block-current-products-img img {
+      max-height: 200px; } }
+
+@media (max-width: 640px) {
+  .nefo-block-current-products-img {
+    margin-bottom: 10px; } }
+
+.nefo-block-current-products-link-all {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right; }
+  .nefo-block-current-products-link-all a {
+    color: #40769f;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-image: url("../images/arrow-right-more.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px; }
 
 .nefo-view-list-workshop-row {
   margin: 1.5em 0; }
