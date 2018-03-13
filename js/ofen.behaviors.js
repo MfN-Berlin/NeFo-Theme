@@ -56,21 +56,5 @@
       });
     }
   };
-  Drupal.behaviors.moveTopMenu = {
-    attach: function (context, settings) {
-      var tabWidth = 540;
-      var moveToFooter = function(event){
-        var win = $(this);
-        if (win.width() < tabWidth) {
-          $('#block-menu-menu-nefo-top-menu').appendTo('footer.l-footer');
-        } else {
-          $('#block-menu-menu-nefo-top-menu').appendTo('.l-region--header');
-        }
-      };
-      $(window).on('resize', moveToFooter);
-      if ($(window).width() <= tabWidth) {
-        $('#block-menu-menu-nefo-top-menu').appendTo('footer.l-footer');
-      }
-    }
-  };
+
 })(jQuery);
