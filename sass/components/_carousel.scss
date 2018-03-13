@@ -17,11 +17,9 @@
     font-size: $credits-font-size;
     font-weight: bold;
   }  
-
-  @include breakpoint(max-width $tablet-width-2) {
+  @include breakpoint(max-width ($tablet-width-2 - 1)) {
     @include block;
     .nefo-slideshow-url {
-      float: right;
       height: 32px;
     }
     .slider-img-credit {
@@ -31,13 +29,59 @@
       padding: 0 $horz-spacing-unit;
     }
   }
+  @include breakpoint(max-width ($tablet-width - 1)) {
+    .slider-img-credit {
+      display: none;
+    }
+    .nefo-button {
+      width: 240px;
+    }
+    .slider-content-right {
+      h2 {
+        margin: 0;
+        line-height: 1.2;
+      }
+      .nefo-slideshow-url {
+        margin: 0 auto;
+        margin-top: 8px;
+      }
+    }    
+  }
+  @include breakpoint($tablet-width ($tablet-width-2 - 1)) {
+    .nefo-button {
+      width: 140px;
+    }
+    .slider-content-right {
+      display:flex;
+      justify-content: flex-end;
+      h2 {
+        display: block;
+        margin: 0;
+        width: 100%;
+        margin-right: 8px;
+      }
+    }    
+  }
   @include breakpoint($tab-3-1) {
+    #block-views-nefo-slider-block {
+      margin-bottom: 20px;
+    }
     .slider-img-credit {
       padding-left: $horz-spacing-unit;
     }
     .slider-content-right {
       padding: 0 $horz-spacing-unit;
-    }  
+    }
+    .slider-content-right {
+      display:flex;
+      justify-content: flex-end;
+      h2 {
+        display: block;
+        margin: 0;
+        width: 100%;
+        margin-right: 8px;
+      }
+    }
   } // tab-3-1
   @include breakpoint($tab-3-2) {
     padding: $vert-spacing-unit $horz-spacing-unit;
@@ -136,8 +180,37 @@
   display: block;
   .owl-controls  {
     margin: 0;
+    position: relative;
+    height: 36px;
+    .owl-pagination {
+      position: absolute;
+      left:0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      padding-top: 6px;
+    }
     .owl-buttons {
-      display: none;
+      position: absolute;
+      left:0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 180px;
+      .owl-prev {
+        float: left;
+      }
+      .owl-next {
+        float: right;
+      }
+      .owl-prev,
+      .owl-next {
+        margin: 0;
+        padding: 3px 14px;
+        font-size: 18px;
+      }
     }    
   }
 
