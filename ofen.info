@@ -14,7 +14,7 @@ stylesheets[all][] = css/ofen.styles.css
 ; ========================================
 ; Scripts
 ; ========================================
-scripts[] = js/ofen.behaviors.js
+;scripts[] = js/ofen.behaviors.js
 
 ; ========================================
 ; Regions
