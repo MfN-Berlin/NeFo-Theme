@@ -169,11 +169,8 @@ function ofen_file_link($variables) {
 function ofen_owlcarousel_settings_alter(&$settings, $instance) {
   switch ($instance) {
     case 'owl-carousel-block':
-    case 'owl-carousel-slider38':
-    case 'owl-carousel-slider2x38':
-    case 'owl-carousel-slider39':
-    case 'owl-carousel-slider2x39':
-      $settings['navigationText'] = array('<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>');
       break;
+    default:
+      $settings['navigationText'] = array('<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>');
   }
 }
