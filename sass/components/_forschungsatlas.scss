@@ -2,7 +2,7 @@
 // Frontpage block
 //
 .block--nefo-blocks-builder-nefo-feature-map {
-  @include breakpoint(max-width $tablet-width-2) {
+  @include breakpoint(max-width ($tablet-width-2 - 1)) {
     margin-top: 2 * $vert-spacing-unit;
   }
   .btn {
