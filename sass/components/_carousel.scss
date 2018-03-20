@@ -235,15 +235,17 @@
       padding: 0 $mobile-content-margin;
       .nefo-view-block-news-title,
       .nefo-block-current-products-title {
+        @include breakpoint($tablet-width ($tablet-width-2 - 1)) {
+          line-height: 1.4;
+        }
         height: 6em;
       }
     }    
   }
-
 }
 
 // Tablet
-@include breakpoint($tablet-width-2 ($desktop-width-2 - 1)) {
+@include breakpoint($tablet-width ($desktop-width-2 - 1)) {
   #block-views-nefo-view-block-news-slider2x,
   #block-views-d9dd00c5302d180c6d9b900473308096 {
     display: block;
