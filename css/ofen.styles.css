@@ -1953,3 +1953,32 @@ ul.pager .pager__item--current {
     transition: all, 0.15s; }
   .views-table tr.odd {
     background: #FFF; }
+
+table {
+  width: 100%;
+  margin: 20px 0; }
+  table th {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    background: #A9C041;
+    border-bottom-style: none; }
+    table th a, table th a.active {
+      color: #FFF !important;
+      text-decoration: none; }
+      table th a:hover, table th a.active:hover {
+        color: #FFF;
+        text-decoration: underline; }
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #7cae4a;
+    text-align: left;
+    vertical-align: middle; }
+  table tr.even, table tr.odd {
+    background: #F3F4EE;
+    transition: all, 0.15s; }
+  table tr.odd {
+    background: #FFF; }
+
+table.no-border th, table.no-border td {
+  border: 0; }

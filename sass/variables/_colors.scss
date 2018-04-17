@@ -26,11 +26,14 @@ $main-menu-bg-active-color: #A9C041;
 $main-menu-hover-active-color: #FFF;
 $dropdown-bg-color: #A9C041;
 $dropdown-color: #FFF;
-$dropdown-hover-color: #FFF; 
+$dropdown-hover-color: #FFF;
 $dropdown-active-color: #FFF;
 
 // Table
+$table-th-color: rgba(0, 0, 0, 0.75);
+$table-th-link-color: #FFF;
 $table-th-bg-color: #A9C041;
+$table-border-color: #7cae4a;//#A9C041;
 $table-tr-border-color: #DDD;
 $table-tr-even-bg-color: #F3F4EE;
 $table-tr-odd-bg-color: #FFF;
