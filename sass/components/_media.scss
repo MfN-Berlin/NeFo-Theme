@@ -1,6 +1,5 @@
 // Images
 .file-image {
-//  margin: $vert-spacing-unit 0;
   max-width: 100%;
   img {
     padding-bottom: 8px;
@@ -19,8 +18,17 @@
     margin-bottom: 8px;
   }
 }
+.node--full {
+  .field--name-field-nefo-news-img,
+  .field--name-field-nefo-article-img,
+  .field--name-field-nefo-interview-img,
+  .field--name-field-nefo-cover-photo {
+    margin-bottom: $vert-spacing-unit;
+  }
+}
 
-// File icons 
+
+// File icons
 .file-icon {
   padding-right: 4px;
 }

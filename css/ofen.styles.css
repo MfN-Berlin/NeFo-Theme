@@ -1596,6 +1596,12 @@ ul.pager .pager__item--current {
     font-weight: 600;
     margin-bottom: 8px; }
 
+.node--full .field--name-field-nefo-news-img,
+.node--full .field--name-field-nefo-article-img,
+.node--full .field--name-field-nefo-interview-img,
+.node--full .field--name-field-nefo-cover-photo {
+  margin-bottom: 20px; }
+
 .file-icon {
   padding-right: 4px; }
 
