@@ -7,7 +7,7 @@
   @include breakpoint(min-width $tablet-width-2) {
     margin-top: $vert-spacing-unit;
   }
-  
+
   .nefo-block-current-products-row {
     @include breakpoint(max-width $tablet-width-2) {
       margin: $vert-spacing-unit 0;
@@ -53,7 +53,7 @@
     height: auto;
     @include breakpoint(min-width $tablet-width-2) {
       max-height: ($image-block-height - 70);
-    }        
+    }
   }
   @include breakpoint(max-width $tablet-width-2) {
     margin-bottom: $mobile-content-margin;
@@ -70,11 +70,6 @@
 //
 // Page
 //
-
-// Workshops
-.nefo-view-list-workshop-row {
-  margin: 1.5em 0;
-}
 
 // NeFo-Produkt Bericht, NeFo-Produkt Faktenblatt, NeFo-Produkt Stellungnahme, NeFo-Produkt Studie
 .nefo-view-list-document-row {
@@ -212,7 +207,7 @@
         img {
           max-height: 212px;
           box-shadow: 8px 8px 4px #888;
-        }        
+        }
     }
   }
 }
