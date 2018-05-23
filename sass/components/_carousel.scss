@@ -16,9 +16,16 @@
     padding-top: 4px;
     font-size: $credits-font-size;
     font-weight: bold;
-  }  
+  }
   @include breakpoint(max-width ($tablet-width-2 - 1)) {
     @include block;
+
+    .slider-content-left {
+      img {
+        max-height: 270px;
+      }
+    }
+
     .nefo-slideshow-url {
       height: 32px;
     }
@@ -45,7 +52,7 @@
         margin: 0 auto;
         margin-top: 8px;
       }
-    }    
+    }
   }
   @include breakpoint($tablet-width ($tablet-width-2 - 1)) {
     .nefo-button {
@@ -60,14 +67,19 @@
         width: 100%;
         margin-right: 8px;
       }
-    }    
+    }
   }
   @include breakpoint($tab-3-1) {
     #block-views-nefo-slider-block {
       margin-bottom: 20px;
     }
-    .slider-img-credit {
-      padding-left: $horz-spacing-unit;
+    .slider-content-left {
+      img {
+        max-height: 360px;
+      }
+      .slider-img-credit {
+        padding-left: $horz-spacing-unit;
+      }
     }
     .slider-content-right {
       padding: 0 $horz-spacing-unit;
@@ -89,7 +101,7 @@
     .slider-content-left {
       position: relative;
       float:left;
-      max-width: 70%;
+      max-width: 60%;
       a {
         display: inline-block;
         width: 100%
@@ -104,10 +116,10 @@
     }
     .slider-content-right {
       display: inline-block;
-      width: 30%;
-      padding-left: 10px;
+      width: 40%;
+      padding: 0 20px;
       h2 {
-        margin: 0;
+        margin-top: 0;
       }
     }
     .owl-controls {
@@ -130,13 +142,13 @@
     .slider-content-left {
       position: relative;
       float:left;
-      max-width: 70%;
+      max-width: 60%;
       a {
         display: inline-block;
         width: 100%
       }
       img {
-        min-height: 360px; 
+        min-height: 360px;
         margin: 0;
         padding: 0;
       }
@@ -150,8 +162,8 @@
     }
     .slider-content-right {
       display: inline-block;
-      width: 30%;
-      padding-left: 10px;
+      width: 40%;
+      padding: 0 20px;
       h2 {
         margin: 0;
       }
@@ -167,7 +179,7 @@
       right: 150px;
       bottom: 0px;
     }
-  }
+  } // desk
 }
 
 //
@@ -218,7 +230,7 @@
         padding: 3px 14px;
         font-size: 18px;
       }
-    }    
+    }
   }
 
   .view-block-news-link-all {
@@ -240,7 +252,7 @@
         }
         height: 6em;
       }
-    }    
+    }
   }
 }
 

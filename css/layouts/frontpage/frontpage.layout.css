@@ -50,6 +50,8 @@
         padding: 0 10px;
         margin-top: 0;
         margin-bottom: 20px; }
+      .l-region--slider .slider-content-left img {
+        max-height: 270px; }
       .l-region--slider .nefo-slideshow-url {
         height: 32px; }
       .l-region--slider .slider-img-credit {
@@ -83,7 +85,9 @@
   @media (min-width: 640px) and (max-width: 767px) {
     .l-region--slider #block-views-nefo-slider-block {
       margin-bottom: 20px; }
-    .l-region--slider .slider-img-credit {
+    .l-region--slider .slider-content-left img {
+      max-height: 360px; }
+    .l-region--slider .slider-content-left .slider-img-credit {
       padding-left: 1em; }
     .l-region--slider .slider-content-right {
       padding: 0 1em; }
@@ -103,7 +107,7 @@
       .l-region--slider .slider-content-left {
         position: relative;
         float: left;
-        max-width: 70%; }
+        max-width: 60%; }
         .l-region--slider .slider-content-left a {
           display: inline-block;
           width: 100%; }
@@ -115,10 +119,10 @@
           padding-top: 0; }
       .l-region--slider .slider-content-right {
         display: inline-block;
-        width: 30%;
-        padding-left: 10px; }
+        width: 40%;
+        padding: 0 20px; }
         .l-region--slider .slider-content-right h2 {
-          margin: 0; }
+          margin-top: 0; }
       .l-region--slider .owl-controls {
         position: absolute;
         right: 80px;
@@ -136,7 +140,7 @@
       .l-region--slider .slider-content-left {
         position: relative;
         float: left;
-        max-width: 70%; }
+        max-width: 60%; }
         .l-region--slider .slider-content-left a {
           display: inline-block;
           width: 100%; }
@@ -152,8 +156,8 @@
           padding-top: 0; }
       .l-region--slider .slider-content-right {
         display: inline-block;
-        width: 30%;
-        padding-left: 10px; }
+        width: 40%;
+        padding: 0 20px; }
         .l-region--slider .slider-content-right h2 {
           margin: 0; }
       .l-region--slider .owl-controls {
