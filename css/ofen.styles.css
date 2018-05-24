@@ -1580,6 +1580,9 @@ ul.pager .pager__item--current {
 .node--blog .field--type-text-with-summary {
   clear: both; }
 
+.field--name-field-nefo-usage-category {
+  display: none; }
+
 .file-image {
   max-width: 100%; }
   .file-image img {
@@ -1904,6 +1907,9 @@ ul.pager .pager__item--current {
   margin-bottom: 0.7em; }
   .nefo-article-teaser-content-container .nefo-article-teaser-event-date .date-display-range {
     display: inline; }
+
+.nefo-article-teaser-content-container .nefo-article-teaser-label {
+  font-weight: 600; }
 
 .nefo-article-teaser-content-container .nefo-article-teaser-target-link {
   font-weight: normal; }

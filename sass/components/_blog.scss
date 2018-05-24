@@ -1,10 +1,15 @@
+//
 // Frontpage
+//
 
+//
 // Page
+//
+
+// Blog
 .node--blog--teaser {
   border-bottom: $separator-width solid $separator-color;
 }
-
 .nefo-content-author {
   margin: 0;
   padding: 0;
@@ -15,4 +20,9 @@
 }
 .node--blog .field--type-text-with-summary {
   clear: both;
+}
+
+// Article
+.field--name-field-nefo-usage-category {
+  display: none;
 }
