@@ -104,6 +104,15 @@ function ofen_preprocess_node(&$variables) {
     }
   } // if(nefo_event)
 
+  // Content type "article"
+  if($variables['type'] == 'article' && $variables['page']) {
+    // Set link "alle Ausschreibungen"
+    if ( !empty($variables['field_nefo_usage_category'][0]['tid']) &&
+         ($variables['field_nefo_usage_category'][0]['tid'] == 83) ) {
+      $variables['nefo_link_back_to_list'] = l('alle Ausschreibungen', 'forschung/ausschreibungen');
+    }
+  } // if(article)
+
 }
 
 
