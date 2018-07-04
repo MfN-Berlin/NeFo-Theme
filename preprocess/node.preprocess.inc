@@ -82,6 +82,26 @@ function ofen_preprocess_node(&$variables) {
     }
   } // if(nefo_product_document)
 
+  // Content type "nefo_event"
+  if($variables['type'] == 'nefo_event' && $variables['page']) {
+    global $language ;
+    $value1 = empty($variables['field_nefo_event_date'][0]['value']) ? '' : $variables['field_nefo_event_date'][0]['value'];
+    $value2 = empty($variables['field_nefo_event_date'][0]['value2']) ? '' : $variables['field_nefo_event_date'][0]['value2'];
+    $timezone = 'Europe/Berlin';
+    $timezone_db = 'UTC';
+    $time_formatted = '';
+    if ($value1 != $value2) {
+      $time1 = format_date(strtotime($value1 .' '. $timezone_db), 'custom', "H:i", $timezone);
+      $time2 = format_date(strtotime($value2 .' '. $timezone_db), 'custom', "H:i", $timezone);
+      if ($language->language == 'de') {
+        $time_formatted = '<span class="nefo-event-time-display">'. $time1 .' - '. $time2 .' Uhr</span>';
+      } else {
+        $time_formatted = '<span class="nefo-event-time-display">'. $time1 .' - '. $time2 .'</span>';
+      }
+      $variables['content']['field_nefo_event_date'][0]['#markup'] .= ', '. $time_formatted;
+    }
+  } // if(nefo_event)
+
 }
 
 
