@@ -6,6 +6,6 @@ Omega 4 based theme for the biodiversity.de website.
 
 # Installation
 ```
-git https://github.com/MfN-Berlin/NeFo-Theme.git ofen
+git clone https://github.com/MfN-Berlin/NeFo-Theme.git ofen
 npm install
 ```
